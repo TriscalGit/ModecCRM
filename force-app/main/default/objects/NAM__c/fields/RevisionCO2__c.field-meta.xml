@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RevisionCO2__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND (
+        RevisionCO__c = 0,
+        NOT(ISPICKVAL(Status__c, &apos;Approved&apos;))
+        ),
+    null,
+    RevisionCO__c
+)</formula>
+    <label>Revision CO</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Vendor__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Supplier</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>(1 AND 2) OR (3 AND 4) OR (6 AND (5 OR 7))</booleanFilter>
+        <errorMessage>Make sure the selected vendor is already homologated or not.</errorMessage>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>BM, Contract - New Contract, Contract - Amendment, Material Packing List (Third-party), Inspection</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.TW1_Vendor_Vetting__c</field>
+            <operation>equals</operation>
+            <value>Active, No Registered, Ongoing, Blocked, Vetting Not Requested, Vetting Rejected, Vetting Approved with Red Flag, Vetting Approved, Vetting Expired</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Vendor Vetting, Vendor Vetting - Senegal</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.TW1_Vendor_Vetting__c</field>
+            <operation>equals</operation>
+            <value>Active, No Registered, Ongoing, Blocked, Vetting Not Requested, Vetting Rejected, Vetting Approved with Red Flag, Vetting Approved, Vetting Expired</value>
+        </filterItems>
+        <filterItems>
+            <field>Account.TW1_Step_Owner__c</field>
+            <operation>equals</operation>
+            <valueField>$User.Id</valueField>
+        </filterItems>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>PO Review Form</value>
+        </filterItems>
+        <filterItems>
+            <field>$Profile.Name</field>
+            <operation>equals</operation>
+            <value>System Administrator, VV Team</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Requests</relationshipLabel>
+    <relationshipName>Requests</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObligateDailyRateUSD</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+  		ISPICKVAL(Type__c, &apos;Charter&apos;),
+			 ISBLANK(ActualDailyRateUSD__c) 	 
+)</errorConditionFormula>
+    <errorMessage>The Actual Daily Rate (USD) field must be filled.</errorMessage>
+</ValidationRule>

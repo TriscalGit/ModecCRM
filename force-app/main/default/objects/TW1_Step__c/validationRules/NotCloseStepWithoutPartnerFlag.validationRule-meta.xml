@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotCloseStepWithoutPartnerFlag</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+RecordType.DeveloperName = &quot;TW1_Approval_Step_Enable_Customer_User&quot;,
+ISCHANGED( TW1_Status__c ),
+ISPICKVAL(TW1_Status__c ,&quot;Closed&quot;),
+OR(
+ISBLANK( TW1_Vendor__r.TW1_Step_Owner__c ),
+ISNULL( TW1_Vendor__r.TW1_Step_Owner__c )
+)
+)</errorConditionFormula>
+    <errorMessage>You must convert the Supplier to Partner before you can close the activity.</errorMessage>
+</ValidationRule>

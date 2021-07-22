@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCL_Warning</fullName>
+    <fields>Name</fields>
+    <fields>TCF_Subject__c</fields>
+    <fields>PublicationDate__c</fields>
+    <fields>TCF_DueDate__c</fields>
+    <fields>OwnerId</fields>
+    <label>Warning</label>
+</CompactLayout>

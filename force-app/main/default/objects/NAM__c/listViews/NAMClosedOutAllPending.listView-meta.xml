@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NAMClosedOutAllPending</fullName>
+    <columns>NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>Subject__c</columns>
+    <columns>IssueDate__c</columns>
+    <columns>Status__c</columns>
+    <columns>ClosedOutStatus__c</columns>
+    <columns>TypeEvent__c</columns>
+    <columns>ProbabilityRating__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>TotalBalanceAlert__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>RevisionCO__c</columns>
+    <columns>Revision__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ClosedOutStatus__c</field>
+        <operation>equals</operation>
+        <value>Execution,EM,PEM,Tech Team,SPC Partners</value>
+    </filters>
+    <label>NAM Closed Out All  - Pending</label>
+</ListView>

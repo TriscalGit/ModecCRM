@@ -1,0 +1,27 @@
+<!--
+  @File Name          : T_MODEC_SenegalSupplierPortal.page
+  @Description        : 
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 01/07/2020 18:29:33
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    01/07/2020   Rafael Hadama     Initial Version
+-->
+<apex:page showHeader="false">
+
+  <apex:includeLightning />
+
+  <apex:form id="frmId">
+    <div id="lightning" />
+    <script>              
+      $Lightning.use("c:T_MODEC_SenegalSupplierPortal_App", function () {
+        //Write a function that creates the component on the page
+        $Lightning.createComponent("c:T_MODEC_SenegalSupplierPortal", {
+        }, "lightning", function (cmp) { });
+      });
+
+    </script>
+  </apex:form>
+</apex:page>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RatingSafety__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT(Safety__c) = &apos;No injury&apos;, 1,  
+    IF(TEXT(Safety__c) = &apos;Slight injury&apos;, 2,
+     IF(TEXT(Safety__c) = &apos;Minor injury&apos;, 3,
+       IF(TEXT(Safety__c) = &apos;Major injury&apos;, 4,
+          IF(TEXT(Safety__c) = &apos;Single fatality&apos;, 5, 0 )
+     )
+   )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Rating People</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

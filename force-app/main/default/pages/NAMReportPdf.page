@@ -1,0 +1,385 @@
+<apex:page standardController="NAM__c" extensions="NamReportPdfController" applyBodyTag="false" showHeader="false" sidebar="false" standardStylesheets="true" >
+
+    <div class="container-pdf">
+        <div align="left">
+            <img src="{!$Resource.modecLogo}" class="logo" width="350" />
+        </div>
+        <table>
+            <tr>
+                <td class="td-header">
+                    <p>
+                        <h1>NAM Report</h1>
+                    </p>
+                    <p>
+                        <h2>(NOTICE TO ASSET MANAGEMENT)</h2>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <table class="table-border">
+            <tr>
+                <td class="column-label">Unit</td>
+                <td>{!NAM__c.Vessel__r.Name}</td>
+            </tr>
+            <tr>
+                <td class="column-label">No.</td>
+                <td>{!NAM__c.Name}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Date</td>
+                <td>
+                    <apex:outputText value="{0, date, MMMM d','  yyyy}">
+                        <apex:param value="{!NAM__c.IssueDate__c}" /> 
+                    </apex:outputText>
+                </td>
+            </tr>
+            <tr>
+                <td class="column-label">Subject</td>
+                <td>{!NAM__c.Subject__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">System No.</td>
+                <td>{!NAM__c.SystemNumber__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Sub-System No.</td>
+                <td>{!NAM__c.SubSystemNumber__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">NOI No.</td>
+                <td>{!NAM__c.NOINo__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Type of Event</td>
+                <td>{!SUBSTITUTE(NAM__c.TypeEvent__c, ';', '; ')}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Criticality Category</td>
+                <td>{!NAM__c.CriticalityCategory__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Criticality Urgency</td>
+                <td>{!NAM__c.CriticalityUrgency__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label" style=" white-space: nowrap;">Responsibility Category</td>
+                <td >{!NAM__c.ResponsibiltyCategory__c}</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <p class="label">Description</p>
+                    <apex:outputText styleClass="td-left" value="{!customDescription}" escape="false"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="container-pdf">
+        <div align="left">
+            <img src="{!$Resource.modecLogo}" class="logo" width="350" />
+        </div>
+        <table>
+            <tr>
+                <td class="td-header">
+                    <h3>Risk Rating</h3>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="column-label">People</td>
+                <td class="td-center">{!NAM__c.Safety__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Futher Asset Damage</td>
+                <td class="td-center">{!NAM__c.FutherAssetDamage__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Potential Penalty/Rate Reduction</td>
+                <td class="td-center">{!NAM__c.PotentialPenalty__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Probability</td>
+                <td class="td-center">{!NAM__c.Probability__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Risk Rating</td>
+                <td class="td-center"><apex:outputText value="{!NAM__c.ProbabilityRating__c}" escape="false" /></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <p class="label">Escalation Risk</p>
+                    <apex:outputText value="{!NAM__c.EscalationRisk__c}" escape="false" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="/resource/RatingImage" alt="Risk" width="100%"/>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <p class="label">Countermeasure</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="column-label">Project Duration: {!NAM__c.ProjectDuration__c}</td>
+            </tr>
+            <tr>
+                <td class="column-label">Action By: {!NAM__c.ActionBy__c}</td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="label">Counter Measure:</p>
+                    <apex:outputText value="{!NAM__c.CounterMeasure__c}" escape="false" />
+                </td>
+            </tr>
+		</table>
+		<table>
+			<tr>
+				<td><p class="label">Cost (Including Mark-Up and ISS)</p></td>
+			</tr>
+			<tr>
+				<td class="column-label">MdB Amount: <apex:outputText value="{0, Number, currency}"><apex:param value="{!NAM__c.MdBAmount__c}" /></apex:outputText> </td>
+				<td class="column-label">MII Amount: <apex:outputText value="{0, Number, currency}"><apex:param value="{!NAM__c.MIIAmount__c}" /></apex:outputText></td>
+				<td class="column-label">MINC Amount: <apex:outputText value="{0, Number, currency}"><apex:param value="{!NAM__c.MINCAmount__c}"/></apex:outputText></td>
+			</tr>
+			<tr>
+				<td class="column-label" colspan="3">Total Approved Amount:  <apex:outputText value="{0, Number, currency}"><apex:param value="{!NAM__c.TotalApprovedAmount__c}"/> </apex:outputText> </td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>
+					<p class="p-center">
+						Prepared By
+						<br />
+						{!NAM__c.Owner.Name}
+						<br />
+						{!NAM__c.Owner.Title}
+					</p>
+				</td>
+				<td>
+					<p class="p-center">
+						Reviewed By
+						<br />
+						{!NAM__c.OM__r.Name}
+						<br />
+						{!NAM__c.OM__r.Title}						
+					</p>
+				</td>
+				<td>
+					<p class="p-center">
+						Approved By
+						<br />
+						{!NAM__c.PEM__r.Name}
+						<br />
+						{!NAM__c.PEM__r.Title}
+					</p>
+				</td>
+			</tr>
+		</table>
+    </div>
+
+    <apex:outputPanel rendered="{!NAM__c.Status__c == 'Approved'}">
+        <div class="page-break"><!-- PAGE BREAK --></div>
+
+        <div class="container-pdf">
+            <div align="left">
+                <img src="{!$Resource.modecLogo}" class="logo" width="350" />
+            </div>
+            <table>
+                <tr>
+                    <td>
+						<p class="label">Work Orders: </p>
+						<apex:outputText styleClass="td-left" value="{!WorkOrderNames}" escape="false"/>
+					</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <p class="label">Action Taken</p>
+                        <apex:outputText styleClass="td-left" value="{!customActionTaken}" escape="false"/>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td class="column-label">Root Cause Category</td>
+                    <td>{!SUBSTITUTE(NAM__c.RootCauseCategory__c, ';', '; ')}</td>
+                </tr>
+                <tr>
+                    <td class="column-label">Related Discipline</td>
+                    <td>{!SUBSTITUTE(NAM__c.RelatedDiscipline__c, ';', '; ')}</td>
+
+                </tr>
+                <tr>
+                    <td class="column-label">Lesson Learned List</td>
+                    <td>{!NAM__c.LessonLearnedList__c}</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <p class="label">Root Cause</p>
+                        <apex:outputText styleClass="td-left" value="{!customRootCause}" escape="false"/>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="page-break"><!-- PAGE BREAK --></div>
+
+        <div class="container-pdf">
+            <div align="left">
+                <img src="{!$Resource.modecLogo}" class="logo" width="350" />
+            </div>
+            <table>
+                <tr>
+                    <td>
+                        <p class="label">Final Cost Bearer (SPC or M&#38;M Contractor/O&#38;M Support Contractor)</p>
+                        <apex:outputText styleClass="td-left" value="{!NAM__c.FinalBearer__c}"/>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <p class="label">Feedback for other Fleets and/or EPCI Contractor</p>
+                        <apex:outputText styleClass="td-left" value="{!NAM__c.FeedbackDescription__c}"/>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <p class="label">WO Close-out Cost Summary</p>
+                        <table class="table-border table-full-width">
+                            <tr>
+                                <th></th>
+                                <th class="td-center">WO amount (USD)</th>
+                                <th class="td-center">Actual amount (USD)</th>
+                                <th class="td-center">Balance (USD)</th>
+                            </tr>
+                            <tr>
+                                <td class="label">MdB</td>
+                                <td style="text-align: right;">
+                                    <apex:outputText value="{0, Number, ###,###.00}">
+                                        <apex:param value="{!NAM__c.MdBAmount__c}" />
+                                    </apex:outputText>
+                                </td>
+                                <td style="text-align: right;">
+                                    <apex:outputText value="{0, Number, ###,###.00}">
+                                        <apex:param value="{!NAM__c.ActualMdBAmount__c}" />
+                                    </apex:outputText>
+                                </td>
+                                <td style="text-align: right;">
+                                    <apex:outputText value="{0, Number, ###,###.00}">
+                                        <apex:param value="{!NAM__c.BalanceMdB__c}" />
+                                    </apex:outputText>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">MII</td>
+                                <td style="text-align: right;">
+                                    <apex:outputText value="{0, Number, ###,###.00}">
+                                        <apex:param value="{!NAM__c.MIIAmount__c}" />
+                                    </apex:outputText>
+                                </td>
+                                <td style="text-align: right;">
+                                    <apex:outputText value="{0, Number, ###,###.00}">
+                                        <apex:param value="{!NAM__c.ActualMIIAmount__c}" />
+                                    </apex:outputText>
+                                </td>
+                                <td style="text-align: right;">
+                                    <apex:outputText value="{0, Number, ###,###.00}">
+                                        <apex:param value="{!NAM__c.BalanceMII__c}" />
+                                    </apex:outputText>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="label">Total</td>
+                                <td style="text-align: right;">
+                                    <apex:outputText value="{0, Number, ###,###.00}">
+                                        <apex:param value="{!NAM__c.TotalApprovedAmount__c}" />
+                                    </apex:outputText>
+                                </td>
+                                <td style="text-align: right;">
+                                    <apex:outputText value="{0, Number, ###,###.00}">
+                                        <apex:param value="{!NAM__c.ActualAmountTotal__c}" />
+                                    </apex:outputText>
+                                </td>
+                                <td style="text-align: right;">
+                                    <apex:outputText value="{0, Number, ###,###.00}">
+                                        <apex:param value="{!NAM__c.TotalBalance__c}" />
+                                    </apex:outputText>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <p class="label">Reason of the Balance</p>
+                        <apex:outputText styleClass="td-left" value="{!NAM__c.ReasonforBalance__c}"/>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <p class="p-center">
+                            Prepared By
+                            <br />
+                            {!NAM__c.Owner.Name}
+                            <br />
+                            Asset Management Coordinator
+                        </p>
+                    </td>
+                    <td>
+                        <p class="p-center">
+                            Reviewed By
+                            <br />
+                            {!NAM__c.EM__r.Name}
+                            <br />
+                            Engineering Manager
+                        </p>
+                    </td>
+                    <td>
+                        <p class="p-center">
+                            Approved By
+                            <br />
+                            {!NAM__c.PEMClosedOut__r.Name}
+                            <br />
+                            Project Engineering Manager
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p class="p-center">
+                            Approved by
+                            <br />
+                            <br />
+                            (SPC management)
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </apex:outputPanel>
+
+    <apex:stylesheet value="{!$Resource.NAMReportPdfCSS}" />
+
+</apex:page>

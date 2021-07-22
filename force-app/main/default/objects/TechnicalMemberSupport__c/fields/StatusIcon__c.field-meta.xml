@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusIcon__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(Text(Status__c) = &apos;Pending&apos;, &apos;----&apos;,  
+  IF(Text(Status__c) = &apos;Supported&apos;, IMAGE(&quot;/resource/support/supported1.png&quot;, &quot;Supported&quot;, 40, 40),
+      IMAGE(&quot;/resource/support/notsupported1.png&quot;, &quot;Not Supported&quot;, 30, 30)
+   )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

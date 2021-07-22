@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV27</fullName>
+    <columns>NAME</columns>
+    <columns>Proposal__c</columns>
+    <columns>Issue__c</columns>
+    <columns>StartDate__c</columns>
+    <columns>EndDate__c</columns>
+    <columns>TotalAmountBRL__c</columns>
+    <columns>TotalAmountUSD__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Vessel__c</field>
+        <operation>contains</operation>
+        <value>MV27</value>
+    </filters>
+    <label>MV27</label>
+</ListView>

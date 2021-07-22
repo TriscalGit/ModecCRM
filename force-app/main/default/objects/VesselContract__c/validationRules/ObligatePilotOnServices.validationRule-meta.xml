@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObligatePilotOnServices</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( 
+ISPICKVAL(Type__c, &apos;Services&apos;),
+ISBLANK(Pilot__c)
+)</errorConditionFormula>
+    <errorMessage>You must fill the Pilot field on Services Contracts.</errorMessage>
+</ValidationRule>

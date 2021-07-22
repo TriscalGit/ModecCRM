@@ -1,0 +1,27 @@
+<!--
+  @File Name          : T_MODEC_HomePage.cmp
+  @Description        : 
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 13/12/2019 12:23:44
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    13/12/2019   Rafael Hadama     Initial Version
+-->
+<aura:component implements="lightning:homeTemplate" description="Full-width header above a main column and collapsible right sidebar.">
+
+    <aura:attribute name="header" type="Aura.Component[]" description="Header region"/>
+    <aura:attribute name="main" type="Aura.Component[]" description="Main region"/>
+    <aura:attribute name="sidebar" type="Aura.Component[]" description="Collapsible sidebar region"/>
+
+    <aura:attribute name="isSidebarCollapsed" type="Boolean" access="PRIVATE" default="false" />
+
+    <div>
+        <lightning:layout class="slds-m-top_medium">
+            <lightning:layoutItem flexibility="auto">
+                {!v.main}
+            </lightning:layoutItem>            
+        </lightning:layout>
+    </div>
+</aura:component>

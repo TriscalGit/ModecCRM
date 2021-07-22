@@ -1,0 +1,27 @@
+<!--
+  @File Name          : T_MODEC_ChangeLanguage.cmp
+  @Description        : 
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 06/02/2020 17:41:13
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    06/02/2020   Rafael Hadama     Initial Version
+-->
+<aura:component controller="T_MODEC_ChangeLanguageCTRL"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global">
+
+    <aura:attribute name="labelPortuguese" type="String" default="Português" />
+    <aura:attribute name="labelEnglish" type="String" default="Inglês" />
+    <aura:handler value="{!this}" name="init" action="{!c.init}" />
+    
+    <div class="languageBar">
+        <div class="languageButtons">
+            <lightning:button label="{!v.labelPortuguese}" title="Portuguese" onclick="{!c.changeLanguageGer}"
+                class="borderPhoto" />
+            <lightning:button label="{!v.labelEnglish}" title="English" onclick="{!c.changeLanguageEng}" class="borderPhoto" />
+        </div>
+    </div>
+</aura:component>

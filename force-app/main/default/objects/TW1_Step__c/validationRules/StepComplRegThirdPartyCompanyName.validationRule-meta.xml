@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StepComplRegThirdPartyCompanyName</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISPICKVAL(TW1_Coord_de_PCMSO_Serv_de_Sa_de_Ocup__c, &apos;Terceiro&apos;),  ISBLANK( TW1_Nome_da_Empresa_Terceirizada__c ) 
+)</errorConditionFormula>
+    <errorDisplayField>TW1_Nome_da_Empresa_Terceirizada__c</errorDisplayField>
+    <errorMessage>Please fill the third party company&apos;s name.</errorMessage>
+</ValidationRule>

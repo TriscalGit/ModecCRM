@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_21__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL($User.LanguageLocaleKey,&quot;pt_BR&quot;),&quot;Inserir os seguintes documentos:&quot;,&quot;Insert the following documents:&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>2.1</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

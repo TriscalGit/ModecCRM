@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Procurement_Manager_TW1_Step</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Procurement Manager</label>
+    <queue>Procurement_Manager</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

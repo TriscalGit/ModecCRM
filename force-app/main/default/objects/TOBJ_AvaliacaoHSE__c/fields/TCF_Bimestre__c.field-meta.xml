@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_Bimestre__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+	OR(MONTH(DATEVALUE(CreatedDate)) = 1, MONTH (DATEVALUE(CreatedDate)) = 2),
+	&quot;1º Bimestre&quot;,
+	IF(
+		OR(MONTH(DATEVALUE(CreatedDate)) = 3, MONTH (DATEVALUE(CreatedDate)) = 4),
+		&quot;2º Bimestre&quot;,
+		IF(
+			OR(MONTH(DATEVALUE(CreatedDate)) = 5, MONTH (DATEVALUE(CreatedDate)) = 6),
+			&quot;3º Bimestre&quot;,
+			IF(
+				OR(MONTH(DATEVALUE(CreatedDate)) = 7, MONTH (DATEVALUE(CreatedDate)) = 8),
+				&quot;4º Bimestre&quot;,
+				IF(
+					OR(MONTH(DATEVALUE(CreatedDate)) = 9, MONTH (DATEVALUE(CreatedDate)) = 10),
+					&quot;5º Bimestre&quot;,
+					&quot;6º Bimestre&quot;
+				)
+			)
+		)
+	)	
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Bimestre</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

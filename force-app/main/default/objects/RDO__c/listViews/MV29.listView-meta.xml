@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV29</fullName>
+    <columns>VesselShortName__c</columns>
+    <columns>Date__c</columns>
+    <columns>NAME</columns>
+    <columns>RateDeltaDaily__c</columns>
+    <columns>RateDeltaTotalReductions__c</columns>
+    <columns>BOM__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Comments__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VesselShortName__c</field>
+        <operation>equals</operation>
+        <value>MV29</value>
+    </filters>
+    <label>MV29</label>
+</ListView>

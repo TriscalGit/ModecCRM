@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LessonLeantList__c</fullName>
+    <externalId>false</externalId>
+    <label>Lesson Leant List</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Added</fullName>
+                <default>false</default>
+                <label>Added</label>
+            </value>
+            <value>
+                <fullName>To be added</fullName>
+                <default>false</default>
+                <label>To be added</label>
+            </value>
+            <value>
+                <fullName>Not required</fullName>
+                <default>false</default>
+                <label>Not required</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnavailableVolumeLargestCargoTank1__c</fullName>
+    <externalId>false</externalId>
+    <label>Unavailable Volume Largest Cargo Tank 1</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1C - 15.179</fullName>
+                <default>false</default>
+                <label>1C - 15.179</label>
+            </value>
+            <value>
+                <fullName>2C - 15.164</fullName>
+                <default>false</default>
+                <label>2C - 15.164</label>
+            </value>
+            <value>
+                <fullName>3C - 15.164</fullName>
+                <default>false</default>
+                <label>3C - 15.164</label>
+            </value>
+            <value>
+                <fullName>4C - 15.139</fullName>
+                <default>false</default>
+                <label>4C - 15.139</label>
+            </value>
+            <value>
+                <fullName>5C - 15.131</fullName>
+                <default>false</default>
+                <label>5C - 15.131</label>
+            </value>
+            <value>
+                <fullName>6C - 15.131</fullName>
+                <default>false</default>
+                <label>6C - 15.131</label>
+            </value>
+            <value>
+                <fullName>7C - 15.083</fullName>
+                <default>false</default>
+                <label>7C - 15.083</label>
+            </value>
+            <value>
+                <fullName>8C - 15.082</fullName>
+                <default>false</default>
+                <label>8C - 15.082</label>
+            </value>
+            <value>
+                <fullName>9C - 15.109</fullName>
+                <default>false</default>
+                <label>9C - 15.109</label>
+            </value>
+            <value>
+                <fullName>10C - 15.113</fullName>
+                <default>false</default>
+                <label>10C - 15.113</label>
+            </value>
+            <value>
+                <fullName>11C - 15.113</fullName>
+                <default>false</default>
+                <label>11C - 15.113</label>
+            </value>
+            <value>
+                <fullName>12C - 18.632</fullName>
+                <default>false</default>
+                <label>12C - 18.632</label>
+            </value>
+            <value>
+                <fullName>2P - 12.669</fullName>
+                <default>false</default>
+                <label>2P - 12.669</label>
+            </value>
+            <value>
+                <fullName>3P - 13.985</fullName>
+                <default>false</default>
+                <label>3P - 13.985</label>
+            </value>
+            <value>
+                <fullName>4P - 14.209</fullName>
+                <default>false</default>
+                <label>4P - 14.209</label>
+            </value>
+            <value>
+                <fullName>5P - 14.222</fullName>
+                <default>false</default>
+                <label>5P - 14.222</label>
+            </value>
+            <value>
+                <fullName>6P - 14.222</fullName>
+                <default>false</default>
+                <label>6P - 14.222</label>
+            </value>
+            <value>
+                <fullName>10P - 14.202</fullName>
+                <default>false</default>
+                <label>10P - 14.202</label>
+            </value>
+            <value>
+                <fullName>11P - 13.886</fullName>
+                <default>false</default>
+                <label>11P - 13.886</label>
+            </value>
+            <value>
+                <fullName>2S - 12.669</fullName>
+                <default>false</default>
+                <label>2S - 12.669</label>
+            </value>
+            <value>
+                <fullName>3S - 13.985</fullName>
+                <default>false</default>
+                <label>3S - 13.985</label>
+            </value>
+            <value>
+                <fullName>4S - 14.208</fullName>
+                <default>false</default>
+                <label>4S - 14.208</label>
+            </value>
+            <value>
+                <fullName>5S - 14.222</fullName>
+                <default>false</default>
+                <label>5S - 14.222</label>
+            </value>
+            <value>
+                <fullName>6S - 14.222</fullName>
+                <default>false</default>
+                <label>6S - 14.222</label>
+            </value>
+            <value>
+                <fullName>10S - 14.202</fullName>
+                <default>false</default>
+                <label>10S - 14.202</label>
+            </value>
+            <value>
+                <fullName>11S - 13.886</fullName>
+                <default>false</default>
+                <label>11S - 13.886</label>
+            </value>
+            <value>
+                <fullName>F.P.T - 14.583</fullName>
+                <default>false</default>
+                <label>F.P.T - 14.583</label>
+            </value>
+            <value>
+                <fullName>8P - 14.222</fullName>
+                <default>false</default>
+                <label>8P - 14.222</label>
+            </value>
+            <value>
+                <fullName>9P - 14.222</fullName>
+                <default>false</default>
+                <label>9P - 14.222</label>
+            </value>
+            <value>
+                <fullName>8S - 14.222</fullName>
+                <default>false</default>
+                <label>8S - 14.222</label>
+            </value>
+            <value>
+                <fullName>9S - 14.222</fullName>
+                <default>false</default>
+                <label>9S - 14.222</label>
+            </value>
+            <value>
+                <fullName>7P - 14.220</fullName>
+                <default>false</default>
+                <label>7P - 14.220</label>
+            </value>
+            <value>
+                <fullName>7S - 14.220</fullName>
+                <default>false</default>
+                <label>7S - 14.220</label>
+            </value>
+            <value>
+                <fullName>12P - 12.287</fullName>
+                <default>false</default>
+                <label>12P - 12.287</label>
+            </value>
+            <value>
+                <fullName>12S - 12.283</fullName>
+                <default>false</default>
+                <label>12S - 12.283</label>
+            </value>
+            <value>
+                <fullName>1P - 8.781</fullName>
+                <default>false</default>
+                <label>1P - 8.781</label>
+            </value>
+            <value>
+                <fullName>1S - 8.781</fullName>
+                <default>false</default>
+                <label>1S - 8.781</label>
+            </value>
+            <value>
+                <fullName>Fuel Oil Storage Tank (P) - 8.490</fullName>
+                <default>false</default>
+                <label>Fuel Oil Storage Tank (P) - 8.490</label>
+            </value>
+            <value>
+                <fullName>Fuel Oil Storage Tank (S) - 8.490</fullName>
+                <default>false</default>
+                <label>Fuel Oil Storage Tank (S) - 8.490</label>
+            </value>
+            <value>
+                <fullName>AFT Tank PORT Void - 3.536</fullName>
+                <default>false</default>
+                <label>AFT Tank PORT Void - 3.536</label>
+            </value>
+            <value>
+                <fullName>A.P.T - 3.180</fullName>
+                <default>false</default>
+                <label>A.P.T - 3.180</label>
+            </value>
+            <value>
+                <fullName>AFT Tank STBD Void - 3.119</fullName>
+                <default>false</default>
+                <label>AFT Tank STBD Void - 3.119</label>
+            </value>
+            <value>
+                <fullName>Double BTM AFT - 886</fullName>
+                <default>false</default>
+                <label>Double BTM AFT - 886</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

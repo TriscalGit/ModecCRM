@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Decommissioned</fullName>
+                <default>false</default>
+                <label>Decommissioned</label>
+            </value>
+            <value>
+                <fullName>EPCI</fullName>
+                <default>false</default>
+                <label>EPCI</label>
+            </value>
+            <value>
+                <fullName>Inactive</fullName>
+                <default>false</default>
+                <label>Inactive</label>
+            </value>
+            <value>
+                <fullName>In Operation</fullName>
+                <default>false</default>
+                <label>In Operation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClarificationsApprovedNAMs</fullName>
+    <columns>NAME</columns>
+    <columns>Vessel__c</columns>
+    <columns>NAM__c</columns>
+    <columns>Type__c</columns>
+    <columns>Status__c</columns>
+    <columns>NAMStatus__c</columns>
+    <columns>ClosedOutStatus__c</columns>
+    <columns>LAST_ACTIVITY</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ClosedOutStatus__c</field>
+        <operation>equals</operation>
+        <value>Approved</value>
+    </filters>
+    <label>Clarifications from Approved NAMs</label>
+</ListView>

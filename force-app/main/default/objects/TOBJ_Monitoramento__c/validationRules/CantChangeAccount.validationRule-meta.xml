@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantChangeAccount</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				ISCHANGED( TCF_Conta__c ),
+				NOT(ISPICKVAL(TCF_Status__c, &quot;New&quot;))
+				)</errorConditionFormula>
+    <errorMessage>A conta do Monitoramento não pode ser alterada. Caso precise monitorar um outro fornecedor criar um registro de monitoramento.</errorMessage>
+</ValidationRule>

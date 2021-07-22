@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV15</fullName>
+    <columns>VesselShortName__c</columns>
+    <columns>Comments__c</columns>
+    <columns>NAME</columns>
+    <columns>AmountBRL__c</columns>
+    <columns>AmountUSD__c</columns>
+    <columns>AmountChargedBRL__c</columns>
+    <columns>AmountChargedUSD__c</columns>
+    <columns>MonthComp__c</columns>
+    <columns>MonthBooked__c</columns>
+    <columns>Status__c</columns>
+    <columns>DeductionDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VesselShortName__c</field>
+        <operation>equals</operation>
+        <value>MV15</value>
+    </filters>
+    <label>MV15</label>
+</ListView>

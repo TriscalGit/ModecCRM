@@ -1,0 +1,15 @@
+.THIS .languageBar {
+  width: 100%;
+}
+
+.THIS .languageButtons {
+  width: 1141px;
+  margin: auto !important;
+  background-color: white;
+  overflow: hidden;
+}
+
+.THIS .borderPhoto {
+  float: right;
+  margin-left: 1%;
+}

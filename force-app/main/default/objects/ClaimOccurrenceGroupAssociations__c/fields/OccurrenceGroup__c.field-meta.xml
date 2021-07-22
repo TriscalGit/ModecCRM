@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OccurrenceGroup__c</fullName>
+    <externalId>false</externalId>
+    <label>Occurrence Group</label>
+    <referenceTo>OccurrenceGroup__c</referenceTo>
+    <relationshipLabel>Claim Occurrence Group Associations</relationshipLabel>
+    <relationshipName>ClaimOccurrenceGroupAssociations</relationshipName>
+    <relationshipOrder>1</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Incident Location</label>
+    <name>TW1_Incident_Location__c</name>
+    <picklistValues>
+        <masterLabel>Base</masterLabel>
+        <translation>Base</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Ship</masterLabel>
+        <translation>Ship</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Shipyard</masterLabel>
+        <translation>Shipyard</translation>
+    </picklistValues>
+</CustomFieldTranslation>

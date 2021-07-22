@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW4_RecordTypeAudit__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASESAFEID(RecordTypeId) = $Setup.ID_Interaction__c.Id_RecordType_Interaction_Audit__c</formula>
+    <label>RecordTypeAudit?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

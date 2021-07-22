@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckAnalistaHSEQ</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				TCF_AnalistaHSEQ__c = true,
+				OR(
+								ISBLANK(TCF_NomeAnalistaHSEQ__c),
+								ISNULL(TCF_NomeAnalistaHSEQ__c),
+								ISBLANK(TCF_PrincipaisRespAnalistaHSEQ__c),
+								ISNULL(TCF_PrincipaisRespAnalistaHSEQ__c)
+				)
+)</errorConditionFormula>
+    <errorDisplayField>TCF_AnalistaHSEQ__c</errorDisplayField>
+    <errorMessage>If the Analyst HSEQ field is filled, the Analyst Name HSEQ and Main Responsibilities Analyst HSEQ fields must also be filled.</errorMessage>
+</ValidationRule>

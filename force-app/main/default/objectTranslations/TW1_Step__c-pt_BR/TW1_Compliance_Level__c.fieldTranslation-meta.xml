@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Nível de Conformidade</label>
+    <name>TW1_Compliance_Level__c</name>
+    <picklistValues>
+        <masterLabel>Level 1 - Exceptional cases</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Level 2 - Usual products or services</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Level 3 - Vendors that interact with Public Officials on MODEC’s behalf</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

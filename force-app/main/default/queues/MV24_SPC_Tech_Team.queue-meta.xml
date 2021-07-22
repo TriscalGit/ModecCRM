@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>MV24 SPC &amp; Tech Team</name>
+    <queueMembers>
+        <users>
+            <user>ke.hori@mitsui.com</user>
+            <user>masatomo.ogamo@modec.com</user>
+            <user>noritaka.kawajiri@molgroup.com</user>
+            <user>shi.komatsu@mbknl.com</user>
+            <user>shioji-jumpei@modec.com</user>
+            <user>toruken.iri@modec.com</user>
+            <user>toshifumi.urasaki@modec.com</user>
+            <user>tsunenobu-matsumoto@modec.com</user>
+            <user>t.nishinohara@mitsui.com.modec</user>
+            <user>yuki.komatsu@modec.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Task</sobjectType>
+    </queueSobject>
+</Queue>

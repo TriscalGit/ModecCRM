@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW5_Rejection_Limit__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    (TW5_Quantity__c &lt;= 50), 1,
+				IF(
+								(TW5_Quantity__c &lt;= 150), 2,
+								IF(
+												(TW5_Quantity__c &lt;= 280), 3,
+												IF(
+																(TW5_Quantity__c &lt;= 500), 4,
+																IF(
+																				(TW5_Quantity__c &lt;= 1200), 6,
+																				IF(
+																								(TW5_Quantity__c &lt;= 3200), 8,
+																								IF(
+																												(TW5_Quantity__c &lt;= 10000), 11,
+																												IF(
+																																(TW5_Quantity__c &lt;= 35000), 15,
+																																22
+																															)
+																												)
+																								)
+																				)
+																)
+												)
+								)
+				)</formula>
+    <label>Rejection Limit</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Incident_Subtype__c</fullName>
+    <externalId>false</externalId>
+    <label>Incident Subtype</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dropped Object</fullName>
+                <default>false</default>
+                <label>Dropped Object</label>
+            </value>
+            <value>
+                <fullName>Evironmental</fullName>
+                <default>false</default>
+                <label>Evironmental</label>
+            </value>
+            <value>
+                <fullName>Fatality</fullName>
+                <default>false</default>
+                <label>Fatality</label>
+            </value>
+            <value>
+                <fullName>First Aid</fullName>
+                <default>false</default>
+                <label>First Aid</label>
+            </value>
+            <value>
+                <fullName>General Near Miss</fullName>
+                <default>false</default>
+                <label>General Near Miss</label>
+            </value>
+            <value>
+                <fullName>Improper waste disposal</fullName>
+                <default>false</default>
+                <label>Improper waste disposal</label>
+            </value>
+            <value>
+                <fullName>Information security</fullName>
+                <default>false</default>
+                <label>Information security</label>
+            </value>
+            <value>
+                <fullName>Lost Time Injury</fullName>
+                <default>false</default>
+                <label>Lost Time Injury</label>
+            </value>
+            <value>
+                <fullName>Medical Treatment</fullName>
+                <default>false</default>
+                <label>Medical Treatment</label>
+            </value>
+            <value>
+                <fullName>Process/operation non-conformance</fullName>
+                <default>false</default>
+                <label>Process/operation non-conformance</label>
+            </value>
+            <value>
+                <fullName>Process/procedural non-conformance</fullName>
+                <default>false</default>
+                <label>Process/procedural non-conformance</label>
+            </value>
+            <value>
+                <fullName>Restricted Work Day Case</fullName>
+                <default>false</default>
+                <label>Restricted Work Day Case</label>
+            </value>
+            <value>
+                <fullName>Significant Event</fullName>
+                <default>false</default>
+                <label>Significant Event</label>
+            </value>
+            <value>
+                <fullName>Spill to sea</fullName>
+                <default>false</default>
+                <label>Spill to sea</label>
+            </value>
+            <value>
+                <fullName>System non-conformance</fullName>
+                <default>false</default>
+                <label>System non-conformance</label>
+            </value>
+            <value>
+                <fullName>Not Yet Classified</fullName>
+                <default>false</default>
+                <label>Not Yet Classified</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

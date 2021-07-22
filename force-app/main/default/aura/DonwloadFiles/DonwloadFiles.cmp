@@ -1,0 +1,46 @@
+<aura:component controller="T_DownloadFilesComponentController" implements="force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="arquivos" type="List"/>
+    <aura:attribute name="arquivosRetorno" type="List"/>
+    <aura:attribute name="step" type="Integer" default="2"/>
+    <aura:handler name="init" value="{!this}" action="{!c.init }"/> 
+    
+    
+    <aura:html tag="style">
+        .cuf-content {
+        padding: 0 0rem !important;
+        }
+        .slds-p-around--medium {
+        padding: 0rem !important;
+        }       
+        .slds-modal__content{
+        overflow-y:hidden !important;
+        height:unset !important;
+        max-height:unset !important;
+        }         
+    </aura:html>
+    
+    <div class="modal">
+        <header class="slds-modal__header">                
+            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Download All Files</h2>
+        </header>
+        <aura:if isTrue="{!v.step == 1? true : false}">            
+            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                <div class="slds-scrollable_y" style="height:20rem;">
+                    <c:DataTableContentDocumentLink aura:id="child" dados="{!v.arquivos}" retornoDataTable="{!v.arquivosRetorno}"/>
+                </div>
+            </div>
+        </aura:if>
+        <aura:if isTrue="{!v.step == 2? true : false}">
+            <div class="slds-is-relative" style="height: 10rem;">
+                <lightning:spinner variant="brand" size="medium"/>
+            </div>
+        </aura:if>
+        <footer class="slds-modal__footer">
+            <lightning:button label="Cancel" variant="brand-outline" onclick="{!c.cancelar}"/>
+            <lightning:button label="Download"  variant="brand" onclick="{!c.download}"/>   		    
+        </footer>
+    </div>
+    
+    
+</aura:component>

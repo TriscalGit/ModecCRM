@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Nome da(s) pessoa(s) responsável(is) pelo HSEQ e pelo preenchimento das informações</help>
+    <label>Responsável HSEQ</label>
+    <name>TCF_ResponsavelHSE__c</name>
+</CustomFieldTranslation>

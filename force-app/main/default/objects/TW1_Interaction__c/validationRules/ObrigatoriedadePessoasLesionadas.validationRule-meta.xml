@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObrigatoriedadePessoasLesionadas</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(PessoasLesionadas__c,ISBLANK(QuaisPessoasForamLesionadas__c))</errorConditionFormula>
+    <errorDisplayField>QuaisPessoasForamLesionadas__c</errorDisplayField>
+    <errorMessage>This field is necessary when there are people affected.</errorMessage>
+</ValidationRule>

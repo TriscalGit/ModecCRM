@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Incident_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Incident Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Injury/Illnes</fullName>
+                <default>false</default>
+                <label>Injury</label>
+            </value>
+            <value>
+                <fullName>Near Miss</fullName>
+                <default>false</default>
+                <label>Near Miss</label>
+            </value>
+            <value>
+                <fullName>Environmental</fullName>
+                <default>false</default>
+                <label>Environmental</label>
+            </value>
+            <value>
+                <fullName>Security</fullName>
+                <default>false</default>
+                <label>Security</label>
+            </value>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>Asset</fullName>
+                <default>false</default>
+                <label>Asset</label>
+            </value>
+            <value>
+                <fullName>Industrial Hygiene</fullName>
+                <default>false</default>
+                <label>Industrial Hygiene</label>
+            </value>
+            <value>
+                <fullName>Property</fullName>
+                <default>false</default>
+                <label>Property</label>
+            </value>
+            <value>
+                <fullName>Vehicular damage</fullName>
+                <default>false</default>
+                <label>Vehicular damage</label>
+            </value>
+            <value>
+                <fullName>Illnes</fullName>
+                <default>false</default>
+                <label>Illnes</label>
+            </value>
+            <value>
+                <fullName>Near Miss / Illness</fullName>
+                <default>false</default>
+                <label>Near Miss / Illness</label>
+            </value>
+            <value>
+                <fullName>Near Miss / Injury</fullName>
+                <default>false</default>
+                <label>Near Miss / Injury</label>
+            </value>
+            <value>
+                <fullName>Near Miss / Asset</fullName>
+                <default>false</default>
+                <label>Near Miss / Asset</label>
+            </value>
+            <value>
+                <fullName>Near Miss / Environmental</fullName>
+                <default>false</default>
+                <label>Near Miss / Environmental</label>
+            </value>
+            <value>
+                <fullName>Near Miss / Security</fullName>
+                <default>false</default>
+                <label>Near Miss / Security</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

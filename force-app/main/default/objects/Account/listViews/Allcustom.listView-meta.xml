@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Allcustom</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>TW1_Vendor_Vetting__c</columns>
+    <columns>ACCOUNT.RECORDTYPE</columns>
+    <columns>TW1_Country__c</columns>
+    <columns>ACCOUNT.ADDRESS1_STATE</columns>
+    <columns>TW1_Shelf_Life_Vetting_Date__c</columns>
+    <columns>ACCOUNT.CREATED_DATE</columns>
+    <columns>TW3_From_Portal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TW3_From_Portal__c</field>
+        <operation>equals</operation>
+        <value>Senegal</value>
+    </filters>
+    <label>All</label>
+</ListView>

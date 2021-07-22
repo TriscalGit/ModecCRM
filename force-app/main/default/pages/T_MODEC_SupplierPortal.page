@@ -1,0 +1,27 @@
+<!--
+  @File Name          : T_MODEC_SupplierPortal.page
+  @Description        : 
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 28/01/2020 14:04:41
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    05/12/2019   Rafael Hadama     Initial Version
+-->
+<apex:page showHeader="false">
+    
+    <apex:includeLightning />
+
+    <apex:form id="frmId">
+        <div id="lightning" />
+        <script>              
+            $Lightning.use("c:T_MODEC_SupplierPortal_App", function () {
+                //Write a function that creates the component on the page
+                $Lightning.createComponent("c:T_MODEC_SupplierPortalNew", {
+                }, "lightning", function (cmp) { });
+            });
+
+        </script>
+        </apex:form>
+</apex:page>

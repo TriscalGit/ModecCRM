@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Default</fullName>
+    <fields>Name</fields>
+    <fields>Vessel__c</fields>
+    <fields>Date__c</fields>
+    <fields>RateDeltaDaily__c</fields>
+    <fields>RateDeltaTotalReductions__c</fields>
+    <label>Default</label>
+</CompactLayout>

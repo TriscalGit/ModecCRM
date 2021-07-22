@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusRejectedFieldsRequired</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				ISPICKVAL(TW1_Status__c, &quot;Rejected&quot;),
+    OR(
+								ISBLANK(TW5_Inspection_Description__c),
+								ISBLANK(TW5_Inspection_Recommendation__c)
+								)
+				)</errorConditionFormula>
+    <errorMessage>If the Item is Rejected, you have to fill &quot;Inspection Description&quot; and &quot;Inspection Recommendation&quot; fields.</errorMessage>
+</ValidationRule>

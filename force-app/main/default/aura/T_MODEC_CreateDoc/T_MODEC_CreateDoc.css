@@ -1,0 +1,118 @@
+.THIS body {
+    background-color: white;
+    border-radius: 7px;
+  }
+  
+  .THIS .container1 {
+      height: 940px;
+  }
+
+.THIS .CssErrorView {border: 2px solid; border-color: #ff9a90; background-color: #ffe5e0; border-radius: 7px;}
+  
+  .THIS .container2 {
+      height: 300px;
+  }
+  
+  .THIS .header {
+    text-align: center;
+    line-height: 70px;
+    color: #383737;
+    font-size: 22px;
+    font-weight: 250;
+  }
+  
+  .THIS .headerTopLine {
+    width: 80%;
+    height: 1px;
+    background: #dddbda;
+    margin: 0 auto;
+  }
+  
+  .THIS .headerTopLineInformation {
+      height: 1px;
+      background: #dddbda;
+      margin: 0 auto;
+    }
+  
+  .THIS .headerInformation {
+      background: #F3F2F2;
+      border-radius: 5px;
+      height: 35px;
+      width: 100%;
+      margin: 0 auto;
+  }
+  
+  .THIS .headerTextInfo {
+      font-size: 17px;
+      line-height: 35px;
+      font-weight:2000;
+      text-align: center;
+  }
+  
+  .THIS .checkboxList {
+    padding-top: 10px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  
+  .THIS .nextButton {
+    float: right;
+    margin-right: 10%;
+    background: #225495;
+    color: white;
+    border: 0;
+    display: block;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .THIS .commentArea {
+    margin-top: 20px;
+    margin-left: 15%;
+    width: 70%;
+  }
+  
+  .THIS .fileUpload {
+    margin-top: 20px;
+    margin-left: 15%;
+  }
+  .THIS .fileList {
+    float: right;
+  }
+  
+  .THIS .backButton {
+    float: right;
+    margin-right: 3%;
+    background: #225495;
+    border: 0;
+    color: white;
+    display: block;
+    margin-top: 20px;
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .THIS .saveButton {
+    float: right;
+    margin-right: 10%;
+    background: #225495;
+    color: white;
+    border: 0;
+    display: block;
+    margin-top: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    border-radius: 5px;
+  }

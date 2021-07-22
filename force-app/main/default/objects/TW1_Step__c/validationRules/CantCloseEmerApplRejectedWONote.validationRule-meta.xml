@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantCloseEmerApplRejectedWONote</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+RecordType.DeveloperName = &quot;Approval_Step_Emergency_Approval&quot;,
+ISPICKVAL(TW1_Status__c , &quot;Closed&quot;),
+ISPICKVAL(  TW1_Manufacturing_Approval__c , &quot;Rejected&quot;),
+ISBLANK(  TW1_Manufacturing_Note__c  )
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t close this step as rejected without a Maintenance and Repair Note.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VesselManager__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+or(ContractAdministrator__c = $User.Id , $User.CommunityNickname = &quot;User15831739644296457125&quot; , $User.FirstName = &quot;Armando&quot;), 1 , 0)</formula>
+    <label>Vessel Manager</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

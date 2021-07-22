@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Preencha como no Ex.: SPIE-RIT-2020-0001</help>
+    <label>Recomendação Técnica de Inspeção</label>
+    <name>Technical_Inspection_Recommendation__c</name>
+</CustomFieldTranslation>

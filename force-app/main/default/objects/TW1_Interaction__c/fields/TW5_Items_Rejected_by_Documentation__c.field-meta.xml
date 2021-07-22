@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW5_Items_Rejected_by_Documentation__c</fullName>
+    <externalId>false</externalId>
+    <label>Items Rejected by Documentation</label>
+    <summaryFilterItems>
+        <field>TW1_Quality_Inspection_Receipt_Item__c.TW1_Status__c</field>
+        <operation>equals</operation>
+        <value>Rejected</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>TW1_Quality_Inspection_Receipt_Item__c.TW5_Rejection_Reason__c</field>
+        <operation>equals</operation>
+        <value>Documentation</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TW1_Quality_Inspection_Receipt_Item__c.TW1_Quality_Inspection_Receipt__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

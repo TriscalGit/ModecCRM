@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantCreateMoreThan10InspItem</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISNEW(),
+ (TW1_Request__r.TW1_Count_Inspection_Items__c  &gt;= 10)
+)</errorConditionFormula>
+    <errorMessage>Can&apos;t create more than 10 Inspection Item.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW5_Family_of_Materials__c</fullName>
+    <externalId>false</externalId>
+    <label>Family of Materials</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Pipe Fittings</fullName>
+                <default>false</default>
+                <label>Pipe Fittings</label>
+            </value>
+            <value>
+                <fullName>Consumables</fullName>
+                <default>false</default>
+                <label>Consumables</label>
+            </value>
+            <value>
+                <fullName>Security Devices</fullName>
+                <default>false</default>
+                <label>Security Devices</label>
+            </value>
+            <value>
+                <fullName>Fastening Elements</fullName>
+                <default>false</default>
+                <label>Fastening Elements</label>
+            </value>
+            <value>
+                <fullName>Electric</fullName>
+                <default>false</default>
+                <label>Electric</label>
+            </value>
+            <value>
+                <fullName>Electronics</fullName>
+                <default>false</default>
+                <label>Electronics</label>
+            </value>
+            <value>
+                <fullName>PPE</fullName>
+                <default>false</default>
+                <label>PPE</label>
+            </value>
+            <value>
+                <fullName>Static Equipment</fullName>
+                <default>false</default>
+                <label>Static Equipment</label>
+            </value>
+            <value>
+                <fullName>Structural</fullName>
+                <default>false</default>
+                <label>Structural</label>
+            </value>
+            <value>
+                <fullName>Tools</fullName>
+                <default>false</default>
+                <label>Tools</label>
+            </value>
+            <value>
+                <fullName>Instrumentation</fullName>
+                <default>false</default>
+                <label>Instrumentation</label>
+            </value>
+            <value>
+                <fullName>Liftings</fullName>
+                <default>false</default>
+                <label>Liftings</label>
+            </value>
+            <value>
+                <fullName>Hydraulic Hoses</fullName>
+                <default>false</default>
+                <label>Hydraulic Hoses</label>
+            </value>
+            <value>
+                <fullName>Marine</fullName>
+                <default>false</default>
+                <label>Marine</label>
+            </value>
+            <value>
+                <fullName>Piping</fullName>
+                <default>false</default>
+                <label>Piping</label>
+            </value>
+            <value>
+                <fullName>Rotating Equipment</fullName>
+                <default>false</default>
+                <label>Rotating Equipment</label>
+            </value>
+            <value>
+                <fullName>Valves</fullName>
+                <default>false</default>
+                <label>Valves</label>
+            </value>
+            <value>
+                <fullName>Seal</fullName>
+                <default>false</default>
+                <label>Seal</label>
+            </value>
+            <value>
+                <fullName>Fire Equipment</fullName>
+                <default>false</default>
+                <label>Fire Equipment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

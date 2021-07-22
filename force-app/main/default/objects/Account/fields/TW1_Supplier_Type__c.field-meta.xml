@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Supplier_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Supplier Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BANK</fullName>
+                <default>false</default>
+                <label>BANK</label>
+            </value>
+            <value>
+                <fullName>GOVERNMENT OFFICE</fullName>
+                <default>false</default>
+                <label>GOVERNMENT OFFICE</label>
+            </value>
+            <value>
+                <fullName>INDIRECTLY AFFILIATED COMPANY</fullName>
+                <default>false</default>
+                <label>INDIRECTLY AFFILIATED COMPANY</label>
+            </value>
+            <value>
+                <fullName>INDIVIDUAL REAL ESTATE OWNER</fullName>
+                <default>false</default>
+                <label>INDIVIDUAL REAL ESTATE OWNER</label>
+            </value>
+            <value>
+                <fullName>LAW FIRM</fullName>
+                <default>false</default>
+                <label>LAW FIRM</label>
+            </value>
+            <value>
+                <fullName>MUNICIPALITY</fullName>
+                <default>false</default>
+                <label>MUNICIPALITY</label>
+            </value>
+            <value>
+                <fullName>NON-PROFIT PROFESSIONAL TRADE ORGANIZATION</fullName>
+                <default>false</default>
+                <label>NON-PROFIT PROFESSIONAL TRADE ORGANIZATION</label>
+            </value>
+            <value>
+                <fullName>OTHER</fullName>
+                <default>false</default>
+                <label>OTHER</label>
+            </value>
+            <value>
+                <fullName>STATE UNIVERSITY</fullName>
+                <default>false</default>
+                <label>STATE UNIVERSITY</label>
+            </value>
+            <value>
+                <fullName>TAX/AUDIT FIRM</fullName>
+                <default>false</default>
+                <label>TAX/AUDIT FIRM</label>
+            </value>
+            <value>
+                <fullName>TAXING AUTHORITY</fullName>
+                <default>false</default>
+                <label>TAXING AUTHORITY</label>
+            </value>
+            <value>
+                <fullName>UTILITY PROVIDER</fullName>
+                <default>false</default>
+                <label>UTILITY PROVIDER</label>
+            </value>
+            <value>
+                <fullName>WORLDWIDE TRANSPORTATION</fullName>
+                <default>false</default>
+                <label>WORLDWIDE TRANSPORTATION</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

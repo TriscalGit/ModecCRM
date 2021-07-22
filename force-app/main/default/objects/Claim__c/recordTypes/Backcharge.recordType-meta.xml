@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Backcharge</fullName>
+    <active>false</active>
+    <label>Backcharge</label>
+    <picklistValues>
+        <picklist>Category__c</picklist>
+        <values>
+            <fullName>Backcharge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Change in Law</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Penalty</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rate reduction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FinancialStatus__c</picklist>
+        <values>
+            <fullName>Charged and accrued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Charged and not accrued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not charged and accrued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not charged and not accrued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not paid and accrued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not paid and not accrued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid and accrued</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paid and not accrued</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PS__c</picklist>
+        <values>
+            <fullName>Dynamic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External %28Lawsuit%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On hold</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Credit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Debit</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

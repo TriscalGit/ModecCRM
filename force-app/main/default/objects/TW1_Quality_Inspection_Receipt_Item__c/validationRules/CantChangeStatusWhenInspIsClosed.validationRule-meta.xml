@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantChangeStatusWhenInspIsClosed</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				OR(
+ 			    ISPICKVAL(TW1_Quality_Inspection_Receipt__r.TW5_Quality_Receipt_Status__c , &quot;Approved&quot;),
+								ISPICKVAL(TW1_Quality_Inspection_Receipt__r.TW5_Quality_Receipt_Status__c , &quot;Approved Under Restriction&quot;),
+								ISPICKVAL(TW1_Quality_Inspection_Receipt__r.TW5_Quality_Receipt_Status__c , &quot;Rejected&quot;)
+								),
+    ISCHANGED(TW1_Status__c)
+				)</errorConditionFormula>
+    <errorMessage>You can&apos;t change an Item when the Inspection is already closed.</errorMessage>
+</ValidationRule>

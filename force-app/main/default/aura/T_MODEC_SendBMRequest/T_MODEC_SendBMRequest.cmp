@@ -1,0 +1,85 @@
+<!--
+  @File Name          : T_MODEC_SendBMRequest.cmp
+  @Description        : Lightning component - para fornecedor realizar request de criação BM ao SAP
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 18/12/2019 12:31:08
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    09/12/2019   Rafael Hadama     Initial Version
+-->
+<aura:component controller="T_MODEC_SendBMRequest_Ctrl"
+  implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+  access="global">
+  <aura:attribute name="loaded" type="Boolean" default="true" />
+
+  <aura:attribute name="disableButton" type="Boolean" default="false" />
+
+  <aura:attribute name="showMsgList" type="Boolean" default="false" />
+  <aura:attribute name="showMsgError" type="Boolean" default="false" />
+  <aura:attribute name="showMsgSuccess" type="Boolean" default="false" />
+  <aura:attribute name="showMsgValidation" type="Boolean" default="false" />
+
+  <aura:attribute name="ListMessages" type="List" />
+
+  <aura:attribute name="recordId" type="String" />
+  <!--
+create send button.
+
+Spinner enabled.
+
+Icons, success and error.
+
+reload current screen.  
+-->
+  <div class="backgroundFull">
+    <div class="header">
+      <img class="imageBeSupplier" src="{!$Resource.ModecLogoAction}" />
+      <div class="thinStyleBarRed"> </div>
+
+      <br />
+
+      <div class="slds-grid slds-gutters">
+        <div class="slds-col">
+          <lightning:button label="Send Request" variant="brand" title="Create BM Entrysheet" onclick="{! c.sendToSAP }"
+            class="textButton" disabled="{!v.disableButton}" iconName="utility:send" iconPosition="left" />
+        </div>
+        <div class="slds-col">
+          <div class="exampleHolder">
+            <aura:if isTrue="{!!v.loaded }">
+              <lightning:spinner alternativeText="Loading" />
+            </aura:if>
+          </div>
+        </div>
+      </div>
+
+      <aura:if isTrue="{! v.showMsgList }">
+        <br />
+        <aura:iteration items="{!v.ListMessages}" var="s">
+          <aura:if isTrue="{!v.showMsgError}">
+            <lightning:icon iconName="utility:error" alternativeText="Error!" variant="error" />
+            {!s}
+          </aura:if>
+          <aura:if isTrue="{!v.showMsgValidation}">
+            <lightning:icon iconName="utility:warning" alternativeText="Warning!" variant="warning" />
+            {!s}
+          </aura:if>
+          <aura:if isTrue="{!v.showMsgSuccess}">
+            <lightning:icon iconName="action:approval" alternativeText="Approved" />
+            {!s}
+          </aura:if>
+        </aura:iteration>
+        <br />
+      </aura:if>
+
+      <div class="thinStyleBarBlue"> </div>
+    </div>
+
+
+
+
+
+  </div>
+
+</aura:component>

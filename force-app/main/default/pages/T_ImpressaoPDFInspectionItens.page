@@ -1,0 +1,169 @@
+<apex:page standardController="TW1_Interaction__c" extensions="T_ImpressaoPDFInspectionItensController" renderAs="PDF" applyBodyTag="false">
+    <head>
+        <style> 
+            body { font-family: Arial, Helvetica, sans-serif; }
+            table { width:100%; border:1px solid black; }
+            t1 { width:20%; }
+            t2 { width:40%; }
+            tr { border:1px solid black; text-align:center;}
+            th { border:1px solid black; text-align:center;}
+            td { border:1px solid black; text-align:center;}
+            
+            @page {
+            margin-top: 10px !important;
+            margin-bottom: 0.5px !important;
+            margin-left: 10px !important;
+            margin-right: 0.5px !important;
+            }
+            .fontSizeLine {
+            font-size: 0.62em;
+            }
+            .sizeOneLine {
+            height: 15px;
+            }
+            .sizeApproved {
+            height: 35px;
+            }
+            .sizeHeader {
+            height: 75px;
+            }
+            .sizeDescription {
+            height: 95px;
+            }
+            .quebraPagina {
+            page-break-before:always;
+            }
+            .semQuebraPagina{
+            page-break-before:avoid;
+            }
+        </style>
+    </head>
+    <body >
+        <!--Esta div serve para que o account.id e consorcio.id sejam carregados e utilizado na controller-->
+        <div style="display:none"></div>
+        
+        <div style="display:none;">
+            <table style="width: 80%;margin-left: 10%;margin-right: 10%;">
+                <tr>
+                    <td style="width: 15%">
+                        <apex:image value="/img/msg_icons/error32.png"/>
+                    </td>
+                    <td style="width: 85%">
+                        <table style="border: 0px; align-text: left;">
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>   
+        <apex:repeat var="item" value="{!items}"> 
+            <div class="{!if(items[0].id == item.id,'semQuebraPagina','quebraPagina')}" style="display:block; padding-top: 30px; padding-left: 20px;">
+                <table style="width: 321.2598425196835px; height: 325px;
+                              border: 3px black solid; border-radius: 12px;">               
+                    <tr>
+                        <td class ="sizeHeader" style="border: 0px;">
+                            <table style="border: 0px;">
+                                <tr>
+                                    <td style="border: 0px; text-align: left;">
+                                        <img src="/resource/1620935982000/ModecLogoPretoBranco?" 
+                                             alt="Logo MODEC"
+                                             width="195"
+                                             heigth="195"/>
+                                    </td>
+                                    <td style="border: 0px; text-align: left;">
+                                        <div style=" width: 45px; height: 45px; border: 3px black solid;"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class ="sizeApproved" style="border: 0px; text-align: center; background: #000000; font-weight: bold; color: #FFFFFF;text-transform: uppercase;">{!item.StatusEtiquetaFormula__c}</td>
+                    </tr>
+                    <tr>
+                        <td class ="sizeOneLine fontSizeLine" style="border: 0px;">
+                            <table style="border: 0px;">
+                                <tr>
+                                    <td style="border: 0px; text-align: left;"><span style="text-align: left; font-weight: bold;">UNIT / VESSEL: </span>
+                                        {!item.TW1_Quality_Inspection_Receipt__r.TW1_Facility__r.Name}
+                                    </td>   
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class ="sizeOneLine fontSizeLine" style="border: 0px;">
+                            <table style="border: 0px;">
+                                <tr>
+                                    <td style="border: 0px; text-align: left;"><span style="text-align: left; font-weight: bold;">PO - NUMBER:  </span>
+                                        {!item.TW1_Quality_Inspection_Receipt__r.TW1_Purchase_Order__c}
+                                    </td>    
+                                    <td width="125" style="border: 0px; text-align: left;"><span style="text-align: left; font-weight: bold;">/ ITEM PO:  </span>
+                                        {!item.TW5_Item_PO__c}
+                                    </td>   
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class ="sizeOneLine fontSizeLine" style="border: 0px;">
+                            <table style="border: 0px;">
+                                <tr>
+                                    <td style="border: 0px; text-align: left;"><span style="text-align: left; font-weight: bold;">INVOICE:  </span>
+                                        {!item.TW1_Quality_Inspection_Receipt__r.TW1_Invoice__c}
+                                    </td>    
+                                    <td width="125" style="border: 0px; text-align: left;"><span style="text-align: left; font-weight: bold;">/ QUANTITY:  </span>
+                                        {!item.TW5_Quantity__c}
+                                    </td>   
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class ="sizeDescription fontSizeLine" style="border: 0px;vertical-align: baseline; max-height: 100px; min-height: 100px;">
+                            <table style="border: 0px;">
+                                <tr>
+                                    <td style="word-wrap: break-word;text-align: left;border: 0px;">
+                                        <span style="display: inline-block;
+                                                     z-index: 0;
+                                                     height: 94px;
+                                                     max-height: 94px;
+                                                     overflow: hidden;">
+                                            <span style="text-align: left; font-weight: bold;">ITEM DESCRIPTION:  </span>
+                                            {!item.TW1_Description__c}
+                                        </span>
+                                    </td>   
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class ="sizeOneLine fontSizeLine" style="border: 0px;">
+                            <table style="border: 0px;">
+                                <tr>
+                                    <td style="border: 0px; text-align: left;"><span style="text-align: left; font-weight: bold;">INSPECTION REPORT - Nº:  </span>
+                                        {!item.TW1_Quality_Inspection_Receipt__r.Name}
+                                    </td> 
+                                    <td width="125" style="border: 0px; text-align: left;"><span style="text-align: left; font-weight: bold;">/ DATA:  </span>
+                                        {!item.TW1_Quality_Inspection_Receipt__r.InspectionResultsDateFormula__c}
+                                    </td> 
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class ="sizeOneLine fontSizeLine" style="border: 0px;">
+                            <table style="border: 0px;">
+                                <tr>
+                                    <td style="border: 0px; text-align: left;"><span style="text-align: left; font-weight: bold;">INSPECTOR: </span>                                        
+                                        {!item.TW1_Quality_Inspection_Receipt__r.TW1_Inspector_Name__c}
+                                    </td>   
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </apex:repeat> 
+    </body>
+</apex:page>

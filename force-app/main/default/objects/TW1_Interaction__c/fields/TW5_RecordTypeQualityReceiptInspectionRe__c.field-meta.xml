@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW5_RecordTypeQualityReceiptInspectionRe__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASESAFEID(RecordTypeId) = $Setup.ID_Interaction__c.Id_RecordType_Interaction_Qual_R_Insp_Re__c</formula>
+    <label>RecordTypeQualityReceiptInspectionRes?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

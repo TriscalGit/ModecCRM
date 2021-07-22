@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantCloseDateAvailWOSchedDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+RecordType.DeveloperName = &quot;Approval_Step_Date_Availability&quot;,
+ISPICKVAL(TW1_Status__c , &apos;Closed&apos;),
+ISPICKVAL( TW1_Inspection_Schedule_Date_Status__c, &quot;Approved&quot; ),
+ISNULL( TW1_Inspection_Scheduled_Date__c )
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t close this step without a Scheduled Date.</errorMessage>
+</ValidationRule>

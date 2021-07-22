@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VVTeamActionNeededWithApproval</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+CONTAINS(RecordType.DeveloperName,&quot;TW1_Approval_Step&quot;),
+NOT(CONTAINS(RecordType.DeveloperName,&quot;Get_Clarification_from_Supplier&quot;)),
+NOT(CONTAINS(RecordType.DeveloperName,&quot;finalization_approval_process&quot;)),
+
+OR(
+ISPICKVAL(TW1_Approval_Status__c,&quot;Approved&quot;),ISPICKVAL(TW1_Approval_Status__c,&quot;Not Approved&quot;)
+),
+ISPICKVAL( TW1_VV_action_needed__c ,&quot;Yes&quot;)
+
+)</errorConditionFormula>
+    <errorDisplayField>TW1_Approval_Status__c</errorDisplayField>
+    <errorMessage>You can not approve or reprove if VV team in Action Required &quot;Yes&quot;. It will only be possible to set as InProgress..</errorMessage>
+</ValidationRule>

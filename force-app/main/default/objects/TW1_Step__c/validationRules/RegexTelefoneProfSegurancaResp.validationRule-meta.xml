@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RegexTelefoneProfSegurancaResp</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+!REGEX( TW1_Telefone_do_Prof_de_Seguran_a_Resp__c ,&quot;^((\\+\\d{2}\\s)?\\(\\d{2}\\)\\s?\\d{4}\\d?\\-\\d{4})?$&quot;),
+!REGEX(  Tel_do_Coord_PCMSO_Serv_de_Sa_de_Ocup__c  ,&quot;^((\\+\\d{2}\\s)?\\(\\d{2}\\)\\s?\\d{4}\\d?\\-\\d{4})?$&quot;),
+!REGEX(  TW1_Telefone__c  ,&quot;^((\\+\\d{2}\\s)?\\(\\d{2}\\)\\s?\\d{4}\\d?\\-\\d{4})?$&quot;)
+)</errorConditionFormula>
+    <errorMessage>Please fill phone field correctly. Ex.: (XX) XXXXX-XXXX</errorMessage>
+</ValidationRule>

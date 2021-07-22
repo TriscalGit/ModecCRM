@@ -1,0 +1,186 @@
+<aura:component controller="T_SegmentacaoForcedoresController" implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    
+    <!-- Results -->
+    <aura:attribute name="data" type="Object[]" access="global"/>
+    <aura:attribute name="columns" type="List" access="private"/>
+    <aura:attribute name="maxRowSelection" type="Integer" access="global" required="false"/>
+    <aura:attribute name="hasResults" type="boolean" access="private"/>
+    <aura:attribute name="sortDirection" type="String" access="global"/>
+    <aura:attribute name="sortedBy" type="String" access="global" default="asc"/>
+    <aura:attribute name="defaultSortDirection" type="String" access="global" default="Name"/>
+    <aura:attribute name="selectedRowsCount" type="Integer" access="global" default="0"/>
+    <aura:attribute name="recordId" type="String" access="global"/>
+    <aura:attribute name="isLoading" type="Boolean" access="global" default="true"/>
+    <aura:attribute name="selectedRows" type="Object[]" access="global"/>
+    
+    
+    <!-- Filters Attributes -->
+    <aura:attribute name="filterSelectTypeOfFilter" type="string" access="public"/>
+    <aura:attribute name="filterInputName" type="string" access="public"/>
+    <aura:attribute name="filterInputTipoCategoria" type="string" access="public"/>
+    <aura:attribute name="filterInputCategory" type="string" access="public"/>
+    <aura:attribute name="filterInputSubCategory" type="string" access="public"/>
+    <aura:attribute name="filterInputVendorVetting" type="string" access="public"/>
+    <aura:attribute name="listValuesOfFilterInputTipoCategoria" type="Object[]" access="public"/>
+    <aura:attribute name="listValuesOfFilterInputVendorVetting" type="Object[]" access="public"/>
+    
+    
+    <!-- handlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    
+    <div>
+        <div class="slds-box slds-p-around_none slds-theme_shade"> <!-- mainDiv -->
+            
+            <lightning:layout class="slds-m-top_small slds-m-bottom_small">
+                <lightning:layoutItem size="6">
+                    <lightning:select name="filterSelectTypeOfFilter" 
+                                      aura:id="filterSelectTypeOfFilter"
+                                      label="Type of Search" 
+                                      value="{!v.filterSelectTypeOfFilter}" 
+                                      class="slds-m-horizontal_large"
+                                      onchange="{!c.clearFilterFields}">
+                        <option value="Name">Filter by Name</option>
+                        <option value="Category">Filter by Category and SubCategory</option>
+                        <option value="Participantes">Filter by Participantes</option>
+                    </lightning:select>
+                </lightning:layoutItem>
+                <lightning:layoutItem size="6" class="slds-text-align_right Buttons">
+                    <aura:if isTrue="{!and(v.filterSelectTypeOfFilter == 'Participantes', v.selectedRowsCount > 0)}">
+                        <lightning:button label="Remove" 
+                                          iconName="utility:delete" 
+                                          iconPosition="left"  
+                                          variant="destructive"
+                                          onclick="{!c.deleteAction}"
+                                          class="slds-m-right_x-small"/>
+                    </aura:if>
+                    <aura:if isTrue="{!and(v.filterSelectTypeOfFilter != 'Participantes', v.selectedRowsCount > 0)}">
+                        <lightning:button label="Add" 
+                                          iconName="utility:add" 
+                                          iconPosition="left"  
+                                          variant="brand" 
+                                          onclick="{!c.addParticipantes}"
+                                          class="slds-m-right_x-small"/>
+                    </aura:if>
+                    <lightning:button label="Search" 
+                                      iconName="utility:search" 
+                                      iconPosition="left"  
+                                      variant="brand" 
+                                      onclick="{!c.searchAction}"
+                                      class="slds-m-horizontal_large"/>
+                </lightning:layoutItem>
+            </lightning:layout>
+            
+            
+            <!-- Filter Values -->
+            <lightning:layout class="slds-m-bottom_medium">
+                <!-- Filter by Name -->
+                <aura:if isTrue="{!v.filterSelectTypeOfFilter == 'Name' ? true : false}">
+                    <lightning:layoutItem size="4">
+                        <span onkeypress="{!c.keyCheck}">
+                            <lightning:input name="filterInputName"
+                                             aura:id="filterInputName"
+                                             value="{!v.filterInputName}"
+                                             label="Supplier Name"
+                                             maxlength="80"
+                                             placeholder="Enter a text..."
+                                             class="slds-m-horizontal_large"/>
+                        </span>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="4">
+                        <lightning:select name="filterInputTipoCategoria" 
+                                          aura:id="filterInputTipoCategoria"
+                                          label="Category Type" 
+                                          value="{!v.filterInputTipoCategoria}" 
+                                          class="slds-m-horizontal_large">
+                            <option value="">Choose one...</option>                            
+                            <aura:iteration items="{!v.listValuesOfFilterInputTipoCategoria}" var="rt">
+                                <option value="{!rt.DeveloperName}">{!rt.Name}</option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="4">
+                        <lightning:select name="filterInputVendorVetting" 
+                                          aura:id="filterInputVendorVetting"
+                                          label="Vendor Vetting" 
+                                          value="{!v.filterInputVendorVetting}" 
+                                          class="slds-m-horizontal_large">
+                            <option value="">Choose one...</option>                            
+                            <aura:iteration items="{!v.listValuesOfFilterInputVendorVetting}" var="vv">
+                               <option value="{!vv.value}">{!vv.label}</option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </lightning:layoutItem>
+                </aura:if>
+                
+                <!-- Filter by Category and SubCategory -->
+                <aura:if isTrue="{!v.filterSelectTypeOfFilter == 'Category' ? true : false}">
+                    <lightning:layoutItem size="4">
+                        <span onkeypress="{!c.keyCheck}">
+                            <lightning:input name="filterInputCategory"
+                                             aura:id="filterInputCategory"
+                                             value="{!v.filterInputCategory}" 
+                                             label="Category"
+                                             maxlength="80"
+                                             placeholder="Enter a text..."
+                                             class="slds-m-horizontal_large"/>
+                        </span>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="4">
+                        <span onkeypress="{!c.keyCheck}">
+                            <lightning:input name="filterInputSubCategory" 
+                                             aura:id="filterInputSubCategory"
+                                             value="{!v.filterInputSubCategory}" 
+                                             label="Subcategory" 
+                                             maxlength="80"
+                                             placeholder="Enter a text..."
+                                             class="slds-m-horizontal_large"/>
+                        </span>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="4">
+                        <lightning:select name="filterInputVendorVetting" 
+                                          aura:id="filterInputVendorVetting"
+                                          label="Vendor Vetting" 
+                                          value="{!v.filterInputVendorVetting}" 
+                                          class="slds-m-horizontal_large">
+                            <option value="">Choose one...</option>
+                            <aura:iteration items="{!v.listValuesOfFilterInputVendorVetting}" var="vv">
+                               <option value="{!vv.value}">{!vv.label}</option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </lightning:layoutItem>
+                </aura:if>
+            </lightning:layout>
+            
+            
+            <!-- Table -->
+            <div class="slds-border_top">
+                <aura:if isTrue="{!v.isLoading}">
+                    <div class="slds-is-relative" style="height: 4rem; background-color: #f3f2f2;">
+                        <lightning:spinner variant="brand" size="medium" class="spinner"/>
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{!!v.isLoading}">
+                    <aura:if isTrue="{!v.hasResults}">
+                        <div style="max-height: 450px; overflow: auto;">
+                            <lightning:datatable columns="{!v.columns}"
+                                                 data="{!v.data}"
+                                                 keyField="id"
+                                                 aura:id="DataTableResults"
+                                                 maxRowSelection="{!v.maxRowSelection}"
+                                                 onrowselection="{!c.updateSelectedText}"
+                                                 sorted-by="{!v.sortedBy}"
+                                                 sorted-direction="{!v.sortDirection}"
+                                                 onsort="{!c.handleSort}"
+                                                 defaultSortDirection="{!v.defaultSortDirection}"/>
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!v.hasResults == false ? true : false}">
+                        <div class="slds-text-align_center slds-m-vertical_x-small">
+                            <span class="">No data returned from your search.</span>
+                        </div>
+                    </aura:if>
+                </aura:if>
+            </div>
+        </div>
+    </div>
+</aura:component>

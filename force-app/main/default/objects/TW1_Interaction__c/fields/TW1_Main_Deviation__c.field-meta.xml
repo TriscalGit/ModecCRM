@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Main_Deviation__c</fullName>
+    <externalId>false</externalId>
+    <label>Main Deviation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Dados da ordem de compra</fullName>
+                <default>false</default>
+                <label>Dados da ordem de compra</label>
+            </value>
+            <value>
+                <fullName>Dados de projeto</fullName>
+                <default>false</default>
+                <label>Dados de projeto</label>
+            </value>
+            <value>
+                <fullName>Defeito</fullName>
+                <default>false</default>
+                <label>Defeito</label>
+            </value>
+            <value>
+                <fullName>Documentação</fullName>
+                <default>false</default>
+                <label>Documentação</label>
+            </value>
+            <value>
+                <fullName>Fora de especificação</fullName>
+                <default>false</default>
+                <label>Fora de especificação</label>
+            </value>
+            <value>
+                <fullName>Nenhum</fullName>
+                <default>false</default>
+                <label>Nenhum</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>Preservação</fullName>
+                <default>false</default>
+                <label>Preservação</label>
+            </value>
+            <value>
+                <fullName>Quantitativo</fullName>
+                <default>false</default>
+                <label>Quantitativo</label>
+            </value>
+            <value>
+                <fullName>Rastreabilidade</fullName>
+                <default>false</default>
+                <label>Rastreabilidade</label>
+            </value>
+            <value>
+                <fullName>Transporte</fullName>
+                <default>false</default>
+                <label>Transporte</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

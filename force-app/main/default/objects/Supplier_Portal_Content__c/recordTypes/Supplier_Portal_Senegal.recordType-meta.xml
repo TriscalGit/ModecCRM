@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier_Portal_Senegal</fullName>
+    <active>true</active>
+    <description>Content do portal destinado a Senegal</description>
+    <label>Supplier Portal Senegal</label>
+    <picklistValues>
+        <picklist>TW1_Page_Language__c</picklist>
+        <values>
+            <fullName>English</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portuguese</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

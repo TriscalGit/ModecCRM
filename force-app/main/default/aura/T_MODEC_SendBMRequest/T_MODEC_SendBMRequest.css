@@ -1,0 +1,55 @@
+.THIS .thinStyleBarRed {
+  margin-top: 30px;
+  margin-left: 0 auto;
+  text-align: center;
+  width: 100%;
+  background-color:red;
+  height: 6px;
+}
+
+.THIS .thinStyleBarBlue {
+    margin-top: 30px;
+    margin-left: 0 auto;
+    text-align: center;
+    width: 100%;
+    background-color:blue;
+    height: 6px;
+  }
+  
+
+.THIS .header {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 80%;
+  margin: 0 auto;
+  background: #1abc9c;
+  font-size: 15px;
+  background-color: white;
+}
+
+.THIS .imageBeSupplier {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.THIS .backgroundFull {
+  background-color: white;
+}
+
+.THIS .exampleHolder {
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  width: auto;
+  vertical-align: middle;
+  white-space:normal;
+}
+
+.THIS .textButton {  
+  font-size: 15px;;
+}

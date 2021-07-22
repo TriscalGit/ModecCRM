@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantChangeQualityRecInspWOChangeStatus</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				RecordType.DeveloperName = &quot;TW1_Receipt_Inspection&quot;,
+				NOT(ISBLANK(TEXT(TW5_Quality_Receipt_Status__c))),
+NOT(ISPICKVAL(TW5_Quality_Receipt_Status__c, &quot;Not Submitted&quot;)),
+NOT(ISCHANGED(TW5_Quality_Receipt_Status__c)),
+				NOT(ISCHANGED( TW5_Items_Rejected_by_Documentation__c )),
+				NOT(ISCHANGED( TW5_Rejected_Items__c )),
+				NOT(ISCHANGED( TW5_Inspection_Type__c )),
+				NOT(ISCHANGED( TW5_Priority__c )),
+				NOT(ISCHANGED( TW5_Emergency_Note__c )),
+				NOT(ISCHANGED( TW5_Approved_Items_By_OM__c )),
+				NOT(ISCHANGED(  TW5_Last_Item_Approved_By_OM_Approver__c )),
+				NOT(ISCHANGED( TW5_Last_Item_Approved_By_OM_Name__c ))
+				)</errorConditionFormula>
+    <errorMessage>You can&apos;t change an Inspection that is already Submitted.</errorMessage>
+</ValidationRule>

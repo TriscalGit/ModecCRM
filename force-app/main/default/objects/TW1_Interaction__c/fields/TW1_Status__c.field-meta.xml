@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Status__c</fullName>
+    <defaultValue>&quot;Open&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Open</fullName>
+                <default>false</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>In Validation By the Legal</fullName>
+                <default>false</default>
+                <label>In Validation By the Legal</label>
+            </value>
+            <value>
+                <fullName>Validated Notification</fullName>
+                <default>false</default>
+                <label>Validated Notification</label>
+            </value>
+            <value>
+                <fullName>Awaiting Return</fullName>
+                <default>false</default>
+                <label>Awaiting Return</label>
+            </value>
+            <value>
+                <fullName>Accepted</fullName>
+                <default>false</default>
+                <label>Accepted</label>
+            </value>
+            <value>
+                <fullName>New Proposed Date</fullName>
+                <default>false</default>
+                <label>New Proposed Date</label>
+            </value>
+            <value>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+                <label>Rejected</label>
+            </value>
+            <value>
+                <fullName>Approved under restriction</fullName>
+                <default>false</default>
+                <label>Approved under restriction</label>
+            </value>
+            <value>
+                <fullName>New incident treatment</fullName>
+                <default>false</default>
+                <label>New incident treatment</label>
+            </value>
+            <value>
+                <fullName>Sent incident to supplier</fullName>
+                <default>false</default>
+                <label>Sent incident to supplier</label>
+            </value>
+            <value>
+                <fullName>Incident responded</fullName>
+                <default>false</default>
+                <label>Incident responded</label>
+            </value>
+            <value>
+                <fullName>Awaiting evidence of treatment</fullName>
+                <default>false</default>
+                <label>Awaiting evidence of treatment</label>
+            </value>
+            <value>
+                <fullName>Evidence sent</fullName>
+                <default>false</default>
+                <label>Evidence sent</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Incident treatment rejected</fullName>
+                <default>false</default>
+                <label>Incident treatment rejected</label>
+            </value>
+            <value>
+                <fullName>Incident treatment approved</fullName>
+                <default>false</default>
+                <label>Incident treatment approved</label>
+            </value>
+            <value>
+                <fullName>Clarification Required</fullName>
+                <default>false</default>
+                <label>Clarification Required</label>
+            </value>
+            <value>
+                <fullName>Analyzing Audit Info</fullName>
+                <default>false</default>
+                <label>Analyzing Audit Info</label>
+            </value>
+            <value>
+                <fullName>Audit Scheduled</fullName>
+                <default>false</default>
+                <label>Audit Scheduled</label>
+            </value>
+            <value>
+                <fullName>Awaiting Action Plan</fullName>
+                <default>false</default>
+                <label>Awaiting Action Plan</label>
+            </value>
+            <value>
+                <fullName>Action Plan Evaluation</fullName>
+                <default>false</default>
+                <label>Action Plan Evaluation</label>
+            </value>
+            <value>
+                <fullName>Action Plan Validation</fullName>
+                <default>false</default>
+                <label>Action Plan Validation</label>
+            </value>
+            <value>
+                <fullName>Awaiting Evidences</fullName>
+                <default>false</default>
+                <label>Awaiting Evidences</label>
+            </value>
+            <value>
+                <fullName>Evidences Sent</fullName>
+                <default>false</default>
+                <label>Evidences Sent</label>
+            </value>
+            <value>
+                <fullName>Evidences Analyzed</fullName>
+                <default>false</default>
+                <label>Evidences Analyzed</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+            <value>
+                <fullName>Reproved</fullName>
+                <default>false</default>
+                <label>Reproved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

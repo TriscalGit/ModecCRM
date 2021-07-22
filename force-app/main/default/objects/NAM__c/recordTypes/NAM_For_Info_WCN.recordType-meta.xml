@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NAM_For_Info_WCN</fullName>
+    <active>true</active>
+    <label>NAM - For Info WCN</label>
+    <picklistValues>
+        <picklist>ActionBy__c</picklist>
+        <values>
+            <fullName>O%26M Contractor %28Asset Management%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ClosedOutStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Execution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPC Partners</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tech Team</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CriticalityCategory__c</picklist>
+        <values>
+            <fullName>Other Special</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Regulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Shutdown</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CriticalityUrgency__c</picklist>
+        <values>
+            <fullName>Within 1 Month</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within 1 Week</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within 1 Year</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Within 24 Hours</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ExecutionStatus__c</picklist>
+        <values>
+            <fullName>Completed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ongoing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FeedbackEPCI__c</picklist>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FutherAssetDamage__c</picklist>
+        <values>
+            <fullName>%3CUSD 100K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3CUSD 1M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3CUSD 20K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3CUSD 500K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3EUSD 1M</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LessonLearnedList__c</picklist>
+        <values>
+            <fullName>Added</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>To be added</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MINCClosedOutStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MINCStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MOLClosedOutStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MOLStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MarubeniClosedOutStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MarubeniStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MitsuiClosedOutStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>MitsuiStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In Progress</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>PotentialPenalty__c</picklist>
+        <values>
+            <fullName>%3CUSD 100K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3CUSD 1M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3CUSD 500K</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>%3EUSD 1M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Probability__c</picklist>
+        <values>
+            <fullName>A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>D</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RCA__c</picklist>
+        <values>
+            <fullName>Not Required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Required</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RelatedDiscipline__c</picklist>
+        <values>
+            <fullName>Accommodation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrical</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HVAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>IT %26 Telecommunication</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instrumentation and Control</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Outfitting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Utility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material %2F Corrosion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mooring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Naval %2F Structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Package%28e%2Eg%2E GTG%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Piping</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Safety</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process and Utility</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rotating Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Static Equipment</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ResponsibiltyCategory__c</picklist>
+        <values>
+            <fullName>Client</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Insurance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>O%26M</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unkown</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Warranty</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RootCauseCategory__c</picklist>
+        <values>
+            <fullName>Commissioning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Construction</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Factor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Maintenance</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not known</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not required</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Procuremen</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Safety__c</picklist>
+        <values>
+            <fullName>Major injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Minor injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No injury</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Single fatality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slight injury</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>AMC</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PEM</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SubSystemNumber__c</picklist>
+        <values>
+            <fullName>AFT Cargo Offloading System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>AFT Deck Crane</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accommodation %2F Engine Room HVAC System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Alarm Management System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ballast System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bilge System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boiler - A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Boiler - B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCR - Addressable Fire Detection System - AFDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CCTV %28Surveillance%29 System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carcass Vent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cargo Metering</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cargo Oil System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chain Handling %2F Chain Jack %2F Chain Stoppers - AFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chain Handling %2F Chain Jack %2F Chain Stoppers - FWD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Injection Tank - A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Chemical Injection Tank - B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Drain System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cooling Medium System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Crude Oil Treating %2F Stabilization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEH %28for future use%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deck Machinery %26 Anchoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deluge System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diesel Generator - 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diesel Generator - 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Diesel Generator - 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>E-House - Addressable Fire Detection System - AFDS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Electrochlorination System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Elevator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Fire Pump</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Emergency Generator</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine Room Compressed Air System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine Room Fresh Water System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine Room Gantry Crane %26 Lifiting Gears</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine Room Sea Water System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Engine Room Workshop Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Environmental Monitoring System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FWD Cargo Offloading System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Facility Control System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Feed Water %26 Steam Distribution System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Water System - AFT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Water System - FWD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Flowline Circulation System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fuel Gas System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GTG Diesel Filtration %26 Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Galley %26 Laundry Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Compression %28GI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Dehydration %26 Regeneration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Lift Compression</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Sampling System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Turbine Generator - 1</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Turbine Generator - 2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Turbine Generator - 3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gas Turbine Generator - 4</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gaseous Fire Fighting System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HFO System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HP Flare System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heat Tracing</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heating Medium System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Heli Refueling System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helideck Foam System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Helideck Warning System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Hull Tanks %26 Void Spaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ICCP System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inert Gas System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inlet Gas Production %2F Lift %2F Export %2F Import %2F Injection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inlet Oil Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Internal Communication System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>LQ Sewage %26 Drain System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Life Boats %2F Rescue Boats %2F Davits</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Living Quarters - Cabins</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lube Oil System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MGO System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MODA System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MODEC V-SAT Communication System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Deck Foam System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Engine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Gas Compression - A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Main Gas Compression - B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine %2F Deck %26 Accommodation Area Completion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine CO2 System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Emergency %2F Normal Lighting %26 Small Power System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine LV Emergency Power Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine Main LV Power Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marine UPS System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Metering System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous Safety System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Miscellaneous Waste Disposal Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Monflex Riser CCTV System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mooring Chan %2F Wire %2F Rope %26 Fairlead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Multimedia %2F LAN %2F PABX System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Navigation Aid - FPSO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Navigation Aids %2F Helideck Warning System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OMTS System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open Drain System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Operational Support Radio System %28UHF%2FVHF%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAGA System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PIP Heating System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pedestal Crane - Fwd</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Petrobras V-SAT Communication System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portable Fire Fighting Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Position Offset Diagram System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Positioning Reference System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Control System %28PCS%29 - Marine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Control System %28PCS%29 - Topsides</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Process Inert Gas %28N2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Produced Water Treatment System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Provision Ref%2E System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riser Monitoring System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riser Pull-in Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Riser Pull-in Winch</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SMP %28for future use%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Shutdown System %28SSDS%29  - Marine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Safety Shutdown System System %28SSDS%29 - Topsides</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satellite Communication System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Satellite TV System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seawater Injection Pumps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seawater Lift Pumps</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seawater Treatment %26 Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sewage System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Slop Water System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Steering Gear System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsea Data Acquisition System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subsea HPU System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tank Monitoring System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides Area Completion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides CO2 System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides Emergency Lighting and Small Power System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides Fire Water System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides Foam System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides Fresh Water System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides HVAC System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides IA%2FUA System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides LV Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides Lifting Gear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides MV Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides Normal Lighting and Small Power System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides Steam Distribution</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides UPS System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Topsides Workshop %26 Laboratory Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Valve Remote Control System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Vapor Recovery Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Waste Disposal %26 Spill Containment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Water Mist System</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>SystemNumber__c</picklist>
+        <values>
+            <fullName>06 - Mooring System Mechanical Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>07 - Mooring System Component</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>08 - Installation Aids</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>10 - Inlet Oil Production</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>11 - Crude Oil Treating%2FStabilization</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>12 - Flowline Circulation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>14 - Produced Water Treatment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>15 - Seawater Treatment %26 Injection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>21 - Vapor Recovery Unit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>22 - Main Gas Compression</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>23 - Gas Dehydration %26 Regeneration</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>24 - Gas Compression %28GI%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>30 - Flare %26 Vent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>31 - Fuel Gas System - General</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>33 - Chemical Injection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>34 - Closed%2FOpen Drain System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>35 - Heat Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>36 - Cooling Medium</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>37 - Process Inert Gas %28N2%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>40 - Power Generation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>41 - Fuel System - Marine</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>42 - Seawater System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>43 - Steam %26 Condensate System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>44 - Potable %26 Fresh Water System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>45-Compressed%28Utility %26 Instrument%29Air</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>46 - Lube Oil System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>47 - Bilge System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>50 - Life Saving %26 Emergency Rescue</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51 - E%2FR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>52 -Deluge System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>53 -Foam System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>54 - Gaseous Fire Fighting System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>55 - Portable Fire Fighting Equipment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>56 - Waste Disposal %26 Spill Containment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>60 - Power Distribution System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>61 - Lighting System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>62 - Facility Control System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>63 - Communication System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>64 - Navigation System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>65 - EMP Data %26 Position Reference Syst</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>66 - Subsea Control System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>67 - Metering System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>70 - Cargo%2C Ballast%2C %26 Slop System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>71 - Cargo Offloading</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>72 - IGS %26 Vent System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>73 - Tank Monitoring System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>74 - Valve Remote Control System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>75 - Hull Tanks %26 Structure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>76 - Corrosion Protection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>80 - Propulsion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>81 - Living Quarter %28LQ%29</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>82 - HVAC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>83 - LQ Sewage %26 Drain System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>84 - Laboratory %26 Workshop Spaces</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>85 - Material Handling System</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>86 - Deck Machinery %26 Anchoring</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>87 - Helideck</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>90 - Area Completion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TypeEvent__c</picklist>
+        <values>
+            <fullName>Accident</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Design Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mechanical Failure</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Preventive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Upgrade%2FModification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wear %26 Tear</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

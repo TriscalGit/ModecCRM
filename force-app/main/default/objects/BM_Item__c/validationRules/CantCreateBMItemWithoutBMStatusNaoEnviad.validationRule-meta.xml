@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantCreateBMItemWithoutBMStatusNaoEnviad</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISNEW(), NOT(ISPICKVAL( Request__r.BM_Status__c , &apos;Não enviado&apos;)))</errorConditionFormula>
+    <errorMessage>You can&apos;t create a new BM Item if the BM status is not &quot;Não enviado&quot;.</errorMessage>
+</ValidationRule>

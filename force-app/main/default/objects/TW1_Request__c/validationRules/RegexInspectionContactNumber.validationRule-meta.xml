@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RegexInspectionContactNumber</fullName>
+    <active>true</active>
+    <errorConditionFormula>!REGEX(  TW1_Inspection_Contact_Number__c  ,&quot;^((\\+\\d{2}\\s)?\\(\\d{2}\\)\\s?\\d{4}\\d?\\-\\d{4})?$&quot;)</errorConditionFormula>
+    <errorMessage>Please fill phone field correctly. Ex.: (XX) XXXXX-XXXX</errorMessage>
+</ValidationRule>

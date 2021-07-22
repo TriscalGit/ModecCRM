@@ -1,0 +1,4 @@
+<design:component>
+	<design:attribute name="dados" label="Dados de entrada"/>
+    <design:attribute name="retornoDataTable" label="Retorno dos dados selecionados"/>
+</design:component>

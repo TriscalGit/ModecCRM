@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW5_Related_Request__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Related Request</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 AND (2 AND 3) OR (4 AND 5)</booleanFilter>
+        <filterItems>
+            <field>$Source.RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Inspection</value>
+        </filterItems>
+        <filterItems>
+            <field>TW1_Request__c.TW1_Inspection_Perfomed__c</field>
+            <operation>equals</operation>
+            <value>Material Release</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.TW1_Inspection_Perfomed__c</field>
+            <operation>equals</operation>
+            <value>Pressure Test, Delivery, Dimensional, Welding</value>
+        </filterItems>
+        <filterItems>
+            <field>TW1_Request__c.TW1_Inspection_Perfomed__c</field>
+            <operation>equals</operation>
+            <value>Material Release, Pressure Test, Delivery, Dimensional, Painting, Welding, Documentation Analysis, PMI follow up, Others</value>
+        </filterItems>
+        <filterItems>
+            <field>$Source.TW1_Inspection_Perfomed__c</field>
+            <operation>equals</operation>
+            <value>Material Release, Painting, Documentation Analysis, PMI follow up, Others</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>TW1_Request__c</referenceTo>
+    <relationshipLabel>Requests (Related Request)</relationshipLabel>
+    <relationshipName>Requests1</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AvailabilityREF102End__c</fullName>
+    <description>Availability - REF 102 - End</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Availability - REF 102 - End</inlineHelpText>
+    <label>End</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

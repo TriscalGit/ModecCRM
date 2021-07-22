@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW4_Deviation_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Deviation Type</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>HSE</fullName>
+                <default>false</default>
+                <label>HSE</label>
+            </value>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>Infrastructure</fullName>
+                <default>false</default>
+                <label>Infrastructure</label>
+            </value>
+            <value>
+                <fullName>People</fullName>
+                <default>false</default>
+                <label>People</label>
+            </value>
+            <value>
+                <fullName>Resources</fullName>
+                <default>false</default>
+                <label>Resources</label>
+            </value>
+            <value>
+                <fullName>Planning and Control</fullName>
+                <default>false</default>
+                <label>Planning and Control</label>
+            </value>
+            <value>
+                <fullName>Operation</fullName>
+                <default>false</default>
+                <label>Operation</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

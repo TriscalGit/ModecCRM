@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Engineering Manager</name>
+    <queueMembers>
+        <users>
+            <user>david.filho@modec.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>NAM__c</sobjectType>
+    </queueSobject>
+</Queue>

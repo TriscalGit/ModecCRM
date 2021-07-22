@@ -1,0 +1,5 @@
+<design:component>
+	<design:attribute name="Message" label="Entre com a mensagem que deverá ser exibida"/>
+    <design:attribute name="Type" datasource="Info,Warning,Success,Error" label="Entre com Info, Warning, Success ou Error"/>
+    <design:attribute name="Duration" label="Quantos segudos deve durar essa mensagem? (Default: 5 segundos)"/>
+</design:component>

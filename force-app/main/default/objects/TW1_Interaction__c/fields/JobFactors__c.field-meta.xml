@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JobFactors__c</fullName>
+    <externalId>false</externalId>
+    <label>Root Cause</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Abuse and misuse</fullName>
+                <default>false</default>
+                <label>Abuse and misuse</label>
+            </value>
+            <value>
+                <fullName>Abuse or misuse of equipment</fullName>
+                <default>false</default>
+                <label>Abuse or misuse of equipment</label>
+            </value>
+            <value>
+                <fullName>Excessive wear and tear</fullName>
+                <default>false</default>
+                <label>Excessive wear and tear</label>
+            </value>
+            <value>
+                <fullName>Improper motivation</fullName>
+                <default>false</default>
+                <label>Improper motivation</label>
+            </value>
+            <value>
+                <fullName>Inadequate communications</fullName>
+                <default>false</default>
+                <label>Inadequate communications</label>
+            </value>
+            <value>
+                <fullName>Inadequate construction</fullName>
+                <default>false</default>
+                <label>Inadequate construction</label>
+            </value>
+            <value>
+                <fullName>Inadequate engineering / design</fullName>
+                <default>false</default>
+                <label>Inadequate engineering / design</label>
+            </value>
+            <value>
+                <fullName>Inadequate leadersgip / supervision</fullName>
+                <default>false</default>
+                <label>Inadequate leadersgip / supervision</label>
+            </value>
+            <value>
+                <fullName>Inadequate maintenance</fullName>
+                <default>false</default>
+                <label>Inadequate maintenance</label>
+            </value>
+            <value>
+                <fullName>Inadequate mental / psychological capacity</fullName>
+                <default>false</default>
+                <label>Inadequate mental / psychological capacity</label>
+            </value>
+            <value>
+                <fullName>Inadequate operations</fullName>
+                <default>false</default>
+                <label>Inadequate operations</label>
+            </value>
+            <value>
+                <fullName>Inadequate physical capability</fullName>
+                <default>false</default>
+                <label>Inadequate physical capability</label>
+            </value>
+            <value>
+                <fullName>Inadequate purchasing</fullName>
+                <default>false</default>
+                <label>Inadequate purchasing</label>
+            </value>
+            <value>
+                <fullName>Inadequate tools / equipment</fullName>
+                <default>false</default>
+                <label>Inadequate tools / equipment</label>
+            </value>
+            <value>
+                <fullName>Inadequate work standards</fullName>
+                <default>false</default>
+                <label>Inadequate work standards</label>
+            </value>
+            <value>
+                <fullName>Lack of knowledge</fullName>
+                <default>false</default>
+                <label>Lack of knowledge</label>
+            </value>
+            <value>
+                <fullName>Lack of skill</fullName>
+                <default>false</default>
+                <label>Lack of skill</label>
+            </value>
+            <value>
+                <fullName>Mental or psychological stress</fullName>
+                <default>false</default>
+                <label>Mental or psychological stress</label>
+            </value>
+            <value>
+                <fullName>No job factors identified</fullName>
+                <default>false</default>
+                <label>No job factors identified</label>
+            </value>
+            <value>
+                <fullName>No personal factors indentified</fullName>
+                <default>false</default>
+                <label>No personal factors indentified</label>
+            </value>
+            <value>
+                <fullName>Physical or physiological stress</fullName>
+                <default>false</default>
+                <label>Physical or physiological stress</label>
+            </value>
+            <value>
+                <fullName>Inadequate leadership / supervision</fullName>
+                <default>false</default>
+                <label>Inadequate leadership / supervision</label>
+            </value>
+            <value>
+                <fullName>Other job factor</fullName>
+                <default>false</default>
+                <label>Other job factor</label>
+            </value>
+            <value>
+                <fullName>No personal factors identified</fullName>
+                <default>false</default>
+                <label>No personal factors identified</label>
+            </value>
+            <value>
+                <fullName>Other personal factor</fullName>
+                <default>false</default>
+                <label>Other personal factor</label>
+            </value>
+            <value>
+                <fullName>Failure to allocate resources</fullName>
+                <default>false</default>
+                <label>Failure to allocate resources</label>
+            </value>
+            <value>
+                <fullName>Failure to check / monitor / test</fullName>
+                <default>false</default>
+                <label>Failure to check / monitor / test</label>
+            </value>
+            <value>
+                <fullName>Failure to communicate / coordinate</fullName>
+                <default>false</default>
+                <label>Failure to communicate / coordinate</label>
+            </value>
+            <value>
+                <fullName>Failure to control outsourced process</fullName>
+                <default>false</default>
+                <label>Failure to control outsourced process</label>
+            </value>
+            <value>
+                <fullName>Failure to document</fullName>
+                <default>false</default>
+                <label>Failure to document</label>
+            </value>
+            <value>
+                <fullName>Failure to follow procedures / policies / practice</fullName>
+                <default>false</default>
+                <label>Failure to follow procedures / policies / practice</label>
+            </value>
+            <value>
+                <fullName>Failure to identify hazard / risk</fullName>
+                <default>false</default>
+                <label>Failure to identify hazard / risk</label>
+            </value>
+            <value>
+                <fullName>Failure to implement HSEQ-MS</fullName>
+                <default>false</default>
+                <label>Failure to implement HSEQ-MS</label>
+            </value>
+            <value>
+                <fullName>Failure to measure / calibrate</fullName>
+                <default>false</default>
+                <label>Failure to measure / calibrate</label>
+            </value>
+            <value>
+                <fullName>Failure to react / review / correct</fullName>
+                <default>false</default>
+                <label>Failure to react / review / correct</label>
+            </value>
+            <value>
+                <fullName>Failure to secure</fullName>
+                <default>false</default>
+                <label>Failure to secure</label>
+            </value>
+            <value>
+                <fullName>Failure to use required PPE</fullName>
+                <default>false</default>
+                <label>Failure to use required PPE</label>
+            </value>
+            <value>
+                <fullName>Failure to warn</fullName>
+                <default>false</default>
+                <label>Failure to warn</label>
+            </value>
+            <value>
+                <fullName>Horseplay</fullName>
+                <default>false</default>
+                <label>Horseplay</label>
+            </value>
+            <value>
+                <fullName>Improper filing / archiving / record keeping</fullName>
+                <default>false</default>
+                <label>Improper filing / archiving / record keeping</label>
+            </value>
+            <value>
+                <fullName>Improper lifting</fullName>
+                <default>false</default>
+                <label>Improper lifting</label>
+            </value>
+            <value>
+                <fullName>Improper placement</fullName>
+                <default>false</default>
+                <label>Improper placement</label>
+            </value>
+            <value>
+                <fullName>Improper position for task</fullName>
+                <default>false</default>
+                <label>Improper position for task</label>
+            </value>
+            <value>
+                <fullName>Making safety device inoperable</fullName>
+                <default>false</default>
+                <label>Making safety device inoperable</label>
+            </value>
+            <value>
+                <fullName>No substandards acts identified</fullName>
+                <default>false</default>
+                <label>No substandards acts identified</label>
+            </value>
+            <value>
+                <fullName>Operating at improper speed</fullName>
+                <default>false</default>
+                <label>Operating at improper speed</label>
+            </value>
+            <value>
+                <fullName>Operating equipment without authority / training</fullName>
+                <default>false</default>
+                <label>Operating equipment without authority / training</label>
+            </value>
+            <value>
+                <fullName>Other substandard acts</fullName>
+                <default>false</default>
+                <label>Other substandard acts</label>
+            </value>
+            <value>
+                <fullName>Removing safety device</fullName>
+                <default>false</default>
+                <label>Removing safety device</label>
+            </value>
+            <value>
+                <fullName>Servicing equipment in operation</fullName>
+                <default>false</default>
+                <label>Servicing equipment in operation</label>
+            </value>
+            <value>
+                <fullName>Under the influence of drugs or alcohol</fullName>
+                <default>false</default>
+                <label>Under the influence of drugs or alcohol</label>
+            </value>
+            <value>
+                <fullName>Using defective equipment</fullName>
+                <default>false</default>
+                <label>Using defective equipment</label>
+            </value>
+            <value>
+                <fullName>Using equipment improperly</fullName>
+                <default>false</default>
+                <label>Using equipment improperly</label>
+            </value>
+            <value>
+                <fullName>Corrosion / errosion</fullName>
+                <default>false</default>
+                <label>Corrosion / errosion</label>
+            </value>
+            <value>
+                <fullName>Defective tools, equipment or material</fullName>
+                <default>false</default>
+                <label>Defective tools, equipment or material</label>
+            </value>
+            <value>
+                <fullName>Fire or explosion hazards</fullName>
+                <default>false</default>
+                <label>Fire or explosion hazards</label>
+            </value>
+            <value>
+                <fullName>Hazardous environmental conditions</fullName>
+                <default>false</default>
+                <label>Hazardous environmental conditions</label>
+            </value>
+            <value>
+                <fullName>Inadequate communications hardware / software / pr</fullName>
+                <default>false</default>
+                <label>Inadequate communications hardware / software / pr</label>
+            </value>
+            <value>
+                <fullName>Inadequate guards or barriers</fullName>
+                <default>false</default>
+                <label>Inadequate guards or barriers</label>
+            </value>
+            <value>
+                <fullName>Inadequate information / data</fullName>
+                <default>false</default>
+                <label>Inadequate information / data</label>
+            </value>
+            <value>
+                <fullName>Inadequate instructions or procedures</fullName>
+                <default>false</default>
+                <label>Inadequate instructions or procedures</label>
+            </value>
+            <value>
+                <fullName>Inadequate or excessive illumination</fullName>
+                <default>false</default>
+                <label>Inadequate or excessive illumination</label>
+            </value>
+            <value>
+                <fullName>Inadequate or improper protective equipment</fullName>
+                <default>false</default>
+                <label>Inadequate or improper protective equipment</label>
+            </value>
+            <value>
+                <fullName>Inadequate preparation / planning</fullName>
+                <default>false</default>
+                <label>Inadequate preparation / planning</label>
+            </value>
+            <value>
+                <fullName>Inadequate support / assistance</fullName>
+                <default>false</default>
+                <label>Inadequate support / assistance</label>
+            </value>
+            <value>
+                <fullName>Inadequate ventilation</fullName>
+                <default>false</default>
+                <label>Inadequate ventilation</label>
+            </value>
+            <value>
+                <fullName>Inadequate warning systems</fullName>
+                <default>false</default>
+                <label>Inadequate warning systems</label>
+            </value>
+            <value>
+                <fullName>Insufficient Resources</fullName>
+                <default>false</default>
+                <label>Insufficient Resources</label>
+            </value>
+            <value>
+                <fullName>No substandard condition identified</fullName>
+                <default>false</default>
+                <label>No substandard condition identified</label>
+            </value>
+            <value>
+                <fullName>Noise exposure</fullName>
+                <default>false</default>
+                <label>Noise exposure</label>
+            </value>
+            <value>
+                <fullName>Other substandard conditions</fullName>
+                <default>false</default>
+                <label>Other substandard conditions</label>
+            </value>
+            <value>
+                <fullName>Poor housekeeping / disorder</fullName>
+                <default>false</default>
+                <label>Poor housekeeping / disorder</label>
+            </value>
+            <value>
+                <fullName>Presence of harmful materials</fullName>
+                <default>false</default>
+                <label>Presence of harmful materials</label>
+            </value>
+            <value>
+                <fullName>Radiation exposure</fullName>
+                <default>false</default>
+                <label>Radiation exposure</label>
+            </value>
+            <value>
+                <fullName>Road conditions</fullName>
+                <default>false</default>
+                <label>Road conditions</label>
+            </value>
+            <value>
+                <fullName>Temperature / climate exposures</fullName>
+                <default>false</default>
+                <label>Temperature / climate exposures</label>
+            </value>
+            <value>
+                <fullName>Undetermined processes / systems</fullName>
+                <default>false</default>
+                <label>Undetermined processes / systems</label>
+            </value>
+            <value>
+                <fullName>Weather conditions</fullName>
+                <default>false</default>
+                <label>Weather conditions</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>6</visibleLines>
+</CustomField>

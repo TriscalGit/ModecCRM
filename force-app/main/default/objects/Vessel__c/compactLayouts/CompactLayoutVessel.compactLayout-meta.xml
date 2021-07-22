@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompactLayoutVessel</fullName>
+    <fields>Name</fields>
+    <fields>SPC__c</fields>
+    <fields>FieldLocation__c</fields>
+    <fields>StorageCapacity__c</fields>
+    <fields>WaterDepth__c</fields>
+    <fields>MooringType__c</fields>
+    <label>Compact Layout Vessel</label>
+</CompactLayout>

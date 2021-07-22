@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_EtapaInspecao__c</fullName>
+    <externalId>false</externalId>
+    <label>Etapa de Inspeção</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>DELIVERY</fullName>
+                <default>false</default>
+                <label>DELIVERY</label>
+            </value>
+            <value>
+                <fullName>DIMENSIONAL</fullName>
+                <default>false</default>
+                <label>DIMENSIONAL</label>
+            </value>
+            <value>
+                <fullName>DOCUMENTATION ANALYSIS</fullName>
+                <default>false</default>
+                <label>DOCUMENTAÇÃO</label>
+            </value>
+            <value>
+                <fullName>LIBERAÇÃO DE MATERIAL</fullName>
+                <default>false</default>
+                <label>LIBERAÇÃO DE MATERIAL</label>
+            </value>
+            <value>
+                <fullName>OTHERS</fullName>
+                <default>false</default>
+                <label>OUTROS</label>
+            </value>
+            <value>
+                <fullName>PAINTING</fullName>
+                <default>false</default>
+                <label>PINTURA</label>
+            </value>
+            <value>
+                <fullName>RECEBIMENTO</fullName>
+                <default>false</default>
+                <label>RECEBIMENTO</label>
+            </value>
+            <value>
+                <fullName>WELDING</fullName>
+                <default>false</default>
+                <label>SOLDAGEM</label>
+            </value>
+            <value>
+                <fullName>PRESSURE TEST</fullName>
+                <default>false</default>
+                <label>TESTE DE PRESSÃO</label>
+            </value>
+            <value>
+                <fullName>MATERIAL RELEASE</fullName>
+                <default>false</default>
+                <label>MATERIAL RELEASE</label>
+            </value>
+            <value>
+                <fullName>PMI FOLLOW UP</fullName>
+                <default>false</default>
+                <label>PMI FOLLOW UP</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Category</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Categories</value>
+    </caseValues>
+    <layouts>
+        <layout>Material</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Service</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Category</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Material</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Service</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

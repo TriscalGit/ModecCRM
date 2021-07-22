@@ -1,0 +1,39 @@
+<!--
+  @File Name          : T_MODEC_FileUploadDoc.cmp
+  @Description        : 
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 04/12/2019 12:44:47
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    04/12/2019   Rafael Hadama     Initial Version
+-->
+<aura:component
+    implements="force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickAction,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,forceCommunity:layout"
+    access="global">
+
+    <aura:attribute name="greeting" type="String" default="Supplier Portal" access="global" />
+
+    <aura:attribute name="subject" type="String" default="Upload Documents" access="global" />
+
+    <aura:attribute name="accept" type="List" default="['.pdf','.docx','.doc','.xlsx','.xls','.xlsm','.txt','.mpp','.ppt','.pptx']" />
+    <aura:attribute name="multiple" type="Boolean" default="true" />
+    <aura:attribute name="disabled" type="Boolean" default="false" />
+
+    <aura:attribute name="recordId" type="String" default=""/>
+
+
+    <div class="slds-box slds-theme_default">
+        <div style="box">
+
+            <span class="greeting">{!v.greeting}</span>, {!v.subject}!
+
+        </div>
+
+        <lightning:fileUpload name="fileUploader" label="Upload Files" multiple="{!v.multiple}" accept="{!v.accept}"
+            disabled="{!v.disabled}" recordId="{!v.recordId}" onuploadfinished="{! c.handleUploadFinished }" />
+
+    </div>
+
+</aura:component>

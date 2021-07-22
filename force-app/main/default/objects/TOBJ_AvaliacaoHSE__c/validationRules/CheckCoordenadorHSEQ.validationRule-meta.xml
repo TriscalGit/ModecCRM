@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckCoordenadorHSEQ</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				TCF_CoordenadorHSEQ__c = true,
+				OR(								  
+								ISBLANK(TCF_NomeCoordenadorHSEQ__c),
+								ISNULL(TCF_NomeCoordenadorHSEQ__c),
+								ISBLANK(TCF_PrincipaisRespCoordenadorHSEQ__c),
+								ISNULL(TCF_PrincipaisRespCoordenadorHSEQ__c)
+				)
+)</errorConditionFormula>
+    <errorDisplayField>TCF_CoordenadorHSEQ__c</errorDisplayField>
+    <errorMessage>If the Coordinator HSEQ field is filled, the Coordinator Name HSEQ and Main Responsibilities Coordinator HSEQ fields must also be filled.</errorMessage>
+</ValidationRule>

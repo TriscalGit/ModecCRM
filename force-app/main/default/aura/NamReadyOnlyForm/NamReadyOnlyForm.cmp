@@ -1,0 +1,10 @@
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId">
+   
+    <aura:attribute name="recordId" type="String" default="" />
+    <lightning:recordForm
+        recordId="{!v.recordId}"
+        objectApiName="NAM__c"
+        layoutType="Full"
+        mode="readonly" />
+   
+</aura:component>

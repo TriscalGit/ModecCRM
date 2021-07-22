@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clarification</fullName>
+    <fields>Name</fields>
+    <fields>NAM__c</fields>
+    <fields>Type__c</fields>
+    <fields>Partner__c</fields>
+    <fields>Status__c</fields>
+    <fields>NAMStatus__c</fields>
+    <fields>ClosedOutStatus__c</fields>
+    <label>Clarification</label>
+</CompactLayout>

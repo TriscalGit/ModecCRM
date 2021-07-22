@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW5_Sample_Size__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+			(TW5_Quantity__c = 1), 1,
+								IF(
+			        (TW5_Quantity__c &lt;= 8), 2,
+				        IF(
+										     (TW5_Quantity__c &lt;= 15), 3,
+											     IF(
+																    (TW5_Quantity__c &lt;= 25), 5,
+																     IF(
+																				    (TW5_Quantity__c &lt;= 50), 8,
+																         IF(
+																									    (TW5_Quantity__c &lt;= 90), 13,
+																									    IF(
+																													    (TW5_Quantity__c &lt;= 150), 20,
+																													    IF(
+																																	    (TW5_Quantity__c &lt;= 280), 32,
+																																	    IF(
+																																					    (TW5_Quantity__c &lt;= 500), 50,
+																																					    IF(
+																																									    (TW5_Quantity__c &lt;= 1200), 80,
+																																									    IF(
+																																													    (TW5_Quantity__c &lt;= 3200), 125,
+																																													    IF(
+																																																	    (TW5_Quantity__c &lt;= 10000), 200,
+																																																	    IF(
+																																																					    (TW5_Quantity__c &lt;= 35000), 315,
+																																																					    IF(
+																																																									    (TW5_Quantity__c &lt;= 150000), 500,
+																																																									    IF(
+																																																													    (TW5_Quantity__c &lt;= 500000), 800,
+																																																													1250
+																																																													)
+																																																									)
+																																																					)
+																																																	)
+																																													)
+																																									)
+																																					)
+																																	)
+																													)
+																									)
+																					)
+																)
+												)
+				    )
+			
+			)</formula>
+    <label>Sample Size</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

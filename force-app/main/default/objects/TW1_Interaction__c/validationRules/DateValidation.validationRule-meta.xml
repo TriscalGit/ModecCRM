@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DateValidation</fullName>
+    <active>true</active>
+    <description>The end date can&apos;t be less than beginning date.</description>
+    <errorConditionFormula>IF( 
+
+OR((ISBLANK(TW1_Beginning_Date__c)),
+
+(ISBLANK(TW1_End_Date__c))), False,
+
+IF(TW1_Beginning_Date__c &gt; TW1_End_Date__c, true, false))</errorConditionFormula>
+    <errorMessage>The end date can&apos;t be less than beginning date.</errorMessage>
+</ValidationRule>

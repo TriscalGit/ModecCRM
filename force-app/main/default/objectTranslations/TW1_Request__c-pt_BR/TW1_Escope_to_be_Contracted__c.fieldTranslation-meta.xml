@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Escopo da Contratação</label>
+    <name>TW1_Escope_to_be_Contracted__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,62 @@
+<aura:component implements='lightning:availableForFlowScreens' access="global">
+    <aura:attribute name="dados" type="ContentDocument[]" default="[]" access="global" required="true"/>
+    <aura:attribute name="retornoDataTable" type="ContentDocument[]" access="global" required="false"/>
+    <aura:attribute name="data" type="Object" access="global"/>
+    <aura:attribute name="columns" type="List" access="private"/>
+    <aura:attribute name="selectedRowsCount" type="Integer" default="0"  access="private"/>
+    <aura:attribute name="maxRowSelection" type="Integer" access="global" required="false"/>
+    <aura:attribute name="isButtonSelectAll" type="Boolean" access="private" default="true"/>
+    
+    <!-- handlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.init }"/>
+    
+    <aura:if isTrue="{!if($Browser.formFactor == 'DESKTOP',true,false)}">
+        <lightning:datatable columns="{!v.columns}"
+                             data="{!v.data}"
+                             keyField="id"
+                             maxRowSelection="{!v.maxRowSelection}"
+                             onrowselection="{!c.updateSelectedText}"/>
+    </aura:if>
+    
+    <aura:attribute name="Texto" type="String" access="global"/>
+    
+    
+    <aura:if isTrue="{!if($Browser.formFactor != 'DESKTOP',true,false)}">
+        <table style="margin: 3%;width:94%">
+            
+            <aura:iteration items="{!v.dados}" var="dado" loaded="false">
+                <tr>
+                    <div class="slds-box" onclick="{!c.selectCheckbox}" data-value="{!dado.Id}"
+                         style="margin-bottom: 1.5%;">
+                        <table>
+                            <tr>
+                                <td style="border-right: 1px solid #ddd;
+                                           width: 20%;
+                                           text-align: -webkit-center;">
+                                        <ui:inputCheckbox value="{!dado.Temp__c}"/>
+                                </td>
+                                <td style="padding-left: 15px;
+                                           width: 80%;">
+                                    <span><b>Title: {!dado.Name}</b></span><br/>
+                                    <span>Extension: {!dado.TW5_Quantity__c}</span><br/>
+                                    <span>Size: {!dado.TW1_Status__c}</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </tr>
+                
+            </aura:iteration>
+        </table>
+        
+        
+        <div style="position: fixed; bottom: 1.5%;">
+            <aura:if isTrue="{!v.isButtonSelectAll}">
+                <lightning:button variant="brand-outline" label="Marcar todos" onclick="{!c.selectAll}"/>
+            </aura:if>
+            <aura:if isTrue="{!!v.isButtonSelectAll}">
+                <lightning:button variant="destructive-text" label="Desmarcar todos" onclick="{!c.notSelectAll}"/>
+            </aura:if>
+        </div>
+    </aura:if>
+</aura:component>

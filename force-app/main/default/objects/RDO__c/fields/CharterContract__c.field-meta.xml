@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CharterContract__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Charter Contract</label>
+    <lookupFilter>
+        <active>false</active>
+        <filterItems>
+            <field>VesselContract__c.Vessel__c</field>
+            <operation>equals</operation>
+            <valueField>$Source.Vessel__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>VesselContract__c</referenceTo>
+    <relationshipLabel>RDOs</relationshipLabel>
+    <relationshipName>RDOs</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supply_chain_TW1_Step</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Supply chain</label>
+    <queue>Supply_chain</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

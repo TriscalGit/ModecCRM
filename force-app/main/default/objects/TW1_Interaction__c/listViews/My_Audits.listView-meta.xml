@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Audits</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>TW1_Status__c</columns>
+    <columns>TW4_Audit_Appraisal__c</columns>
+    <columns>TW1_Conclusion_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>TW1_Interaction__c.Audit</value>
+    </filters>
+    <label>My Audits</label>
+</ListView>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subgroup__c</fullName>
+    <externalId>false</externalId>
+    <label>Subgroup</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ANP</fullName>
+                <default>false</default>
+                <label>ANP</label>
+            </value>
+            <value>
+                <fullName>Antifoam</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Antifoam</label>
+            </value>
+            <value>
+                <fullName>Biocide</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biocide</label>
+            </value>
+            <value>
+                <fullName>Biocide Biodispersant</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Biocide Biodispersant</label>
+            </value>
+            <value>
+                <fullName>Chemicals</fullName>
+                <default>false</default>
+                <label>Chemicals</label>
+            </value>
+            <value>
+                <fullName>Chlorine Scavenger</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Chlorine Scavenger</label>
+            </value>
+            <value>
+                <fullName>Demulsifier</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Demulsifier</label>
+            </value>
+            <value>
+                <fullName>Diesel</fullName>
+                <default>false</default>
+                <label>Diesel</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Ethanol</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Ethanol</label>
+            </value>
+            <value>
+                <fullName>Extra flights</fullName>
+                <default>false</default>
+                <label>Extra flights</label>
+            </value>
+            <value>
+                <fullName>Extra meals</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Extra meals</label>
+            </value>
+            <value>
+                <fullName>Extra seats</fullName>
+                <default>false</default>
+                <label>Extra seats</label>
+            </value>
+            <value>
+                <fullName>IBAMA</fullName>
+                <default>false</default>
+                <label>IBAMA</label>
+            </value>
+            <value>
+                <fullName>MEG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MEG</label>
+            </value>
+            <value>
+                <fullName>No show</fullName>
+                <default>false</default>
+                <label>No show</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Oxygen Scavenger</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Oxygen Scavenger</label>
+            </value>
+            <value>
+                <fullName>R7</fullName>
+                <default>false</default>
+                <label>R7</label>
+            </value>
+            <value>
+                <fullName>REPETRO</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>REPETRO</label>
+            </value>
+            <value>
+                <fullName>Scale Inhibitor</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Scale Inhibitor</label>
+            </value>
+            <value>
+                <fullName>Seaport</fullName>
+                <default>false</default>
+                <label>Seaport</label>
+            </value>
+            <value>
+                <fullName>Supply Vessel</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Supply Vessel</label>
+            </value>
+            <value>
+                <fullName>Support</fullName>
+                <default>false</default>
+                <label>Support</label>
+            </value>
+            <value>
+                <fullName>TEG</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>TEG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

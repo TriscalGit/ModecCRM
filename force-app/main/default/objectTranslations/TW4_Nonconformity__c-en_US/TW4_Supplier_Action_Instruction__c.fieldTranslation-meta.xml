@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>TW4_Supplier_Action_Instruction__c</name>
+    <picklistValues>
+        <masterLabel>As you complete to fill all nonconformities actions, please go back to your Action Plan Step and click on &quot;Send Action Plan&quot;.</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

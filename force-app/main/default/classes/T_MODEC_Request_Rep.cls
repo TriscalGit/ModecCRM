@@ -1,0 +1,627 @@
+/**
+ * @File Name          : T_MODEC_Request_Rep.cls
+ * @Description        :
+ * @Author             : Rafael Hadama
+ * @Group              :
+ * @Last Modified By   : Rafael Hadama
+ * @Last Modified On   : 07-16-2020
+ * @Modification Log   :
+ * Ver       Date            Author              Modification
+ * 1.0    24/10/2019   Daniel Fernandes     Initial Version
+ **/
+public class T_MODEC_Request_Rep {
+    public TW1_Request__c getRequestBMStatus(string requestId)
+    {
+        TW1_Request__c req = [Select Id, BM_Status__c from TW1_Request__c where Id =:requestId];
+
+        return req;
+    }
+
+    public TW1_Request__c getRequestNFStatus(string requestId)
+    {
+        TW1_Request__c req = [Select Id, TW1_NF_Invoice_Status__c from TW1_Request__c where Id =:requestId];
+
+        return req;
+    }
+
+    public TW1_Request__c getRequestById(String requestId)
+    {
+        //validar quais campos retornar
+        TW1_Request__c req = [SELECT
+                              Id,
+                              Name,
+                              CreatedDate,
+                              CreatedById,
+                              TW1_SAP_Code__c,
+                              TW1_CNPJ_CPF__c,
+                              TW1_Homologation_Request_Date__c,
+                              TW1_Escope_to_be_Contracted__c,
+                              Compliance_Level__c,
+                              TW1_Vetting_Stage__c,
+                              TW1_Interaction_Government__c,
+                              TW1_PO_or_FWA__c,
+                              TW1_Suply_Nature__c,
+                              TW1_Location_of_Service_Rendering__c,
+                              TW1_Technical_Service__c,
+                              TW1_EPCI_or_Operation__c,
+                              TW1_Remarks__c,
+                              TW1_Vendor__c,
+                              TW1_Supplier_Type__c,
+                              TW1_VV_action_needed_Procurement_Manager__c,
+                              TW1_Approval_Status_Procurement_Manager__c,
+                              TW1_Company_Name__c, TW1_Contact_Name__c,
+                              TW1_Comments_Procurement_Manager__c,
+                              TW1_VV_action_needed_Docs_Validation_VV__c,
+                              TW1_Approval_Status_Docs_Validation_VV__c,
+                              TW1_Company_Email_Address__c,
+                              TW1_Comments_Docs_Validation_VV__c,
+                              TW1_VV_action_needed_HSEQ_EPCI_or_Op__c,
+                              TW1_VV_action_needed_Finance_Step_1__c,
+                              TW1_VV_action_needed_Finance_Step_2__c,
+                              TW1_VV_action_needed_Compliance_Step_1__c,
+                              TW1_VV_action_needed_Compliance_Step_2__c,
+                              TW1_VV_action_needed_Engineering__c,
+                              TW1_VV_action_needed_Quality__c,
+                              TW1_VV_action_needed_Vetting_Final_Check__c,
+                              TW1_VV_action_needed_GM_SC_FIN_CON__c,
+                              TW1_VV_action_needed_CEO_if_Red_Flag__c,
+                              TW1_Approval_Status_HSEQ_EPCI_or_Op__c,
+                              TW1_Approval_Status_Finance_Step_1__c,
+                              TW1_Approval_Status_Finance_Step_2__c,
+                              TW1_Approval_Status_Compliance_Step_1__c,
+                              TW1_Approval_Status_Compliance_Step_2__c,
+                              TW1_Approval_Status_Engineering__c,
+                              TW1_Approval_Status_Quality__c,
+                              TW1_Approval_Status_Vetting_Final_Check__c,
+                              TW1_Approval_Status_GM_SC_FIN_CON__c,
+                              TW1_Approval_Status_CEO_if_Red_Flag__c,
+                              TW1_Contact_email_address__c,
+                              TW1_Contact_Number__c,
+                              TW1_Address__c,
+                              TW1_State__c,
+                              TW1_Country__c,
+                              TW1_PO__c,
+                              TW1_Purchase_Item__c,
+                              TW1_Service_Start_Date__c,
+                              TW1_Service_End_Date__c,
+                              TW1_BM_Value__c,
+                              TW1_PO_Value__c,
+                              TW1_Comments_HSEQ_EPCI_or_Operation__c,
+                              TW1_Comments_Finance_Step_1__c,
+                              TW1_Comments_Finance_Step_2__c,
+                              TW1_Comments_Compliance_Step_1__c,
+                              TW1_Comments_Compliance_Step_2__c,
+                              TW1_Comments_Engineering__c,
+                              TW1_Comments_Quality__c,
+                              TW1_Comments_Vetting_Final_Check__c,
+                              TW1_Comments_GM_SC_FIN_CON__c,
+                              TW1_Comments_CEO_if_Red_Flag__c,
+                              TW1_Status__c,
+                              TW1_Conclusion_Date__c,
+                              TW1_Canceled_by__c,
+                              TW1_Payment_Form__c,
+                              TW1_Spend_over_100kUSD_on_the_first_Year__c,
+                              TW1_Interaction_w_Gov_Agen_on_Behalf_MdB__c,
+                              TW1_Explain__c,
+                              TW1_Conclusion_Date_CEO_if_Red_Flag__c,
+                              TW1_Conclusion_Date_Compliance_Step_1__c,
+                              TW1_Conclusion_Date_Compliance_Step_2__c,
+                              TW1_Conclusion_Date_Docs_Validation_VV__c,
+                              TW1_Conclusion_Date_Engineering__c,
+                              TW1_Conclusion_Date_Finance_Step_1__c,
+                              TW1_Conclusion_Date_Finance_Step_2__c,
+                              TW1_Conclusion_Date_GM_SC_FIN_CON__c,
+                              TW1_Conclusion_Date_HSEQ_EPCI_or_Op__c,
+                              TW1_Conclusion_Date_Procurement_Manager__c,
+                              TW1_Conclusion_Date_Quality__c,
+                              TW1_Conclusion_Date_Vetting_Final_Check__c,
+                              TW1_Approver_Procurement_Manager__c,
+                              TW1_Approver_Docs_Validation_VV__c,
+                              TW1_Approver_HSEQ_EPCI_or_Op__c,
+                              TW1_Approver_Finance_Step_1__c,
+                              TW1_Approver_Finance_Step_2__c,
+                              TW1_Approver_Compliance_Step_1__c,
+                              TW1_Approver_Compliance_Step_2__c,
+                              TW1_Approver_Engineering__c,
+                              TW1_Approver_Quality__c,
+                              TW1_Approver_Vetting_Final_Check__c,
+                              TW1_Approver_GM_SC_FIN_CON__c,
+                              TW1_Approver_CEO__c,
+                              TW1_Approver_Initial_Validation__c,
+                              TW1_VV_action_needed_Initial_Validation__c,
+                              TW1_Approval_Status_Initial_Validation__c,
+                              TW1_Conclusion_Date_Initial_Validation__c,
+                              TW1_Comments_Initital_Validation__c,
+                              TW1_Demand_Category__c,
+                              TW1_Contract_Scope_Description__c,
+                              TW1_Contract_Amendment_Scope_Description__c,
+                              TW1_Volume__c,
+                              TW1_Annual_Estimated_Value__c,
+                              TW1_Justification__c,
+                              TW1_Expected_Date_for_Beginning__c,
+                              //TW1_Demand_Hiring_months__c,
+                              TW1_Contract_Demand_Creation_Date__c,
+                              TW1_Autonumber_Contract__c,
+                              TW1_Demand_Number__c,
+                              TW1_Requesting_Area__c,
+                              TW1_Related_Contract__c,
+                              TW1_New_Contract__c,
+                              TW1_Facility__c,
+                              TW1_Requester__c,
+                              TW1_Red_Flag_Procurement_Manager__c,
+                              TW1_Red_Flag_Docs_Validation_VV__c,
+                              TW1_Red_Flag_HSEQ__c,
+                              TW1_Red_Flag_Finance_Step_1__c,
+                              TW1_Red_Flag_Finance_Step_2__c,
+                              TW1_Red_Flag_Compliance_Step_1__c,
+                              TW1_Red_Flag_Compliance_Step_2__c,
+                              TW1_Red_Flag_Engineering__c,
+                              TW1_Red_Flag_Quality__c,
+                              TW1_Send_To_Contract_Tteam__c,
+                              TW1_Homologation_Process_Status__c,
+                              TW1_Supplier_Email__c,
+                              TW1_Modec_Requester_Email__c,
+                              TW1_Supplier_Reference_Number_for_BM__c,
+                              TW1_BM_Reference_Number_in_SAP_MODEC__c,
+                              TW1_Final_Measurement__c,
+                              TW1_Service_Description__c,
+                              TW1_BM_Creation_Date_in_SAP__c,
+                              TW1_Approval_date_of_BM_in_SAP__c,
+                              Service_Performed_at_Onshore_Supplier__c,
+                              TW1_Attached_Document__c,
+                              //TW1_fiscal_doc_count__c,
+                              TW1_NF_Shipping_Date__c,
+                              BM_Status__c,
+                              TW1_Rejection_Reason__c,
+                              TW1_Other_rejection_reason__c,
+                              TW1_NF_Status_Date__c,
+                              TW1_All_Inspection_Items_Status_Filled__c,
+                              TW1_All_Appraisal__c,
+                              TW1_All_Inspection_Items_Approved__c,
+                              TW1_Inspection_Status__c,
+                              TW1_Purchase_Order__c,
+                              TW1_Work_Order__c,
+                              TW1_Change_and_Repair_Project__c,
+                              TW1_Project_Number__c,
+                              TW1_Management_Of_Change__c,
+                              TW1_WO_Due_Date__c,
+                              TW1_Planned_Delivery_Date__c,
+                              Technical_Inspection_Recommendation__c,
+                              TW1_Inspection_Perfomed__c,
+                              TW1_Inspection_Contact_Number__c,
+                              RecordtypeId,
+                              TW1_Inspection_Address__c,
+                              TW1_All_Inspection_Items_Status__c
+                              FROM TW1_Request__c WHERE Id =: requestId];
+
+        if (req == null)
+        {
+            return null;
+        }
+        else
+        {
+            return req;
+        }
+    }
+
+    /**
+     * @description Buscando Requests(BMs) ,
+     * @author Rafael Hadama | 29/11/2019
+     * @param listBoletinsIds (list<Bm.TW1_BM_Reference_Number_in_SAP_MODEC__c>)
+     * @return map<String, TW1_Request__c>
+     **/
+    public map<String, TW1_Request__c> getRequestByListIds(list<string> listBoletinsIds)
+    {
+        //validar quais campos retornar
+        list<TW1_Request__c> listBoletins = [SELECT
+                                             Id,
+                                             Name,
+                                             CreatedDate,
+                                             TW1_SAP_Code__c,
+                                             TW1_CNPJ_CPF__c,
+                                             TW1_Homologation_Request_Date__c,
+                                             TW1_Escope_to_be_Contracted__c,
+                                             Compliance_Level__c,
+                                             TW1_Vetting_Stage__c,
+                                             TW1_Interaction_Government__c,
+                                             TW1_PO_or_FWA__c,
+                                             TW1_Suply_Nature__c,
+                                             TW1_Location_of_Service_Rendering__c,
+                                             TW1_Technical_Service__c,
+                                             TW1_EPCI_or_Operation__c,
+                                             TW1_Remarks__c,
+                                             TW1_Vendor__c,
+                                             TW1_Supplier_Type__c,
+                                             TW1_VV_action_needed_Procurement_Manager__c,
+                                             TW1_Approval_Status_Procurement_Manager__c,
+                                             TW1_Company_Name__c, TW1_Contact_Name__c,
+                                             TW1_Comments_Procurement_Manager__c,
+                                             TW1_VV_action_needed_Docs_Validation_VV__c,
+                                             TW1_Approval_Status_Docs_Validation_VV__c,
+                                             TW1_Company_Email_Address__c,
+                                             TW1_Comments_Docs_Validation_VV__c,
+                                             TW1_VV_action_needed_HSEQ_EPCI_or_Op__c,
+                                             TW1_VV_action_needed_Finance_Step_1__c,
+                                             TW1_VV_action_needed_Finance_Step_2__c,
+                                             TW1_VV_action_needed_Compliance_Step_1__c,
+                                             TW1_VV_action_needed_Compliance_Step_2__c,
+                                             TW1_VV_action_needed_Engineering__c,
+                                             TW1_VV_action_needed_Quality__c,
+                                             TW1_VV_action_needed_Vetting_Final_Check__c,
+                                             TW1_VV_action_needed_GM_SC_FIN_CON__c,
+                                             TW1_VV_action_needed_CEO_if_Red_Flag__c,
+                                             TW1_Approval_Status_HSEQ_EPCI_or_Op__c,
+                                             TW1_Approval_Status_Finance_Step_1__c,
+                                             TW1_Approval_Status_Finance_Step_2__c,
+                                             TW1_Approval_Status_Compliance_Step_1__c,
+                                             TW1_Approval_Status_Compliance_Step_2__c,
+                                             TW1_Approval_Status_Engineering__c,
+                                             TW1_Approval_Status_Quality__c,
+                                             TW1_Approval_Status_Vetting_Final_Check__c,
+                                             TW1_Approval_Status_GM_SC_FIN_CON__c,
+                                             TW1_Approval_Status_CEO_if_Red_Flag__c,
+                                             TW1_Contact_email_address__c,
+                                             TW1_Contact_Number__c,
+                                             TW1_Address__c,
+                                             TW1_State__c,
+                                             TW1_Country__c,
+                                             TW1_PO__c,
+                                             TW1_Purchase_Item__c,
+                                             TW1_Service_Start_Date__c,
+                                             TW1_Service_End_Date__c,
+                                             TW1_BM_Value__c,
+                                             TW1_PO_Value__c,
+                                             TW1_Comments_HSEQ_EPCI_or_Operation__c,
+                                             TW1_Comments_Finance_Step_1__c,
+                                             TW1_Comments_Finance_Step_2__c,
+                                             TW1_Comments_Compliance_Step_1__c,
+                                             TW1_Comments_Compliance_Step_2__c,
+                                             TW1_Comments_Engineering__c,
+                                             TW1_Comments_Quality__c,
+                                             TW1_Comments_Vetting_Final_Check__c,
+                                             TW1_Comments_GM_SC_FIN_CON__c,
+                                             TW1_Comments_CEO_if_Red_Flag__c,
+                                             TW1_Status__c,
+                                             TW1_Conclusion_Date__c,
+                                             TW1_Canceled_by__c,
+                                             TW1_Payment_Form__c,
+                                             TW1_Spend_over_100kUSD_on_the_first_Year__c,
+                                             TW1_Interaction_w_Gov_Agen_on_Behalf_MdB__c,
+                                             TW1_Explain__c,
+                                             TW1_Conclusion_Date_CEO_if_Red_Flag__c,
+                                             TW1_Conclusion_Date_Compliance_Step_1__c,
+                                             TW1_Conclusion_Date_Compliance_Step_2__c,
+                                             TW1_Conclusion_Date_Docs_Validation_VV__c,
+                                             TW1_Conclusion_Date_Engineering__c,
+                                             TW1_Conclusion_Date_Finance_Step_1__c,
+                                             TW1_Conclusion_Date_Finance_Step_2__c,
+                                             TW1_Conclusion_Date_GM_SC_FIN_CON__c,
+                                             TW1_Conclusion_Date_HSEQ_EPCI_or_Op__c,
+                                             TW1_Conclusion_Date_Procurement_Manager__c,
+                                             TW1_Conclusion_Date_Quality__c,
+                                             TW1_Conclusion_Date_Vetting_Final_Check__c,
+                                             TW1_Approver_Procurement_Manager__c,
+                                             TW1_Approver_Docs_Validation_VV__c,
+                                             TW1_Approver_HSEQ_EPCI_or_Op__c,
+                                             TW1_Approver_Finance_Step_1__c,
+                                             TW1_Approver_Finance_Step_2__c,
+                                             TW1_Approver_Compliance_Step_1__c,
+                                             TW1_Approver_Compliance_Step_2__c,
+                                             TW1_Approver_Engineering__c,
+                                             TW1_Approver_Quality__c,
+                                             TW1_Approver_Vetting_Final_Check__c,
+                                             TW1_Approver_GM_SC_FIN_CON__c,
+                                             TW1_Approver_CEO__c,
+                                             TW1_Approver_Initial_Validation__c,
+                                             TW1_VV_action_needed_Initial_Validation__c,
+                                             TW1_Approval_Status_Initial_Validation__c,
+                                             TW1_Conclusion_Date_Initial_Validation__c,
+                                             TW1_Comments_Initital_Validation__c,
+                                             TW1_Demand_Category__c,
+                                             TW1_Contract_Scope_Description__c,
+                                             TW1_Contract_Amendment_Scope_Description__c,
+                                             TW1_Volume__c,
+                                             TW1_Annual_Estimated_Value__c,
+                                             TW1_Justification__c,
+                                             TW1_Expected_Date_for_Beginning__c,
+                                             //TW1_Demand_Hiring_months__c,
+                                             TW1_Contract_Demand_Creation_Date__c,
+                                             TW1_Autonumber_Contract__c,
+                                             TW1_Demand_Number__c,
+                                             TW1_Requesting_Area__c,
+                                             TW1_Related_Contract__c,
+                                             TW1_New_Contract__c,
+                                             TW1_Facility__c,
+                                             TW1_Requester__c,
+                                             TW1_Red_Flag_Procurement_Manager__c,
+                                             TW1_Red_Flag_Docs_Validation_VV__c,
+                                             TW1_Red_Flag_HSEQ__c,
+                                             TW1_Red_Flag_Finance_Step_1__c,
+                                             TW1_Red_Flag_Finance_Step_2__c,
+                                             TW1_Red_Flag_Compliance_Step_1__c,
+                                             TW1_Red_Flag_Compliance_Step_2__c,
+                                             TW1_Red_Flag_Engineering__c,
+                                             TW1_Red_Flag_Quality__c,
+                                             TW1_Send_To_Contract_Tteam__c,
+                                             TW1_Homologation_Process_Status__c,
+                                             TW1_Supplier_Email__c,
+                                             TW1_Modec_Requester_Email__c,
+                                             TW1_Supplier_Reference_Number_for_BM__c,
+                                             TW1_BM_Reference_Number_in_SAP_MODEC__c,
+                                             TW1_Final_Measurement__c,
+                                             TW1_Service_Description__c,
+                                             TW1_BM_Creation_Date_in_SAP__c,
+                                             TW1_Approval_date_of_BM_in_SAP__c,
+                                             Service_Performed_at_Onshore_Supplier__c,
+                                             TW1_Attached_Document__c,
+                                             //TW1_fiscal_doc_count__c,
+                                             TW1_NF_Shipping_Date__c,
+                                             BM_Status__c,
+                                             TW1_Rejection_Reason__c,
+                                             TW1_Other_rejection_reason__c,
+                                             TW1_NF_Status_Date__c,
+                                             (Select id, TW1_Gross_Value__c, T_Quantity__c, TW1_Service_Line__c from BM_Itens__r)
+                                             FROM TW1_Request__c WHERE TW1_BM_Reference_Number_in_SAP_MODEC__c IN:listBoletinsIds];
+
+        //Criando map para retorno
+        Map<string, TW1_Request__c> mapBoletins = new map<string, TW1_Request__c>();
+
+        //Preenchendo o map com key - Numero do BM (SAP) e sobject Request
+        for (TW1_Request__c boletim:listBoletins)
+        {
+            mapBoletins.put(boletim.TW1_BM_Reference_Number_in_SAP_MODEC__c, boletim);
+        }
+
+        return mapBoletins;
+    }
+
+    /**
+     * @description Método que busca os boletins com status == Aguardando
+     * @author Rafael Hadama | 02/12/2019
+     * @return list<TW1_Request__c>
+     **/
+    public list<TW1_Request__c> getBMsEnvioAnexos()
+    {
+        //validar quais campos retornar
+        list<TW1_Request__c> listBoletins = [SELECT
+                                             Id,
+                                             Name,
+                                             CreatedDate,
+                                             TW1_SAP_Code__c,
+                                             TW1_CNPJ_CPF__c,
+                                             TW1_Homologation_Request_Date__c,
+                                             TW1_Escope_to_be_Contracted__c,
+                                             Compliance_Level__c,
+                                             TW1_Vetting_Stage__c,
+                                             TW1_Interaction_Government__c,
+                                             TW1_PO_or_FWA__c,
+                                             TW1_Suply_Nature__c,
+                                             TW1_Location_of_Service_Rendering__c,
+                                             TW1_Technical_Service__c,
+                                             TW1_EPCI_or_Operation__c,
+                                             TW1_Remarks__c,
+                                             TW1_Vendor__c,
+                                             TW1_Supplier_Type__c,
+                                             TW1_VV_action_needed_Procurement_Manager__c,
+                                             TW1_Approval_Status_Procurement_Manager__c,
+                                             TW1_Company_Name__c, TW1_Contact_Name__c,
+                                             TW1_Comments_Procurement_Manager__c,
+                                             TW1_VV_action_needed_Docs_Validation_VV__c,
+                                             TW1_Approval_Status_Docs_Validation_VV__c,
+                                             TW1_Company_Email_Address__c,
+                                             TW1_Comments_Docs_Validation_VV__c,
+                                             TW1_VV_action_needed_HSEQ_EPCI_or_Op__c,
+                                             TW1_VV_action_needed_Finance_Step_1__c,
+                                             TW1_VV_action_needed_Finance_Step_2__c,
+                                             TW1_VV_action_needed_Compliance_Step_1__c,
+                                             TW1_VV_action_needed_Compliance_Step_2__c,
+                                             TW1_VV_action_needed_Engineering__c,
+                                             TW1_VV_action_needed_Quality__c,
+                                             TW1_VV_action_needed_Vetting_Final_Check__c,
+                                             TW1_VV_action_needed_GM_SC_FIN_CON__c,
+                                             TW1_VV_action_needed_CEO_if_Red_Flag__c,
+                                             TW1_Approval_Status_HSEQ_EPCI_or_Op__c,
+                                             TW1_Approval_Status_Finance_Step_1__c,
+                                             TW1_Approval_Status_Finance_Step_2__c,
+                                             TW1_Approval_Status_Compliance_Step_1__c,
+                                             TW1_Approval_Status_Compliance_Step_2__c,
+                                             TW1_Approval_Status_Engineering__c,
+                                             TW1_Approval_Status_Quality__c,
+                                             TW1_Approval_Status_Vetting_Final_Check__c,
+                                             TW1_Approval_Status_GM_SC_FIN_CON__c,
+                                             TW1_Approval_Status_CEO_if_Red_Flag__c,
+                                             TW1_Contact_email_address__c,
+                                             TW1_Contact_Number__c,
+                                             TW1_Address__c,
+                                             TW1_State__c,
+                                             TW1_Country__c,
+                                             TW1_PO__c,
+                                             TW1_Purchase_Item__c,
+                                             TW1_Service_Start_Date__c,
+                                             TW1_Service_End_Date__c,
+                                             TW1_BM_Value__c,
+                                             TW1_PO_Value__c,
+                                             TW1_Comments_HSEQ_EPCI_or_Operation__c,
+                                             TW1_Comments_Finance_Step_1__c,
+                                             TW1_Comments_Finance_Step_2__c,
+                                             TW1_Comments_Compliance_Step_1__c,
+                                             TW1_Comments_Compliance_Step_2__c,
+                                             TW1_Comments_Engineering__c,
+                                             TW1_Comments_Quality__c,
+                                             TW1_Comments_Vetting_Final_Check__c,
+                                             TW1_Comments_GM_SC_FIN_CON__c,
+                                             TW1_Comments_CEO_if_Red_Flag__c,
+                                             TW1_Status__c,
+                                             TW1_Conclusion_Date__c,
+                                             TW1_Canceled_by__c,
+                                             TW1_Payment_Form__c,
+                                             TW1_Spend_over_100kUSD_on_the_first_Year__c,
+                                             TW1_Interaction_w_Gov_Agen_on_Behalf_MdB__c,
+                                             TW1_Explain__c,
+                                             TW1_Conclusion_Date_CEO_if_Red_Flag__c,
+                                             TW1_Conclusion_Date_Compliance_Step_1__c,
+                                             TW1_Conclusion_Date_Compliance_Step_2__c,
+                                             TW1_Conclusion_Date_Docs_Validation_VV__c,
+                                             TW1_Conclusion_Date_Engineering__c,
+                                             TW1_Conclusion_Date_Finance_Step_1__c,
+                                             TW1_Conclusion_Date_Finance_Step_2__c,
+                                             TW1_Conclusion_Date_GM_SC_FIN_CON__c,
+                                             TW1_Conclusion_Date_HSEQ_EPCI_or_Op__c,
+                                             TW1_Conclusion_Date_Procurement_Manager__c,
+                                             TW1_Conclusion_Date_Quality__c,
+                                             TW1_Conclusion_Date_Vetting_Final_Check__c,
+                                             TW1_Approver_Procurement_Manager__c,
+                                             TW1_Approver_Docs_Validation_VV__c,
+                                             TW1_Approver_HSEQ_EPCI_or_Op__c,
+                                             TW1_Approver_Finance_Step_1__c,
+                                             TW1_Approver_Finance_Step_2__c,
+                                             TW1_Approver_Compliance_Step_1__c,
+                                             TW1_Approver_Compliance_Step_2__c,
+                                             TW1_Approver_Engineering__c,
+                                             TW1_Approver_Quality__c,
+                                             TW1_Approver_Vetting_Final_Check__c,
+                                             TW1_Approver_GM_SC_FIN_CON__c,
+                                             TW1_Approver_CEO__c,
+                                             TW1_Approver_Initial_Validation__c,
+                                             TW1_VV_action_needed_Initial_Validation__c,
+                                             TW1_Approval_Status_Initial_Validation__c,
+                                             TW1_Conclusion_Date_Initial_Validation__c,
+                                             TW1_Comments_Initital_Validation__c,
+                                             TW1_Demand_Category__c,
+                                             TW1_Contract_Scope_Description__c,
+                                             TW1_Contract_Amendment_Scope_Description__c,
+                                             TW1_Volume__c,
+                                             TW1_Annual_Estimated_Value__c,
+                                             TW1_Justification__c,
+                                             TW1_Expected_Date_for_Beginning__c,
+                                             //TW1_Demand_Hiring_months__c,
+                                             TW1_Contract_Demand_Creation_Date__c,
+                                             TW1_Autonumber_Contract__c,
+                                             TW1_Demand_Number__c,
+                                             TW1_Requesting_Area__c,
+                                             TW1_Related_Contract__c,
+                                             TW1_New_Contract__c,
+                                             TW1_Facility__c,
+                                             TW1_Requester__c,
+                                             TW1_Red_Flag_Procurement_Manager__c,
+                                             TW1_Red_Flag_Docs_Validation_VV__c,
+                                             TW1_Red_Flag_HSEQ__c,
+                                             TW1_Red_Flag_Finance_Step_1__c,
+                                             TW1_Red_Flag_Finance_Step_2__c,
+                                             TW1_Red_Flag_Compliance_Step_1__c,
+                                             TW1_Red_Flag_Compliance_Step_2__c,
+                                             TW1_Red_Flag_Engineering__c,
+                                             TW1_Red_Flag_Quality__c,
+                                             TW1_Send_To_Contract_Tteam__c,
+                                             TW1_Homologation_Process_Status__c,
+                                             TW1_Supplier_Email__c,
+                                             TW1_Modec_Requester_Email__c,
+                                             TW1_Supplier_Reference_Number_for_BM__c,
+                                             TW1_BM_Reference_Number_in_SAP_MODEC__c,
+                                             TW1_Final_Measurement__c,
+                                             TW1_Service_Description__c,
+                                             TW1_BM_Creation_Date_in_SAP__c,
+                                             TW1_Approval_date_of_BM_in_SAP__c,
+                                             Service_Performed_at_Onshore_Supplier__c,
+                                             TW1_Attached_Document__c,
+                                             //TW1_fiscal_doc_count__c,
+                                             TW1_NF_Shipping_Date__c,
+                                             BM_Status__c,
+                                             TW1_Rejection_Reason__c,
+                                             TW1_Other_rejection_reason__c,
+                                             TW1_NF_Status_Date__c
+                                             FROM TW1_Request__c WHERE BM_Status__c = 'Aguardando' AND
+                                                                                      TW1_BM_Reference_Number_in_SAP_MODEC__c != null];
+
+        if (listBoletins.size() > 0)
+        {
+            return listBoletins;
+        }
+        else
+        {
+            return new list<TW1_Request__c>();
+        }
+    }
+
+    public TW1_Request__c getInspectionAndInspectionLines(String requestId)
+    {
+        //validar quais campos retornar
+        TW1_Request__c req = [SELECT
+                              Id,
+                              Name,
+                              CreatedDate,
+                              TW1_Vendor__c,
+                              TW1_All_Inspection_Items_Status_Filled__c,
+                              TW1_All_Appraisal__c,
+                              TW1_All_Inspection_Items_Approved__c,
+                              TW1_Inspection_Status__c,
+                              TW1_Purchase_Order__c,
+                              TW1_Work_Order__c,
+                              TW1_Change_and_Repair_Project__c,
+                              TW1_Project_Number__c,
+                              TW1_Management_Of_Change__c,
+                              TW1_WO_Due_Date__c,
+                              TW1_Planned_Delivery_Date__c,
+                              Technical_Inspection_Recommendation__c,
+                              TW1_Inspection_Perfomed__c,
+                              TW1_Inspection_Contact_Number__c,
+                              TW1_Inspection_Address__c,
+                              RecordtypeId,
+                              TW1_Facility__c,
+                              Inspection_Type__c,
+                              TW1_Supplier_Email__c,
+                              (select Id, Name, TW1_Quantity__c, TW1_Inspection_Appraisal__c, TW1_Tag_or_Certificate_Number__c, TW1_Heat_Number__c, TW1_Item_Description__c, TW1_Rejection_Reason__c, TW1_Status__c from Inspection_Items__r)
+                              FROM TW1_Request__c WHERE Id =: requestId];
+        if (req == null)
+        {
+            return null;
+        }
+        else
+        {
+            return req;
+        }
+    }
+
+    public TW1_Request__c getInspectionAndInspectionLinesCLONE(String requestId)
+    {
+        //validar quais campos retornar
+        TW1_Request__c req = [SELECT
+                              Id,
+                              Name,
+                              CreatedDate,
+                              TW1_Vendor__c,
+                              TW1_All_Inspection_Items_Status_Filled__c,
+                              TW1_All_Appraisal__c,
+                              TW1_All_Inspection_Items_Approved__c,
+                              TW1_Inspection_Status__c,
+                              TW1_Purchase_Order__c,
+                              TW1_Work_Order__c,
+                              TW1_Change_and_Repair_Project__c,
+                              TW1_Project_Number__c,
+                              TW1_Management_Of_Change__c,
+                              TW1_WO_Due_Date__c,
+                              TW1_Planned_Delivery_Date__c,
+                              Technical_Inspection_Recommendation__c,
+                              TW1_Inspection_Perfomed__c,
+                              TW1_Inspection_Contact_Number__c,
+                              TW1_Inspection_Address__c,
+                              RecordtypeId,
+                              TW1_Facility__c,
+                              Inspection_Type__c,
+                              TW1_Supplier_Email__c,
+                              (select Id, Name, TW1_Quantity__c, TW1_Tag_or_Certificate_Number__c, TW1_Heat_Number__c, 
+                                      TW1_Item_Description__c, TW1_Rejection_Reason__c, TW1_Status__c, 
+                                      TW5_Isometric_Drawing__c, TW5_PO_Item_Number__c, TW1_Inspection_Appraisal__c
+                               from Inspection_Items__r 
+                               where TW1_Status__c = 'Rejected')
+                              FROM TW1_Request__c WHERE Id =: requestId];
+        if (req == null)
+        {
+            return null;
+        }
+        else
+        {
+            return req;
+        }
+    }
+}

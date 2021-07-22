@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>NAM</fullName>
+                <default>false</default>
+                <label>NAM</label>
+            </value>
+            <value>
+                <fullName>Closed Out</fullName>
+                <default>false</default>
+                <label>Closed Out</label>
+            </value>
+            <value>
+                <fullName>MINC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MINC</label>
+            </value>
+            <value>
+                <fullName>MOL</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>MOL</label>
+            </value>
+            <value>
+                <fullName>Marubeni</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Marubeni</label>
+            </value>
+            <value>
+                <fullName>Mitsui</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Mitsui</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

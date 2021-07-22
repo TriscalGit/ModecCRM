@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_BM_Value_Rollup__c</fullName>
+    <externalId>false</externalId>
+    <label>BM Value</label>
+    <summarizedField>BM_Item__c.TW1_Total__c</summarizedField>
+    <summaryForeignKey>BM_Item__c.Request__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

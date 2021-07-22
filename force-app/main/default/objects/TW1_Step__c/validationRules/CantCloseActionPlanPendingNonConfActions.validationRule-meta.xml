@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantCloseActionPlanPendingNonConfActions</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  
+				RecordType.DeveloperName = &quot;TW1_Action_Plan&quot;,
+				 TW1_Interaction__r.TW4_Pending_Nonconformities__c  &lt;&gt; 0,
+				  ISPICKVAL(TW1_Status__c, &quot;Closed&quot;),
+				   ISCHANGED(TW1_Status__c)
+				)</errorConditionFormula>
+    <errorMessage>Before send Action Plan, fill in the Corrective and Preventive Action in each nonconformity.</errorMessage>
+</ValidationRule>

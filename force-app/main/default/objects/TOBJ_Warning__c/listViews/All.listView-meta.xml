@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>TCF_Subject__c</columns>
+    <columns>PublicationDate__c</columns>
+    <columns>TCF_DueDate__c</columns>
+    <columns>Total_of_participants__c</columns>
+    <columns>TCF_RequiresConfirmation__c</columns>
+    <columns>TCF_HSEQWarning__c</columns>
+    <columns>RequiredSendEmail__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+</ListView>

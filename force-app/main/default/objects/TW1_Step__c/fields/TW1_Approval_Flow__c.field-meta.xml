@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Approval_Flow__c</fullName>
+    <externalId>false</externalId>
+    <label>Approval Flow</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Procurement Manager</fullName>
+                <default>false</default>
+                <label>Procurement Manager</label>
+            </value>
+            <value>
+                <fullName>Docs Validation (VV)</fullName>
+                <default>false</default>
+                <label>Docs Validation (VV)</label>
+            </value>
+            <value>
+                <fullName>HSEQ (EPCI or Operation)</fullName>
+                <default>false</default>
+                <label>HSEQ (EPCI or Operation)</label>
+            </value>
+            <value>
+                <fullName>Finance - Step 1</fullName>
+                <default>false</default>
+                <label>Finance - Step 1</label>
+            </value>
+            <value>
+                <fullName>Reassignment finance Step 1</fullName>
+                <default>false</default>
+                <label>Reassignment finance Step 1</label>
+            </value>
+            <value>
+                <fullName>Finance - Step 2</fullName>
+                <default>false</default>
+                <label>Finance - Step 2</label>
+            </value>
+            <value>
+                <fullName>Compliance - Step 1</fullName>
+                <default>false</default>
+                <label>Compliance - Step 1</label>
+            </value>
+            <value>
+                <fullName>Reassignment compliance Step 1</fullName>
+                <default>false</default>
+                <label>Reassignment compliance Step 1</label>
+            </value>
+            <value>
+                <fullName>Compliance - Step 2</fullName>
+                <default>false</default>
+                <label>Compliance - Step 2</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>Quality</fullName>
+                <default>false</default>
+                <label>Quality</label>
+            </value>
+            <value>
+                <fullName>Vetting Final Check</fullName>
+                <default>false</default>
+                <label>Vetting Final Check</label>
+            </value>
+            <value>
+                <fullName>GM SC, FIN, CON</fullName>
+                <default>false</default>
+                <label>GM SC, FIN, CON</label>
+            </value>
+            <value>
+                <fullName>CEO (if Red Flag)</fullName>
+                <default>false</default>
+                <label>CEO (if Red Flag)</label>
+            </value>
+            <value>
+                <fullName>Compliance Initial Validation</fullName>
+                <default>false</default>
+                <label>Compliance Initial Validation</label>
+            </value>
+            <value>
+                <fullName>VVW Attachment</fullName>
+                <default>false</default>
+                <label>VVW Attachment</label>
+            </value>
+            <value>
+                <fullName>Enable Customer User</fullName>
+                <default>false</default>
+                <label>Enable Customer User</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

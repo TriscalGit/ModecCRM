@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantGoThroughContractProgWithoutSCInput</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  CONTAINS(RecordType.DeveloperName, &apos;Contract_Progress&apos;), NOT(ISPICKVAL( TW1_Contract_Demand_Status__c , &apos;Completed&apos;)),
+ISPICKVAL( TW1_Status__c , &quot;Closed&quot;) 
+)</errorConditionFormula>
+    <errorMessage>Please fill the field Contract Demand Status (SC Input) before continue the flow.</errorMessage>
+</ValidationRule>

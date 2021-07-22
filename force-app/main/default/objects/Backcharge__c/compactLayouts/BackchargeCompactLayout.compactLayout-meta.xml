@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BackchargeCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>Vessel__c</fields>
+    <fields>Group__c</fields>
+    <fields>Subgroup__c</fields>
+    <fields>VesselContract__c</fields>
+    <fields>ChargedAmountSumUSD__c</fields>
+    <fields>TotalAmountSumUSD__c</fields>
+    <label>Backcharge Compact Layout</label>
+</CompactLayout>

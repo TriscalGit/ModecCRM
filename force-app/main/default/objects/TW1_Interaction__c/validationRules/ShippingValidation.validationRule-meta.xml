@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ShippingValidation</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+ISCHANGED ( TW1_Shipping_Evidence__c ),
+NOT(ISPICKVAL( TW1_Status__c , &quot;Validated Notification&quot;))
+
+)</errorConditionFormula>
+    <errorMessage>Evidence can only be attached if approved by the Legal team.</errorMessage>
+</ValidationRule>

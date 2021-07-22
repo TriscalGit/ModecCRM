@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantChangeReqIfSAPModecFilled</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+OR(
+ISCHANGED(TW1_PO__c), ISCHANGED(TW1_Purchase_Item__c), ISCHANGED(TW1_Supplier_Reference_Number_for_BM__c), ISCHANGED(TW1_Service_Start_Date__c), ISCHANGED(TW1_Service_End_Date__c), ISCHANGED(TW1_Supplier_Email__c), ISCHANGED(TW1_Modec_Requester_Email__c), ISCHANGED(TW1_Final_Measurement__c), ISCHANGED(TW1_Service_Description__c)
+),
+NOT($Profile.Id = LEFT($Setup.ID_Profile__c.ID_Profile_System_Admin__c, 15)),
+RecordType.DeveloperName = &quot;TW1_BM&quot;,
+NOT(ISBLANK(TW1_BM_Reference_Number_in_SAP_MODEC__c))
+)</errorConditionFormula>
+    <errorMessage>You cannot change a BM Request after you already sent it.</errorMessage>
+</ValidationRule>

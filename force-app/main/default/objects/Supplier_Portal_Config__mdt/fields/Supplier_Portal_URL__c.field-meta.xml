@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supplier_Portal_URL__c</fullName>
+    <description>Field to store the URL of the community login page. to be displayed in the website</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>Supplier Portal URL</label>
+    <required>false</required>
+    <type>Url</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantCloseRegistrationWOSupplyChain</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+  RecordType.DeveloperName = &quot;TW1_Contract_Registration&quot;,
+ISBLANK( TW1_Supply_Contract_Manager__c),
+ISCHANGED( TW1_Status__c),
+ISPICKVAL(TW1_Status__c,&quot;Closed&quot;))</errorConditionFormula>
+    <errorMessage>You can&apos;t close this step without fill contract info.</errorMessage>
+</ValidationRule>

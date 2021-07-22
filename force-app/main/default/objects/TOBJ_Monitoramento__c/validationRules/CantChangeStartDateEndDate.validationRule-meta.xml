@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantChangeStartDateEndDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				NOT(ISPICKVAL(TCF_Status__c, &quot;New&quot;)),
+				OR(
+								ISCHANGED(TCF_Inicio__c),
+								ISCHANGED(TCF_Termino__c)
+				)
+)</errorConditionFormula>
+    <errorMessage>Monitoring after starting cant change the start date and end date.</errorMessage>
+</ValidationRule>

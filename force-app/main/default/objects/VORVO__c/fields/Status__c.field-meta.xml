@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Agreed/Not signed</fullName>
+                <default>false</default>
+                <label>Agreed/Not signed</label>
+            </value>
+            <value>
+                <fullName>Agreed/Signed</fullName>
+                <default>false</default>
+                <label>Agreed/Signed</label>
+            </value>
+            <value>
+                <fullName>Building the proposal</fullName>
+                <default>false</default>
+                <label>Building the proposal</label>
+            </value>
+            <value>
+                <fullName>Not agreed</fullName>
+                <default>false</default>
+                <label>Not agreed</label>
+            </value>
+            <value>
+                <fullName>On hold</fullName>
+                <default>false</default>
+                <label>On hold</label>
+            </value>
+            <value>
+                <fullName>Ongoing</fullName>
+                <default>false</default>
+                <label>Ongoing</label>
+            </value>
+            <value>
+                <fullName>Paid</fullName>
+                <default>false</default>
+                <label>Paid</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

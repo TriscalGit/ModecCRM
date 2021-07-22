@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Is_RedFlagged__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL(TW1_Red_Flag_Compliance_Step_1__c,&quot;Yes&quot;),
+
+ISPICKVAL(TW1_Red_Flag_Compliance_Step_2__c,&quot;Yes&quot;),
+
+ISPICKVAL(TW1_Red_Flag_Docs_Validation_VV__c,&quot;Yes&quot;),
+
+ISPICKVAL(TW1_Red_Flag_Engineering__c,&quot;Yes&quot;),
+
+ISPICKVAL(TW1_Red_Flag_Finance_Step_1__c,&quot;Yes&quot;),
+
+ISPICKVAL(TW1_Red_Flag_Finance_Step_2__c,&quot;Yes&quot;),
+
+ISPICKVAL(TW1_Red_Flag_HSEQ__c,&quot;Yes&quot;),
+
+ISPICKVAL(TW1_Red_Flag_Procurement_Manager__c,&quot;Yes&quot;),
+
+ISPICKVAL(TW1_Red_Flag_Quality__c,&quot;Yes&quot;)),True,False)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is RedFlagged</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

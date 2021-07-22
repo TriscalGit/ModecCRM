@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TAC_Approved</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <height>600</height>
+    <linkType>url</linkType>
+    <masterLabel>Approved</masterLabel>
+    <openType>sidebar</openType>
+    <protected>false</protected>
+    <url>/flow/TFL_HSEEvaluationApproved?recordId={!TOBJ_AvaliacaoHSE__c.Id}&amp;retURL={!TOBJ_AvaliacaoHSE__c.Id}</url>
+</WebLink>

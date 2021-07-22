@@ -1,0 +1,7 @@
+<design:component label="Only Main Region">
+    <flexipage:template>
+        <flexipage:region name="header" defaultWidth="LARGE" />
+        <flexipage:region name="main" defaultWidth="LARGE" />
+        <flexipage:region name="sidebar" defaultWidth="SMALL" />
+    </flexipage:template>
+</design:component>

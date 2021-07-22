@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>VesselShortName__c</columns>
+    <columns>Type__c</columns>
+    <columns>Client__c</columns>
+    <columns>ContractAnniversary__c</columns>
+    <columns>Contracted__c</columns>
+    <columns>Contractor__c</columns>
+    <columns>StartDate__c</columns>
+    <columns>EndDate__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>All</label>
+    <sharedTo>
+        <role>Administrator</role>
+        <role>Commercial</role>
+        <role>VesselContractAdministrator</role>
+        <role>Vessel_Contract_Read</role>
+    </sharedTo>
+</ListView>

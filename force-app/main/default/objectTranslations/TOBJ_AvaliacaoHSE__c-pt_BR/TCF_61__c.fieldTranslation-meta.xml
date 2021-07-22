@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>… São discussões realizadas por grupos de trabalho individuais, geralmente em um ambiente de “campo” para aumentar a conscientização de HSEQ para o dia, ou para discutir especificamente os perigos potenciais associados a uma tarefa futura.</help>
+    <label></label>
+    <name>TCF_61__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_AvisoAvaliacaoSecao3__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL($User.LanguageLocaleKey,&quot;pt_BR&quot;),
+			IMAGE($Setup.TCS_ImagesMonitoring__c.TCF_Secao3PT__c, &quot;section3-pt&quot;),
+			IMAGE($Setup.TCS_ImagesMonitoring__c.TCF_Secao3EN__c, &quot;section3-en&quot;)
+		)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Disclamer Section 3</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Resposta 8.2</label>
+    <name>TCF_Resposta82__c</name>
+    <picklistValues>
+        <masterLabel>Environment</masterLabel>
+        <translation>Meio Ambiente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSE</masterLabel>
+        <translation>HSE</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSEQ</masterLabel>
+        <translation>HSEQ</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality</masterLabel>
+        <translation>Qualidade</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Safety</masterLabel>
+        <translation>Segurança</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Em caso de Inspeção em peças/spools, deve ser inserido a Tag nesse campo.</help>
+    <label>Tag ou Número do Certificado</label>
+    <name>TW1_Tag_or_Certificate_Number__c</name>
+</CustomFieldTranslation>

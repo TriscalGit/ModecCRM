@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Reason_of_Rejection__c</fullName>
+    <externalId>false</externalId>
+    <label>Reason of Rejection</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Valor Divergente</fullName>
+                <default>false</default>
+                <label>Valor Divergente</label>
+            </value>
+            <value>
+                <fullName>CNPJ Divergente</fullName>
+                <default>false</default>
+                <label>CNPJ Divergente</label>
+            </value>
+            <value>
+                <fullName>Quantidade Divergente</fullName>
+                <default>false</default>
+                <label>Quantidade Divergente</label>
+            </value>
+            <value>
+                <fullName>Sem Ficha de Emergencia e/ou FISPQ</fullName>
+                <default>false</default>
+                <label>Sem Ficha de Emergencia e/ou FISPQ</label>
+            </value>
+            <value>
+                <fullName>Material Avariado</fullName>
+                <default>false</default>
+                <label>Material Avariado</label>
+            </value>
+            <value>
+                <fullName>Falta de Certificado</fullName>
+                <default>false</default>
+                <label>Falta de Certificado</label>
+            </value>
+            <value>
+                <fullName>Sem Saldo na PO</fullName>
+                <default>false</default>
+                <label>Sem Saldo na PO</label>
+            </value>
+            <value>
+                <fullName>Material mal-acondicionado na caixa</fullName>
+                <default>false</default>
+                <label>Material mal-acondicionado na caixa</label>
+            </value>
+            <value>
+                <fullName>PO pendente de aprovação</fullName>
+                <default>false</default>
+                <label>PO pendente de aprovação</label>
+            </value>
+            <value>
+                <fullName>NF Fora do Prazo de Circulação</fullName>
+                <default>false</default>
+                <label>NF Fora do Prazo de Circulação</label>
+            </value>
+            <value>
+                <fullName>NF Recusada pelo Fiscal</fullName>
+                <default>false</default>
+                <label>NF Recusada pelo Fiscal</label>
+            </value>
+            <value>
+                <fullName>Material sem estar paletizado</fullName>
+                <default>false</default>
+                <label>Material sem estar paletizado</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>Documentação - Sem cópia da PO</fullName>
+                <default>false</default>
+                <label>Documentação - Sem cópia da PO</label>
+            </value>
+            <value>
+                <fullName>Documentação - Sem duas vias da nota</fullName>
+                <default>false</default>
+                <label>Documentação - Sem duas vias da nota</label>
+            </value>
+            <value>
+                <fullName>Documentação - Sem PO na nota</fullName>
+                <default>false</default>
+                <label>Documentação - Sem PO na nota</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Notificacao_De_Step_Criada_Para_Fornecedores</name>
+        <label>Notificacao De Step Criada Para Fornecedores</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>TW1_Step__c.NotificacaoDeStepCriadaParaFornecedores</actionName>
+        <actionType>emailAlert</actionType>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>51.0</apiVersion>
+    <decisions>
+        <name>QualRecordType</name>
+        <label>Qual é o RecordType?</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Warning_ReceiveConfirmation</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Warning_ReceiveConfirmation</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notificacao_De_Step_Criada_Para_Fornecedores</targetReference>
+            </connector>
+            <label>Warning_ReceiveConfirmation</label>
+        </rules>
+    </decisions>
+    <interviewLabel>Step - Trigger - Email Alerts {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Step - Trigger - Email Alerts</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>QualRecordType</targetReference>
+        </connector>
+        <object>TW1_Step__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

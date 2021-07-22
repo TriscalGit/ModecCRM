@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantSendQRInspWOQRInspItem</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				ISCHANGED(TW5_Quality_Receipt_Status__c),
+				 ISPICKVAL(TW5_Quality_Receipt_Status__c, &quot;Submitted&quot;),
+				 TW5_Quality_Receipt_Items_Created__c = 0
+				)</errorConditionFormula>
+    <errorMessage>You can&apos;t send an Inspection without at least one Item created.</errorMessage>
+</ValidationRule>

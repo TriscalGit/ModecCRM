@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Payment_Conditions__c</fullName>
+    <defaultValue>&quot;30 days&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Payment Conditions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>30 days</fullName>
+                <default>true</default>
+                <label>30 days</label>
+            </value>
+            <value>
+                <fullName>45 days</fullName>
+                <default>false</default>
+                <label>45 days</label>
+            </value>
+            <value>
+                <fullName>a</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>a</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

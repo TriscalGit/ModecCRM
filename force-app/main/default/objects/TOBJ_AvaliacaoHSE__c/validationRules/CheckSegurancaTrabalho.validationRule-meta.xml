@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckSegurancaTrabalho</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				TCF_TecnicoSegurancaTrabalho__c = true,
+				OR(
+								ISBLANK(TCF_NomeSegurancaTrabalho__c),
+								ISNULL(TCF_NomeSegurancaTrabalho__c),
+								ISBLANK(TCF_PrincipaisRespSegurancaTrabalho__c),
+								ISNULL(TCF_PrincipaisRespSegurancaTrabalho__c)
+				)
+)</errorConditionFormula>
+    <errorDisplayField>TCF_TecnicoSegurancaTrabalho__c</errorDisplayField>
+    <errorMessage>If the Safety Technician field is completed, the Safety Technician Name fields and Main Responsibilities Safety Technician must also be completed.</errorMessage>
+</ValidationRule>

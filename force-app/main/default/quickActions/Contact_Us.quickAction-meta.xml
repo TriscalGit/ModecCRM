@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Action to send interaction from supplier community</description>
+    <fieldOverrides>
+        <field>TW1_From_Community__c</field>
+        <formula>true</formula>
+    </fieldOverrides>
+    <label>Contact Us</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>TW1_Subject_contact_us__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>TW1_Description_contact_us__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <successMessage>Message successfully sent!</successMessage>
+    <targetObject>TW1_Interaction__c</targetObject>
+    <targetRecordType>TW1_Interaction__c.TW1_Contact_Us</targetRecordType>
+    <type>Create</type>
+</QuickAction>

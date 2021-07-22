@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantChangeBMAfterSendBM</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+OR(
+ISCHANGED(T_Quantity__c ) , ISCHANGED(TW1_Service_Line__c ), ISCHANGED(TW1_Gross_Value__c)
+),
+NOT(ISBLANK(Request__r.TW1_BM_Reference_Number_in_SAP_MODEC__c))
+)</errorConditionFormula>
+    <errorMessage>You cannot change a BM Item after send BM.</errorMessage>
+</ValidationRule>

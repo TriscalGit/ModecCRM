@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_AreaAtuacaoEspecialidade__c</fullName>
+    <externalId>false</externalId>
+    <label>Área de Atuação/Especialidade</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>BACKLOAD</fullName>
+                <default>false</default>
+                <label>BACKLOAD</label>
+            </value>
+            <value>
+                <fullName>DISPOSITIVOS DE SEGURANÇA</fullName>
+                <default>false</default>
+                <label>DISPOSITIVOS DE SEGURANÇA</label>
+            </value>
+            <value>
+                <fullName>ELEMENTOS DE FIXAÇÃO</fullName>
+                <default>false</default>
+                <label>ELEMENTOS DE FIXAÇÃO</label>
+            </value>
+            <value>
+                <fullName>EQUIPAMENTO</fullName>
+                <default>false</default>
+                <label>EQUIPAMENTO</label>
+            </value>
+            <value>
+                <fullName>EQUIPAMENTOS ALUGADOS</fullName>
+                <default>false</default>
+                <label>EQUIPAMENTOS ALUGADOS</label>
+            </value>
+            <value>
+                <fullName>ESTRUTURA</fullName>
+                <default>false</default>
+                <label>ESTRUTURA</label>
+            </value>
+            <value>
+                <fullName>INSTRUMENTAÇÃO</fullName>
+                <default>false</default>
+                <label>INSTRUMENTAÇÃO</label>
+            </value>
+            <value>
+                <fullName>MATERIAIS PARA IÇAMENTO</fullName>
+                <default>false</default>
+                <label>MATERIAIS PARA IÇAMENTO</label>
+            </value>
+            <value>
+                <fullName>OUTROS</fullName>
+                <default>false</default>
+                <label>OUTROS</label>
+            </value>
+            <value>
+                <fullName>TUBULAÇÃO E ACESSÓRIOS</fullName>
+                <default>false</default>
+                <label>TUBULAÇÃO E ACESSÓRIOS</label>
+            </value>
+            <value>
+                <fullName>VÁLVULAS</fullName>
+                <default>false</default>
+                <label>VÁLVULAS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

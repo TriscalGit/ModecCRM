@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>VesselShortName__c</columns>
+    <columns>TAG__c</columns>
+    <columns>Description__c</columns>
+    <columns>Responsible1__c</columns>
+    <columns>Responsible2__c</columns>
+    <columns>Responsible3__c</columns>
+    <columns>StartDate__c</columns>
+    <columns>EndDate__c</columns>
+    <columns>Deadline__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VesselShortName__c</field>
+        <operation>equals</operation>
+        <value>MV23</value>
+    </filters>
+    <label>All</label>
+    <sharedTo>
+        <role>Administrator</role>
+        <role>Commercial</role>
+        <role>VesselContractAdministrator</role>
+        <role>Vessel_Contract_Read</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CriticalityCategory__c</fullName>
+    <externalId>false</externalId>
+    <label>Criticality Category</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Safety</fullName>
+                <default>false</default>
+                <label>Safety</label>
+            </value>
+            <value>
+                <fullName>Shutdown</fullName>
+                <default>false</default>
+                <label>Shutdown</label>
+            </value>
+            <value>
+                <fullName>Regulation</fullName>
+                <default>false</default>
+                <label>Regulation</label>
+            </value>
+            <value>
+                <fullName>Other Special</fullName>
+                <default>false</default>
+                <label>Other Special</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

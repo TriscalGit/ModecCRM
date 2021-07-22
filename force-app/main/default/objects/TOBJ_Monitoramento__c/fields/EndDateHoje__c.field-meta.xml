@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EndDateHoje__c</fullName>
+    <description>verifica se o end date é hoje e se esta ativo.</description>
+    <externalId>false</externalId>
+    <formula>AND(TODAY() &gt;  TCF_Termino__c, ISPICKVAL(TCF_Status__c, &apos;Active&apos;))</formula>
+    <label>HiddenEndDateHojeActive?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClosedOutStatus__c</fullName>
+    <externalId>false</externalId>
+    <label>Closed Out Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Execution</fullName>
+                <default>false</default>
+                <label>Execution</label>
+            </value>
+            <value>
+                <fullName>EM</fullName>
+                <default>false</default>
+                <label>EM</label>
+            </value>
+            <value>
+                <fullName>PEM</fullName>
+                <default>false</default>
+                <label>PEM</label>
+            </value>
+            <value>
+                <fullName>Tech Team</fullName>
+                <default>false</default>
+                <label>Tech Team</label>
+            </value>
+            <value>
+                <fullName>SPC Partners</fullName>
+                <default>false</default>
+                <label>SPC Partners</label>
+            </value>
+            <value>
+                <fullName>Approved</fullName>
+                <default>false</default>
+                <label>Approved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

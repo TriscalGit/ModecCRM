@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HSEQ Evaluation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HSEQ Evaluation</value>
+    </caseValues>
+    <layouts>
+        <layout>HSE Evaluation Layout - Answered</layout>
+        <sections>
+            <label></label>
+            <section>1. Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>10. Environmental Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>11. History of Accidents / Incidents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>12. Equipment Maintenance/Calibration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>13. Turnover</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>14. Doubts, Suggestions and Contractor&apos;s General Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2. Regulatory Documentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3. Leadership, Role and Responsibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4. Risk Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5. People Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6. HSEQ Communications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7. Observations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>8. Auditing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>9. Emergency Preparedness and Response</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Rating</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logo</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Modec Evaluation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HSE Evaluation Layout - Answered - Supplier</layout>
+        <sections>
+            <label></label>
+            <section>1. Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>10. Environmental Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>11. History of Accidents / Incidents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>12. Equipment Maintenance/Calibration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>13. Turnover</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>14. Doubts, Suggestions and Contractor&apos;s General Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2. Regulatory Documentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3. Leadership, Role and Responsibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4. Risk Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5. People Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6. HSEQ Communications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7. Observations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>8. Auditing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>9. Emergency Preparedness and Response</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Rating</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logo</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Modec Evaluation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HSE Evaluation Layout - Initial</layout>
+        <sections>
+            <label></label>
+            <section>1. Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>10. Environmental Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>11. History of Accidents / Incidents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>12. Equipment Maintenance/Calibration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>13. Turnover</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>14. Doubts, Suggestions and Contractor&apos;s General Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2. Regulatory Documentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3. Leadership, Role and Responsibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4. Risk Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5. People Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6. HSEQ Communications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7. Observations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>8. Auditing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>9. Emergency Preparedness and Response</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logo</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HSE Evaluation Layout - Initial - Answered</layout>
+        <sections>
+            <label></label>
+            <section>1. Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>10. Environmental Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>11. History of Accidents / Incidents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>12. Equipment Maintenance/Calibration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>13. Turnover</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>14. Doubts, Suggestions and Contractor&apos;s General Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2. Regulatory Documentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3. Leadership, Role and Responsibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4. Risk Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5. People Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6. HSEQ Communications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7. Observations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>8. Auditing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>9. Emergency Preparedness and Response</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logo</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HSE Evaluation Layout - Initial - Answered - Supplier</layout>
+        <sections>
+            <label></label>
+            <section>1. Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>10. Environmental Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>11. History of Accidents / Incidents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>12. Equipment Maintenance/Calibration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>13. Turnover</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>14. Doubts, Suggestions and Contractor&apos;s General Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2. Regulatory Documentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3. Leadership, Role and Responsibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4. Risk Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5. People Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6. HSEQ Communications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7. Observations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>8. Auditing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>9. Emergency Preparedness and Response</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logo</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HSE Evaluation Layout - Initial- Supplier</layout>
+        <sections>
+            <label></label>
+            <section>1. Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>10. Environmental Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>11. History of Accidents / Incidents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>12. Equipment Maintenance/Calibration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>13. Turnover</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>14. Doubts, Suggestions and Contractor&apos;s General Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2. Regulatory Documentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3. Leadership, Role and Responsibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4. Risk Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5. People Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6. HSEQ Communications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7. Observations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>8. Auditing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>9. Emergency Preparedness and Response</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logo</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HSE Evaluation Layout - Rated</layout>
+        <sections>
+            <label></label>
+            <section>1. Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>10. Environmental Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>11. History of Accidents / Incidents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>12. Equipment Maintenance/Calibration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>13. Turnover</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>14. Doubts, Suggestions and Contractor&apos;s General Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2. Regulatory Documentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3. Leadership, Role and Responsibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4. Risk Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5. People Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6. HSEQ Communications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7. Observations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>8. Auditing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>9. Emergency Preparedness and Response</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Rating</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logo</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Modec Evaluation</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>HSE Evaluation Layout - Rated - Supplier</layout>
+        <sections>
+            <label></label>
+            <section>1. Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>10. Environmental Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>11. History of Accidents / Incidents</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>12. Equipment Maintenance/Calibration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>13. Turnover</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>14. Doubts, Suggestions and Contractor&apos;s General Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2. Regulatory Documentation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3. Leadership, Role and Responsibility</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4. Risk Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5. People Management</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6. HSEQ Communications</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7. Observations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>8. Auditing</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>9. Emergency Preparedness and Response</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Rating</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Logo</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Modec Evaluation</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Recall_Status</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TAC_AskQuestions</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TAC_AttachEvidence</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TAC_ClosedEvaluation</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>TRT_Answered</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TRT_Initial</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TRT_Rated</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckAnalistaHSEQ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckCoordenadorHSEQ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckEngineerHSEQ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckGerenteHSEQ</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckSegurancaTrabalho</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Item44</name>
+    </validationRules>
+    <webLinks>
+        <label></label>
+        <name>TAC_Approved</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>TBT_Rejectd</name>
+    </webLinks>
+</CustomObjectTranslation>

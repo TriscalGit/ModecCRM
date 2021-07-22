@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantGoThroughContractProgWithoutSupplier</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  CONTAINS(RecordType.DeveloperName, &apos;Contract_Progress&apos;), ISBLANK( TW1_Vendor__c),  ISPICKVAL( TW1_Contract_Demand_Status__c , &apos;Completed&apos;) 
+)</errorConditionFormula>
+    <errorMessage>Please fill the field Supplier before continue the flow.</errorMessage>
+</ValidationRule>

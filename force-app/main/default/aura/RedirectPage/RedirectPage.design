@@ -1,0 +1,4 @@
+<design:component>
+   <design:attribute name="recordId" label="Entre com o ID do registro que deseja redirecionar a tela" />
+   <design:attribute name="URL" label="Entre com a URL que deseja redirecionar a tela" />
+</design:component>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Inspe_es_Fornecedor</fullName>
+    <columns>NAME</columns>
+    <columns>TW1_Project_Number__c</columns>
+    <columns>TW1_Inspection_Status__c</columns>
+    <columns>TW1_Status__c</columns>
+    <columns>TW1_Inspection_Perfomed__c</columns>
+    <columns>Inspection_Type__c</columns>
+    <columns>TW1_Inspection_Scheduled_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>TW1_I_m_Vendor__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>TW1_Request__c.Inspection</value>
+    </filters>
+    <label>Inspeções Fornecedor</label>
+</ListView>

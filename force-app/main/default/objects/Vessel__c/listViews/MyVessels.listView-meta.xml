@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyVessels</fullName>
+    <columns>NAME</columns>
+    <columns>ShortName__c</columns>
+    <columns>Status__c</columns>
+    <columns>Country__c</columns>
+    <columns>FieldLocation__c</columns>
+    <columns>GasProduction__c</columns>
+    <columns>OilProduction__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CreatedByMe__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>My Vessels</label>
+    <sharedTo>
+        <role>Administrator</role>
+        <role>Commercial</role>
+        <role>VesselContractAdministrator</role>
+        <role>Vessel_Contract_Read</role>
+    </sharedTo>
+</ListView>

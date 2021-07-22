@@ -1,0 +1,64 @@
+<!--
+  @File Name          : T_MODEC_CloneInspection.cmp
+  @Description        : 
+  @Author             : Raoni Brand
+  @Group              : 
+  @Last Modified By   : Raoni Brand
+  @Last Modified On   : 30/06/2020 16:41:10
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    29/06/2020   Raoni Brand     Initial Version
+-->
+<aura:component controller="T_MODEC_CloneInspection_Ctrl" implements="flexipage:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId" access="global">
+
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
+    <aura:attribute name="IsSpinner" type="Boolean"/>
+    <aura:attribute name="successMsg" type="Boolean" default="false" />
+    <aura:attribute name="errorMsg" type="Boolean" default="false" />
+    <aura:attribute name="inspectionType" type="String" default="{!v.InspectionDatesDto.InspectionType}" />
+    <aura:attribute name="recordId" type="String" default="" />
+    <aura:attribute name="CloneResponseDto" type="Object" />
+    <aura:attribute name="cloneUrl" type="String" default="" />
+
+    <body>
+
+        <div class="">
+            <div class="inspectionPageHeader">
+                <img class="imageHeaderLogo" src="{!$Resource.modecLogo}" />
+            </div>
+
+            <div class="redStyleBar"></div>
+            <div class="slds-box mainBox">
+
+                <div class="successErrorMsg">
+
+                    <aura:if isTrue="{!v.IsSpinner}">
+                        <lightning:spinner variant="brand" size="medium" />
+                    </aura:if>
+
+                    <aura:if isTrue="{!v.successMsg}">
+                        <div class="msgSucesso">
+                            <p class="placeHolderMsgSucesso">Inspection has been cloned successfully.</p>
+                            <a href="{!v.cloneUrl}">click here to go to cloned inspection.</a>
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!v.errorMsg}">
+                        <div class="msgErro">
+                            <p class="placeHolderMsgErro">Error(s) found when attempting to clone the inspection.</p>
+                            <aura:iteration items="{!v.CloneResponseDto.MessageList}" var="msg">
+                                <p style="color: #ED1942;">{!msg}</p>
+                            </aura:iteration>
+                        </div>
+                    </aura:if>
+                </div>
+                
+                <div class="btnConfirm">
+                    <lightning:button variant="brand" onclick="{!c.btnConfirm}" name="btnConfirm" label="OK" />
+                </div>
+            </div>
+                
+            </div>
+            <div class="blueStyleBar"></div>
+            
+    </body>
+</aura:component>

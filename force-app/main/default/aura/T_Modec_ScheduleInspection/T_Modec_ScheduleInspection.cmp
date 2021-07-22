@@ -1,0 +1,113 @@
+<!--
+  @File Name          : T_Modec_ScheduleInspection.cmp
+  @Description        : 
+  @Author             : Raoni Brand
+  @Group              : 
+  @Last Modified By   : Raoni Brand
+  @Last Modified On   : 10/07/2020 11:02:54
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    16/06/2020   Raoni Brand     Initial Version
+-->
+<aura:component controller="T_MODEC_ScheduleInspection_Ctrl"
+    implements="flexipage:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,force:hasRecordId"
+    access="global">
+
+    <aura:handler value="{!this}" name="init" action="{!c.doInit}" />
+    <aura:attribute name="container1" type="Boolean" default="true" />
+    <aura:attribute name="container2" type="Boolean" default="false" />
+    <aura:attribute name="successMsg" type="Boolean" default="false" />
+    <aura:attribute name="errorMsg" type="Boolean" default="false" />
+    <aura:attribute name="saveButton" type="Boolean" default="false" />
+    <aura:attribute name="inspectionType" type="String" default="{!v.InspectionDatesDto.InspectionType}" />
+    <aura:attribute name="InspectionDatesDto" type="Object" />
+    <aura:attribute name="recordId" type="String" default="" />
+
+    <aura:attribute name="InspectionResponseDto" type="Object" />
+
+    <body>
+
+        <div class="">
+            <div class="inspectionPageHeader">
+                <img class="imageHeaderLogo" src="{!$Resource.modecLogo}" />
+            </div>
+
+            <div class="redStyleBar"></div>
+            <div class="slds-box mainBox">
+
+                <aura:if isTrue="{!v.container1}">
+                    <div class="inspectionDatesDiv">
+                        <div style="overflow: hidden;">
+                            <div class="dateFieldLeft">
+                                <lightning:input type="date" aura:id="inputDetect" label="Inspection Date Option 1"
+                                   required="true" value="{!v.InspectionDatesDto.InspectionDate1}"
+                                    displayDatePicker="true" />
+                            </div>
+                            <div class="dateFieldRight">
+                                <lightning:input type="date" aura:id="inputDetect" label="Inspection Date Option 2"
+                                    required="true" value="{!v.InspectionDatesDto.InspectionDate2}"
+                                    displayDatePicker="true" />
+                            </div>
+                        </div>
+                        <div style="overflow: hidden;">
+                            <div class="dateFieldLeft">
+                                <lightning:input type="date" aura:id="inputDetect" label="Inspection Date Option 3"
+                                    required="true" value="{!v.InspectionDatesDto.InspectionDate3}"
+                                    displayDatePicker="true" />
+                            </div>
+                            <div class="btnEmergencyDate">
+                                <lightning:button variant="brand" onclick="{!c.emergencyDateDiv}" name="emergengyDate"
+                                    label="Emergency date" />
+                            </div>
+                        </div>
+                    </div>
+                </aura:if>
+
+                <aura:if isTrue="{!v.container2}">
+                    <div class="emergencyDateDiv">
+                        <div style="overflow: hidden;">
+                        <div class="dateFieldLeft">
+                            <lightning:input type="date" aura:id="inputDetect" label="Emergency Date" required="true"
+                                value="{!v.InspectionDatesDto.EmergencyInspectionDate}" displayDatePicker="true" />
+                        </div>
+                        <div class="dateFieldRight">
+                            <lightning:input type="email" aura:id="inputDetect" label="Email"
+                                required="true" value="{!v.InspectionDatesDto.EmergencyEmail}"
+                                />
+                        </div>
+                    </div>
+                        <div class="btnInspectionDate">
+                            <lightning:button variant="brand" onclick="{!c.inspectionDateDiv}" name="inspectionDate"
+                                label="Inspection dates" />
+                        </div>
+                    </div>
+                </aura:if>
+                <div class="notesArea">
+                    <lightning:textarea name="notes" aura:id="inputDetect" required="true" label="Note"
+                        value="{!v.InspectionDatesDto.InspectionNote}" />
+                </div>
+                <div style="overflow: hidden;">
+                    <div class="salesforceButtons" style="float: right;">
+                        <lightning:button class="btnSave" variant="brand" onclick="{!c.saveScheduledInspection}"
+                            disabled="{!v.saveButton}" name="save" label="Save" />
+                    </div>
+                    <aura:if isTrue="{!v.successMsg}">
+                        <div style="float: right; margin-right: 20px; margin-top: 20px;">
+                            <p style="color: #155492;">Data(s) salva(s) com sucesso.</p>
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!v.errorMsg}">
+                        <div style="float: right; margin-right: 20px; margin-top: 20px;">
+                            <aura:iteration items="{!v.InspectionResponseDto.MessageList}" var="msg">
+                                <p style="color: #ED1942;">{!msg}</p>
+                            </aura:iteration>
+
+                        </div>
+                    </aura:if>
+                </div>
+            </div>
+            <div class="blueStyleBar"></div>
+        </div>
+    </body>
+
+</aura:component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckGerenteHSEQ</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				TCF_GerenteHSEQ__c = true,
+				OR(
+								ISBLANK(TCF_NomeGerenteHSEQ__c),
+								ISNULL(TCF_NomeGerenteHSEQ__c),
+								ISBLANK(TCF_PrincipaisRespGerenteHSEQ__c ),
+								ISNULL(TCF_PrincipaisRespGerenteHSEQ__c )
+				)
+)</errorConditionFormula>
+    <errorDisplayField>TCF_GerenteHSEQ__c</errorDisplayField>
+    <errorMessage>If the HSEQ Manager field is completed, the HSEQ Manager Name and Main Responsibilities Manager HSEQ fields must also be completed.</errorMessage>
+</ValidationRule>

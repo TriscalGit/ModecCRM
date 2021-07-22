@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BlockFutureEndDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND 
+(
+		   ISCHANGED(EndDate__c), 		  
+				 EndDate__c &gt;  TODAY() 
+)</errorConditionFormula>
+    <errorMessage>The &quot;End Date&quot; field must be today or earlier.</errorMessage>
+</ValidationRule>

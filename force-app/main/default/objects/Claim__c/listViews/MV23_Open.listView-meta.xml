@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV23_Open</fullName>
+    <columns>NAME</columns>
+    <columns>VesselShortName__c</columns>
+    <columns>Subject__c</columns>
+    <columns>Category__c</columns>
+    <columns>StartDate__c</columns>
+    <columns>EndDate__c</columns>
+    <columns>AmountUnderDisputeSum__c</columns>
+    <columns>Status__c</columns>
+    <columns>PS__c</columns>
+    <columns>ResultsSum__c</columns>
+    <columns>Comments__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VesselShortName__c</field>
+        <operation>equals</operation>
+        <value>MV23</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>ongoing</value>
+    </filters>
+    <label>MV23 Open</label>
+</ListView>

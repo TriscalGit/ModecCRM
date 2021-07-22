@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Tipo de Fornecedor</label>
+    <name>TW1_Supplier_Type__c</name>
+    <picklistValues>
+        <masterLabel>BANK</masterLabel>
+        <translation>BANCO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>GOVERNMENT OFFICE</masterLabel>
+        <translation>ENTIDADES GOVERNAMENTAIS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INDIRECTLY AFFILIATED COMPANY</masterLabel>
+        <translation>EMPRESA INDIRETAMENTE COLIGADA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>INDIVIDUAL REAL ESTATE OWNER</masterLabel>
+        <translation>INDIVÍDUO PROPRIETÁRIO DE IMÓVEL</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>LAW FIRM</masterLabel>
+        <translation>ESCRITÓRIOS DE ADVOCACIA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>MUNICIPALITY</masterLabel>
+        <translation>CONCESSIONÁRIAS DE SERVIÇO PÚBLICO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NON-PROFIT PROFESSIONAL TRADE ORGANIZATION</masterLabel>
+        <translation>ORGANIZAÇÕES PROFISSIONAIS SEM FINS LUCRATIVOS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>OTHER</masterLabel>
+        <translation>OUTRO</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>STATE UNIVERSITY</masterLabel>
+        <translation>UNIVERSIDADES PÚBLICAS</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAX/AUDIT FIRM</masterLabel>
+        <translation>EMPRESAS DE AUDITORIA FINANCEIRA/ TRIBUTÁRIA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>TAXING AUTHORITY</masterLabel>
+        <translation>AUTORIDADE TRIBUTÁRIA</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>UTILITY PROVIDER</masterLabel>
+        <translation>FORNECEDOR DE UTILIDADES</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>WORLDWIDE TRANSPORTATION</masterLabel>
+        <translation>TRANSPORTADORAS INTERNACIONAIS</translation>
+    </picklistValues>
+</CustomFieldTranslation>

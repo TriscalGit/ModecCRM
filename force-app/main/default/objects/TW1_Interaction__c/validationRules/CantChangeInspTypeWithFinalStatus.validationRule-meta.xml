@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantChangeInspTypeWithFinalStatus</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				RecordType.DeveloperName = &quot;TW1_Receipt_Inspection&quot;,
+				ISCHANGED(TW5_Inspection_Type__c),
+				OR(
+								ISPICKVAL(TW5_Quality_Receipt_Status__c , &quot;Rejected&quot;),
+								ISPICKVAL(TW5_Quality_Receipt_Status__c , &quot;Approved&quot;),
+								ISPICKVAL(TW5_Quality_Receipt_Status__c , &quot;Approved Under Restriction&quot;)
+								)
+				)</errorConditionFormula>
+    <errorMessage>You can&apos;t change an Inspection Type if the Inspection is already with a final status.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_Bimestre1__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(MONTH(DATEVALUE(CreatedDate)) = 1, MONTH (DATEVALUE(CreatedDate)) = 2), TCF_GeneralRating__c , null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>1º Bimestre</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantGoThroughDocsValidWithoutSelecArea</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ ISPICKVAL( TW1_Approval_Status__c , &apos;Approved&apos;),
+  ISCHANGED(TW1_Approval_Status__c), 
+   CONTAINS(RecordType.DeveloperName,&quot;Docs_Validation_VV&quot;),
+
+ 
+ TW1_Send_to_Compliance__c = false ,  TW1_Send_to_Engineering__c = false ,  TW1_Send_to_Finance__c = false ,  TW1_Send_to_HSEQ__c = false ,  TW1_Send_to_Quality__c = false
+)</errorConditionFormula>
+    <errorMessage>Please select an area to continue vetting.</errorMessage>
+</ValidationRule>

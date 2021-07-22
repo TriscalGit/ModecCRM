@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InspectionRelatedRequestHasToHaveSamePO</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+					RecordType.DeveloperName = &quot;Inspection&quot;,
+ 					 ISCHANGED(TW1_Inspection_Status__c),
+					 TW1_Purchase_Order__c  &lt;&gt;  TW5_Related_Request__r.TW1_Purchase_Order__c,
+				  NOT(ISBLANK(TW5_Related_Request__c))
+				)</errorConditionFormula>
+    <errorDisplayField>TW5_Related_Request__c</errorDisplayField>
+    <errorMessage>You have to relate a Request with the same Purchase Order Number.</errorMessage>
+</ValidationRule>

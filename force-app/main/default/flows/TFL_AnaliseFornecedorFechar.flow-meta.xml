@@ -1,0 +1,2338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>RedirecionarAnalise</name>
+        <label>Redirecionar Análise</label>
+        <locationX>1023</locationX>
+        <locationY>494</locationY>
+        <actionName>c:RedirectPage</actionName>
+        <actionType>component</actionType>
+        <inputParameters>
+            <name>recordId</name>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Atribuir_Lista_Secao_1</name>
+        <label>Atribuir Lista Secao 1</label>
+        <locationX>1157</locationX>
+        <locationY>914</locationY>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem1_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem1_2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem1_3</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem1_4</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem1_5</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem1_6</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem1_7</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Observacoes_Secao_2_Em_branco</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Atribuir_Lista_Secao_2</name>
+        <label>Atribuir Lista Secao 2</label>
+        <locationX>1394</locationX>
+        <locationY>913</locationY>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem2_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem2_2</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Observacoes_Secao_3_Em_branco</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Atribuir_Lista_Secao_3</name>
+        <label>Atribuir Lista Secao 3</label>
+        <locationX>1619</locationX>
+        <locationY>917</locationY>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem3_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem3_2</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Observacoes_Secao_4_Em_branco</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Atribuir_Lista_Secao_4</name>
+        <label>Atribuir Lista Secao 4</label>
+        <locationX>1848</locationX>
+        <locationY>928</locationY>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_3</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_4</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_5</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_6</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_7</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_8</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_9</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem4_10</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Observacoes_Secao_5_Em_branco</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Atribuir_Lista_Secao_5</name>
+        <label>Atribuir Lista Secao 5</label>
+        <locationX>2082</locationX>
+        <locationY>938</locationY>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem5_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem5_2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem5_3</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem5_4</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem5_5</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Observacoes_Secao_6_Em_branco</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Atribuir_Lista_Secao_6</name>
+        <label>Atribuir Lista Secao 6</label>
+        <locationX>2309</locationX>
+        <locationY>946</locationY>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem6_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem6_2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem6_3</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem6_4</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem6_5</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem6_6</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Observacoes_Secao_7_Em_branco</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Atribuir_Lista_Secao_7</name>
+        <label>Atribuir Lista Secao</label>
+        <locationX>2535</locationX>
+        <locationY>944</locationY>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem7_1</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem7_2</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem7_3</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ListaCompleta</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>ObservacoesEmBrancoItem7_4</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Header_HTML</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AtribuirLinhaHTML</name>
+        <label>Atribuir Linha HTML</label>
+        <locationX>2896</locationX>
+        <locationY>532</locationY>
+        <assignmentItems>
+            <assignToReference>HTML</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>&lt;tr&gt; 		 	&lt;th style=&quot;text-align: left;color:#ff0000;word-break: break-all;&quot;&gt;{!Loop_Lista}&lt;/th&gt; &lt;tr/&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Lista</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>END_HTML</name>
+        <label>END HTML</label>
+        <locationX>3057</locationX>
+        <locationY>638</locationY>
+        <assignmentItems>
+            <assignToReference>HTML</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>&lt;/table&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Tela_ObservacoesBranco</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Header_HTML</name>
+        <label>Header HTML</label>
+        <locationX>2743</locationX>
+        <locationY>837</locationY>
+        <assignmentItems>
+            <assignToReference>HTML</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>&lt;table&gt;</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_Lista</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Observacoes_Secao_1_Em_branco</name>
+        <label>Observacoes Secao 1 Em branco</label>
+        <locationX>1149</locationX>
+        <locationY>715</locationY>
+        <defaultConnector>
+            <targetReference>Observacoes_Secao_2_Em_branco</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Seção 1 OK</defaultConnectorLabel>
+        <rules>
+            <name>Observa_es_Em_BrancoSecao1</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidaObservacoesSecao1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Atribuir_Lista_Secao_1</targetReference>
+            </connector>
+            <label>Observações Em Branco</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Observacoes_Secao_2_Em_branco</name>
+        <label>Observacoes Secao 2 Em branco</label>
+        <locationX>1388</locationX>
+        <locationY>717</locationY>
+        <defaultConnector>
+            <targetReference>Observacoes_Secao_3_Em_branco</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Seção 2 OK</defaultConnectorLabel>
+        <rules>
+            <name>Observa_es_Em_BrancoSecao2</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidaObservacoesSecao2</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Atribuir_Lista_Secao_2</targetReference>
+            </connector>
+            <label>Observações Em Branco</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Observacoes_Secao_3_Em_branco</name>
+        <label>Observacoes Secao 3 Em branco</label>
+        <locationX>1614</locationX>
+        <locationY>729</locationY>
+        <defaultConnector>
+            <targetReference>Observacoes_Secao_4_Em_branco</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Seção 3 OK</defaultConnectorLabel>
+        <rules>
+            <name>Observa_es_Em_BrancoSecao3</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidaObservacoesSecao3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Atribuir_Lista_Secao_3</targetReference>
+            </connector>
+            <label>Observações Em Branco</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Observacoes_Secao_4_Em_branco</name>
+        <label>Observacoes Secao 4 Em branco</label>
+        <locationX>1841</locationX>
+        <locationY>734</locationY>
+        <defaultConnector>
+            <targetReference>Observacoes_Secao_5_Em_branco</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Seção 4 OK</defaultConnectorLabel>
+        <rules>
+            <name>Observa_es_Em_BrancoSecao4</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidaObservacoesSecao4</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Atribuir_Lista_Secao_4</targetReference>
+            </connector>
+            <label>Observações Em Branco</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Observacoes_Secao_5_Em_branco</name>
+        <label>Observacoes Secao 5 Em branco</label>
+        <locationX>2078</locationX>
+        <locationY>741</locationY>
+        <defaultConnector>
+            <targetReference>Observacoes_Secao_6_Em_branco</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Seção 5 OK</defaultConnectorLabel>
+        <rules>
+            <name>Observa_es_Em_BrancoSecao5</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidaObservacoesSecao5</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Atribuir_Lista_Secao_5</targetReference>
+            </connector>
+            <label>Observações Em Branco</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Observacoes_Secao_6_Em_branco</name>
+        <label>Observacoes Secao 6 Em branco</label>
+        <locationX>2300</locationX>
+        <locationY>750</locationY>
+        <defaultConnector>
+            <targetReference>Observacoes_Secao_7_Em_branco</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Seção 6 OK</defaultConnectorLabel>
+        <rules>
+            <name>Observa_es_Em_BrancoSecao6</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidaObservacoesSecao6</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Atribuir_Lista_Secao_6</targetReference>
+            </connector>
+            <label>Observações Em Branco</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Observacoes_Secao_7_Em_branco</name>
+        <label>Observacoes Secao 7 Em branco</label>
+        <locationX>2527</locationX>
+        <locationY>757</locationY>
+        <defaultConnector>
+            <targetReference>Header_HTML</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Seção 7 OK</defaultConnectorLabel>
+        <rules>
+            <name>Observa_es_Em_BrancoSecao1_0_0_0_0_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidaObservacoesSecao7</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Atribuir_Lista_Secao_7</targetReference>
+            </connector>
+            <label>Observações Em Branco</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Sem_Notas</name>
+        <label>Sem Notas?</label>
+        <locationX>848</locationX>
+        <locationY>722</locationY>
+        <defaultConnector>
+            <targetReference>Valida_Observa_es_Obrigat_rias</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Possui Nota</defaultConnectorLabel>
+        <rules>
+            <name>Nenhum_Nota</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidaSemNotas</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Tela_SemNotas</targetReference>
+            </connector>
+            <label>Nenhum Nota</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Status</name>
+        <label>Status</label>
+        <locationX>710</locationX>
+        <locationY>717</locationY>
+        <defaultConnector>
+            <targetReference>Tela_Status_Bloqueado</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Status &lt;&gt; Aberta</defaultConnectorLabel>
+        <rules>
+            <name>StatusAberta</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_AnaliseFornecedor.TCF_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Aberta</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sem_Notas</targetReference>
+            </connector>
+            <label>Aberta</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Tipo_de_Interaction</name>
+        <label>Tipo de Interaction</label>
+        <locationX>486</locationX>
+        <locationY>717</locationY>
+        <defaultConnectorLabel>Resultado padrão</defaultConnectorLabel>
+        <rules>
+            <name>TipoInspecaoRecebimento</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_AnaliseFornecedor.TCF_Interaction__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TW1_Receipt_Inspection</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get_AnaliseFornecedor.TCF_Request__r.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Inspection</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Status</targetReference>
+            </connector>
+            <label>Inspeção de Recebimento</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Valida_Observa_es_Obrigat_rias</name>
+        <label>Valida Observações Obrigatórias</label>
+        <locationX>976</locationX>
+        <locationY>720</locationY>
+        <defaultConnector>
+            <targetReference>SubfluxoFecharAnalise</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Nenhum Observação Obrigatória em BRANCO</defaultConnectorLabel>
+        <rules>
+            <name>Existe_Observacao_em_Branco</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>ValidaObservacoesObrigatorias</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Observacoes_Secao_1_Em_branco</targetReference>
+            </connector>
+            <label>Existe Observação em Branco</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Verifica_Nulo</name>
+        <label>Verifica Valor Nulo Lista</label>
+        <locationX>2729</locationX>
+        <locationY>433</locationY>
+        <defaultConnector>
+            <targetReference>AtribuirLinhaHTML</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Contem Dados</defaultConnectorLabel>
+        <rules>
+            <name>Nulo</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Loop_Lista</leftValueReference>
+                <operator>EqualTo</operator>
+            </conditions>
+            <connector>
+                <targetReference>Loop_Lista</targetReference>
+            </connector>
+            <label>Nulo</label>
+        </rules>
+    </decisions>
+    <description>Processo para fechar a análise do fornecedor pelo botão</description>
+    <formulas>
+        <name>ObservacoesEmBrancoItem1_1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+		OR( 
+			ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_1__c}, &quot;0&quot;),
+			ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_1__c}, &quot;1&quot;),
+			ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_1__c}, &quot;2&quot;)
+		),
+		OR(
+			ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_1__c}),
+			ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_1__c})
+		)
+	), 
+	&quot;1.1 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem1_2</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+		OR( 
+			ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_2__c}, &quot;0&quot;),
+			ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_2__c}, &quot;1&quot;),
+			ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_2__c}, &quot;2&quot;)
+		),
+		OR(
+			ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_2__c}),
+			ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_2__c})
+		)
+	), 
+	&quot;1.2 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem1_3</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_3__c})
+			)
+		), 
+	&quot;1.3 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem1_4</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_4__c})
+			)
+		), 
+	&quot;1.4 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem1_5</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_5__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_5__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_5__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_5__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_5__c})
+			)
+		), 
+	&quot;1.5 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem1_6</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_6__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_6__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_6__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_6__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_6__c})
+			)
+		), 
+	&quot;1.6 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem1_7</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_7__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_7__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_7__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_7__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_7__c})
+			)
+		), 
+	&quot;1.7 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem2_1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_2_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_2_1__c})
+			)
+		), 
+	&quot;2.1 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem2_2</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_2_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_2_2__c})
+			)
+		), 
+	&quot;2.2 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem3_1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_3_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_3_1__c})
+			)
+		), 
+	&quot;3.1 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem3_2</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_3_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_3_2__c})
+			)
+		), 
+	&quot;3.2 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_1__c})
+			)
+		), 
+	&quot;4.1 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_10</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_10__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_10__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_10__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_10__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_10__c})
+			)
+		), 
+	&quot;4.10 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_2</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_2__c})
+			)
+		), 
+	&quot;4.2 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_3</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_3__c})
+			)
+		), 
+	&quot;4.3 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_4</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_4__c})
+			)
+		), 
+	&quot;4.4 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_5</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_5__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_5__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_5__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_5__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_5__c})
+			)
+		), 
+	&quot;4.5 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_6</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_6__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_6__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_6__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_6__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_6__c})
+			)
+		), 
+	&quot;4.6 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_7</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_7__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_7__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_7__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_7__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_7__c})
+			)
+		), 
+	&quot;4.7 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_8</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_8__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_8__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_8__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_8__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_8__c})
+			)
+		), 
+	&quot;4.8 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem4_9</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_9__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_9__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_9__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_9__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_9__c})
+			)
+		), 
+	&quot;4.9 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem5_1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_1__c})
+			)
+		), 
+	&quot;5.1 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem5_2</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_2__c})
+			)
+		), 
+	&quot;5.2 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem5_3</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_3__c})
+			)
+		), 
+	&quot;5.3 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem5_4</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_4__c})
+			)
+		), 
+	&quot;5.4 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem5_5</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_5__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_5__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_5__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_5__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_5__c})
+			)
+		), 
+	&quot;5.5 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem6_1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_1__c})
+			)
+		), 
+	&quot;6.1 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem6_2</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_2__c})
+			)
+		), 
+	&quot;6.2 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem6_3</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_3__c})
+			)
+		), 
+	&quot;6.3 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem6_4</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_4__c})
+			)
+		), 
+	&quot;6.4 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem6_5</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_5__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_5__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_5__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_5__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_5__c})
+			)
+		), 
+	&quot;6.5 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem6_6</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_6__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_6__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_6__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_6__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_6__c})
+			)
+		), 
+	&quot;6.6 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem7_1</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_7_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_7_1__c})
+			)
+		), 
+	&quot;7.1 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem7_2</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_7_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_7_2__c})
+			)
+		), 
+	&quot;7.2 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem7_3</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_7_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_7_3__c})
+			)
+		), 
+	&quot;7.3 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ObservacoesEmBrancoItem7_4</name>
+        <dataType>String</dataType>
+        <expression>IF(
+	AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_7_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_7_4__c})
+			)
+		), 
+	&quot;7.4 Observações&quot;,
+	null
+)</expression>
+    </formulas>
+    <formulas>
+        <name>UserLanguage</name>
+        <dataType>String</dataType>
+        <expression>TEXT({!$User.LanguageLocaleKey})</expression>
+    </formulas>
+    <formulas>
+        <name>ValidaObservacoesObrigatorias</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+	OR(
+		{!ValidaObservacoesSecao1} = true,
+		{!ValidaObservacoesSecao2} = true,
+		{!ValidaObservacoesSecao3} = true,
+		{!ValidaObservacoesSecao4} = true,
+		{!ValidaObservacoesSecao5} = true,
+		{!ValidaObservacoesSecao6} = true,
+		{!ValidaObservacoesSecao7} = true
+	),
+	true,
+	false
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ValidaObservacoesSecao1</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+	OR(
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_1__c})
+			)
+		),
+		
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_2__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_3__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_4__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_5__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_5__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_5__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_5__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_5__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_6__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_6__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_6__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_6__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_6__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_7__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_7__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_1_7__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_1_7__c})
+			)
+		)
+	),
+	true,
+	false
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ValidaObservacoesSecao2</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+	OR(
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_2_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_2_1__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_2_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_2_2__c})
+			)
+		)
+	),
+	true,
+	false
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ValidaObservacoesSecao3</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+	OR(
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_3_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_3_1__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_3_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_3_2__c})
+			)
+		)
+	),
+	true,
+	false
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ValidaObservacoesSecao4</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+	OR(
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_1__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_2__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_3__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_4__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_5__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_5__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_5__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_5__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_5__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_6__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_6__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_6__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_6__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_6__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_7__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_7__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_7__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_7__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_8__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_8__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_8__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_8__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_8__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_9__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_9__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_9__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_9__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_9__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_10__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_10__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_10__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_4_10__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_4_10__c})
+			)
+		)
+	),
+	true,
+	false
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ValidaObservacoesSecao5</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+	OR(
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_1__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_2__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_3__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_4__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_5__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_5__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_5__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_5_5__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_5_5__c})
+			)
+		)
+	),
+	true,
+	false
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ValidaObservacoesSecao6</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+	OR(
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_1__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_2__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_3__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_4__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_5__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_5__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_5__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_5__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_5__c})
+			)
+		),
+	
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_6__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_6__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_6__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_6_6__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_6_6__c})
+			)
+		)
+
+	),
+	true,
+	false
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ValidaObservacoesSecao7</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(
+	OR(
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_1__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_1__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_1__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_7_1__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_7_1__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_2__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_2__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_2__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_7_2__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_7_2__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_3__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_3__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_3__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_7_3__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_7_3__c})
+			)
+		),
+
+		AND(
+			OR( 
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_4__c}, &quot;0&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_4__c}, &quot;1&quot;),
+				ISPICKVAL({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_4__c}, &quot;2&quot;)
+			),
+			OR(
+				ISBLANK({!Get_AnaliseFornecedor.TCF_Observacoes_7_4__c}),
+				ISNULL({!Get_AnaliseFornecedor.TCF_Observacoes_7_4__c})
+			)
+		)		
+	),
+	true,
+	false
+)</expression>
+    </formulas>
+    <formulas>
+        <name>ValidaSemNotas</name>
+        <dataType>Boolean</dataType>
+        <expression>IF(AND(
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_1__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_2__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_3__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_4__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_5__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_6__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_1_7__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_1__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_2_2__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_1__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_3_2__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_1__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_2__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_3__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_4__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_5__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_6__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_7__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_8__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_9__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_4_10__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_1__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_2__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_3__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_4__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_5_5__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_1__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_2__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_3__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_4__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_5__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_6_6__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_1__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_2__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_3__c})),
+		ISBLANK(TEXT({!Get_AnaliseFornecedor.TCF_Inspecao_Resposta_7_4__c}))
+), true, false)</expression>
+    </formulas>
+    <interviewLabel>Análise Fornecedor - Fechar {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Análise Fornecedor - Botão Fechar</label>
+    <loops>
+        <name>Loop_Lista</name>
+        <label>Loop Lista</label>
+        <locationX>2743</locationX>
+        <locationY>624</locationY>
+        <collectionReference>ListaCompleta</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Verifica_Nulo</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>END_HTML</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordLookups>
+        <name>Get_AnaliseFornecedor</name>
+        <label>Analise Fornecedor</label>
+        <locationX>154</locationX>
+        <locationY>715</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>T_GetRecursoEstatico</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>recordId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>TOBJ_AnaliseFornecedor__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>T_GetRecursoEstatico</name>
+        <label>Recurso Estático</label>
+        <locationX>327</locationX>
+        <locationY>715</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Tipo_de_Interaction</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>LOGO_MODEC_CONTRACT</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>StaticResource</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <screens>
+        <name>Tela_ObservacoesBranco</name>
+        <label>Tela Observações Em Branco</label>
+        <locationX>3250</locationX>
+        <locationY>639</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>TelaObservacoesBranco</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <elementReference>T_GetRecursoEstatico.Name</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>horizontalAlignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageHeight</name>
+                <value>
+                    <stringValue>15%</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageWidth</name>
+                <value>
+                    <stringValue>15%</stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>TextoObservacoesBranco</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b style=&quot;color: rgb(62, 62, 60);&quot;&gt;Os campos de observações abaixo precisam ser preenchidos devido a nota dada ser menor ou igual a 2:&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>Teste</name>
+            <fieldText>&lt;p&gt;{!HTML}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Tela_SemNotas</name>
+        <label>Tela Sem Notas</label>
+        <locationX>864</locationX>
+        <locationY>948</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>TelaSemNotas</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <elementReference>T_GetRecursoEstatico.Name</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>horizontalAlignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageHeight</name>
+                <value>
+                    <stringValue>15%</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageWidth</name>
+                <value>
+                    <stringValue>15%</stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>SemNotas_PT</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;﻿Não foi atribuída nenhuma Nota a esta análise. Favor preencher a Análise do Fornecedor antes de Fechar.&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>UserLanguage</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>pt_BR</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>SemNotas_EN</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;﻿&lt;/b&gt;&lt;b style=&quot;color: rgb(62, 62, 60); background-color: rgb(255, 255, 255);&quot;&gt;Não foi atribuída nenhuma Nota a esta análise. Favor preencher a Análise do Fornecedor antes de Fechar.&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>UserLanguage</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>pt_BR</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <screens>
+        <name>Tela_Status_Bloqueado</name>
+        <label>Tela Status Bloqueado</label>
+        <locationX>720</locationX>
+        <locationY>933</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>TelaStatusBloqueado</name>
+            <extensionName>flowruntime:image</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>imageName</name>
+                <value>
+                    <elementReference>T_GetRecursoEstatico.Name</elementReference>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>horizontalAlignment</name>
+                <value>
+                    <stringValue>center</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageHeight</name>
+                <value>
+                    <stringValue>15%</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>imageWidth</name>
+                <value>
+                    <stringValue>15%</stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>StatusBloqueado_PT</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;﻿O Status desta análise não permite mais que ela seja Fechada.&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>UserLanguage</leftValueReference>
+                    <operator>EqualTo</operator>
+                    <rightValue>
+                        <stringValue>pt_BR</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <fields>
+            <name>StatusBloqueado_EN</name>
+            <fieldText>&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;b&gt;﻿The Status of this analysis no longer allows it to be closed.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <visibilityRule>
+                <conditionLogic>and</conditionLogic>
+                <conditions>
+                    <leftValueReference>UserLanguage</leftValueReference>
+                    <operator>NotEqualTo</operator>
+                    <rightValue>
+                        <stringValue>pt_BR</stringValue>
+                    </rightValue>
+                </conditions>
+            </visibilityRule>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>28</locationX>
+        <locationY>558</locationY>
+        <connector>
+            <targetReference>Get_AnaliseFornecedor</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>SubfluxoFecharAnalise</name>
+        <label>Fechar Análise</label>
+        <locationX>891</locationX>
+        <locationY>494</locationY>
+        <connector>
+            <targetReference>RedirecionarAnalise</targetReference>
+        </connector>
+        <flowName>TFL_AnaliseFornecedor_InspecaoRecebimento_Fechar</flowName>
+        <inputAssignments>
+            <name>AnaliseFornecedor</name>
+            <value>
+                <elementReference>Get_AnaliseFornecedor</elementReference>
+            </value>
+        </inputAssignments>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </subflows>
+    <variables>
+        <name>HTML</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ID_AnaliseFornecedor</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>ID_TipoRegistroInteraction</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>ListaCompleta</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ListaObservacoesEmBranco_SemTratamento</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>ListaTratada</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>Nome_TipoRegistroInteraction</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>ObservacoesEmBrancoSecao1</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ObservacoesEmBrancoSecao2</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ObservacoesEmBrancoSecao3</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ObservacoesEmBrancoSecao4</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ObservacoesEmBrancoSecao5</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ObservacoesEmBrancoSecao6</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>ObservacoesEmBrancoSecao7</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>recordId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>Resposta</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

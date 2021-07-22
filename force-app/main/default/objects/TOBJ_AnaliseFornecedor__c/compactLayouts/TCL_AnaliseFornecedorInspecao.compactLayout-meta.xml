@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCL_AnaliseFornecedorInspecao</fullName>
+    <fields>Name</fields>
+    <fields>TCF_Status__c</fields>
+    <fields>TCF_PontuacaoTotal__c</fields>
+    <fields>TCF_NivelDeAprovacao__c</fields>
+    <label>Analise Fornecedor Inspeção</label>
+</CompactLayout>

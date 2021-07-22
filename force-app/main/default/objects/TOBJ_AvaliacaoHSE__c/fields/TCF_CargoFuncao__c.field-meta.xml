@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_CargoFuncao__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL($User.LanguageLocaleKey,&quot;pt_BR&quot;), &quot;Informar as pessoas chaves e seus cargos/funções e principais responsabilidades para o desempenho do sistema de gestão de HSEQ.&quot;, &quot;Inform key people and their positions/functions and main responsibilities for the performance of the HSEQ management system&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Attach the organization chart of the HSEQ department and the description of the team positions</inlineHelpText>
+    <label>Occupation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

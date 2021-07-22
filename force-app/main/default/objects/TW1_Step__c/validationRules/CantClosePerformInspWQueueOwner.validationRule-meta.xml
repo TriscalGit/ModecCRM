@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantClosePerformInspWQueueOwner</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+(LEFT( OwnerId , 3) = &quot;00G&quot;),
+    OR(
+				RecordType.DeveloperName = &quot;Perform_Inspection&quot;,
+				RecordType.DeveloperName =	&quot;TW5_Quality_Receipt_Inspection_Supply_Chain_Evaluation&quot;
+				),
+  ISPICKVAL(TW1_Status__c , &apos;Closed&apos;) 
+)</errorConditionFormula>
+    <errorDisplayField>OwnerId</errorDisplayField>
+    <errorMessage>You have to take ownership of this Step to close it.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW4_Pending_Nonconformities_Validation__c</fullName>
+    <externalId>false</externalId>
+    <label>Pending Nonconformities Validation</label>
+    <summaryFilterItems>
+        <field>TW4_Nonconformity__c.TW4_Nonconformity_Validation_Filled__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TW4_Nonconformity__c.TW4_Interaction__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

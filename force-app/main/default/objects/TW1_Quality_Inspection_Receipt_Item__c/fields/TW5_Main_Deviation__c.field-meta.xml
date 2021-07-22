@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW5_Main_Deviation__c</fullName>
+    <externalId>false</externalId>
+    <label>Main Deviation</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Logistic</fullName>
+                <default>false</default>
+                <label>Logistic</label>
+            </value>
+            <value>
+                <fullName>Quantitative</fullName>
+                <default>false</default>
+                <label>Quantitative</label>
+            </value>
+            <value>
+                <fullName>Defect/Damage</fullName>
+                <default>false</default>
+                <label>Defect/Damage</label>
+            </value>
+            <value>
+                <fullName>Out of Specification</fullName>
+                <default>false</default>
+                <label>Out of Specification</label>
+            </value>
+            <value>
+                <fullName>PO Date (divergent from the purchase order)</fullName>
+                <default>false</default>
+                <label>PO Date (divergent from the purchase order)</label>
+            </value>
+            <value>
+                <fullName>Preservation</fullName>
+                <default>false</default>
+                <label>Preservation</label>
+            </value>
+            <value>
+                <fullName>Traceability</fullName>
+                <default>false</default>
+                <label>Traceability</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

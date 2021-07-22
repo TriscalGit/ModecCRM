@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_Description__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL($User.LanguageLocaleKey,&quot;pt_BR&quot;),&quot;Prezado Parceiro, com o objetivo de estabelecer um padrão preventivo alinhado com os valores e diretrizes da MODEC, sua empresa está sendo convidada a participar do processo de Avaliação Periódica de Desempenho de HSEQ das Contratadas O principal objetivo da avaliação é garantir o atendimento aos requisitos de HSEQ (saúde, segurança, meio ambiente e qualidade), visando o fortalecimento de uma cultura prevencionista com foco no ZERO incidentes dentro das nossas instalações. Contamos com a sua parceria e colaboração. (Att, Gestão de HSSE das Contratadas)&quot;,&quot;Dear Partner, in order to establish a preventive standard in line with MODEC&apos;s values and guidelines, your company is being invited to participate in the Contractor&apos;s Periodic HSEQ Performance Assessment process. The main objective of the assessment is to ensure compliance with the requirements of HSEQ (health, safety, environment and quality), aiming at strengthening a preventive culture with a focus on ZERO incidents within our facilities. We count on your partnership and collaboration. (Att, HSSE Management of Contractors)&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Description</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

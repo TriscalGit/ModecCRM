@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>You_cannot_change_a_completed_Step</fullName>
+    <active>true</active>
+    <description>You cannot change a completed Step.</description>
+    <errorConditionFormula>AND(OR(ISPICKVAL(PRIORVALUE(TW1_Status__c), &quot;Closed&quot;),
+       ISPICKVAL(PRIORVALUE(TW1_Status__c), &quot;Canceled&quot;)
+    ),
+    NOT(ISNULL(PRIORVALUE(TW1_Conclusion_Date__c))),
+    RecordType.DeveloperName == &apos;Warning_ReceiveConfirmation&apos;
+)</errorConditionFormula>
+    <errorMessage>You cannot change a completed Step.</errorMessage>
+</ValidationRule>

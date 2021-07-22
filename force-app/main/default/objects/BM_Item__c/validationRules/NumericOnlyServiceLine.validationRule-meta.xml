@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumericOnlyServiceLine</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISNUMBER( TW1_Service_Line__c ))</errorConditionFormula>
+    <errorDisplayField>TW1_Service_Line__c</errorDisplayField>
+    <errorMessage>Please fill the field only with numeric characters.</errorMessage>
+</ValidationRule>

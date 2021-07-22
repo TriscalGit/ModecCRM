@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckEndDate</fullName>
+    <active>true</active>
+    <errorConditionFormula>TCF_Termino__c  &lt;=  TCF_Inicio__c</errorConditionFormula>
+    <errorMessage>A data de término não pode ser igual ou menor que a data de início.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>CNPJ da NF divergente da PO</fullName>
+        <default>false</default>
+        <label>CNPJ da NF divergente da PO</label>
+    </customValue>
+    <customValue>
+        <fullName>NF fora do período de competência</fullName>
+        <default>false</default>
+        <label>NF fora do período de competência</label>
+    </customValue>
+    <customValue>
+        <fullName>Pendente PDF da NF</fullName>
+        <default>false</default>
+        <label>Pendente PDF da NF</label>
+    </customValue>
+    <customValue>
+        <fullName>Outros</fullName>
+        <default>false</default>
+        <label>Outros</label>
+    </customValue>
+    <customValue>
+        <fullName>Valor de folha (SES) divergente da NF</fullName>
+        <default>false</default>
+        <label>Valor de folha (SES) divergente da NF</label>
+    </customValue>
+    <customValue>
+        <fullName>Valor de folha (SES) divergente da NF e CNPJ da NF divergente da PO</fullName>
+        <default>false</default>
+        <label>Valor de folha (SES) divergente da NF e CNPJ da NF divergente da PO</label>
+    </customValue>
+    <customValue>
+        <fullName>Boleto vencido</fullName>
+        <default>false</default>
+        <label>Boleto vencido</label>
+    </customValue>
+    <customValue>
+        <fullName>CNPJ Fornecedor divergente da PO</fullName>
+        <default>false</default>
+        <label>CNPJ Fornecedor divergente da PO</label>
+    </customValue>
+    <masterLabel>Rejection Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

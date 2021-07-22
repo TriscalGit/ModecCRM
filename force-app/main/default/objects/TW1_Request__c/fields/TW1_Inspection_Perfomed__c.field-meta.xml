@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Inspection_Perfomed__c</fullName>
+    <externalId>false</externalId>
+    <label>Inspection Performed</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Material Release</fullName>
+                <default>false</default>
+                <label>Material Release</label>
+            </value>
+            <value>
+                <fullName>Pressure Test</fullName>
+                <default>false</default>
+                <label>Pressure Test</label>
+            </value>
+            <value>
+                <fullName>Delivery</fullName>
+                <default>false</default>
+                <label>Delivery</label>
+            </value>
+            <value>
+                <fullName>Dimensional</fullName>
+                <default>false</default>
+                <label>Dimensional</label>
+            </value>
+            <value>
+                <fullName>Painting</fullName>
+                <default>false</default>
+                <label>Painting</label>
+            </value>
+            <value>
+                <fullName>Welding</fullName>
+                <default>false</default>
+                <label>Welding</label>
+            </value>
+            <value>
+                <fullName>Documentation Analysis</fullName>
+                <default>false</default>
+                <label>Documentation Analysis</label>
+            </value>
+            <value>
+                <fullName>PMI follow up</fullName>
+                <default>false</default>
+                <label>PMI follow up</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Acompanhamento de PMI</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Acompanhamento de PMI</label>
+            </value>
+            <value>
+                <fullName>Acompanhamento de Qualificação</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Acompanhamento de Qualificação</label>
+            </value>
+            <value>
+                <fullName>Análise de Documentação</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Análise de Documentação</label>
+            </value>
+            <value>
+                <fullName>Final Delivery</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Final Delivery</label>
+            </value>
+            <value>
+                <fullName>Inspeção Dimensional</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inspeção Dimensional</label>
+            </value>
+            <value>
+                <fullName>Inspeção de Pintura</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inspeção de Pintura</label>
+            </value>
+            <value>
+                <fullName>Inspeção de Solda</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Inspeção de Solda</label>
+            </value>
+            <value>
+                <fullName>Liberação de Materiais</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Liberação de Materiais</label>
+            </value>
+            <value>
+                <fullName>Reapresentação de Certificados</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Reapresentação de Certificados</label>
+            </value>
+            <value>
+                <fullName>Teste Hidrostático</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Teste Hidrostático</label>
+            </value>
+            <value>
+                <fullName>Teste de Carga</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Teste de Carga</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

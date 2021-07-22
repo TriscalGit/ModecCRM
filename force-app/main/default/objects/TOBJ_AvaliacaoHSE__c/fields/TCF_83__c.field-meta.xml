@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_83__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL($User.LanguageLocaleKey,&quot;pt_BR&quot;),&quot;Existe um controle e acompanhamento das tratativas das não conformidades (NC) identificadas nas auditorias internas?&quot;,&quot;Is there a control and monitoring of non-conformity (NC) dealings identified in internal audits?&quot;)</formula>
+    <inlineHelpText>All evidence must be attached</inlineHelpText>
+    <label>8.3</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

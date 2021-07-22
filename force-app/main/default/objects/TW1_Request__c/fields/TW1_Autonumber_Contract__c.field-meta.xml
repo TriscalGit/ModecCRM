@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Autonumber_Contract__c</fullName>
+    <displayFormat>SC-{YY}-{000000}</displayFormat>
+    <externalId>false</externalId>
+    <label>Autonumber - Demand Contract</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

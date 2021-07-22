@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doc_attached_service_onshore</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(Service_Performed_at_Onshore_Supplier__c, &apos;Yes&apos;),
+TW1_Attached_Document__c == false)</errorConditionFormula>
+    <errorMessage>If you have registered an onshore service, you must create NF attachments.</errorMessage>
+</ValidationRule>

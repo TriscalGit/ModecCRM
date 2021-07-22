@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TypeEvent__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of Event</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Accident</fullName>
+                <default>false</default>
+                <label>Accident</label>
+            </value>
+            <value>
+                <fullName>Mechanical Failure</fullName>
+                <default>false</default>
+                <label>Mechanical Failure</label>
+            </value>
+            <value>
+                <fullName>Wear &amp; Tear</fullName>
+                <default>false</default>
+                <label>Wear &amp; Tear</label>
+            </value>
+            <value>
+                <fullName>Design Error</fullName>
+                <default>false</default>
+                <label>Design Error</label>
+            </value>
+            <value>
+                <fullName>Preventive</fullName>
+                <default>false</default>
+                <label>Preventive</label>
+            </value>
+            <value>
+                <fullName>Upgrade/Modification</fullName>
+                <default>false</default>
+                <label>Upgrade/Modification</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>3</visibleLines>
+</CustomField>

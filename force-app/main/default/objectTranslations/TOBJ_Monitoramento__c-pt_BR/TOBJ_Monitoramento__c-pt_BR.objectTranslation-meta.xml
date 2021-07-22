@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <gender></gender>
+    <layouts>
+        <layout>Monitoramento Layout</layout>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monitoramento Layout - Stop</layout>
+        <sections>
+            <label></label>
+            <section>Comments</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel></nameFieldLabel>
+    <quickActions>
+        <label>Iniciar Monitoramento</label>
+        <name>TAC_StartMonitoring</name>
+    </quickActions>
+    <quickActions>
+        <label>Parar Monitoramento</label>
+        <name>TAC_Stop</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>TRT_Master</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantChangeAccount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantChangeInactive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantChangeStartDateEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CheckStartDate</name>
+    </validationRules>
+    <webLinks>
+        <label>Parar Todos Monitoramentos</label>
+        <name>TAC_StopALL</name>
+    </webLinks>
+</CustomObjectTranslation>

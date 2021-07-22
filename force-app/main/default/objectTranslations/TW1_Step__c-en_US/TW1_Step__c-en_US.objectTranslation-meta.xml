@@ -1,0 +1,1352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Step</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Steps</value>
+    </caseValues>
+    <layouts>
+        <layout>Approval Process Layout</layout>
+        <sections>
+            <label></label>
+            <section>Aprovação</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BM NF</layout>
+        <sections>
+            <label></label>
+            <section>BM Request Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SED</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BM NF - Supplier</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Completation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informação do Coordenador de PCMSO ou Serviço de Saúde Ocupacional</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informação do Profissional de Segurança</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informação para contato de emergência</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contract Management</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contract Progress</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SC Input</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contract Registration</layout>
+        <sections>
+            <label></label>
+            <section>Contract Registration</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SC Input</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Getting Clafication</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Incidente - Ações a serem tomadas</layout>
+        <sections>
+            <label>Adictional Informations</label>
+            <section>Complemento</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations</label>
+            <section>Informations</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Incidente - Evidência do Incidente</layout>
+        <sections>
+            <label>Custom Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations</label>
+            <section>Informations</section>
+        </sections>
+        <sections>
+            <label>Adictional Informations</label>
+            <section>Informations - Complemento</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Incidente - Validar Evidência do Incidente</layout>
+        <sections>
+            <label>Custom Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations</label>
+            <section>Informations</section>
+        </sections>
+        <sections>
+            <label>Adictional Informations</label>
+            <section>complemento</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Incidente - Validação das Ações do Incidente</layout>
+        <sections>
+            <label>Adictional Informations</label>
+            <section>Complemento</section>
+        </sections>
+        <sections>
+            <label>Custom Links</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informations</label>
+            <section>Informations</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspection - Date Availability</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspection - Emergency Inspection</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspection - Inspection Definition</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspection - Perform Inspection</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspection - Supplier Date Confirmation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Interaction Supplier Response</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Interaction layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Legal Team Evaluation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monitoring Complement</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Question</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Reason</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Monitoring Invite</layout>
+        <sections>
+            <label></label>
+            <section>Accept</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emails</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Reason</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Receipt Inspection - Item Approved By OM Representative</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Receipt Inspection - Result</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Receipt Inspection - Supplier Documentation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Rejected Items</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Receipt Inspection - Supply Chain Evaluation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Rejected Items</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Action Plan</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Action Plan Validation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - CEO</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Compliance - Step 1</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Compliance - Step 2</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Compliance Initial Validation</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Docs Validation (VV)</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Enable Customer User</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Engineering</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Finance - Step 1</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Finance - Step 2</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Finance - Step 2 - Admin</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - GM SC, FIN, CON</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - HSEQ (EPCI or Operation)</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSEQ Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - HSEQ (EPCI or Operation) - Admin</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSEQ Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - HSEQ (EPCI or Operation) - Senegal</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSEQ Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Procurement Manager</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Quality</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - VV Team</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - VV Team - Senegal</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - VVW Attachment</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Approval - Vetting Final Check</layout>
+        <sections>
+            <label></label>
+            <section>Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Audit Confirmation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Audit Confirmation Date</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Audit Planning / Technical Visit</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Audit Schedule</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Supplier Acceptance</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Evidence Analysis</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Finalization Approval Process</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Meeting</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Modec Logistic</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Request Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - Nonconformity Evidence</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step - VV Audit Information</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Step Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Step Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Warning - Receive Confirmation</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informations</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>complemento</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Approval</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Approval_Docs_Validation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Approval_Flow</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Approval_Flow_HSEQ</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Approve_NF</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Compliance_Level</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Document_Status</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Inspection_Date_Confirmation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Inspection_Instruction</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Inspection_Scheduled_Date</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Manufacturing_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Documentation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Perform_Audit</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Reprove_NF</name>
+    </quickActions>
+    <quickActions>
+        <label>Your response has been sent to Modec.</label>
+        <name>RespondeEvidence</name>
+    </quickActions>
+    <quickActions>
+        <label>Response evidence</label>
+        <name>RespondeEvidence</name>
+    </quickActions>
+    <quickActions>
+        <label>Your response has been sent to Modec. NOTE: Remember to attach the necessaries documents.</label>
+        <name>ResponderModec</name>
+    </quickActions>
+    <quickActions>
+        <label>Response Modec</label>
+        <name>ResponderModec</name>
+    </quickActions>
+    <quickActions>
+        <label>Response</label>
+        <name>Response</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SED_Evaluation_Changing</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TAC_ClosedComplement</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TAC_ReplyModecInvitation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Accept</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Clarification</name>
+    </quickActions>
+    <quickActions>
+        <label>Your Step has been closed.</label>
+        <name>TW1_Close_Step</name>
+    </quickActions>
+    <quickActions>
+        <label>Close Step</label>
+        <name>TW1_Close_Step</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Complete_Homologation_process</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Confirm_Delivery_Date</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Fill_Contract_Page</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Flag_Document_Delivery</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_SC_Input</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_SendEvidence</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_VV_Team_Action</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Validate</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Accept_Audit</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Audit_Confirmation_Date</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Evidence_Status</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Flow_Accept_Audit</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Flow_Audit_Confirmation_Date</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Send_Action_Plan</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Send_Evaluation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW5_Close_Documentation_Step</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW5_Close_Inspection_Step</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW5_Supply_Chain_Inspection_Evaluation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>T_Action_Reassign_to_level_1</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Upload_VVW_Compliance_Doc</name>
+    </quickActions>
+    <quickActions>
+        <label>Complete!</label>
+        <name>ValidateEvidence</name>
+    </quickActions>
+    <quickActions>
+        <label>Validate evidence</label>
+        <name>ValidateEvidence</name>
+    </quickActions>
+    <quickActions>
+        <label>Complete!</label>
+        <name>ValidateIncident</name>
+    </quickActions>
+    <quickActions>
+        <label>Validate incident</label>
+        <name>ValidateIncident</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Approval_Process</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Approval_Step_Date_Availability</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Approval_Step_Date_Confirmation</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Approval_Step_Emergency_Approval</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Approval_Step_Inspection_Definition</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>BM_NF</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>BM_NF_Step_Supplier</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Incident - Actions to be taken</label>
+        <name>Incidente_AcoesSeremTomadas</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Incident - Evidence of Incident</label>
+        <name>Incidente_EvidenciaIncidente</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Incident - Validation of actions to be taken</label>
+        <name>Incidente_ValidacaoDasAcoesIncidente</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Incident - Validate Evidence of Incident</label>
+        <name>Incidente_ValidarEvidenciaIncidente</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Perform_Inspection</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TRT_MonitoringComplement</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TRT_MonitoringInvite</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Action_Plan</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Action_Plan_Step_Supply_Chain</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_CEO</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Compliance_Initial_Validation</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Compliance_Step_1</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Compliance_Step_2</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Docs_Validation_VV</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Enable_Customer_User</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Engineering</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Finance_Step_1</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Finance_Step_2</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_GM_SC_FIN_CON</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_HSEQ_EPCI_or_Operation</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_HSEQ_Get_Clarification_from_Supplier</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Procurement_Manager</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Quality</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_VVW_Attachment</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_VV_Team</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_Vetting_Final_Check</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Approval_Step_finalization_approval_process</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Complete_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Contract_Management</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Contract_Progress</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Contract_Registration</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Inspection_Supplier_Response</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Interacions</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Legal_Team</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Step_Meeting</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Step_Modec_Logistic</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW3_Approval_Step_HSEQ_EPCI_or_Operation_Senegal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW3_Approval_Step_VV_Team_Senegal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW4_Action_Plan_Validation</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW4_Audit_Confirmation</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW4_Audit_Confirmation_Date</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW4_Audit_Schedule</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW4_Evidence_Analysis</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW4_Nonconformity_Evidence</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW4_VV_Audit_Information</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW5_Quality_Receipt_Inspection_Item_Approved_By_OM_Representative</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW5_Quality_Receipt_Inspection_Result</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW5_Quality_Receipt_Inspection_Supplier_Documentation</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW5_Quality_Receipt_Inspection_Supply_Chain_Evaluation</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Warning_ReceiveConfirmation</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseActionPlanPendingNonConfActions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseDateAvailRejectedWONote</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseDateAvailWOSchedDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseDateAvailWOSchedDateStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseEmerApplRejectedWONote</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseEvidenceAnalysisRejWOReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseInspDefinitionWOInstrucions</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseInspectionWOInspResult</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantClosePerformInspWQueueOwner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseRegistrationWOSupplyChain</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantCloseValidationActionPlanPendingVal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantGoThroughContractProgWithoutSCInput</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantGoThroughContractProgWithoutSupplier</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantGoThroughDocsValidWithoutSelecArea</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>This field is necessary when evidence is required.</errorMessage>
+        <name>DataEvidenciaObrigatoriedade</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>DontStatVettingWithoutDocUploaded</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>IfThirdPartyCoordinatorCompleteReg</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>NotCloseStepWithoutPartnerFlag</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>RegexTelefoneProfSegurancaResp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>StepComplRegThirdPartyCompanyName</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>VVTeamActionNeededWithApproval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Validates_step_closure_without_approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>You_cannot_change_a_completed_Step</name>
+    </validationRules>
+</CustomObjectTranslation>

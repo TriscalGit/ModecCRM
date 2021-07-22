@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Inspection_Date_Option_2__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>This is a read only field. It can be filled via &quot;Schedule Inspection&quot; button after your save this record.</inlineHelpText>
+    <label>Inspection Date Option 2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

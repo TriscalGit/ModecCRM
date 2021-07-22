@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantGiveResultUntilStatusDifNotSubmitted</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				ISCHANGED( TW1_Status__c ),
+				ISPICKVAL(TW1_Quality_Inspection_Receipt__r.TW5_Quality_Receipt_Status__c, &quot;Not Submitted&quot;)
+				)</errorConditionFormula>
+    <errorMessage>You can&apos;t give a result to an Item while your Inspection has not yet been submitted.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TaxISS2BRL__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    TaxISS2__c * BRLRate__c != 0,
+				TaxISS2__c * BRLRate__c,
+				NULL
+)</formula>
+    <label>Tax (ISS 2%) BRL</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackHistory>false</trackHistory>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

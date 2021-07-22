@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compliance_2_Open</fullName>
+    <columns>NAME</columns>
+    <columns>TW1_Subject__c</columns>
+    <columns>TW1_Status__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>TW1_Status__c</field>
+        <operation>equals</operation>
+        <value>Opened</value>
+    </filters>
+    <label>Compliance 2 - Open</label>
+    <queue>Compliance2</queue>
+    <sharedTo>
+        <role>Administrator</role>
+        <role>Compliance</role>
+        <role>Compliance_2</role>
+        <role>Vetting_Final_Check</role>
+    </sharedTo>
+</ListView>

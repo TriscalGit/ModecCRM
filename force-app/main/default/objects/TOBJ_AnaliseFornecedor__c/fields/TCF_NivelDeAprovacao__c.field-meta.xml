@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_NivelDeAprovacao__c</fullName>
+    <externalId>false</externalId>
+    <label>Nível de Aprovação</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Inaceitável</fullName>
+                <default>false</default>
+                <label>Inaceitável</label>
+            </value>
+            <value>
+                <fullName>Ruim</fullName>
+                <default>false</default>
+                <label>Ruim</label>
+            </value>
+            <value>
+                <fullName>Satisfatório</fullName>
+                <default>false</default>
+                <label>Satisfatório</label>
+            </value>
+            <value>
+                <fullName>Bom</fullName>
+                <default>false</default>
+                <label>Bom</label>
+            </value>
+            <value>
+                <fullName>Excelente</fullName>
+                <default>false</default>
+                <label>Excelente</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

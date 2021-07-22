@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SystemNumber__c</fullName>
+    <externalId>false</externalId>
+    <label>System Number</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>06 - Mooring System Mechanical Component</fullName>
+                <default>false</default>
+                <label>06 - Mooring System Mechanical Component</label>
+            </value>
+            <value>
+                <fullName>07 - Mooring System Component</fullName>
+                <default>false</default>
+                <label>07 - Mooring System Component</label>
+            </value>
+            <value>
+                <fullName>08 - Installation Aids</fullName>
+                <default>false</default>
+                <label>08 - Installation Aids</label>
+            </value>
+            <value>
+                <fullName>10 - Inlet Oil Production</fullName>
+                <default>false</default>
+                <label>10 - Inlet Oil Production</label>
+            </value>
+            <value>
+                <fullName>11 - Crude Oil Treating/Stabilization</fullName>
+                <default>false</default>
+                <label>11 - Crude Oil Treating/Stabilization</label>
+            </value>
+            <value>
+                <fullName>12 - Flowline Circulation</fullName>
+                <default>false</default>
+                <label>12 - Flowline Circulation</label>
+            </value>
+            <value>
+                <fullName>14 - Produced Water Treatment</fullName>
+                <default>false</default>
+                <label>14 - Produced Water Treatment</label>
+            </value>
+            <value>
+                <fullName>15 - Seawater Treatment &amp; Injection</fullName>
+                <default>false</default>
+                <label>15 - Seawater Treatment &amp; Injection</label>
+            </value>
+            <value>
+                <fullName>21 - Vapor Recovery Unit</fullName>
+                <default>false</default>
+                <label>21 - Vapor Recovery Unit</label>
+            </value>
+            <value>
+                <fullName>20 - Inlet Gas Production/Gas Lift/Gas Export/Gas Import/Gas Injection</fullName>
+                <default>false</default>
+                <label>20 - Inlet Gas Production/Gas Lift/Gas Export/Gas Import/Gas Injection</label>
+            </value>
+            <value>
+                <fullName>22 - Main Gas Compression</fullName>
+                <default>false</default>
+                <label>22 - Main Gas Compression</label>
+            </value>
+            <value>
+                <fullName>23 - Gas Dehydration &amp; Regeneration</fullName>
+                <default>false</default>
+                <label>23 - Gas Dehydration &amp; Regeneration</label>
+            </value>
+            <value>
+                <fullName>24 - Gas Compression (GI)</fullName>
+                <default>false</default>
+                <label>24 - Gas Compression (GI)</label>
+            </value>
+            <value>
+                <fullName>30 - Flare &amp; Vent</fullName>
+                <default>false</default>
+                <label>30 - Flare &amp; Vent</label>
+            </value>
+            <value>
+                <fullName>31 - Fuel Gas System - General</fullName>
+                <default>false</default>
+                <label>31 - Fuel Gas System - General</label>
+            </value>
+            <value>
+                <fullName>33 - Chemical Injection</fullName>
+                <default>false</default>
+                <label>33 - Chemical Injection</label>
+            </value>
+            <value>
+                <fullName>34 - Closed/Open Drain System</fullName>
+                <default>false</default>
+                <label>34 - Closed/Open Drain System</label>
+            </value>
+            <value>
+                <fullName>35 - Heat Medium</fullName>
+                <default>false</default>
+                <label>35 - Heat Medium</label>
+            </value>
+            <value>
+                <fullName>36 - Cooling Medium</fullName>
+                <default>false</default>
+                <label>36 - Cooling Medium</label>
+            </value>
+            <value>
+                <fullName>37 - Process Inert Gas (N2)</fullName>
+                <default>false</default>
+                <label>37 - Process Inert Gas (N2)</label>
+            </value>
+            <value>
+                <fullName>40 - Power Generation</fullName>
+                <default>false</default>
+                <label>40 - Power Generation</label>
+            </value>
+            <value>
+                <fullName>41 - Fuel System - Marine</fullName>
+                <default>false</default>
+                <label>41 - Fuel System - Marine</label>
+            </value>
+            <value>
+                <fullName>42 - Seawater System</fullName>
+                <default>false</default>
+                <label>42 - Seawater System</label>
+            </value>
+            <value>
+                <fullName>43 - Steam &amp; Condensate System</fullName>
+                <default>false</default>
+                <label>43 - Steam &amp; Condensate System</label>
+            </value>
+            <value>
+                <fullName>44 - Potable &amp; Fresh Water System</fullName>
+                <default>false</default>
+                <label>44 - Potable &amp; Fresh Water System</label>
+            </value>
+            <value>
+                <fullName>45-Compressed(Utility &amp; Instrument)Air</fullName>
+                <default>false</default>
+                <label>45-Compressed(Utility &amp; Instrument)Air</label>
+            </value>
+            <value>
+                <fullName>46 - Lube Oil System</fullName>
+                <default>false</default>
+                <label>46 - Lube Oil System</label>
+            </value>
+            <value>
+                <fullName>47 - Bilge System</fullName>
+                <default>false</default>
+                <label>47 - Bilge System</label>
+            </value>
+            <value>
+                <fullName>50 - Life Saving &amp; Emergency Rescue</fullName>
+                <default>false</default>
+                <label>50 - Life Saving &amp; Emergency Rescue</label>
+            </value>
+            <value>
+                <fullName>51 - E/R</fullName>
+                <default>false</default>
+                <label>51 - E/R</label>
+            </value>
+            <value>
+                <fullName>52 -Deluge System</fullName>
+                <default>false</default>
+                <label>52 -Deluge System</label>
+            </value>
+            <value>
+                <fullName>53 -Foam System</fullName>
+                <default>false</default>
+                <label>53 -Foam System</label>
+            </value>
+            <value>
+                <fullName>54 - Gaseous Fire Fighting System</fullName>
+                <default>false</default>
+                <label>54 - Gaseous Fire Fighting System</label>
+            </value>
+            <value>
+                <fullName>55 - Portable Fire Fighting Equipment</fullName>
+                <default>false</default>
+                <label>55 - Portable Fire Fighting Equipment</label>
+            </value>
+            <value>
+                <fullName>56 - Waste Disposal &amp; Spill Containment</fullName>
+                <default>false</default>
+                <label>56 - Waste Disposal &amp; Spill Containment</label>
+            </value>
+            <value>
+                <fullName>60 - Power Distribution System</fullName>
+                <default>false</default>
+                <label>60 - Power Distribution System</label>
+            </value>
+            <value>
+                <fullName>61 - Lighting System</fullName>
+                <default>false</default>
+                <label>61 - Lighting System</label>
+            </value>
+            <value>
+                <fullName>62 - Facility Control System</fullName>
+                <default>false</default>
+                <label>62 - Facility Control System</label>
+            </value>
+            <value>
+                <fullName>63 - Communication System</fullName>
+                <default>false</default>
+                <label>63 - Communication System</label>
+            </value>
+            <value>
+                <fullName>64 - Navigation System</fullName>
+                <default>false</default>
+                <label>64 - Navigation System</label>
+            </value>
+            <value>
+                <fullName>65 - EMP Data &amp; Position Reference Syst</fullName>
+                <default>false</default>
+                <label>65 - EMP Data &amp; Position Reference Syst</label>
+            </value>
+            <value>
+                <fullName>66 - Subsea Control System</fullName>
+                <default>false</default>
+                <label>66 - Subsea Control System</label>
+            </value>
+            <value>
+                <fullName>67 - Metering System</fullName>
+                <default>false</default>
+                <label>67 - Metering System</label>
+            </value>
+            <value>
+                <fullName>70 - Cargo, Ballast, &amp; Slop System</fullName>
+                <default>false</default>
+                <label>70 - Cargo, Ballast, &amp; Slop System</label>
+            </value>
+            <value>
+                <fullName>71 - Cargo Offloading</fullName>
+                <default>false</default>
+                <label>71 - Cargo Offloading</label>
+            </value>
+            <value>
+                <fullName>72 - IGS &amp; Vent System</fullName>
+                <default>false</default>
+                <label>72 - IGS &amp; Vent System</label>
+            </value>
+            <value>
+                <fullName>73 - Tank Monitoring System</fullName>
+                <default>false</default>
+                <label>73 - Tank Monitoring System</label>
+            </value>
+            <value>
+                <fullName>74 - Valve Remote Control System</fullName>
+                <default>false</default>
+                <label>74 - Valve Remote Control System</label>
+            </value>
+            <value>
+                <fullName>75 - Hull Tanks &amp; Structure</fullName>
+                <default>false</default>
+                <label>75 - Hull Tanks &amp; Structure</label>
+            </value>
+            <value>
+                <fullName>76 - Corrosion Protection</fullName>
+                <default>false</default>
+                <label>76 - Corrosion Protection</label>
+            </value>
+            <value>
+                <fullName>80 - Propulsion</fullName>
+                <default>false</default>
+                <label>80 - Propulsion</label>
+            </value>
+            <value>
+                <fullName>81 - Living Quarter (LQ)</fullName>
+                <default>false</default>
+                <label>81 - Living Quarter (LQ)</label>
+            </value>
+            <value>
+                <fullName>82 - HVAC</fullName>
+                <default>false</default>
+                <label>82 - HVAC</label>
+            </value>
+            <value>
+                <fullName>83 - LQ Sewage &amp; Drain System</fullName>
+                <default>false</default>
+                <label>83 - LQ Sewage &amp; Drain System</label>
+            </value>
+            <value>
+                <fullName>84 - Laboratory &amp; Workshop Spaces</fullName>
+                <default>false</default>
+                <label>84 - Laboratory &amp; Workshop Spaces</label>
+            </value>
+            <value>
+                <fullName>85 - Material Handling System</fullName>
+                <default>false</default>
+                <label>85 - Material Handling System</label>
+            </value>
+            <value>
+                <fullName>86 - Deck Machinery &amp; Anchoring</fullName>
+                <default>false</default>
+                <label>86 - Deck Machinery &amp; Anchoring</label>
+            </value>
+            <value>
+                <fullName>87 - Helideck</fullName>
+                <default>false</default>
+                <label>87 - Helideck</label>
+            </value>
+            <value>
+                <fullName>90 - Area Completion</fullName>
+                <default>false</default>
+                <label>90 - Area Completion</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

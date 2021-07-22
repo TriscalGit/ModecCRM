@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Day_of_The_Week_Date_Availability__c</fullName>
+    <externalId>false</externalId>
+    <formula>Case (
+Weekday(Datevalue(TW1_Conclusion_Date_Date_Availability__c)),
+1, &apos;Sunday&apos;,
+2, &apos;Monday&apos;,
+3, &apos;Tuesday&apos;,
+4, &apos;Wednesday&apos;,
+5, &apos;Thursday&apos;,
+6, &apos;Friday&apos;,
+7, &apos;Saturday&apos;,
+&apos;&apos;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Day of The Week - Inspection Schedule</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

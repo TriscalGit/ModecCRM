@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LimitDate__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(WaterInjectionUninjectedVolume__c &gt; 0, ADDMONTHS(Date__c,3) - 1, null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Limit Date</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Type_of_equipment__c</fullName>
+    <externalId>false</externalId>
+    <label>Type of equipment</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Caixa</fullName>
+                <default>false</default>
+                <label>Caixa</label>
+            </value>
+            <value>
+                <fullName>Container</fullName>
+                <default>false</default>
+                <label>Container</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

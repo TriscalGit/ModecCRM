@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_QA_QC_Inspection__c</fullName>
+    <externalId>false</externalId>
+    <label>QA/QC Inspection</label>
+    <referenceTo>TW1_Interaction__c</referenceTo>
+    <relationshipLabel>QAQC Items</relationshipLabel>
+    <relationshipName>QAQC_Items</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

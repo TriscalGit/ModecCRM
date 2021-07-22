@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial2_TW1_Step</fullName>
+    <columns>NAME</columns>
+    <columns>TW1_Status__c</columns>
+    <columns>TW1_Subject__c</columns>
+    <columns>TW1_Vendor__c</columns>
+    <columns>TW1_Request__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>Financial 2 - Brazil - All</label>
+    <queue>Financial2</queue>
+    <sharedTo>
+        <role>Finance_Step_2</role>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Supply_Chain_Evaluation_TW1_Interaction</fullName>
+    <filterScope>Queue</filterScope>
+    <label>Supply Chain Evaluation</label>
+    <queue>Supply_Chain_Evaluation</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_Inspecao_4_10__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+	ISPICKVAL($User.LanguageLocaleKey,&quot;pt_BR&quot;), 
+	&quot;Os inspetores de Solda, END, Dimensional e Pintura estão certificados&quot;,
+	&quot;Welding, NDT, Dimensional and Painting inspectors are certified&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>4.10</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

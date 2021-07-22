@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantChangeInactive</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(PRIORVALUE(TCF_Status__c), &quot;Inactive&quot;)</errorConditionFormula>
+    <errorMessage>The selected monitoring is inactive. ﻿To start a new monitoring use the clone option.</errorMessage>
+</ValidationRule>

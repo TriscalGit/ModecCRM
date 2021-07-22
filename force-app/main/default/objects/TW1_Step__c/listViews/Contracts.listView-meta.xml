@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contracts</fullName>
+    <columns>NAME</columns>
+    <columns>RECORDTYPE</columns>
+    <columns>TW1_Vendor__c</columns>
+    <columns>TW1_Request__c</columns>
+    <columns>TW1_Interaction__c</columns>
+    <columns>TW1_Status__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>TW1_Subject__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>TW1_Step__c.TW1_Contract_Progress,TW1_Step__c.TW1_Contract_Registration</value>
+    </filters>
+    <label>Contracts</label>
+    <sharedTo>
+        <role>Supply_Contract_Manager</role>
+    </sharedTo>
+</ListView>

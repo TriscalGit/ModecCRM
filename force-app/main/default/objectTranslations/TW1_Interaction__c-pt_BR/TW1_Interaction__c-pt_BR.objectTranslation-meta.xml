@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <gender></gender>
+    <layouts>
+        <layout>Announcements/Warnings Layouts</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Audit</layout>
+        <sections>
+            <label>Validação do Plano de Ação</label>
+            <section>Action Plan Validation</section>
+        </sections>
+        <sections>
+            <label>Data de Confirmação da Auditoria</label>
+            <section>Audit Confirmation Date</section>
+        </sections>
+        <sections>
+            <label>Relatório da Auditoria</label>
+            <section>Audit Report</section>
+        </sections>
+        <sections>
+            <label>Agendamento da Auditoria</label>
+            <section>Audit Schedule</section>
+        </sections>
+        <sections>
+            <label>Confirmação da Auditoria</label>
+            <section>Confirm Audit</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Análise das Evidências</label>
+            <section>Evidences&apos; Analysis</section>
+        </sections>
+        <sections>
+            <label>Interação</label>
+            <section>Interaction</section>
+        </sections>
+        <sections>
+            <label>Evidências do Fornecedor</label>
+            <section>Supplier Evidences</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Audit - Admin</layout>
+        <sections>
+            <label></label>
+            <section>Action Plan Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Confirmation Date</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Report</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Audit Schedule</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Confirm Audit</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evidences&apos; Analysis</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Supplier Evidences</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Audit - Supplier Layout</layout>
+        <sections>
+            <label>Validação do Plano de Ação</label>
+            <section>Action Plan Validation</section>
+        </sections>
+        <sections>
+            <label>Data de Confirmação da Auditoria</label>
+            <section>Audit Confirmation Date</section>
+        </sections>
+        <sections>
+            <label>Relatório da Auditoria</label>
+            <section>Audit Report</section>
+        </sections>
+        <sections>
+            <label>Agendamento da Auditoria</label>
+            <section>Audit Schedule</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Interação</label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Audit planning/Technical Visit Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contact Us</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Deliveries Ontime</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Extrajudicial Notification Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Incident Layout</layout>
+        <sections>
+            <label>E-mails adicionais</label>
+            <section>Adictional Emails</section>
+        </sections>
+        <sections>
+            <label>Links customizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informações complementares</label>
+            <section>Information - Complemento</section>
+        </sections>
+        <sections>
+            <label>Informações da Interação</label>
+            <section>Interaction</section>
+        </sections>
+        <sections>
+            <label>Causa raiz</label>
+            <section>Root Cause</section>
+        </sections>
+        <sections>
+            <label>Passo - Ações a serem tomadas</label>
+            <section>Step - Actions to be taken</section>
+        </sections>
+        <sections>
+            <label>Passo - Evidencias do incidente</label>
+            <section>Step - Evidence of Incident</section>
+        </sections>
+        <sections>
+            <label>Passo - Validações da evidencia do incidente</label>
+            <section>Step - Validate Evident of Incident</section>
+        </sections>
+        <sections>
+            <label>Passo - Validações das ações a serem tomadas</label>
+            <section>Step - Validation of actions to be taken</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Incident Layout Supplier</layout>
+        <sections>
+            <label>E-mails adicionais</label>
+            <section>Adictional Emails</section>
+        </sections>
+        <sections>
+            <label>Links customizados</label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Informações complementares</label>
+            <section>Information - Complemento</section>
+        </sections>
+        <sections>
+            <label>Informações da Interação</label>
+            <section>Interaction</section>
+        </sections>
+        <sections>
+            <label>Causa raiz</label>
+            <section>Root Cause</section>
+        </sections>
+        <sections>
+            <label>Passo - Ações a serem tomadas</label>
+            <section>Step - Actions to be taken</section>
+        </sections>
+        <sections>
+            <label>Passo - Evidencias do incidente</label>
+            <section>Step - Evidence of Incident</section>
+        </sections>
+        <sections>
+            <label>Passo - Validações da evidencia do incidente</label>
+            <section>Step - Validate Evident of Incident</section>
+        </sections>
+        <sections>
+            <label>Passo - Validações das ações a serem tomadas</label>
+            <section>Step - Validation of actions to be taken</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Interaction Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Log Receipt Inspection</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Log Receipt Inspection Material</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Material Packing List</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Meeting Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Meeting Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Offshore Receipt Inspection</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QA Receipt Inspection</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>QA/QC Inspection</layout>
+        <sections>
+            <label></label>
+            <section>Clarification - Focal Project Engineering</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evidences</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inspection Data</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inspection Description</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inspection Recommendation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inspection Result</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Rejection/Restriction Reason</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Supplier Response</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Type of Inspection</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Quality Receipt Inspection</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inspection Result</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Send Inspection</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Supply Chain Interaction</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Receipt Inspection</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Description of Inspection</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Evidences</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Examination Date</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inspection Recommendation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inspection Result</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Rejection/Restriction Reason</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Sampling Inspection</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Type of Inspection</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Supplier contact us</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel></nameFieldLabel>
+    <quickActions>
+        <label></label>
+        <name>Approved_With_nonconformities</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Approved_Without_Nonconformities</name>
+    </quickActions>
+    <quickActions>
+        <label>Incidente cancelado.</label>
+        <name>CancelIncident</name>
+    </quickActions>
+    <quickActions>
+        <label>Cancelar Incidente</label>
+        <name>CancelIncident</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Close</name>
+    </quickActions>
+    <quickActions>
+        <label>Anexar Documento</label>
+        <name>Create_DocInteraction</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>GeneratePDF</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_QA_QC_Item</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Quality_Inspection_Receipt_Item</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Reproved</name>
+    </quickActions>
+    <quickActions>
+        <label>Incidente enviado com sucesso.</label>
+        <name>SendIncident</name>
+    </quickActions>
+    <quickActions>
+        <label>Enviar Incidente</label>
+        <name>SendIncident</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TAC_NewSupplierAnalyzeInteraction</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Action_Plan_Approved</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Action_Plan_Reproved</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Approve_Evidence</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Close_Inspection</name>
+    </quickActions>
+    <quickActions>
+        <label>Confirmar Auditoria</label>
+        <name>TW1_Confirm_Audit</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Minute_Meeting</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Reject_Evidence</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Response_Approval</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Send_Inspection_to_Supplier</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Send_meeting_invite</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Send_to_Legal_Team</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Shipping_Evidence</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Audit_Appraisal</name>
+    </quickActions>
+    <quickActions>
+        <label>Resultado e Relatório da Auditoria</label>
+        <name>TW4_Audit_Appraisal_Flow</name>
+    </quickActions>
+    <quickActions>
+        <label>Fechar Auditoria</label>
+        <name>TW4_Close_Audit</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_New_Nonconformity</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW5_Close_Inspection</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW5_Emergency_Inspection</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW5_Send_Inspection</name>
+    </quickActions>
+    <recordTypes>
+        <label>Auditoria</label>
+        <name>Audit</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Log_Receipt_Inspection_Material</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Announcements_Warnings</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Audit_Planning_Technical_Visit</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Contact_Us</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Deliveries_Ontime</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Extrajudicial_Notice</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Incidente</label>
+        <name>TW1_Incidents</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Log_Receipt_Inspection</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Material_Packing_List</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Meeting</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Offshore_Receipt_Inspection</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_QA_QC_Inspection</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_QA_Receipt_Inspection</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Receipt_Inspection</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Não é possível agendar uma auditoria com a mesma data/hora de início e fim.</errorMessage>
+        <name>AuditBeginDateEqualEndDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantChangeInspTypeWithFinalStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantChangeQualityRecInspWOChangeStatus</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível reagendar uma auditoria que já foi avaliada.</errorMessage>
+        <name>CantConfirmAuditWhenAlreadyAppraisal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantSendQRInspWOQRInspItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>A data final não pode ser menor que a data de início.</errorMessage>
+        <name>DateValidation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Este incidente já foi enviado para o fornecedor ou foi cancelado.</errorMessage>
+        <name>GarantiaFluxoIncidente</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Após o envio de um incidente não pode ser editado o registro.</errorMessage>
+        <name>IncidentBloqueioDeCamposAposEnvio</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>InspectionTypeEmergencyNoteNotFilled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Este campo é necessario quando há pessoas afetadas.</errorMessage>
+        <name>ObrigatoriedadePessoasLesionadas</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Só é possível anexar uma evidência se aprovado pelo time jurídico.</errorMessage>
+        <name>ShippingValidation</name>
+    </validationRules>
+</CustomObjectTranslation>

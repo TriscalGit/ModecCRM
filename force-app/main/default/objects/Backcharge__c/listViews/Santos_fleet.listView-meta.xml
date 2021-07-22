@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Santos_fleet</fullName>
+    <columns>NAME</columns>
+    <columns>VesselShortName__c</columns>
+    <columns>Group__c</columns>
+    <columns>Subgroup__c</columns>
+    <columns>Status__c</columns>
+    <columns>MonthComp__c</columns>
+    <columns>MonthBooked__c</columns>
+    <columns>Quantity__c</columns>
+    <columns>TotalAmountBRL__c</columns>
+    <columns>TotalAmountUSD__c</columns>
+    <columns>ChargedDate__c</columns>
+    <columns>Coments__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VesselShortName__c</field>
+        <operation>equals</operation>
+        <value>MV20,MV22,MV23,MV24,MV26</value>
+    </filters>
+    <label>Santos fleet</label>
+</ListView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TechResponsibleNAM</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT(ISBLANK(ResponsibleForNAM__c)), 
+     ISCHANGED(ResponsibleForNAM__c),  
+     TEXT(Status__c) &lt;&gt; &apos;Tech Team&apos;
+)</errorConditionFormula>
+    <errorDisplayField>ResponsibleForNAM__c</errorDisplayField>
+    <errorMessage>You only can change this field on the NAM Tech Team status</errorMessage>
+</ValidationRule>

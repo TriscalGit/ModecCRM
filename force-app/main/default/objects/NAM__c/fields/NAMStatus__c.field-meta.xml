@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NAMStatus__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(Text(ClosedOutStatus__c ) = &apos;Approved&apos;, IMAGE(&quot;/resource/nam_status/completed.png&quot; , &quot;Chat&quot;, 20,20 ), 
+   if(Text(Status__c ) = &apos;Cancelled&apos;, IMAGE(&quot;/resource/nam_status/cancelled.png&quot;, &quot;Cancelled&quot;, 20,20 ), IMAGE(&quot;/resource/nam_status/pending1.png&quot;, &quot;In Progress&quot;, 20, 20))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>NAM Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

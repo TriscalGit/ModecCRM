@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AguaradandoAvaliacao</fullName>
+    <columns>NAME</columns>
+    <columns>TCF_Status__c</columns>
+    <columns>TCF_GeneralRating__c</columns>
+    <columns>TCF_GeneralSafetyCulture__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>TOBJ_AvaliacaoHSE__c.TRT_Answered</value>
+    </filters>
+    <label>Aguardando Avaliação</label>
+</ListView>

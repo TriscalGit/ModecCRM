@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Payment_Form__c</fullName>
+    <defaultValue>&quot;Bank transfer&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Payment Form</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bank transfer</fullName>
+                <default>false</default>
+                <label>Bank transfer</label>
+            </value>
+            <value>
+                <fullName>Bank slip</fullName>
+                <default>false</default>
+                <label>Bank slip</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

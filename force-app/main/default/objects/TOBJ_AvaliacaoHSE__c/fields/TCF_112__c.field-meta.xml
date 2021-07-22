@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_112__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL($User.LanguageLocaleKey,&quot;pt_BR&quot;),&quot;Forneça as seguintes estatísticas de atividades relacionadas ao trabalho da Empresa no período, incluindo o trabalho realizado pelo pessoal da Contratada:&quot;,&quot;Provide the following activity statistics related to the Company&apos;s work in the period, including the work performed by the Contractor&apos;s personnel:&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Attach investigation report of accidents that occurred in the period</inlineHelpText>
+    <label>11.2</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

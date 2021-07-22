@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV27SPC_Task</fullName>
+    <filterScope>Queue</filterScope>
+    <label>MV27 SPC</label>
+    <queue>MV27SPC</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

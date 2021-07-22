@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ImpedirAlterarAvaliacaoFinalizada</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				RecordType.DeveloperName = &quot;TRT_Inspecao&quot;,
+				NOT(ISCHANGED(TCF_Status__c)),
+				OR(
+								ISPICKVAL(TCF_Status__c,&quot;Fechada&quot;),
+								ISPICKVAL(TCF_Status__c,&quot;Não Concluída&quot;)
+							)
+)</errorConditionFormula>
+    <errorMessage>Esta Avaliação não pode mais ser alterada.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Financial_2_Senegal_TW1_Step</fullName>
+    <columns>NAME</columns>
+    <columns>TW1_Status__c</columns>
+    <columns>TW1_Subject__c</columns>
+    <columns>TW1_Vendor__c</columns>
+    <columns>TW1_Request__c</columns>
+    <filterScope>Queue</filterScope>
+    <label>Financial 2 Senegal - All</label>
+    <queue>Financial_2_Senegal</queue>
+    <sharedTo>
+        <role>Finance_Step_2</role>
+        <role>Finance_Step_2_Senegal</role>
+    </sharedTo>
+</ListView>

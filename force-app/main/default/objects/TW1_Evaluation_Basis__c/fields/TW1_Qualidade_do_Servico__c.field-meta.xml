@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Qualidade_do_Servico__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF(TW1_1_3_1__c = &apos;N/A&apos;, 0, VALUE( TW1_1_3_1__c)) + IF(TW1_1_3_2__c = &apos;N/A&apos;, 0, VALUE(TW1_1_3_2__c) ) + IF(TW1_1_3_3__c = &apos;N/A&apos;, 0, VALUE(TW1_1_3_3__c)))
+
+/
+
+(IF(TW1_1_3_1__c = &apos;N/A&apos;, 0, 1) + IF(TW1_1_3_2__c = &apos;N/A&apos;, 0, 1) + IF(TW1_1_3_3__c = &apos;N/A&apos;, 0, 1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Qualidade do Serviço</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

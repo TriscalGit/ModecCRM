@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PO_Review_Form</fullName>
+    <columns>NAME</columns>
+    <columns>TW1_Vendor__c</columns>
+    <columns>TW1_PO__c</columns>
+    <columns>TW1_Purchase_Item__c</columns>
+    <columns>T_Service_Line__c</columns>
+    <columns>T_Status_Focal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>TW1_Request__c.T_PO_Review_Form</value>
+    </filters>
+    <label>PO Review Form</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

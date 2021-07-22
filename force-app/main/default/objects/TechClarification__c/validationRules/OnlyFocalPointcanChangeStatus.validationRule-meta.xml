@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OnlyFocalPointcanChangeStatus</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ISCHANGED( ReviewStatus__c ),
+  $User.Id &lt;&gt;  FocalPoint__r.Id 
+)</errorConditionFormula>
+    <errorMessage>Only the person assigned as the &quot;Focal Point&quot; can change the &quot;Review Status&quot;</errorMessage>
+</ValidationRule>

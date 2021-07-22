@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ObligateDailyRateBRL</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+  		ISPICKVAL(Type__c, &apos;Services&apos;),
+			 ISBLANK(ActualDailyRateBRL__c) 	 
+)</errorConditionFormula>
+    <errorMessage>The Actual Daily Rate (BRL) field must be filled.</errorMessage>
+</ValidationRule>

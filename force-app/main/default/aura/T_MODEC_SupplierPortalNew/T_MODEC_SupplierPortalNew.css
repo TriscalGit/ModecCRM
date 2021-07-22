@@ -1,0 +1,685 @@
+.THIS body {
+    background-color: white;
+}
+
+.THIS .header {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    z-index: 1;
+    -webkit-box-shadow: 0px -2px 10px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -2px 10px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px -2px 10px -4px rgba(0,0,0,0.75);
+}
+
+.THIS .headerButtons {
+    width: 100%;
+    line-height: 48px;
+}
+
+.THIS .souFornecedorButton {
+    background: #0D509D;
+    color: white;
+    float: right;
+    font-size: 18px;
+    border: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 2%;
+    margin-left: 3%;
+    transform: translate(0,32%);
+}
+
+.THIS .navbar {
+    overflow: hidden;
+    background-color: white;
+    float: right; 
+    padding-left: 2%;
+    padding-right: 3%;
+    display: flex;
+    text-align: center;
+    line-height: 52px;
+}
+
+.THIS .siteLanguage {
+    float: right;
+    overflow: hidden;
+    background-color: white;
+    line-height: 52px;
+    margin-left: 2%;
+}
+
+.THIS .siteLanguage a{
+    font-size: 14px;
+    color: #808081;
+    text-align: center;
+    text-decoration: none;
+}
+
+.THIS .navbar a {
+    float: right;
+    font-size: 14px;
+    color: #808081;
+    text-align: center;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.THIS .dropdown {
+    float: right;
+    overflow: hidden;
+    margin-left: 20px;
+    background: white;
+    line-height: 48px;
+}
+
+.THIS .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #808081;
+    background: white;
+}
+
+.THIS .languageButtons {
+    float: right;
+    border: 0px;
+    background: white;
+    color: #808081;
+    font-weight: bold;
+    line-height: 52px;
+}
+
+.THIS .imagesPortal {
+    width: 100%;
+}
+
+.THIS .modecFooter {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.THIS .modecFooterPag2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px; 
+}
+
+.THIS .modecFooterPag3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 130px; 
+}
+
+.THIS .youtube {
+    float: left;
+    height: 35px;
+    width: auto;
+    top: 50%;
+    transform: translateY(170%);
+    margin-left: 40px;
+}
+
+.THIS .contactUs {
+    float: left;
+    top: 50%;
+    transform: translateY(360%);
+    margin-left: 35px;
+}
+
+.THIS .privacy {
+    float: left;
+    top: 50%;
+    transform: translateY(360%);
+    margin-left: 35px;
+}
+
+.THIS .terms {
+    float: left;
+    top: 50%;
+    transform: translateY(360%);
+    margin-left: 35px;
+}
+
+.THIS .siteMap {
+    float: left;
+    top: 50%;
+    transform: translateY(360%);
+    margin-left: 35px;
+}
+
+.THIS .copyright-text {
+    float: right;
+    margin-right: 40px;
+    color: white;
+    top: 50%;
+    transform: translateY(360%);
+}
+
+.THIS .container1 {
+    padding-top: 70px;
+    height: 0px;
+}
+
+.THIS .container2 {
+    padding-top: 70px;
+    background: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+.THIS .containerPag3 {
+    padding-top: 70px;
+    background: white;
+    position: relative;
+    min-height: 100vh;
+}
+
+.THIS .container3 {
+    height: 0px;
+    background: white;
+}
+
+.THIS .registerSuccess {
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.THIS .registerFailure {
+    background: white;
+    width: 100%;
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.THIS .registerSuccessText {
+    font-size: 22px;
+    color: #6d6e71;
+    letter-spacing: -1px;
+    line-height: normal;
+}
+
+.THIS .registerFailureText {
+    font-size: 22px;
+    color: #6d6e71;
+    letter-spacing: -1px;
+    line-height: normal;
+}
+
+.THIS .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+}
+
+.THIS .dropdown-content a {
+    float: none;
+    color: #808081;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: block;
+    justify-content: center;
+    line-height: 30px;
+}
+
+.THIS .dropdown-content a:hover {
+    background-color: #BABABB;
+    color: white;
+}
+
+.THIS .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.THIS .imageHeaderLogo {
+    width: 140px;
+    height: auto;
+    float: left;
+    transform: translate(0,37%);
+    margin-left: 25%;
+}
+
+.THIS .thinStyleBar {
+    text-align: center;
+    width: 100%;
+    background-color: #ED242B;
+    height: 20px;
+}
+
+.THIS .modecImgBig {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+.THIS .modecVideoTitle1 {
+    color: #ed1942;
+    font-size: 36px; 
+    font-weight: bold;
+}
+
+.THIS .modecVideoTitle2 {
+    color: #064f9c;
+    font-size: 36px; 
+    font-weight: bold;
+}
+
+.THIS .modecVideoBig {
+    padding-top: 60px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: center;
+}
+
+.THIS .modecText {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: justify;
+}
+
+.THIS .modecTitle {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+
+
+.THIS .modecForm {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    text-align: justify;
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+
+.THIS .modecFormInputs {
+    padding-left: 12%;
+    padding-right: 12%;
+    width: 100%;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+.THIS .modecFormContPag3 {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+    padding-bottom: 150px;
+}
+
+.THIS .modecFormCont {
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    overflow: hidden;
+}
+
+.THIS .botoesPag2 {
+    margin-top: 70px; 
+    margin-bottom: 50px; 
+    overflow: hidden;
+}
+
+.THIS .slds-align_absolute-center {
+    float: right;
+    line-height: 54px;
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #BD3237;
+}
+
+.THIS .bePartner {
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.THIS .formHeader {
+    padding-top: 50px;
+    letter-spacing: -1px;
+}
+
+.THIS .formHeaderPag3 {
+    padding-top: 50px;
+    letter-spacing: -1px;
+}
+
+.THIS .moreText {
+    padding-left: 12%;
+    padding-right: 12%;
+    letter-spacing: -1px;
+}
+
+.THIS .etapaCadastroText {
+    padding-left: 12%;
+    padding-right: 12%;
+    letter-spacing: -1px;
+}
+
+.THIS .etapaCadastroRow {
+    display: flex;
+}
+
+.THIS .etapaCadastroColumn1 {
+    flex: 45%;
+}
+
+.THIS .etapaCadastroColumn2 {
+    flex: 45%;
+}
+
+.THIS .faqText {
+    display: flex;
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+.THIS .formText {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: -1px;
+    text-align: justify;
+}
+
+.THIS .jaFornecedor {
+    border: 0;
+    font-size: 30px;
+    background-color: #A7A9AC;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    float: right;
+    margin-right: 40px;
+}
+
+.THIS .parceiroButton {
+    border: 0;
+    font-size: 30px;
+    background-color: #ED1942;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    float: right;
+    margin-right: 12%;
+}
+
+.THIS .continuarButton {
+    border: 0;
+    font-size: 30px;
+    background-color: #ED1942;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    float: right;
+}
+
+.THIS .concluirButton {
+    border: 0;
+    font-size: 30px;
+    background-color: #ED1942;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: center;
+    float: right;
+}
+
+.THIS .voltarButton {
+    border: 0;
+    font-size: 30px;
+    background-color: #A7A9AC;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    float: right;
+    margin-right: 40px;
+}
+
+.THIS .RetornarPagAnteriorButton {
+    border: 0;
+    font-size: 30px;
+    background-color: #A7A9AC;
+    color: white;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.THIS .pag3LeftRightButtons {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    width: 12%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.THIS .pag3buttons {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.THIS .limparDisabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.THIS .parceiroButton:hover {
+    background-color: #ED242B;
+}
+
+.THIS .continuarButton:hover {
+    background-color: #ED242B;
+}
+
+.THIS .jaFornecedor:hover {
+    background-color: #939496;
+}
+
+.THIS .concluirButton:hover {
+    background-color: #ED242B;
+}
+
+.THIS .voltarButton:hover {
+    background-color: #939496;
+}
+
+.THIS .rightArrowButton:hover {
+    color: #939496;
+}
+.THIS .leftArrowButton:hover {
+    color: #939496;
+}
+
+.THIS .slds-form-element__label {
+    color: #6D6E71;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.THIS .modecFormInputHalfWidth {
+    color: #6D6E71;
+    width: 45%;
+    font-size: 15px;
+    display: inline-block;
+    margin: 0;
+}
+
+.THIS .modecFormInputFullWidth {
+    color: #6D6E71;
+    width: 100%;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.THIS .threeInputsLine {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.THIS .modecFormInputThirdWidth {
+    color: #6D6E71;
+    width: 30%;
+    font-size: 15px;
+}
+
+.THIS .modecFormInputThirdPage {
+    padding-top: 30px;
+    color: #6D6E71;
+    width: 44%;
+    font-size: 15px;
+}
+
+.THIS .modecFormInputThirdPageSearch {
+    color: #6D6E71;
+    width: 44%;
+    font-size: 15px;
+}
+
+.THIS .rightArrowButton {
+    color: #BCBDC0;
+    background-color: white;
+    border: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.THIS .leftArrowButton {
+    background-color: white;
+    color: #BCBDC0;
+    border: 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.THIS .thinStyleBarInputs {
+    margin-top: 30px;
+    margin-left: 0 auto;
+    text-align: center;
+    width: 100%;
+    background-color: #f5f2e4;
+    height: 6px;
+}
+
+.THIS .list-left {
+    margin-top: 8px;
+    width: 44%;
+    height: 350px;
+    border: solid #E9EAEB 3px;
+    background: white;
+    font-size: 20px;
+    float: left;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.THIS .list-right {
+    margin-top: 8px;
+    width: 44%;
+    height: 350px;
+    border: solid #E9EAEB 3px;
+    background: white;
+    font-size: 20px;
+    float: right;
+    overflow: auto;
+    overflow-y: auto;
+}
+
+.THIS .list-left li,
+.THIS .list-right li {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.THIS .highlightedLi {
+    background-color: #E9EAEB;
+    color: white;
+}
+
+.THIS .disabledInputOption {
+    background-color: #F1F1F1;
+    position: sticky;
+    color: #6D6E71;
+    top: 0;
+}
+
+.THIS.slds-spinner_container {
+    z-index: 10000;
+    position: fixed;
+}
+
+.THIS .slds-carousel__content {
+    display: none;
+}
+
+.THIS .slds-carousel__autoplay {
+    display: none;
+}

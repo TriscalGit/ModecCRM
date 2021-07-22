@@ -1,0 +1,151 @@
+<!--
+  @File Name          : T_MODEC_CreateDoc.cmp
+  @Description        : LP Mock para desenvolvimento de outros objetos
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 12/12/2019 12:37:45
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    09/12/2019   Rafael Hadama     Initial Version
+-->
+
+<aura:component controller="T_MODEC_CreateDoc_CTRL"
+                implements="force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes"
+                access="global">
+    <aura:attribute name="container1" type="Boolean" default="true" />
+    <aura:attribute name="container2" type="Boolean" default="false" />
+    <aura:handler value="{!this}" name="init" action="{!c.init}" />
+    <aura:attribute name="disabled" type="Boolean" default="false" />
+    <aura:attribute name="saved" type="Boolean" default="false" />
+    <aura:attribute name="showSpinner" type="Boolean" default="true" />
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="documentationId" type="String" />
+    <aura:attribute name="listRecTypesDocumentation" type="List" />
+    <aura:attribute name="mapRecordTypes" type="Map" />
+    <aura:attribute name="recordTypeIdChecked" type="String" default="" />
+    <aura:attribute name="RecordtypeSelecionado" type="String" default="" />
+    <aura:attribute name="recordTypeName" type="String" default="" />
+    <aura:attribute name="listAttachments" type="List" />
+    <aura:attribute name="SObjectType" type="String" default=""/>
+    <aura:attribute name="SObjectRecord" type="SObject"/>
+    <aura:attribute name="isDisplayError" type="Boolean" default="false"/>
+    <aura:attribute name="isGenericError" type="Boolean" default="false"/>
+    
+    <aura:attribute name="accept" type="List"
+                    default="['.pdf','.docx','.doc','.xlsx','.xls','.xlsm','.txt','.mpp','.ppt','.pptx','.jpg','.jpeg','.png','.bmp']" />
+    <!--<aura:attribute name="createDocumentationDto" type="Object" />-->
+    
+    <html>
+        
+        <body>
+            <aura:if isTrue="{!!v.saved}">
+                
+                <aura:if isTrue="{!v.container1}">
+                    <div class="container1">
+                        <div class="headerTopLine"></div>
+                        <h1 class="headerTextInfo"> <span class="slds-page-header__title slds-truncate" title="New Documentation">
+                            New Documentation</span></h1>
+                        <div class="checkboxList">
+                            <!--<aura:iteration items="{!v.listRecTypesDocumentation}" var="item" indexVar="idx">
+                  				<lightning:input type="checkbox" value="{!item.value}" label="{!item.label}"/>
+              					</aura:iteration>-->
+                            
+                            <aura:if isTrue="{!v.isDisplayError}">
+                                <div class="CssErrorView">
+                                    <table style="width: 90%;margin-left: 5%;margin-right: 5%;">
+                                        <tr>
+                                            <td>
+                                                <table style="border: 0px; align-text: left;">
+                                                    <tr>
+                                                        <td style="text-align: center; font-weight: bold;">
+                                                            <aura:if isTrue="{!v.SObjectType == 'TOBJ_AvaliacaoHSE__c' ? true : false}">
+                                                                {!$Label.c.Warning}
+                                                            </aura:if>
+                                                            <aura:if isTrue="{!v.isGenericError}">
+                                                                Error
+                                                            </aura:if>
+                                                        </td>
+                                                    </tr>
+                                                    <tr style="border: 0px;">
+                                                        <td style="text-align: center;">
+                                                            <aura:if isTrue="{!v.SObjectType == 'TOBJ_AvaliacaoHSE__c' ? true : false}">
+                                                                {!$Label.c.WarningCreateDocumentComponent}
+                                                            </aura:if>
+                                                            <aura:if isTrue="{!v.isGenericError}">
+                                                                You can not create new Documentations for closed Requests
+                                                            </aura:if>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </aura:if>
+                            <lightning:radioGroup name="radioGroupRequired" label="Choose one option."
+                                                  options="{! v.listRecTypesDocumentation }" value="{! v.RecordtypeSelecionado }" type="radio"
+                                                  onchange="{! c.handleChangerecType }" required="true" />
+                        </div>
+                        <aura:if isTrue="{!!v.isGenericError}">
+                            <input type="button" class="nextButton" value="Next" onclick="{!c.SwitchToPage2}" />
+                        </aura:if>
+                    </div>
+                </aura:if>
+                
+                
+                
+                <aura:if isTrue="{!v.container2}">
+                    <div class="container2">
+                        <aura:if isTrue="{!v.showSpinner}">
+                            <lightning:spinner />
+                        </aura:if>
+                        <div class="headerInformation slds-border_right slds-border_left">
+                            <div class="headerTopLineInformation"></div>
+                            <h1 class="headerTextInfo"> <span class="slds-page-header__title slds-truncate" title="New Documentation">
+                                Document {!v.recordTypeName} </span></h1>
+                        </div>
+                        
+                        <div class="slds-box">
+                            <!-- GUFS_Merge -->
+                            <aura:if isTrue="{!v.SObjectRecord.RecordType.DeveloperName == 'T_PO_Review_Form' ? true : false}">
+                                <div style="text-align: center; color: red;">
+                                    You can only upload a ZIP file for PO Review Form.
+                                </div>
+                            </aura:if>
+                            
+                            <lightning:textarea aura:id="Commentfield" label="Comments" name="reason" required="true"
+                                                placeholder="Write here..." />
+                            <div class="slds-box">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="">
+                                            <lightning:fileUpload name="fileUploader" label="File Upload" multiple="true" accept="{!v.accept}"
+                                                                  recordId="{!v.documentationId}" onuploadfinished="{!c.handleUploadFinished}" />
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2 ">
+                                        <div class="">
+                                            <aura:iteration items="{!v.listAttachments}" var="item" indexVar="idx">
+                                                {!item} <br/>
+                                            </aura:iteration>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <aura:if isTrue="{!!v.isGenericError}">
+                            <input type="button" class="backButton" value="Save" onclick="{!c.saveDocumentation}" />
+                            <input type="button" class="backButton" value="Back" onclick="{!c.SwitchBackToPage1}" />
+                        </aura:if>
+                    </div>
+                </aura:if>
+                
+                <aura:set attribute="else">
+                    <p>Saved! New record id is {!v.recordId}</p>
+                </aura:set>
+            </aura:if>
+        </body>
+    </html>
+</aura:component>

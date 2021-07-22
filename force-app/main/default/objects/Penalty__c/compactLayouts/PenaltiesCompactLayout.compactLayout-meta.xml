@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PenaltiesCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>VesselShortName__c</fields>
+    <fields>Status__c</fields>
+    <fields>DeductionDate__c</fields>
+    <fields>AmountUSD__c</fields>
+    <fields>AmountChargedUSD__c</fields>
+    <label>Penalties Compact Layout</label>
+</CompactLayout>

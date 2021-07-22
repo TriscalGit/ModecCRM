@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV22</fullName>
+    <columns>NAME</columns>
+    <columns>VesselShortName__c</columns>
+    <columns>ReferenceMonth__c</columns>
+    <columns>RDOsDailyRateSum__c</columns>
+    <columns>StartDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VesselShortName__c</field>
+        <operation>equals</operation>
+        <value>MV22</value>
+    </filters>
+    <label>MV22</label>
+</ListView>

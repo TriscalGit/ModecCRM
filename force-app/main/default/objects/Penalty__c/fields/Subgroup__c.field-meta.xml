@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Subgroup__c</fullName>
+    <externalId>false</externalId>
+    <label>Subgroup</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Annex E</fullName>
+                <default>false</default>
+                <label>Annex E</label>
+            </value>
+            <value>
+                <fullName>Authorities</fullName>
+                <default>false</default>
+                <label>Authorities</label>
+            </value>
+            <value>
+                <fullName>CO2 flaring</fullName>
+                <default>false</default>
+                <label>CO2 flaring</label>
+            </value>
+            <value>
+                <fullName>Crew</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Crew</label>
+            </value>
+            <value>
+                <fullName>Equipment</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Equipment</label>
+            </value>
+            <value>
+                <fullName>Gas flaring</fullName>
+                <default>false</default>
+                <label>Gas flaring</label>
+            </value>
+            <value>
+                <fullName>Gas Humidity</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Gas Humidity</label>
+            </value>
+            <value>
+                <fullName>HSE</fullName>
+                <default>false</default>
+                <label>HSE</label>
+            </value>
+            <value>
+                <fullName>Local Content</fullName>
+                <default>false</default>
+                <label>Local Content</label>
+            </value>
+            <value>
+                <fullName>Oil spill</fullName>
+                <default>false</default>
+                <label>Oil Spill</label>
+            </value>
+            <value>
+                <fullName>Others</fullName>
+                <default>false</default>
+                <label>Others</label>
+            </value>
+            <value>
+                <fullName>Out of Specification</fullName>
+                <default>false</default>
+                <label>Out of Specification</label>
+            </value>
+            <value>
+                <fullName>System/Equipment</fullName>
+                <default>false</default>
+                <label>System/Equipment</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

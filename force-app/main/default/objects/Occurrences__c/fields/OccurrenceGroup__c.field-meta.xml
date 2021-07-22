@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OccurrenceGroup__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>Occurrence Group</label>
+    <referenceTo>OccurrenceGroup__c</referenceTo>
+    <relationshipLabel>Occurrences</relationshipLabel>
+    <relationshipName>Occurrences</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

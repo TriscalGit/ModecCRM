@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Quality_Receipt_Inspection_Submitted</fullName>
+    <columns>NAME</columns>
+    <columns>TW1_Supplier__c</columns>
+    <columns>TW5_Inspection_Type__c</columns>
+    <columns>TW5_Quality_Receipt_Status__c</columns>
+    <columns>TW1_Purchase_Order__c</columns>
+    <columns>TW1_Invoice__c</columns>
+    <columns>TW1_Facility__c</columns>
+    <columns>TW5_Send_Inspection_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>TW1_Interaction__c.TW1_Receipt_Inspection</value>
+    </filters>
+    <filters>
+        <field>TW5_Quality_Receipt_Status__c</field>
+        <operation>equals</operation>
+        <value>Submitted</value>
+    </filters>
+    <label>Quality Receipt Inspection - Submitted</label>
+    <sharedTo>
+        <role>Administrator</role>
+        <role>Inspection</role>
+        <role>Integrity</role>
+    </sharedTo>
+</ListView>

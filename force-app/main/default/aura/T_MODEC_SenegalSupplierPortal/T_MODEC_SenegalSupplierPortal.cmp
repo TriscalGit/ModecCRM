@@ -1,0 +1,548 @@
+<!--
+  @File Name          : T_MODEC_SenegalSupplierPortal.cmp
+  @Description        : 
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 10-23-2020
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    01/07/2020   Rafael Hadama     Initial Version
+-->
+<aura:component controller="T_MODEC_SenegalCadastroCtrl"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global">
+    <aura:attribute name="container1" type="Boolean" default="true" />
+    <aura:attribute name="container2" type="Boolean" default="false" />
+    <aura:attribute name="container3" type="Boolean" default="false" />
+    <aura:attribute name="carregando" type="Boolean" default="false" />
+    <aura:attribute name="containerCatCheck" type="Boolean" default="false" />
+
+    <aura:attribute name="RegexEmailValidation" type="String" default=".+@.+\..+"/>
+    <aura:attribute name="messageWhenPatternMismatchEmail" type="String" default="Veuillez vérifier l'e-mail tapé."/>messageWhenValueMissing
+    <aura:attribute name="messageWhenValueMissing" type="String" default="Veuillez Saisir."/>
+    <aura:attribute name="Sucesso" type="Boolean" default="false" />
+    <aura:attribute name="Erro" type="Boolean" default="false" />
+
+    <aura:attribute name="Categorias" type="String[]" />
+    <aura:attribute name="MapaCategorias" type="Map" />
+    <aura:attribute name="listaDir" type="List" />
+    <aura:attribute name="ModelolistaEsq" type="List" />
+    <aura:attribute name="ModelolistaDir" type="List" />
+
+    <aura:attribute name="cadastroFornecedorDto" type="Object" />
+
+    <aura:attribute name="paisSelecionado" type="string" default="Senegal" />
+    <aura:attribute name="regimeExclusivo" type="string" />
+    <!--Map criado para alimentar valores de picklist-->
+    <aura:attribute name="mapPicklistValues" type="Map" />
+    <aura:attribute name="currentMapPicklistValues" type="Map" />
+    <aura:attribute name="backgroundImageURL" type="String" default="" />
+    <!--background do footer-->
+    <aura:handler value="{!this}" name="init" action="{!c.init}" />
+
+    <!-- Implementando segundo Madruga regra-->
+    <aura:attribute name="listSelecionadas" type="List" default="" />
+    <aura:attribute name="categoriaSelecionada" type="String" default="" />
+    <aura:attribute name="mostrarCategory" type="Boolean" default="false" />
+
+    <aura:attribute name="listaCompletaPorCategoria" type="Map" default="{}" />
+    <aura:attribute name="mapCategoriasEsquerdoCorrente" type="Map" default="{}" />
+    <aura:attribute name="quickSearchText" type="String" default="" />
+
+    <aura:attribute name="listaCategoriaSelecionadas" type="Map" default="{}" />
+
+    <!-- Metadata Object -->
+    <aura:attribute name="SupplierMetadata" type="Object" />
+    <aura:attribute name="carouselList" type="List" />
+
+    <!-- Novo objeto Supplier Portal Content -->
+    <aura:attribute name="CurrentLanguage" type="String" default="French" />
+    <aura:attribute name="CurrrentSupplierContent" type="Object" />
+    <aura:attribute name="MapSupplierContent" type="Map" />
+
+    <aura:attribute name="ErroCNPJ" type="Boolean" default="false" />
+    <aura:attribute name="ErroCNPJMessage" type="String" default="CNPJ Inválido." />
+
+    <aura:attribute name="IsFrench" type="Boolean" default="true" />
+
+    <aura:attribute name="TaxpayerField" type="Boolean" default="false" />
+
+    <html>
+
+    <body>
+        <div class="header">
+            <div class="thinStyleBar"> </div>
+            <div style="height: 52px; float: left; width: 184px">
+                <a href="https://dev-newsupplierportal.cs34.force.com/"><img class="imageHeaderLogo"
+                        src="{!$Resource.modecLogo}" /></a>
+            </div>
+            <div class="headerButtons">
+                <input type="button" value="{!v.CurrrentSupplierContent.TW1_Sou_Fornecedor__c}"
+                    class="souFornecedorButton" onclick="{!c.gotoURL}"></input>
+                <div class="siteLanguage">
+                    <input type="button" class="languageButtons" value="FR" style="float:right; font-weight: bold;"
+                        onclick="{!c.ChangePortalLanguage}"></input>
+                    <p style="float:right; font-weight: bold; color: #808081;"> | </p>
+                    <input type="button" class="languageButtons" value="EN" style="float:right; font-weight: bold;"
+                        onclick="{!c.ChangePortalLanguage}"></input>
+                </div>
+                <div class="navbar">
+                    <a
+                        href="{!v.CurrrentSupplierContent.TW1_About_Modec_URL__c}">{!v.CurrrentSupplierContent.TW1_About_Modec__c}</a>
+                    <a
+                        href="{!v.CurrrentSupplierContent.TW1_Compliance_URL__c}">{!v.CurrrentSupplierContent.TW1_Compliance__c}</a>
+                    <a
+                        href="{!v.CurrrentSupplierContent.TW1_T_and_C_URL__c}">{!v.CurrrentSupplierContent.TW1_T_and_C__c}</a>
+                    <a
+                        href="{!v.CurrrentSupplierContent.TW1_HSSEQ_URL__c}">{!v.CurrrentSupplierContent.TW1_HSSEQ__c}</a>
+                    <div class="dropdown">
+                        <button type="button"
+                            class="dropbtn">{!v.CurrrentSupplierContent.TW1_Seja_um_Fornecedor__c}</button>
+                        <div class="dropdown-content">
+                            <a
+                                href="{!v.CurrrentSupplierContent.TW1_Registration_steps_URL__c}">{!v.CurrrentSupplierContent.TW1_Etapas_de_Cadastro__c}</a>
+                            <a
+                                href="{!v.CurrrentSupplierContent.TW1_Ethic_URL__c}">{!v.CurrrentSupplierContent.TW1_Etica__c}</a>
+                            <a
+                                href="{!v.CurrrentSupplierContent.TW1_Code_of_conduct_URL__c}">{!v.CurrrentSupplierContent.TW1_Codigo_de_conduta__c}</a>
+                            <a
+                                href="{!v.CurrrentSupplierContent.TW1_Manuals_URL__c}">{!v.CurrrentSupplierContent.TW1_Manuais__c}</a>
+                            <a
+                                href="{!v.CurrrentSupplierContent.TW1_FAQ_URL__c}">{!v.CurrrentSupplierContent.TW1_FAQ__c}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTAINER 1 -->
+        <aura:if isTrue="{!v.container1}">
+            <div class="container1" id="container1">
+                <div class="modecImgBig">
+                    <!--<img src="/resource/modecImages/modecImgs/besupplier.png" />-->
+                    <!--<img class="imagesPortal" src="{!v.CurrrentSupplierContent.TW1_Cover_Picture__c}" />-->
+                    <div class="modecVideoBig">
+                        <p><span class="modecVideoTitle1">Separated as never before.</span><span
+                                class="modecVideoTitle2"> Together as always.</span></p>
+                        <iframe width="100%" height="600"
+                            src="https://www.youtube.com/embed/qHx7p21Jvbo?autoplay=1"></iframe>
+                    </div>
+                </div>
+                <div class="modecText">
+                    <h1 style="padding-top: 70px; ">
+                        <ui:outputRichText aura:id="outputRT" class="modecTitle"
+                            value="{!v.CurrrentSupplierContent.TW1_Welcome_Title__c}" />
+                    </h1>
+                    <div class="moreText" style="margin-top: 30px; margin-bottom: 90px;">
+                        <ui:outputRichText aura:id="outputRT"
+                            value="{!v.CurrrentSupplierContent.TW1_Welcome_Content__c}" />
+                    </div>
+                    <lightning:carousel disableAutoRefresh="false" disableAutoScroll="false" class="carousel">
+                        <aura:iteration items="{!v.carouselList}" var="s">
+                            <lightning:carouselImage src="{!s}"> </lightning:carouselImage>
+                        </aura:iteration>
+                    </lightning:carousel>
+                    <br />
+                    <h1 class="bePartner" style="margin-top: 30px;">
+                        <ui:outputRichText aura:id="outputRT"
+                            value="{!v.CurrrentSupplierContent.TW1_Stages_Title__c}" />
+                    </h1>
+                    <br />
+                    <div class="etapaCadastroText" style="margin-top: 30px; margin-bottom: 90px;">
+                        <div class="etapaCadastroRow">
+                            <div class="etapaCadastroColumn1" style="padding-right: 40px;">
+                                <ui:outputRichText aura:id="outputRT"
+                                    value="{!v.CurrrentSupplierContent.TW1_Stage_Content_Left__c}" />
+                            </div>
+                            <div class="etapaCadastroColumn2" style="padding-left: 40px;">
+                                <ui:outputRichText aura:id="outputRT"
+                                    value="{!v.CurrrentSupplierContent.TW1_Stage_Content_Right__c}" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="{!v.CurrrentSupplierContent.TW1_Bottom_Picture__c}" />
+
+                    <h1 class="bePartner" style="margin-top: 70px;">
+                        <ui:outputRichText aura:id="outputRT" value="{!v.CurrrentSupplierContent.TW1_FAQ_Title__c}" />
+                    </h1>
+                    <br />
+                    <div class="faqText">
+                        <ui:outputRichText aura:id="outputRT" value="{!v.CurrrentSupplierContent.TW1_FAQ_Content__c}" />
+                    </div>
+                    <div class="botoesPrimeiraPag"
+                        style="overflow: hidden; width: 100%; margin-top: 80px; margin-bottom: 90px;">
+                        <input type="button" class="parceiroButton"
+                            value="{!v.CurrrentSupplierContent.TW1_Quero_ser_Fornecedor__c}"
+                            onclick="{!c.SwitchToPage2}" />
+                        <input type="button" class="jaFornecedor"
+                            value="{!v.CurrrentSupplierContent.TW1_Ja_sou_Fornecedor__c}" onclick="{!c.gotoURL}" />
+                    </div>
+                    <footer class="modecFooter"
+                        style="{!'min-height: 130px; background:' + v.backgroundColor + ' url(' + v.backgroundImageURL +');background-size: cover'}">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                            <p><a href="{!v.CurrrentSupplierContent.TW1_Youtube_URL__c}"><img class="youtube"
+                                        src="{!$Resource.modecYTIcon}" /></a></p>
+                            <p class="contactUs"><a style="color: white;" href="#">Contact Us</a></p>
+                            <p class="privacy"><a style="color: white;" href="#">Privacy Policy</a></p>
+                            <p class="terms"><a style="color: white;" href="#">Terms &amp; Conditions</a></p>
+                            <p class="siteMap"><a style="color: white;" href="#">Site Map</a></p>
+                            <p class="copyright-text">Copyright &copy; MODEC, Inc. All Rights Reserved.</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </aura:if>
+        <!-- FIM CONTAINER 1 -->
+
+        <!-- CONTAINER 2 -->
+        <aura:if isTrue="{!v.container2}">
+            <div class="container2">
+                <div class="modecForm">
+                    <div class="modecFormInputs">
+
+                        <ui:outputRichText aura:id="outputRT" class="formHeader"
+                            value="{!v.CurrrentSupplierContent.TW1_Cadastro_novo_fornecedor_Pag2__c}" />
+
+                        <ui:outputRichText aura:id="outputRT" class="formText"
+                            value="{!v.CurrrentSupplierContent.TW1_Cadastro_novo_fornecedor_txt_Pag2__c}" />
+
+                        <div id="InputFormPage2" class="row" style="padding-top: 20px; overflow: auto;">
+                            <!-- <lightning:input aura:id="inputDetect" class="modecFormInputHalfWidth" type="text"
+                                name="input1" required="true" label="{!v.CurrrentSupplierContent.TW1_CNPJ__c}"
+                                value="{!v.cadastroFornecedorDto.CpfCnpj}" messageWhenValueMissing="Veuillez Saisir." /> -->
+                            <lightning:select aura:id="inputDetect" value="{!v.paisSelecionado}"
+                                label="{!v.CurrrentSupplierContent.TW1_Pais__c}" class="modecFormInputHalfWidth"
+                                required="true" messageWhenValueMissing="{!v.messageWhenValueMissing}"
+                                onchange="{!c.ChangeCountryOption}" 
+                                              >
+                                <aura:if  isTrue="{!v.CurrentLanguage != 'English'}" >
+                                    <option value="">Choisissez une option</option>
+                                </aura:if>
+                                <aura:if  isTrue="{!v.CurrentLanguage == 'English'}" >
+                                    <option value="">Chose an option</option>
+                                </aura:if>
+                                <aura:iteration items="{!v.currentMapPicklistValues.TW1_Country__c}" var="s">
+                                    <option value="{!s.value}">{!s.label}</option>
+                                </aura:iteration>
+                            </lightning:select>
+
+                            <!-- TODO: Quando entrar o regime exclusivo de Senegal tem que descomentar o Select abaixo -->
+                                <lightning:select aura:id="inputDetect" value="{!v.cadastroFornecedorDto.RegimeExclusivo}"
+                                                  label="{!v.CurrrentSupplierContent.RegimeExclusivo__c}" class="modecFormInputHalfWidth SecondColumnField"
+                                                  required="true" messageWhenValueMissing="{!v.messageWhenValueMissing}" 
+                                                  onchange="">
+                                        <aura:if  isTrue="{!v.CurrentLanguage != 'English'}" >
+                                            <option value="">Choisissez une option</option>
+                                        </aura:if>
+                                        <aura:if  isTrue="{!v.CurrentLanguage == 'English'}" >
+                                            <option value="">Chose an option</option>
+                                        </aura:if>
+                                    <aura:if isTrue="{!v.paisSelecionado != 'Senegal'}">
+                                        <aura:if  isTrue="{!v.CurrentLanguage != 'English'}">
+                                            <option value="Non-Exclusive Regime">Régime Non-Exclusif</option>
+                                        </aura:if>
+                                        <aura:if  isTrue="{!v.CurrentLanguage == 'English'}" >
+                                            <option value="Non-Exclusive Regime">Non-Exclusive Regime</option>
+                                        </aura:if>
+                                    </aura:if>
+                                    <aura:if  isTrue="{!v.paisSelecionado == 'Senegal'}" >
+                                        <aura:iteration items="{!v.currentMapPicklistValues.RegimeExclusivo__c}" var="s">
+                                            <option value="{!s.value}">{!s.label}</option>
+                                        </aura:iteration>
+                                    </aura:if>
+                                </lightning:select>
+
+                            <aura:if isTrue="{!v.TaxpayerField}">
+                                <lightning:input aura:id="inputDetect" class="modecFormInputFullWidth" type="text"
+                                    name="input1" required="true" label="{!v.CurrrentSupplierContent.TW3_Taxpayer__c}"
+                                    value="{!v.cadastroFornecedorDto.TaxPayerNumber}"
+                                    messageWhenValueMissing="{!v.messageWhenValueMissing}" />
+                                <aura:set attribute="else">
+                                    <lightning:input aura:id="inputDetect" class="modecFormInputFullWidth" type="text"
+                                        name="input1" required="true" label="{!v.CurrrentSupplierContent.TW1_CNPJ__c}"
+                                        value="{!v.cadastroFornecedorDto.CpfCnpj}"
+                                        messageWhenValueMissing="{!v.messageWhenValueMissing}" />
+                                </aura:set>
+                            </aura:if>
+
+                            <lightning:input aura:id="inputDetect" class="modecFormInputHalfWidth" type="text"
+                                name="input2" required="true"
+                                label="{!v.CurrrentSupplierContent.TW1_Nome_da_Empresa__c}"
+                                value="{!v.cadastroFornecedorDto.NomeEmpresa}"
+                                messageWhenValueMissing="{!v.messageWhenValueMissing}" />
+                            <lightning:input aura:id="inputDetect" class="modecFormInputHalfWidth" style="float: right;"
+                                type="text" name="input3" required="true"
+                                label="{!v.CurrrentSupplierContent.TW1_Nome_Fantasia__c}"
+                                value="{!v.cadastroFornecedorDto.NomeFantasia}"
+                                messageWhenValueMissing="{!v.messageWhenValueMissing}" />
+                            
+                            <div class="threeInputsLine">
+                                <lightning:input aura:id="inputDetectEmail" class="modecFormInputHalfWidth" type="email"
+                                                 name="input4" required="true"
+                                                 label="{!v.CurrrentSupplierContent.TW1_Endereco_de_Email__c}"
+                                                 value="{!v.cadastroFornecedorDto.Email}" messageWhenValueMissing="{!v.messageWhenValueMissing}"
+                                                 messageWhenPatternMismatch="{!v.messageWhenPatternMismatchEmail}" 
+                                                 pattern="{!v.RegexEmailValidation}"/>
+
+                                <!--
+            <lightning:input aura:id="inputDetect" class="modecFormInputHalfWidth" style="float: right;" type="text"
+              name="input5" required="true" label="Supplier Type" value="{!v.cadastroFornecedorDto.TipoFornecedor}"
+              messageWhenValueMissing="Please provide a supplier type." />
+            -->
+
+                                <lightning:select aura:id="inputDetect"
+                                                  value="{!v.cadastroFornecedorDto.TipoFornecedor}"
+                                                  label="{!v.CurrrentSupplierContent.TW1_Tipo_de_Fornecedor__c}"
+                                                  class="modecFormInputHalfWidth" required="true"
+                                                  messageWhenValueMissing="{!v.messageWhenValueMissing}">
+                                    <aura:if  isTrue="{!v.CurrentLanguage != 'English'}" >
+                                        <option value="">Choisissez une option</option>
+                                    </aura:if>
+                                    <aura:if  isTrue="{!v.CurrentLanguage == 'English'}" >
+                                        <option value="">Chose an option</option>
+                                    </aura:if>
+                                    <aura:iteration items="{!v.currentMapPicklistValues.TW1_Supplier_Type__c}" var="s">
+                                        <option value="{!s.value}">{!s.label}</option>
+                                    </aura:iteration>
+                                </lightning:select>
+                            </div>
+                            <br />
+                            <lightning:input aura:id="inputDetect" class="modecFormInputFullWidth" type="text"
+                                name="input6" required="true" label="{!v.CurrrentSupplierContent.TW1_Endereco__c}"
+                                value="{!v.cadastroFornecedorDto.Endereco}"
+                                messageWhenValueMissing="{!v.messageWhenValueMissing}" />
+                            <div class="threeInputsLine" style="padding-bottom: 20px;">
+                                <lightning:input aura:id="inputDetect" class="modecFormInputHalfWidth" type="text"
+                                    name="input7" required="true" label="{!v.CurrrentSupplierContent.TW1_Cidade__c}"
+                                    value="{!v.cadastroFornecedorDto.Cidade}"
+                                    messageWhenValueMissing="{!v.messageWhenValueMissing}" />
+                                <lightning:input aura:id="inputDetect" class="modecFormInputHalfWidth" type="text"
+                                    name="input8" required="true" label="{!v.CurrrentSupplierContent.TW1_Estado__c}"
+                                    value="{!v.cadastroFornecedorDto.Estado}"
+                                    messageWhenValueMissing="{!v.messageWhenValueMissing}" />
+                                <!--<lightning:input aura:id="inputDetect" class="modecFormInputThirdWidth" type="text"
+                                name="input9" label="País" value="" />-->
+                                <!-- <lightning:input aura:id="inputDetect" class="modecFormInputHalfWidth" type="text"
+                                    name="input1" required="true" label="{!v.CurrrentSupplierContent.TW1_CNPJ__c}"
+                                    value="{!v.cadastroFornecedorDto.CpfCnpj}"
+                                    messageWhenValueMissing="{!v.messageWhenValueMissing}" /> -->
+                                <!-- <lightning:select aura:id="inputDetect" value="{!v.paisSelecionado}"
+                                    label="{!v.CurrrentSupplierContent.TW1_Pais__c}" class="modecFormInputThirdWidth"
+                                    required="true" messageWhenValueMissing="{!v.messageWhenValueMissing}"
+                                    onchange="{!c.ChangeCountryOption}">
+                                    <option value="">Choisissez une option.</option>
+                                    <aura:iteration items="{!v.mapPicklistValues.TW1_Country__c}" var="s">
+                                        <option value="{!s.value}">{!s.label}</option>
+                                    </aura:iteration>
+                                </lightning:select> -->
+                            </div>
+                            <div class="threeInputsLine">
+                                <lightning:input aura:id="inputDetect" class="modecFormInputThirdWidth" type="text"
+                                    name="input10" label="{!v.CurrrentSupplierContent.TW1_Contato_responsavel__c}"
+                                    required="true" value="{!v.cadastroFornecedorDto.ContatoResponsavel}"
+                                    messageWhenValueMissing="{!v.messageWhenValueMissing}" />
+                                <lightning:input aura:id="inputDetect" class="modecFormInputThirdWidth" type="tel"
+                                    name="input11" label="{!v.CurrrentSupplierContent.TW1_Telefone__c}" required="true"
+                                    value="{!v.cadastroFornecedorDto.ContatoTelefone}"
+                                    messageWhenValueMissing="{!v.messageWhenValueMissing}" />
+                                <lightning:input aura:id="inputDetectEmail2" class="modecFormInputThirdWidth" type="email"
+                                    name="input12" label="{!v.CurrrentSupplierContent.TW1_Email_do_contato__c}"
+                                    required="true" value="{!v.cadastroFornecedorDto.ContatoEmail}"
+                                    messageWhenValueMissing="{!v.messageWhenValueMissing}"
+                                    messageWhenPatternMismatch="{!v.messageWhenPatternMismatchEmail}" 
+                                                 pattern="{!v.RegexEmailValidation}"/>
+                            </div>
+                        </div>
+                        <div class="botoesPag2">
+                            <input type="button" style="float:right;" class="continuarButton"
+                                value="{!v.CurrrentSupplierContent.TW1_Continuar_btn__c}"
+                                onclick="{!c.SwitchToPage3}" />
+                        </div>
+
+                    </div>
+
+                    <footer class="modecFooterPag2"
+                        style="{!'min-height: 130px; background:' + v.backgroundColor + ' url(' + v.backgroundImageURL +');background-size: cover'}">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                            <p><a href="{!v.CurrrentSupplierContent.TW1_Youtube_URL__c}"><img class="youtube"
+                                        src="{!$Resource.modecYTIcon}" /></a></p>
+                            <p class="contactUs"><a style="color: white;" href="#">Contact Us</a></p>
+                            <p class="privacy"><a style="color: white;" href="#">Privacy Policy</a></p>
+                            <p class="terms"><a style="color: white;" href="#">Terms &amp; Conditions</a></p>
+                            <p class="siteMap"><a style="color: white;" href="#">Site Map</a></p>
+                            <p class="copyright-text">Copyright &copy; MODEC, Inc. All Rights Reserved.</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </aura:if>
+        <!-- FIM CONTAINER 2 -->
+        <!-- CONTAINER 3 -->
+        <aura:if isTrue="{!v.container3}">
+            <div class="containerPag3">
+                <div class="modecFormContPag3" style="overflow: hidden;">
+                    <div class="pag3Padding" style="padding-left: 12%; padding-right: 12%; overflow: hidden;">
+
+                        <ui:outputRichText aura:id="outputRT" class="formHeaderPag3"
+                            value="{!v.CurrrentSupplierContent.TW1_Cadastro_novo_fornecedor_Pag3__c}" />
+
+                        <ui:outputRichText aura:id="outputRT" class="formText"
+                            value="{!v.CurrrentSupplierContent.TW1_Cadastro_novo_fornecedor_txt_Pag3__c}" />
+
+                        <!--Picklist CategoryType-->
+                        <div class="dualList">
+                            <lightning:select aura:id="inputDetectPage3"
+                                label="{!v.CurrrentSupplierContent.TW1_Tipo_de_categoria__c}"
+                                class="modecFormInputThirdPage" onchange="{!c.SelecionarListaCategoriasDisponiveis}">
+                                <aura:iteration items="{!v.Categorias}" var="item" indexVar="idx">
+                                    <option value="{!item.developerName}">{!item.label}</option>
+                                </aura:iteration>
+                            </lightning:select>
+                            <!--Input QuickSearch-->
+                            <lightning:input label="{!v.CurrrentSupplierContent.TW1_Busca_rapida__c}"
+                                class="modecFormInputThirdPageSearch" type="seacrh"
+                                onchange="{!c.FiltroCategoriasDisponiveis}" value="{!v.quickSearchText}" />
+                            <!--Avaiable Categories-->
+                            <div class="row dual-list">
+                                <ui:inputSelect aura:id="InputSelectMultiple" class="list-left multiple"
+                                    multiple="true">
+                                    <!--<option value="" style="background-color: #b39f61; color: white; position: sticky; top:0;"
+                    disabled="disabled">Available Categories</option>-->
+                                    <ui:inputSelectOption
+                                        label="{!v.CurrrentSupplierContent.TW1_Categorias_disponiveis__c}"
+                                        class="disabledInputOption" disabled="true" />
+                                    <aura:iteration items="{!v.ModelolistaEsq}" var="item" indexVar="idx">
+                                        <aura:if isTrue="{!v.IsFrench}">
+                                            <ui:inputSelectOption label="{!item.labelFR}" text="{!item.value}" />
+                                            <aura:set attribute="else">
+                                                <ui:inputSelectOption label="{!item.labelEN}" text="{!item.value}" />
+                                            </aura:set>
+                                        </aura:if>
+                                    </aura:iteration>
+                                </ui:inputSelect>
+                                <div class="pag3LeftRightButtons">
+                                    <input type="button" class="rightArrowButton list-arrows move-right" value="&#9654;"
+                                        onclick="{!c.MoverParaDireita}" />
+                                    <input type="button" class="leftArrowButton list-arrows move-left" value="&#9664;"
+                                        onclick="{!c.MoverParaEsquerda}" />
+                                </div>
+                                <!--Selected Categories-->
+                                <ui:inputSelect aura:id="InputSelectMultiple2" class="list-right multiple"
+                                    multiple="true">
+                                    <!--<option value="" style="background-color: #b39f61; color: white; position: sticky; top:0;"
+                    disabled="disabled">Selected Categories</option>-->
+                                    <ui:inputSelectOption
+                                        label="{!v.CurrrentSupplierContent.TW1_Categorias_selecionadas__c}"
+                                        class="disabledInputOption" disabled="true" />
+                                    <aura:iteration items="{!v.ModelolistaDir}" var="item" indexVar="idx">
+                                        <!--<option value="{!item.value}">{!item.label}</option>-->
+                                        <aura:if isTrue="{!v.IsFrench}">
+                                            <ui:inputSelectOption label="{!item.labelFR}" text="{!item.value}" />
+                                            <aura:set attribute="else">
+                                                <ui:inputSelectOption label="{!item.labelEN}" text="{!item.value}" />
+                                            </aura:set>
+                                        </aura:if>
+                                    </aura:iteration>
+                                </ui:inputSelect>
+                            </div>
+                        </div>
+                    </div>
+                    <aura:if isTrue="{!v.containerCatCheck}">
+                        <aura:if isTrue="{!v.CurrentLanguage == 'Portuguese'}">
+                            <div style="overflow: hidden; margin-right: 12%;">
+                                <p style="float: right; font-size: 20px; color: #BD3237;">Nenhuma categoria foi
+                                    selecionada.</p>
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!v.CurrentLanguage == 'English'}">
+                            <div style="overflow: hidden; margin-right: 12%;">
+                                <p style="float: right; font-size: 20px; color: #BD3237;">No categories were selected.
+                                </p>
+                            </div>
+                        </aura:if>
+                    </aura:if>
+                    <div style="margin-left: 12%; margin-right: 12%; overflow: hidden; margin-top: 50px;">
+                        <lightning:input type="checkbox" style="float: left;" aura:id="inputDetect" required="true" />
+                        <span
+                            style="float: left; line-height: 24px; color: #6D6E71; font-size:17px;">{!v.CurrrentSupplierContent.TW1_Termo_de_aceite_pt1__c}</span><span
+                            style="float: left; line-height: 24px; font-size:17px;"> </span><span><a
+                                style="float: left; line-height: 24px; font-size:17px;"
+                                href="#">{!v.CurrrentSupplierContent.TW1_Termo_de_aceite_pt2__c}</a></span><span
+                            style="float: left; line-height: 24px; font-size:17px;"> </span><span
+                            style="float: left; line-height: 24px; color: #6D6E71; font-size:17px;">
+                            {!v.CurrrentSupplierContent.TW1_Termo_de_aceite_pt3__c}</span>
+                    </div>
+
+                    <div class="pag3buttons"
+                        style="margin-bottom: 60px; padding-left: 12%; padding-right: 12%; overflow: hidden;">
+                        <input type="button" class="concluirButton"
+                            value="{!v.CurrrentSupplierContent.TW1_Concluir_btn__c}"
+                            onclick="{!c.ConcluirCadastroFornecedor}" />
+                        <!--onClick de concluirButton {!c.ConcluirCadastroFornecedor}-->
+                        <input type="button" class="voltarButton" value="{!v.CurrrentSupplierContent.TW1_Voltar_btn__c}"
+                            onclick="{!c.SwitchBackToPage2}" />
+                    </div>
+
+                    <footer class="modecFooterPag3"
+                        style="{!'min-height: 130px; background:' + v.backgroundColor + ' url(' + v.backgroundImageURL +');background-size: cover'}">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                            <p><a href="{!v.CurrrentSupplierContent.TW1_Youtube_URL__c}"><img class="youtube"
+                                        src="{!$Resource.modecYTIcon}" /></a></p>
+                            <p class="contactUs"><a style="color: white;"
+                                    href="{!v.CurrrentSupplierContent.TW1_Contact_Us_URL__c}">Contact Us</a></p>
+                            <p class="privacy"><a style="color: white;"
+                                    href="{!v.CurrrentSupplierContent.TW1_Privacy_Policy_URL__c}">Privacy Policy</a></p>
+                            <p class="terms"><a style="color: white;"
+                                    href="{!v.CurrrentSupplierContent.TW1_Terms_Conditions_URL__c}">Terms &amp;
+                                    Conditions</a></p>
+                            <p class="siteMap"><a style="color: white;"
+                                    href="{!v.CurrrentSupplierContent.TW1_Site_Map_URL__c}">Site
+                                    Map</a></p>
+                            <p class="copyright-text">Copyright &copy; MODEC, Inc. All Rights Reserved.</p>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </aura:if>
+
+        <div class="container3">
+            <div class="modecFormCont">
+                <aura:if isTrue="{! v.Sucesso }">
+                    <div class="registerSuccess">
+                        <ui:outputRichText aura:id="outputRT" class="registerSuccessText"
+                            value="{!v.CurrrentSupplierContent.TW1_Sucesso_no_cadastro_txt__c}" />
+                        <input type="button" class="RetornarPagAnteriorButton"
+                            value="{!v.CurrrentSupplierContent.TW1_Sucesso_no_cadastro_btn__c}"
+                            onclick="{!c.gotoStartingPage}" />
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{! v.Erro }">
+                    <div class="registerFailure">
+
+                        <ui:outputRichText aura:id="outputRT" class="registerFailureText"
+                            value="{!v.CurrrentSupplierContent.TW1_Falha_no_cadastro_txt__c}" />
+                        <input type="button" class="RetornarPagAnteriorButton"
+                            value="{!v.CurrrentSupplierContent.TW1_Falha_no_cadastro_btn__c}"
+                            onclick="{!c.SwitchBackToPage2}" />
+                    </div>
+                </aura:if>
+            </div>
+        </div>
+
+        <!-- FIM CONTAINER 3 -->
+    </body>
+
+    </html>
+    <aura:if isTrue="{! v.carregando }">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    <!-- OTHER MODAL MARK-UP HERE -->
+</aura:component>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PS__c</fullName>
+    <externalId>false</externalId>
+    <label>Process Status</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Discussion with client</fullName>
+                <default>false</default>
+                <label>Discussion with client</label>
+            </value>
+            <value>
+                <fullName>Dynamic</fullName>
+                <default>false</default>
+                <label>Dynamic</label>
+            </value>
+            <value>
+                <fullName>External (Lawsuit)</fullName>
+                <default>false</default>
+                <label>External (Lawsuit)</label>
+            </value>
+            <value>
+                <fullName>NA</fullName>
+                <default>false</default>
+                <label>NA</label>
+            </value>
+            <value>
+                <fullName>On hold</fullName>
+                <default>false</default>
+                <label>On hold</label>
+            </value>
+            <value>
+                <fullName>Waiting client&apos;s feedback</fullName>
+                <default>false</default>
+                <label>Waiting client&apos;s feedback</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

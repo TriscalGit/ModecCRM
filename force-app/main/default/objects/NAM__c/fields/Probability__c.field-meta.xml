@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Probability__c</fullName>
+    <externalId>false</externalId>
+    <label>Probability</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A - Never heard in MODEC</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B - Has occurred in MODEC</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C - Occurred several times a year in MODEC</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D - Occurred several times a year in the unit</label>
+            </value>
+            <value>
+                <fullName>A - Never heard in MODEC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>A - Never heard in MODEC</label>
+            </value>
+            <value>
+                <fullName>B - Has occurred in MODEC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>B - Has occurred in MODEC</label>
+            </value>
+            <value>
+                <fullName>C - Occurred several times a year in MODEC</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>C - Occurred several times a year in MODEC</label>
+            </value>
+            <value>
+                <fullName>D - Occurred several times a  year in the unit</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>D - Occurred several times a  year in the unit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

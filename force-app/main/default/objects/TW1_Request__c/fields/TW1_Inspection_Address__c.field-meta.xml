@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Inspection_Address__c</fullName>
+    <externalId>false</externalId>
+    <label>Inspection Address</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Barra Mansa</fullName>
+                <default>false</default>
+                <label>Barra Mansa</label>
+            </value>
+            <value>
+                <fullName>Macaé</fullName>
+                <default>false</default>
+                <label>Macaé</label>
+            </value>
+            <value>
+                <fullName>Niterói</fullName>
+                <default>false</default>
+                <label>Niterói</label>
+            </value>
+            <value>
+                <fullName>Rio das Ostras</fullName>
+                <default>false</default>
+                <label>Rio das Ostras</label>
+            </value>
+            <value>
+                <fullName>São Paulo</fullName>
+                <default>false</default>
+                <label>São Paulo</label>
+            </value>
+            <value>
+                <fullName>Rio de Janeiro</fullName>
+                <default>false</default>
+                <label>Rio de Janeiro</label>
+            </value>
+            <value>
+                <fullName>Angra dos Reis</fullName>
+                <default>false</default>
+                <label>Angra dos Reis</label>
+            </value>
+            <value>
+                <fullName>N/D</fullName>
+                <default>false</default>
+                <label>N/D</label>
+            </value>
+            <value>
+                <fullName>Av Teste</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Av Teste</label>
+            </value>
+            <value>
+                <fullName>Rua Teste</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Rua Teste</label>
+            </value>
+            <value>
+                <fullName>rua xxxx</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>rua xxxx</label>
+            </value>
+            <value>
+                <fullName>testeEEEEE2</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>testeEEEEE2</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

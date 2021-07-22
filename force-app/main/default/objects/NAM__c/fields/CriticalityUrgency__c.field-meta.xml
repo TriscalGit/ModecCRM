@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CriticalityUrgency__c</fullName>
+    <externalId>false</externalId>
+    <label>Criticality Urgency</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Within 24 Hours</fullName>
+                <default>false</default>
+                <label>Within 24 Hours</label>
+            </value>
+            <value>
+                <fullName>Within 1 Week</fullName>
+                <default>false</default>
+                <label>Within 1 Week</label>
+            </value>
+            <value>
+                <fullName>Within 1 Month</fullName>
+                <default>false</default>
+                <label>Within 1 Month</label>
+            </value>
+            <value>
+                <fullName>Within 1 Year</fullName>
+                <default>false</default>
+                <label>Within 1 Year</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

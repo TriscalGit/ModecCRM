@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Safety__c</fullName>
+    <externalId>false</externalId>
+    <label>People</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No injury</fullName>
+                <default>false</default>
+                <label>No injury</label>
+            </value>
+            <value>
+                <fullName>Slight injury</fullName>
+                <default>false</default>
+                <label>Slight injury</label>
+            </value>
+            <value>
+                <fullName>Minor injury</fullName>
+                <default>false</default>
+                <label>Minor injury</label>
+            </value>
+            <value>
+                <fullName>Major injury</fullName>
+                <default>false</default>
+                <label>Major injury</label>
+            </value>
+            <value>
+                <fullName>Single fatality</fullName>
+                <default>false</default>
+                <label>Single fatality</label>
+            </value>
+            <value>
+                <fullName>Lost time injury</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Lost time injury</label>
+            </value>
+            <value>
+                <fullName>Multiple facilities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Multiple facilities</label>
+            </value>
+            <value>
+                <fullName>Multiple fatalities</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>Multiple fatalities</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

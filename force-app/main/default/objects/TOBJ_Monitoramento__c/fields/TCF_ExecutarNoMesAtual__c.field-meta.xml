@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_ExecutarNoMesAtual__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(MOD(MONTH(TODAY()),2) = 0,
+   IF(ISPICKVAL(TCF_MesCiclo__c,&apos;Odd&apos;),
+      false,
+      true
+   ),
+   IF(ISPICKVAL(TCF_MesCiclo__c,&apos;Odd&apos;),
+      true,
+      false
+   )
+)</formula>
+    <label>HiddenExecutarNoMesAtual?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,1293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SubSystemNumber__c</fullName>
+    <externalId>false</externalId>
+    <label>SubSystem Number</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SystemNumber__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Mooring Chan / Wire / Rope &amp; Fairlead</fullName>
+                <default>false</default>
+                <label>Mooring Chain / Wire / Rope &amp; Fairlead</label>
+            </value>
+            <value>
+                <fullName>Chain Handling / Chain Jack / Chain Stoppers - FWD</fullName>
+                <default>false</default>
+                <label>Chain Handling / Chain Jack / Chain Stoppers - FWD</label>
+            </value>
+            <value>
+                <fullName>Chain Handling / Chain Jack / Chain Stoppers - AFT</fullName>
+                <default>false</default>
+                <label>Chain Handling / Chain Jack / Chain Stoppers - AFT</label>
+            </value>
+            <value>
+                <fullName>Riser Pull-in Winch</fullName>
+                <default>false</default>
+                <label>Riser Pull-in Winch</label>
+            </value>
+            <value>
+                <fullName>Riser Pull-in Equipment</fullName>
+                <default>false</default>
+                <label>Riser Pull-in Equipment</label>
+            </value>
+            <value>
+                <fullName>Inlet Oil Production</fullName>
+                <default>false</default>
+                <label>Inlet Oil Production</label>
+            </value>
+            <value>
+                <fullName>Crude Oil Treating / Stabilization</fullName>
+                <default>false</default>
+                <label>Crude Oil Treating / Stabilization</label>
+            </value>
+            <value>
+                <fullName>Flowline Circulation System</fullName>
+                <default>false</default>
+                <label>Flowline Circulation System</label>
+            </value>
+            <value>
+                <fullName>Produced Water Treatment System</fullName>
+                <default>false</default>
+                <label>Produced Water Treatment System</label>
+            </value>
+            <value>
+                <fullName>Seawater Treatment &amp; Distribution</fullName>
+                <default>false</default>
+                <label>Seawater Treatment &amp; Distribution</label>
+            </value>
+            <value>
+                <fullName>Seawater Injection Pumps</fullName>
+                <default>false</default>
+                <label>Seawater Injection Pumps</label>
+            </value>
+            <value>
+                <fullName>Inlet Gas Production / Lift / Export / Import / Injection</fullName>
+                <default>false</default>
+                <label>Inlet Gas Production / Lift / Export / Import / Injection</label>
+            </value>
+            <value>
+                <fullName>Vapor Recovery Unit</fullName>
+                <default>false</default>
+                <label>Vapor Recovery Unit</label>
+            </value>
+            <value>
+                <fullName>Main Gas Compression - A</fullName>
+                <default>false</default>
+                <label>Main Gas Compression - A</label>
+            </value>
+            <value>
+                <fullName>Gas Dehydration &amp; Regeneration</fullName>
+                <default>false</default>
+                <label>Gas Dehydration &amp; Regeneration</label>
+            </value>
+            <value>
+                <fullName>Gas Compression (GI)</fullName>
+                <default>false</default>
+                <label>Gas Compression (GI)</label>
+            </value>
+            <value>
+                <fullName>Main Gas Compression - B</fullName>
+                <default>false</default>
+                <label>Main Gas Compression - B</label>
+            </value>
+            <value>
+                <fullName>HP Flare System</fullName>
+                <default>false</default>
+                <label>HP Flare System</label>
+            </value>
+            <value>
+                <fullName>Carcass Vent</fullName>
+                <default>false</default>
+                <label>Carcass Vent</label>
+            </value>
+            <value>
+                <fullName>Fuel Gas System</fullName>
+                <default>false</default>
+                <label>Fuel Gas System</label>
+            </value>
+            <value>
+                <fullName>Gas Lift Compression</fullName>
+                <default>false</default>
+                <label>Gas Lift Compression</label>
+            </value>
+            <value>
+                <fullName>Chemical Injection Tank - A</fullName>
+                <default>false</default>
+                <label>Chemical Injection Tank - A</label>
+            </value>
+            <value>
+                <fullName>Chemical Injection Tank - B</fullName>
+                <default>false</default>
+                <label>Chemical Injection Tank - B</label>
+            </value>
+            <value>
+                <fullName>Closed Drain System</fullName>
+                <default>false</default>
+                <label>Closed Drain System</label>
+            </value>
+            <value>
+                <fullName>Open Drain System</fullName>
+                <default>false</default>
+                <label>Open Drain System</label>
+            </value>
+            <value>
+                <fullName>Heating Medium System</fullName>
+                <default>false</default>
+                <label>Heating Medium System</label>
+            </value>
+            <value>
+                <fullName>PIP Heating System</fullName>
+                <default>false</default>
+                <label>PIP Heating System</label>
+            </value>
+            <value>
+                <fullName>Cooling Medium System</fullName>
+                <default>false</default>
+                <label>Cooling Medium System</label>
+            </value>
+            <value>
+                <fullName>Process Inert Gas (N2)</fullName>
+                <default>false</default>
+                <label>Process Inert Gas (N2)</label>
+            </value>
+            <value>
+                <fullName>Diesel Generator - 1</fullName>
+                <default>false</default>
+                <label>Diesel Generator - 1</label>
+            </value>
+            <value>
+                <fullName>Diesel Generator - 2</fullName>
+                <default>false</default>
+                <label>Diesel Generator - 2</label>
+            </value>
+            <value>
+                <fullName>Diesel Generator - 3</fullName>
+                <default>false</default>
+                <label>Diesel Generator - 3</label>
+            </value>
+            <value>
+                <fullName>Emergency Generator</fullName>
+                <default>false</default>
+                <label>Emergency Generator</label>
+            </value>
+            <value>
+                <fullName>Gas Turbine Generator - 1</fullName>
+                <default>false</default>
+                <label>Gas Turbine Generator - 1</label>
+            </value>
+            <value>
+                <fullName>Gas Turbine Generator - 2</fullName>
+                <default>false</default>
+                <label>Gas Turbine Generator - 2</label>
+            </value>
+            <value>
+                <fullName>Gas Turbine Generator - 3</fullName>
+                <default>false</default>
+                <label>Gas Turbine Generator - 3</label>
+            </value>
+            <value>
+                <fullName>Gas Turbine Generator - 4</fullName>
+                <default>false</default>
+                <label>Gas Turbine Generator - 4</label>
+            </value>
+            <value>
+                <fullName>HFO System</fullName>
+                <default>false</default>
+                <label>HFO System</label>
+            </value>
+            <value>
+                <fullName>MGO System</fullName>
+                <default>false</default>
+                <label>MGO System</label>
+            </value>
+            <value>
+                <fullName>GTG Diesel Filtration &amp; Distribution</fullName>
+                <default>false</default>
+                <label>GTG Diesel Filtration &amp; Distribution</label>
+            </value>
+            <value>
+                <fullName>Engine Room Sea Water System</fullName>
+                <default>false</default>
+                <label>Engine Room Sea Water System</label>
+            </value>
+            <value>
+                <fullName>Electrochlorination System</fullName>
+                <default>false</default>
+                <label>Electrochlorination System</label>
+            </value>
+            <value>
+                <fullName>Seawater Lift Pumps</fullName>
+                <default>false</default>
+                <label>Seawater Lift Pumps</label>
+            </value>
+            <value>
+                <fullName>Boiler - A</fullName>
+                <default>false</default>
+                <label>Boiler - A</label>
+            </value>
+            <value>
+                <fullName>Boiler - B</fullName>
+                <default>false</default>
+                <label>Boiler - B</label>
+            </value>
+            <value>
+                <fullName>Feed Water &amp; Steam Distribution System</fullName>
+                <default>false</default>
+                <label>Feed Water &amp; Steam Distribution System</label>
+            </value>
+            <value>
+                <fullName>Topsides Steam Distribution</fullName>
+                <default>false</default>
+                <label>Topsides Steam Distribution</label>
+            </value>
+            <value>
+                <fullName>Engine Room Fresh Water System</fullName>
+                <default>false</default>
+                <label>Engine Room Fresh Water System</label>
+            </value>
+            <value>
+                <fullName>Topsides Fresh Water System</fullName>
+                <default>false</default>
+                <label>Topsides Fresh Water System</label>
+            </value>
+            <value>
+                <fullName>Engine Room Compressed Air System</fullName>
+                <default>false</default>
+                <label>Engine Room Compressed Air System</label>
+            </value>
+            <value>
+                <fullName>Topsides IA/UA System</fullName>
+                <default>false</default>
+                <label>Topsides IA/UA System</label>
+            </value>
+            <value>
+                <fullName>Lube Oil System</fullName>
+                <default>false</default>
+                <label>Lube Oil System</label>
+            </value>
+            <value>
+                <fullName>Bilge System</fullName>
+                <default>false</default>
+                <label>Bilge System</label>
+            </value>
+            <value>
+                <fullName>Life Boats / Rescue Boats / Davits</fullName>
+                <default>false</default>
+                <label>Life Boats / Rescue Boats / Davits</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Safety System</fullName>
+                <default>false</default>
+                <label>Miscellaneous Safety System</label>
+            </value>
+            <value>
+                <fullName>Fire Water System - FWD</fullName>
+                <default>false</default>
+                <label>Fire Water System - FWD</label>
+            </value>
+            <value>
+                <fullName>Fire Water System - AFT</fullName>
+                <default>false</default>
+                <label>Fire Water System - AFT</label>
+            </value>
+            <value>
+                <fullName>Emergency Fire Pump</fullName>
+                <default>false</default>
+                <label>Emergency Fire Pump</label>
+            </value>
+            <value>
+                <fullName>Water Mist System</fullName>
+                <default>false</default>
+                <label>Water Mist System</label>
+            </value>
+            <value>
+                <fullName>Topsides Fire Water System</fullName>
+                <default>false</default>
+                <label>Topsides Fire Water System</label>
+            </value>
+            <value>
+                <fullName>Deluge System</fullName>
+                <default>false</default>
+                <label>Deluge System</label>
+            </value>
+            <value>
+                <fullName>Main Deck Foam System</fullName>
+                <default>false</default>
+                <label>Main Deck Foam System</label>
+            </value>
+            <value>
+                <fullName>Helideck Foam System</fullName>
+                <default>false</default>
+                <label>Helideck Foam System</label>
+            </value>
+            <value>
+                <fullName>Topsides Foam System</fullName>
+                <default>false</default>
+                <label>Topsides Foam System</label>
+            </value>
+            <value>
+                <fullName>Gaseous Fire Fighting System</fullName>
+                <default>false</default>
+                <label>Gaseous Fire Fighting System</label>
+            </value>
+            <value>
+                <fullName>Marine CO2 System</fullName>
+                <default>false</default>
+                <label>Marine CO2 System</label>
+            </value>
+            <value>
+                <fullName>Topsides CO2 System</fullName>
+                <default>false</default>
+                <label>Topsides CO2 System</label>
+            </value>
+            <value>
+                <fullName>Portable Fire Fighting Equipment</fullName>
+                <default>false</default>
+                <label>Portable Fire Fighting Equipment</label>
+            </value>
+            <value>
+                <fullName>Waste Disposal &amp; Spill Containment</fullName>
+                <default>false</default>
+                <label>Waste Disposal &amp; Spill Containment</label>
+            </value>
+            <value>
+                <fullName>Sewage System</fullName>
+                <default>false</default>
+                <label>Sewage System</label>
+            </value>
+            <value>
+                <fullName>Slop Water System</fullName>
+                <default>false</default>
+                <label>Slop Water System</label>
+            </value>
+            <value>
+                <fullName>Miscellaneous Waste Disposal Equipment</fullName>
+                <default>false</default>
+                <label>Miscellaneous Waste Disposal Equipment</label>
+            </value>
+            <value>
+                <fullName>Marine UPS System</fullName>
+                <default>false</default>
+                <label>Marine UPS System</label>
+            </value>
+            <value>
+                <fullName>Marine LV Emergency Power Distribution</fullName>
+                <default>false</default>
+                <label>Marine LV Emergency Power Distribution</label>
+            </value>
+            <value>
+                <fullName>Marine Main LV Power Distribution</fullName>
+                <default>false</default>
+                <label>Marine Main LV Power Distribution</label>
+            </value>
+            <value>
+                <fullName>Topsides UPS System</fullName>
+                <default>false</default>
+                <label>Topsides UPS System</label>
+            </value>
+            <value>
+                <fullName>Topsides MV Distribution</fullName>
+                <default>false</default>
+                <label>Topsides MV Distribution</label>
+            </value>
+            <value>
+                <fullName>Topsides LV Distribution</fullName>
+                <default>false</default>
+                <label>Topsides LV Distribution</label>
+            </value>
+            <value>
+                <fullName>Heat Tracing</fullName>
+                <default>false</default>
+                <label>Heat Tracing</label>
+            </value>
+            <value>
+                <fullName>Marine Emergency / Normal Lighting &amp; Small Power System</fullName>
+                <default>false</default>
+                <label>Marine Emergency / Normal Lighting &amp; Small Power System</label>
+            </value>
+            <value>
+                <fullName>Topsides Emergency Lighting and Small Power System</fullName>
+                <default>false</default>
+                <label>Topsides Emergency Lighting and Small Power System</label>
+            </value>
+            <value>
+                <fullName>Topsides Normal Lighting and Small Power System</fullName>
+                <default>false</default>
+                <label>Topsides Normal Lighting and Small Power System</label>
+            </value>
+            <value>
+                <fullName>Facility Control System</fullName>
+                <default>false</default>
+                <label>Facility Control System</label>
+            </value>
+            <value>
+                <fullName>Process Control System (PCS) - Marine</fullName>
+                <default>false</default>
+                <label>Process Control System (PCS) - Marine</label>
+            </value>
+            <value>
+                <fullName>Safety Shutdown System (SSDS)  - Marine</fullName>
+                <default>false</default>
+                <label>Safety Shutdown System (SSDS)  - Marine</label>
+            </value>
+            <value>
+                <fullName>CCR - Addressable Fire Detection System - AFDS</fullName>
+                <default>false</default>
+                <label>CCR - Addressable Fire Detection System - AFDS</label>
+            </value>
+            <value>
+                <fullName>Alarm Management System</fullName>
+                <default>false</default>
+                <label>Alarm Management System</label>
+            </value>
+            <value>
+                <fullName>E-House - Addressable Fire Detection System - AFDS</fullName>
+                <default>false</default>
+                <label>E-House - Addressable Fire Detection System - AFDS</label>
+            </value>
+            <value>
+                <fullName>Process Control System (PCS) - Topsides</fullName>
+                <default>false</default>
+                <label>Process Control System (PCS) - Topsides</label>
+            </value>
+            <value>
+                <fullName>Safety Shutdown System System (SSDS) - Topsides</fullName>
+                <default>false</default>
+                <label>Safety Shutdown System System (SSDS) - Topsides</label>
+            </value>
+            <value>
+                <fullName>PAGA System</fullName>
+                <default>false</default>
+                <label>PAGA System</label>
+            </value>
+            <value>
+                <fullName>Multimedia / LAN / PABX System</fullName>
+                <default>false</default>
+                <label>Multimedia / LAN / PABX System</label>
+            </value>
+            <value>
+                <fullName>CCTV (Surveillance) System</fullName>
+                <default>false</default>
+                <label>CCTV (Surveillance) System</label>
+            </value>
+            <value>
+                <fullName>Satellite TV System</fullName>
+                <default>false</default>
+                <label>Satellite TV System</label>
+            </value>
+            <value>
+                <fullName>Operational Support Radio System (UHF/VHF)</fullName>
+                <default>false</default>
+                <label>Operational Support Radio System (UHF/VHF)</label>
+            </value>
+            <value>
+                <fullName>Satellite Communication System</fullName>
+                <default>false</default>
+                <label>Satellite Communication System</label>
+            </value>
+            <value>
+                <fullName>MODEC V-SAT Communication System</fullName>
+                <default>false</default>
+                <label>MODEC V-SAT Communication System</label>
+            </value>
+            <value>
+                <fullName>OMTS System</fullName>
+                <default>false</default>
+                <label>OMTS System</label>
+            </value>
+            <value>
+                <fullName>Monflex Riser CCTV System</fullName>
+                <default>false</default>
+                <label>Monflex Riser CCTV System</label>
+            </value>
+            <value>
+                <fullName>Position Offset Diagram System</fullName>
+                <default>false</default>
+                <label>Position Offset Diagram System</label>
+            </value>
+            <value>
+                <fullName>Riser Monitoring System</fullName>
+                <default>false</default>
+                <label>Riser Monitoring System</label>
+            </value>
+            <value>
+                <fullName>Internal Communication System</fullName>
+                <default>false</default>
+                <label>Internal Communication System</label>
+            </value>
+            <value>
+                <fullName>Petrobras V-SAT Communication System</fullName>
+                <default>false</default>
+                <label>Petrobras V-SAT Communication System</label>
+            </value>
+            <value>
+                <fullName>Navigation Aids / Helideck Warning System</fullName>
+                <default>false</default>
+                <label>Navigation Aids / Helideck Warning System</label>
+            </value>
+            <value>
+                <fullName>Helideck Warning System</fullName>
+                <default>false</default>
+                <label>Helideck Warning System</label>
+            </value>
+            <value>
+                <fullName>Navigation Aid - FPSO</fullName>
+                <default>false</default>
+                <label>Navigation Aid - FPSO</label>
+            </value>
+            <value>
+                <fullName>Environmental Monitoring System</fullName>
+                <default>false</default>
+                <label>Environmental Monitoring System</label>
+            </value>
+            <value>
+                <fullName>Positioning Reference System</fullName>
+                <default>false</default>
+                <label>Positioning Reference System</label>
+            </value>
+            <value>
+                <fullName>Subsea HPU System</fullName>
+                <default>false</default>
+                <label>Subsea HPU System</label>
+            </value>
+            <value>
+                <fullName>Subsea Data Acquisition System</fullName>
+                <default>false</default>
+                <label>Subsea Data Acquisition System</label>
+            </value>
+            <value>
+                <fullName>MODA System</fullName>
+                <default>false</default>
+                <label>MODA System</label>
+            </value>
+            <value>
+                <fullName>DEH (for future use)</fullName>
+                <default>false</default>
+                <label>DEH (for future use)</label>
+            </value>
+            <value>
+                <fullName>SMP (for future use)</fullName>
+                <default>false</default>
+                <label>SMP (for future use)</label>
+            </value>
+            <value>
+                <fullName>Metering System</fullName>
+                <default>false</default>
+                <label>Metering System</label>
+            </value>
+            <value>
+                <fullName>Cargo Oil System</fullName>
+                <default>false</default>
+                <label>Cargo Oil System</label>
+            </value>
+            <value>
+                <fullName>Ballast System</fullName>
+                <default>false</default>
+                <label>Ballast System</label>
+            </value>
+            <value>
+                <fullName>FWD Cargo Offloading System</fullName>
+                <default>false</default>
+                <label>FWD Cargo Offloading System</label>
+            </value>
+            <value>
+                <fullName>AFT Cargo Offloading System</fullName>
+                <default>false</default>
+                <label>AFT Cargo Offloading System</label>
+            </value>
+            <value>
+                <fullName>Cargo Metering</fullName>
+                <default>false</default>
+                <label>Cargo Metering</label>
+            </value>
+            <value>
+                <fullName>Inert Gas System</fullName>
+                <default>false</default>
+                <label>Inert Gas System</label>
+            </value>
+            <value>
+                <fullName>Tank Monitoring System</fullName>
+                <default>false</default>
+                <label>Tank Monitoring System</label>
+            </value>
+            <value>
+                <fullName>Gas Sampling System</fullName>
+                <default>false</default>
+                <label>Gas Sampling System</label>
+            </value>
+            <value>
+                <fullName>Valve Remote Control System</fullName>
+                <default>false</default>
+                <label>Valve Remote Control System</label>
+            </value>
+            <value>
+                <fullName>Hull Tanks &amp; Void Spaces</fullName>
+                <default>false</default>
+                <label>Hull Tanks &amp; Void Spaces</label>
+            </value>
+            <value>
+                <fullName>ICCP System</fullName>
+                <default>false</default>
+                <label>ICCP System</label>
+            </value>
+            <value>
+                <fullName>Main Engine</fullName>
+                <default>false</default>
+                <label>Main Engine</label>
+            </value>
+            <value>
+                <fullName>Galley &amp; Laundry Equipment</fullName>
+                <default>false</default>
+                <label>Galley &amp; Laundry Equipment</label>
+            </value>
+            <value>
+                <fullName>Living Quarters - Cabins</fullName>
+                <default>false</default>
+                <label>Living Quarters - Cabins</label>
+            </value>
+            <value>
+                <fullName>Accommodation / Engine Room HVAC System</fullName>
+                <default>false</default>
+                <label>Accommodation / Engine Room HVAC System</label>
+            </value>
+            <value>
+                <fullName>Provision Ref. System</fullName>
+                <default>false</default>
+                <label>Provision Ref. System</label>
+            </value>
+            <value>
+                <fullName>Topsides HVAC System</fullName>
+                <default>false</default>
+                <label>Topsides HVAC System</label>
+            </value>
+            <value>
+                <fullName>LQ Sewage &amp; Drain System</fullName>
+                <default>false</default>
+                <label>LQ Sewage &amp; Drain System</label>
+            </value>
+            <value>
+                <fullName>Engine Room Workshop Equipment</fullName>
+                <default>false</default>
+                <label>Engine Room Workshop Equipment</label>
+            </value>
+            <value>
+                <fullName>Topsides Workshop &amp; Laboratory Equipment</fullName>
+                <default>false</default>
+                <label>Topsides Workshop &amp; Laboratory Equipment</label>
+            </value>
+            <value>
+                <fullName>Pedestal Crane - Fwd</fullName>
+                <default>false</default>
+                <label>Pedestal Crane - Fwd</label>
+            </value>
+            <value>
+                <fullName>Elevator</fullName>
+                <default>false</default>
+                <label>Elevator</label>
+            </value>
+            <value>
+                <fullName>Engine Room Gantry Crane &amp; Lifiting Gears</fullName>
+                <default>false</default>
+                <label>Engine Room Gantry Crane &amp; Lifiting Gears</label>
+            </value>
+            <value>
+                <fullName>AFT Deck Crane</fullName>
+                <default>false</default>
+                <label>AFT Deck Crane</label>
+            </value>
+            <value>
+                <fullName>Topsides Lifting Gear</fullName>
+                <default>false</default>
+                <label>Topsides Lifting Gear</label>
+            </value>
+            <value>
+                <fullName>Deck Machinery &amp; Anchoring</fullName>
+                <default>false</default>
+                <label>Deck Machinery &amp; Anchoring</label>
+            </value>
+            <value>
+                <fullName>Heli Refueling System</fullName>
+                <default>false</default>
+                <label>Heli Refueling System</label>
+            </value>
+            <value>
+                <fullName>Marine / Deck &amp; Accommodation Area Completion</fullName>
+                <default>false</default>
+                <label>Marine / Deck &amp; Accommodation Area Completion</label>
+            </value>
+            <value>
+                <fullName>Topsides Area Completion</fullName>
+                <default>false</default>
+                <label>Topsides Area Completion</label>
+            </value>
+            <value>
+                <fullName>Steering Gear System</fullName>
+                <default>false</default>
+                <label>Steering Gear System</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>70 - Cargo, Ballast, &amp; Slop System</controllingFieldValue>
+            <valueName>Cargo Oil System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>70 - Cargo, Ballast, &amp; Slop System</controllingFieldValue>
+            <valueName>Ballast System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71 - Cargo Offloading</controllingFieldValue>
+            <valueName>FWD Cargo Offloading System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71 - Cargo Offloading</controllingFieldValue>
+            <valueName>AFT Cargo Offloading System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>71 - Cargo Offloading</controllingFieldValue>
+            <valueName>Cargo Metering</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>72 - IGS &amp; Vent System</controllingFieldValue>
+            <valueName>Inert Gas System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>73 - Tank Monitoring System</controllingFieldValue>
+            <valueName>Tank Monitoring System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>73 - Tank Monitoring System</controllingFieldValue>
+            <valueName>Gas Sampling System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>74 - Valve Remote Control System</controllingFieldValue>
+            <valueName>Valve Remote Control System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>75 - Hull Tanks &amp; Structure</controllingFieldValue>
+            <valueName>Hull Tanks &amp; Void Spaces</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>76 - Corrosion Protection</controllingFieldValue>
+            <valueName>ICCP System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>80 - Propulsion</controllingFieldValue>
+            <valueName>Main Engine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>80 - Propulsion</controllingFieldValue>
+            <valueName>Steering Gear System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>81 - Living Quarter (LQ)</controllingFieldValue>
+            <valueName>Galley &amp; Laundry Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>81 - Living Quarter (LQ)</controllingFieldValue>
+            <valueName>Living Quarters - Cabins</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>82 - HVAC</controllingFieldValue>
+            <valueName>Accommodation / Engine Room HVAC System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>82 - HVAC</controllingFieldValue>
+            <valueName>Provision Ref. System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>82 - HVAC</controllingFieldValue>
+            <valueName>Topsides HVAC System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>20 - Inlet Gas Production/Gas Lift/Gas Export/Gas Import/Gas Injection</controllingFieldValue>
+            <valueName>Inlet Gas Production / Lift / Export / Import / Injection</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>83 - LQ Sewage &amp; Drain System</controllingFieldValue>
+            <valueName>LQ Sewage &amp; Drain System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>22 - Main Gas Compression</controllingFieldValue>
+            <valueName>Main Gas Compression - A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>84 - Laboratory &amp; Workshop Spaces</controllingFieldValue>
+            <valueName>Engine Room Workshop Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>84 - Laboratory &amp; Workshop Spaces</controllingFieldValue>
+            <valueName>Topsides Workshop &amp; Laboratory Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>23 - Gas Dehydration &amp; Regeneration</controllingFieldValue>
+            <valueName>Gas Dehydration &amp; Regeneration</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Material Handling System</controllingFieldValue>
+            <valueName>Pedestal Crane - Fwd</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Material Handling System</controllingFieldValue>
+            <valueName>Elevator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Material Handling System</controllingFieldValue>
+            <valueName>Engine Room Gantry Crane &amp; Lifiting Gears</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Material Handling System</controllingFieldValue>
+            <valueName>AFT Deck Crane</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>85 - Material Handling System</controllingFieldValue>
+            <valueName>Topsides Lifting Gear</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>24 - Gas Compression (GI)</controllingFieldValue>
+            <valueName>Gas Compression (GI)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>24 - Gas Compression (GI)</controllingFieldValue>
+            <valueName>Main Gas Compression - B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>86 - Deck Machinery &amp; Anchoring</controllingFieldValue>
+            <valueName>Deck Machinery &amp; Anchoring</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>30 - Flare &amp; Vent</controllingFieldValue>
+            <valueName>HP Flare System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>30 - Flare &amp; Vent</controllingFieldValue>
+            <valueName>Carcass Vent</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>87 - Helideck</controllingFieldValue>
+            <valueName>Heli Refueling System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>31 - Fuel Gas System - General</controllingFieldValue>
+            <valueName>Fuel Gas System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>90 - Area Completion</controllingFieldValue>
+            <valueName>Marine / Deck &amp; Accommodation Area Completion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>90 - Area Completion</controllingFieldValue>
+            <valueName>Topsides Area Completion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>33 - Chemical Injection</controllingFieldValue>
+            <valueName>Chemical Injection Tank - A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>33 - Chemical Injection</controllingFieldValue>
+            <valueName>Chemical Injection Tank - B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>34 - Closed/Open Drain System</controllingFieldValue>
+            <valueName>Closed Drain System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>34 - Closed/Open Drain System</controllingFieldValue>
+            <valueName>Open Drain System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>35 - Heat Medium</controllingFieldValue>
+            <valueName>Heating Medium System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>36 - Cooling Medium</controllingFieldValue>
+            <valueName>Cooling Medium System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>06 - Mooring System Mechanical Component</controllingFieldValue>
+            <valueName>Mooring Chan / Wire / Rope &amp; Fairlead</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>07 - Mooring System Component</controllingFieldValue>
+            <valueName>Chain Handling / Chain Jack / Chain Stoppers - FWD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>07 - Mooring System Component</controllingFieldValue>
+            <valueName>Chain Handling / Chain Jack / Chain Stoppers - AFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>08 - Installation Aids</controllingFieldValue>
+            <valueName>Riser Pull-in Winch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>08 - Installation Aids</controllingFieldValue>
+            <valueName>Riser Pull-in Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>10 - Inlet Oil Production</controllingFieldValue>
+            <valueName>Inlet Oil Production</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>11 - Crude Oil Treating/Stabilization</controllingFieldValue>
+            <valueName>Crude Oil Treating / Stabilization</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>12 - Flowline Circulation</controllingFieldValue>
+            <valueName>Flowline Circulation System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>14 - Produced Water Treatment</controllingFieldValue>
+            <valueName>Produced Water Treatment System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15 - Seawater Treatment &amp; Injection</controllingFieldValue>
+            <valueName>Seawater Treatment &amp; Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>15 - Seawater Treatment &amp; Injection</controllingFieldValue>
+            <valueName>Seawater Injection Pumps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>21 - Vapor Recovery Unit</controllingFieldValue>
+            <valueName>Vapor Recovery Unit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>37 - Process Inert Gas (N2)</controllingFieldValue>
+            <valueName>Process Inert Gas (N2)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40 - Power Generation</controllingFieldValue>
+            <valueName>Diesel Generator - 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40 - Power Generation</controllingFieldValue>
+            <valueName>Diesel Generator - 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40 - Power Generation</controllingFieldValue>
+            <valueName>Diesel Generator - 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40 - Power Generation</controllingFieldValue>
+            <valueName>Emergency Generator</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40 - Power Generation</controllingFieldValue>
+            <valueName>Gas Turbine Generator - 1</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40 - Power Generation</controllingFieldValue>
+            <valueName>Gas Turbine Generator - 2</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40 - Power Generation</controllingFieldValue>
+            <valueName>Gas Turbine Generator - 3</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>40 - Power Generation</controllingFieldValue>
+            <valueName>Gas Turbine Generator - 4</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>41 - Fuel System - Marine</controllingFieldValue>
+            <valueName>HFO System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>41 - Fuel System - Marine</controllingFieldValue>
+            <valueName>MGO System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>41 - Fuel System - Marine</controllingFieldValue>
+            <valueName>GTG Diesel Filtration &amp; Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>42 - Seawater System</controllingFieldValue>
+            <valueName>Engine Room Sea Water System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>42 - Seawater System</controllingFieldValue>
+            <valueName>Electrochlorination System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>42 - Seawater System</controllingFieldValue>
+            <valueName>Seawater Lift Pumps</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>43 - Steam &amp; Condensate System</controllingFieldValue>
+            <valueName>Boiler - A</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>43 - Steam &amp; Condensate System</controllingFieldValue>
+            <valueName>Boiler - B</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>43 - Steam &amp; Condensate System</controllingFieldValue>
+            <valueName>Feed Water &amp; Steam Distribution System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>43 - Steam &amp; Condensate System</controllingFieldValue>
+            <valueName>Topsides Steam Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>44 - Potable &amp; Fresh Water System</controllingFieldValue>
+            <valueName>Engine Room Fresh Water System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>44 - Potable &amp; Fresh Water System</controllingFieldValue>
+            <valueName>Topsides Fresh Water System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>45-Compressed(Utility &amp; Instrument)Air</controllingFieldValue>
+            <valueName>Engine Room Compressed Air System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>45-Compressed(Utility &amp; Instrument)Air</controllingFieldValue>
+            <valueName>Topsides IA/UA System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>46 - Lube Oil System</controllingFieldValue>
+            <valueName>Lube Oil System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>47 - Bilge System</controllingFieldValue>
+            <valueName>Bilge System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>50 - Life Saving &amp; Emergency Rescue</controllingFieldValue>
+            <valueName>Life Boats / Rescue Boats / Davits</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>50 - Life Saving &amp; Emergency Rescue</controllingFieldValue>
+            <valueName>Miscellaneous Safety System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>51 - E/R</controllingFieldValue>
+            <valueName>Fire Water System - FWD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>51 - E/R</controllingFieldValue>
+            <valueName>Fire Water System - AFT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>51 - E/R</controllingFieldValue>
+            <valueName>Emergency Fire Pump</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>51 - E/R</controllingFieldValue>
+            <valueName>Water Mist System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>51 - E/R</controllingFieldValue>
+            <valueName>Topsides Fire Water System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>52 -Deluge System</controllingFieldValue>
+            <valueName>Deluge System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>53 -Foam System</controllingFieldValue>
+            <valueName>Main Deck Foam System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>53 -Foam System</controllingFieldValue>
+            <valueName>Helideck Foam System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>53 -Foam System</controllingFieldValue>
+            <valueName>Topsides Foam System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>54 - Gaseous Fire Fighting System</controllingFieldValue>
+            <valueName>Marine CO2 System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>54 - Gaseous Fire Fighting System</controllingFieldValue>
+            <valueName>Topsides CO2 System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>55 - Portable Fire Fighting Equipment</controllingFieldValue>
+            <valueName>Portable Fire Fighting Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>56 - Waste Disposal &amp; Spill Containment</controllingFieldValue>
+            <valueName>Sewage System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>56 - Waste Disposal &amp; Spill Containment</controllingFieldValue>
+            <valueName>Slop Water System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>56 - Waste Disposal &amp; Spill Containment</controllingFieldValue>
+            <valueName>Miscellaneous Waste Disposal Equipment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60 - Power Distribution System</controllingFieldValue>
+            <valueName>Marine UPS System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60 - Power Distribution System</controllingFieldValue>
+            <valueName>Marine LV Emergency Power Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60 - Power Distribution System</controllingFieldValue>
+            <valueName>Marine Main LV Power Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60 - Power Distribution System</controllingFieldValue>
+            <valueName>Topsides UPS System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60 - Power Distribution System</controllingFieldValue>
+            <valueName>Topsides MV Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60 - Power Distribution System</controllingFieldValue>
+            <valueName>Topsides LV Distribution</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>60 - Power Distribution System</controllingFieldValue>
+            <valueName>Heat Tracing</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>61 - Lighting System</controllingFieldValue>
+            <valueName>Marine Emergency / Normal Lighting &amp; Small Power System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>61 - Lighting System</controllingFieldValue>
+            <valueName>Topsides Emergency Lighting and Small Power System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>61 - Lighting System</controllingFieldValue>
+            <valueName>Topsides Normal Lighting and Small Power System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>62 - Facility Control System</controllingFieldValue>
+            <valueName>Process Control System (PCS) - Marine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>62 - Facility Control System</controllingFieldValue>
+            <valueName>Safety Shutdown System (SSDS)  - Marine</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>62 - Facility Control System</controllingFieldValue>
+            <valueName>CCR - Addressable Fire Detection System - AFDS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>62 - Facility Control System</controllingFieldValue>
+            <valueName>Alarm Management System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>62 - Facility Control System</controllingFieldValue>
+            <valueName>E-House - Addressable Fire Detection System - AFDS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>62 - Facility Control System</controllingFieldValue>
+            <valueName>Process Control System (PCS) - Topsides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>62 - Facility Control System</controllingFieldValue>
+            <valueName>Safety Shutdown System System (SSDS) - Topsides</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>PAGA System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>Multimedia / LAN / PABX System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>CCTV (Surveillance) System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>Satellite TV System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>Operational Support Radio System (UHF/VHF)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>Satellite Communication System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>MODEC V-SAT Communication System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>OMTS System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>Monflex Riser CCTV System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>Position Offset Diagram System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>Riser Monitoring System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>Internal Communication System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>63 - Communication System</controllingFieldValue>
+            <valueName>Petrobras V-SAT Communication System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>64 - Navigation System</controllingFieldValue>
+            <valueName>Navigation Aids / Helideck Warning System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>64 - Navigation System</controllingFieldValue>
+            <valueName>Helideck Warning System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>64 - Navigation System</controllingFieldValue>
+            <valueName>Navigation Aid - FPSO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>65 - EMP Data &amp; Position Reference Syst</controllingFieldValue>
+            <valueName>Environmental Monitoring System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>65 - EMP Data &amp; Position Reference Syst</controllingFieldValue>
+            <valueName>Positioning Reference System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>66 - Subsea Control System</controllingFieldValue>
+            <valueName>Subsea HPU System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>66 - Subsea Control System</controllingFieldValue>
+            <valueName>Subsea Data Acquisition System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>66 - Subsea Control System</controllingFieldValue>
+            <valueName>MODA System</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>66 - Subsea Control System</controllingFieldValue>
+            <valueName>DEH (for future use)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>66 - Subsea Control System</controllingFieldValue>
+            <valueName>SMP (for future use)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>67 - Metering System</controllingFieldValue>
+            <valueName>Metering System</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

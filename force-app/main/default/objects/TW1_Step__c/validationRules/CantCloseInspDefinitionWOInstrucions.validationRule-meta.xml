@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantCloseInspDefinitionWOInstrucions</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+RecordType.DeveloperName = &quot;Approval_Step_Inspection_Definition&quot;,
+ISPICKVAL(TW1_Status__c , &quot;Closed&quot;),
+ISBLANK(  TW1_Inspection_Instruction__c  )
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t close this step without a Inspection Instruction.</errorMessage>
+</ValidationRule>

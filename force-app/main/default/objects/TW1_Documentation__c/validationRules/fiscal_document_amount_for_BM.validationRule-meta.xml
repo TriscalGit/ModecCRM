@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>fiscal_document_amount_for_BM</fullName>
+    <active>true</active>
+    <errorConditionFormula>TW1_Request__r.TW1_Count_fiscal_docs__c &gt;= 1</errorConditionFormula>
+    <errorMessage>Each BM must have only one fiscal document</errorMessage>
+</ValidationRule>

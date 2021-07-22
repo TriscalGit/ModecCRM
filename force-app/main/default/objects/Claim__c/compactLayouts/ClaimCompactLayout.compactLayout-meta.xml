@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClaimCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>VesselShortName__c</fields>
+    <fields>Source__c</fields>
+    <fields>Category__c</fields>
+    <fields>AmountUnderDisputeSum__c</fields>
+    <fields>ResultsSum__c</fields>
+    <fields>Status__c</fields>
+    <label>Claim Compact Layout</label>
+</CompactLayout>

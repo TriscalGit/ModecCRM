@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_HSSE_Risk__c</fullName>
+    <externalId>false</externalId>
+    <label>HSSE Risk</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>TGP_HSSE_Risk</valueSetName>
+    </valueSet>
+</CustomField>

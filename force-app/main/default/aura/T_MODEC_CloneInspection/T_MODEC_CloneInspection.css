@@ -1,0 +1,53 @@
+.THIS .mainBox{
+    overflow: hidden;
+}
+
+.THIS .inspectionPageHeader{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.THIS .imageHeaderLogo{
+    height: 45px;
+    width: auto;
+}
+
+.THIS .redStyleBar{
+    width: 100%;
+    height: 6px;
+    background-color: #ED1942;
+}
+
+.THIS .placeHolderMsgSucesso{
+    font-size: 17px;
+}
+
+.THIS .placeHolderMsgErro{
+    font-size: 17px;
+}
+
+.THIS .msgSucesso{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.THIS .msgErro{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+
+.THIS .btnConfirm{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.THIS .blueStyleBar{
+    width: 100%;
+    height: 6px;
+    background-color: #064F9C;
+}

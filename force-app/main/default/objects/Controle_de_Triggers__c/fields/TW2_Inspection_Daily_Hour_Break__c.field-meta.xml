@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW2_Inspection_Daily_Hour_Break__c</fullName>
+    <description>Number field to determine a 24 hour clock. Used to determine if today should count as an available date,</description>
+    <externalId>false</externalId>
+    <label>Inspection Daily Hour Break</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

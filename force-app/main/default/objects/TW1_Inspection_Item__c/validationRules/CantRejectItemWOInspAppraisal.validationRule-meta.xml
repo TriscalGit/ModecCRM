@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantRejectItemWOInspAppraisal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( TW1_Status__c , &quot;Rejected&quot;),
+ISNULL( TW1_Inspection_Appraisal__c )
+)</errorConditionFormula>
+    <errorMessage>You can&apos;t give this Item a rejected result without filling the field Inspection Appraisal.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,75 @@
+<aura:component controller="T_WarningViewScreenController" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+    <aura:attribute name="Warnings" type="Object[]" access="private"/>
+    <aura:attribute name="CardSizes" type="String" access="private"/>
+    <aura:attribute name="TotalNumberOfWarnings" type="Integer" access="private"/>
+    <aura:attribute name="NumberOfWarningsToShow" type="Integer" access="private"/>
+    <aura:attribute name="ScreenSize" type="String" access="private"/>
+    <aura:attribute name="WarningSetting" type="Object" access="private"/>
+    <aura:attribute name="warningDateToOrder" type="String" access="private" default="TCF_DueDate__c"/>
+    <aura:attribute name="warningOrders" type="String" access="private" default="asc"/>
+    <aura:attribute name="sizeOfFilter" type="String" access="private" default="6"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+    <div aura:id="measurement"/>
+    
+    <lightning:card title="Warning News" iconName="custom:custom29" class="lgc-bg slds-m-horizontal_small">
+        <lightning:layout multipleRows="true">
+            <lightning:layoutItem padding="" size="{!v.sizeOfFilter}" flexibility="auto">
+                <lightning:select name="warningDateToOrder"
+                                  aura:id="warningDateToOrder"
+                                  label="Date to ordenate"
+                                  value="{!v.warningDateToOrder}"
+                                  class="slds-m-horizontal_large"
+                                  onchange="{!c.ordenateWarnings}">
+                    <option value="TCF_DueDate__c">Due Date</option>
+                    <option value="PublicationDate__c">Publish Date</option>
+                </lightning:select>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="" size="{!v.sizeOfFilter}" flexibility="auto">
+                <lightning:select name="warningOrders"
+                                  aura:id="warningOrders"
+                                  label="Order of warnings"
+                                  value="{!v.warningOrders}"
+                                  class="slds-m-horizontal_large"
+                                  onchange="{!c.ordenateWarnings}">
+                    <option value="asc">Ascending order</option>
+                    <option value="desc">Descending order</option>
+                </lightning:select>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </lightning:card>
+    
+    <aura:if isTrue="{!v.TotalNumberOfWarnings > 0 ? true : false}">
+        <lightning:layout multipleRows="true">
+            <aura:iteration items="{!v.Warnings}" var="Warning">
+                <aura:if isTrue="{!lessthan(_index,v.NumberOfWarningsToShow)}">
+                    <lightning:layoutItem padding="around-small" size="{!v.CardSizes}" flexibility="auto">
+                        <lightning:card footer="{!'Publication Date: '+Warning.PublicationDateView__c}" title="{!Warning.TCF_Subject__c}">
+                            <aura:set attribute="actions">
+                                <div onclick="{!c.OpenWarning}" data-value="{!Warning.Id}">
+                                    <lightning:button label="Open Warning"/>
+                                </div>
+                            </aura:set>
+                            <div class="RichTextAreaView slds-m-horizontal_x-small">
+                                <ui:outputRichText value="{!Warning.TCF_Notice__c}"/>
+                            </div>
+                        </lightning:card>
+                    </lightning:layoutItem>
+                </aura:if>
+            </aura:iteration>
+        </lightning:layout>
+        <aura:if isTrue="{!lessthan(v.NumberOfWarningsToShow,v.TotalNumberOfWarnings)}">
+            <div style="text-align: center;padding: 20px 0px;">
+                <lightning:button label="Load more warnings" onclick="{!c.LoadMore}"/>
+            </div>
+        </aura:if>
+    </aura:if>
+    
+    <aura:if isTrue="{!v.TotalNumberOfWarnings == 0 ? true : false}">
+        <lightning:card class="slds-m-horizontal_small">
+            <div style="text-align: center;margin-bottom: 1.5rem;">
+                <p>Sorry, we do not have any warning at the moment.</p>
+            </div>
+        </lightning:card>
+    </aura:if>
+</aura:component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Previous_Contract_Amount__c</fullName>
+    <externalId>false</externalId>
+    <label>Previous Contract Amount</label>
+    <summarizedField>TW1_MODEC_Contract__c.TW1_Contracted_Value_B__c</summarizedField>
+    <summaryForeignKey>TW1_MODEC_Contract__c.TW1_Vendor__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <type>Summary</type>
+</CustomField>

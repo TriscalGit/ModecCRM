@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalSupportedPending__c</fullName>
+    <externalId>false</externalId>
+    <label>Total Supported Pending</label>
+    <summaryFilterItems>
+        <field>TechnicalMemberSupport__c.Status__c</field>
+        <operation>equals</operation>
+        <value>Pending, Not Supported</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>TechnicalMemberSupport__c.Type__c</field>
+        <operation>equals</operation>
+        <value>NAM</value>
+    </summaryFilterItems>
+    <summaryForeignKey>TechnicalMemberSupport__c.NAM__c</summaryForeignKey>
+    <summaryOperation>count</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantStartVettingExpDateLessThan6Months</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND
+(
+ ISNEW(),
+ RecordType.DeveloperName  = &quot;TW1_Vendor_Vetting&quot;,
+ NOT(ISBLANK(TW1_Vendor__r.TW1_Shelf_Life_Vetting_Date__c)), 
+ TW1_Vendor__r.TW1_Shelf_Life_Vetting_Date__c  &gt;= TODAY() + 180,
+ NOT($Profile.Id =  LEFT($Setup.ID_Profile__c.ID_Profile_VV_Team__c, 15)),
+ NOT($Profile.Id =  LEFT($Setup.ID_Profile__c.ID_Profile_System_Admin__c, 15))  
+)</errorConditionFormula>
+    <errorMessage>Can&apos;t start Vendor Vetting as expiration date is bigger than 6 months.</errorMessage>
+</ValidationRule>

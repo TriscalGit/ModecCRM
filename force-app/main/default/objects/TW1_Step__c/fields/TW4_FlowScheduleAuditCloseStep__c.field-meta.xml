@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW4_FlowScheduleAuditCloseStep__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(
+				AND(
+								(Today()- DATEVALUE(CreatedDate)) &gt; 30,
+								ISPICKVAL(TW4_Nonconformity_Criticism__c, &quot;High&quot;),
+								ISPICKVAL(TW1_Status__c, &apos;Opened&apos;)
+				),
+AND(
+								(Today()- DATEVALUE(CreatedDate)) &gt; 60,
+								ISPICKVAL(TW4_Nonconformity_Criticism__c, &quot;Moderate&quot;),
+								ISPICKVAL(TW1_Status__c, &apos;Opened&apos;)
+),
+				AND(
+								(Today()- DATEVALUE(CreatedDate)) &gt; 90,
+								OR(
+								ISPICKVAL(TW4_Nonconformity_Criticism__c, &quot;Low&quot;),
+												ISPICKVAL(TW4_Nonconformity_Criticism__c, &quot;Observation&quot;)
+												),
+								ISPICKVAL(TW1_Status__c, &apos;Opened&apos;)
+)
+				)</formula>
+    <label>FlowScheduleAuditCloseStep</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

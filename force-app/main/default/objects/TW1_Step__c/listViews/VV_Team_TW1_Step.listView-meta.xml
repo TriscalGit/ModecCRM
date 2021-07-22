@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VV_Team_TW1_Step</fullName>
+    <columns>NAME</columns>
+    <columns>TW1_Request__c</columns>
+    <columns>TW1_Vendor__c</columns>
+    <columns>OWNER.ALIAS</columns>
+    <filterScope>Queue</filterScope>
+    <label>VV Team</label>
+    <queue>VV_Team</queue>
+    <sharedTo>
+        <role>Docs_Validation_VV</role>
+    </sharedTo>
+</ListView>

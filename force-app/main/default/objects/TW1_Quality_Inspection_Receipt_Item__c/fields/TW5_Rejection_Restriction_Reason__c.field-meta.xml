@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW5_Rejection_Restriction_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Rejection/Restriction Reason</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Documentation</fullName>
+                <default>false</default>
+                <label>Documentation</label>
+            </value>
+            <value>
+                <fullName>Manufacturing Defect</fullName>
+                <default>false</default>
+                <label>Manufacturing Defect</label>
+            </value>
+            <value>
+                <fullName>Out of Specification</fullName>
+                <default>false</default>
+                <label>Out of Specification</label>
+            </value>
+            <value>
+                <fullName>PO Divergence</fullName>
+                <default>false</default>
+                <label>PO Divergence</label>
+            </value>
+            <value>
+                <fullName>Abserve of PO</fullName>
+                <default>false</default>
+                <label>Abserve of PO</label>
+            </value>
+            <value>
+                <fullName>ITEM NO PRESENTATION</fullName>
+                <default>false</default>
+                <label>ITEM NO PRESENTATION</label>
+            </value>
+            <value>
+                <fullName>Final Delivery</fullName>
+                <default>false</default>
+                <label>Final Delivery</label>
+            </value>
+            <value>
+                <fullName>Lack of Preservation</fullName>
+                <default>false</default>
+                <label>Lack of Preservation</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

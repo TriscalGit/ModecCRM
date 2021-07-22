@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IfTQMOCYesFillTQMOCReason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(TW5_TQ_MOC__c  , &quot;Yes&quot;),  
+  ISBLANK( TW5_TQ_MOC_Reason__c )
+)</errorConditionFormula>
+    <errorMessage>If this item has TQ/MOC, you have to fill TQ/MOC Reason.</errorMessage>
+</ValidationRule>

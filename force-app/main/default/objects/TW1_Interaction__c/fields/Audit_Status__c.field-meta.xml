@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Audit_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Audit Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Approved without nonconformities</fullName>
+                <default>false</default>
+                <label>Approved without nonconformities</label>
+            </value>
+            <value>
+                <fullName>Approved with nonconformities</fullName>
+                <default>false</default>
+                <label>Approved with nonconformities</label>
+            </value>
+            <value>
+                <fullName>Not Approved</fullName>
+                <default>false</default>
+                <label>Not Approved</label>
+            </value>
+            <value>
+                <fullName>Audit Filled</fullName>
+                <default>false</default>
+                <label>Audit Filled</label>
+            </value>
+            <value>
+                <fullName>Awaiting Evidence</fullName>
+                <default>false</default>
+                <label>Awaiting Evidence</label>
+            </value>
+            <value>
+                <fullName>Evidence Approved</fullName>
+                <default>false</default>
+                <label>Evidence Approved</label>
+            </value>
+            <value>
+                <fullName>Audit Process Completed Successfully</fullName>
+                <default>false</default>
+                <label>Audit Process Completed Successfully</label>
+            </value>
+            <value>
+                <fullName>Awaiting Evidence Validation</fullName>
+                <default>false</default>
+                <label>Awaiting Evidence Validation</label>
+            </value>
+            <value>
+                <fullName>Evidence Rejected</fullName>
+                <default>false</default>
+                <label>Evidence Rejected</label>
+            </value>
+            <value>
+                <fullName>Action Plan Reproved</fullName>
+                <default>false</default>
+                <label>Action Plan Reproved</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

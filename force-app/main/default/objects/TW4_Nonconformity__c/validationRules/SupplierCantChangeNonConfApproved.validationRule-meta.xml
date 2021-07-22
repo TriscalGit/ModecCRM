@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SupplierCantChangeNonConfApproved</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+				
+				OR(
+								ISPICKVAL(TW4_Nonconformity_Status__c, &quot;Approved&quot;),
+								NOT(ISPICKVAL(TW4_Interaction__r.TW1_Status__c, &quot;Awaiting Action Plan&quot;)),
+								ISCHANGED(TW4_Corrective_Action__c),
+								ISCHANGED( TW4_Preventive_Action__c )
+								),
+
+    $User.ProfileId =  CASESAFEID(&quot;$Setup.ID_Profile__c.ID_Profile_Supplier__c&quot;)
+				)</errorConditionFormula>
+    <errorMessage>You cannot change a Nonconformity if it is already Approved.</errorMessage>
+</ValidationRule>

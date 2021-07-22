@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantConfirmAuditWhenAlreadyAppraisal</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				RecordType.DeveloperName = &quot;Audit&quot;,
+			 NOT(ISBLANK(TEXT(TW4_Audit_Appraisal__c))),
+				OR (
+								ISCHANGED( TW1_Beginning_Date__c ),
+												ISCHANGED( TW1_End_Date__c ),
+																ISCHANGED( TW1_Location_Base__c ),
+																				ISCHANGED( Scope__c ),
+																								ISCHANGED(TW1_Auditors__c),
+																												ISCHANGED(  TW1_Comments__c )
+								)
+)</errorConditionFormula>
+    <errorMessage>Can&apos;t reschedule an audit when it has already had an appraisal.</errorMessage>
+</ValidationRule>

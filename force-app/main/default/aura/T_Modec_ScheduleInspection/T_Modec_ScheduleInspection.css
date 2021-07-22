@@ -1,0 +1,63 @@
+.THIS .mainBox{
+    overflow: hidden;
+}
+
+.THIS .inspectionPageHeader{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.THIS .imageHeaderLogo{
+    height: 45px;
+    width: auto;
+}
+
+.THIS .redStyleBar{
+    width: 100%;
+    height: 6px;
+    background-color: #ED1942;
+}
+
+.THIS .inspectionDatesDiv{
+    overflow: auto;
+}
+
+.THIS .emergencyDateDiv{
+    overflow:auto;
+}
+
+.THIS .dateFieldLeft{
+    float: left;
+    width: 48%;
+}
+
+.THIS .dateFieldRight{
+    float: right;
+    width: 48%;
+}
+
+.THIS .btnEmergencyDate{
+    float: right;
+    margin-top: 20px;
+}
+
+.THIS .btnInspectionDate{
+    float: right;
+    margin-top: 20px;
+}
+
+.THIS .notesArea{
+    width: 100%;
+}
+
+.THIS .btnSave{
+    float: right;
+    margin-top: 12px;
+}
+
+.THIS .blueStyleBar{
+    width: 100%;
+    height: 6px;
+    background-color: #064F9C;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_Inspecao_7_3__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+	ISPICKVAL($User.LanguageLocaleKey,&quot;pt_BR&quot;), 
+	&quot;O modo de embalagem e proteção para transporte do material fabricado está adequado&quot;,
+	&quot;The packaging and protection mode for transporting the manufactured material is adequate&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>7.3</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

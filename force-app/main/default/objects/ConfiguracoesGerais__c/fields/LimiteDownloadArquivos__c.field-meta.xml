@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LimiteDownloadArquivos__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Limite de arquivos que a funcionalidade de download do Documentaion vai fazer ao mesmo tempo</inlineHelpText>
+    <label>Limite Download Arquivos</label>
+    <precision>2</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

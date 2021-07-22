@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Step_approval_flow__c</fullName>
+    <externalId>false</externalId>
+    <formula>if(or(RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Complete_Registration__c,15),
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Compliance_Initial_Validat__c,15),  
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Compliance_Step_1__c,15),
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Compliance_Step_2__c,15),
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Docs_Validation_VV__c,15), 
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Engineering__c,15), 
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Finance_Step_1__c,15), 
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Finance_Step_2__c,15), 
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_HSEQ_EPCI_or_Operation__c,15), 
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Procurement_Manager__c,15), 
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Quality__c,15), 
+ RecordTypeId == LEFT($Setup.IDStep__c.Id_RecordType_Vetting_Final_Check__c,15)), true, false)</formula>
+    <label>Step approval flow</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

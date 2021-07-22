@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>NAM__c</fields>
+    <fields>ReviewStatus__c</fields>
+    <fields>FocalPoint__c</fields>
+    <fields>NamOwner__c</fields>
+    <label>Compact Layout</label>
+</CompactLayout>

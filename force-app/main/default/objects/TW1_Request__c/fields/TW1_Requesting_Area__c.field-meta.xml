@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Requesting_Area__c</fullName>
+    <externalId>false</externalId>
+    <label>Requesting Area</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Adm</fullName>
+                <default>false</default>
+                <label>Adm</label>
+            </value>
+            <value>
+                <fullName>BP&amp;M</fullName>
+                <default>false</default>
+                <label>BP&amp;M</label>
+            </value>
+            <value>
+                <fullName>Compliance</fullName>
+                <default>false</default>
+                <label>Compliance</label>
+            </value>
+            <value>
+                <fullName>Communication</fullName>
+                <default>false</default>
+                <label>Communication</label>
+            </value>
+            <value>
+                <fullName>Contracts</fullName>
+                <default>false</default>
+                <label>Contracts</label>
+            </value>
+            <value>
+                <fullName>Engineering</fullName>
+                <default>false</default>
+                <label>Engineering</label>
+            </value>
+            <value>
+                <fullName>EPCI</fullName>
+                <default>false</default>
+                <label>EPCI</label>
+            </value>
+            <value>
+                <fullName>Financial</fullName>
+                <default>false</default>
+                <label>Financial</label>
+            </value>
+            <value>
+                <fullName>Laboratory Management</fullName>
+                <default>false</default>
+                <label>Laboratory Management</label>
+            </value>
+            <value>
+                <fullName>HSEQ</fullName>
+                <default>false</default>
+                <label>HSEQ</label>
+            </value>
+            <value>
+                <fullName>Import / Export</fullName>
+                <default>false</default>
+                <label>Import / Export</label>
+            </value>
+            <value>
+                <fullName>Integrity</fullName>
+                <default>false</default>
+                <label>Integrity</label>
+            </value>
+            <value>
+                <fullName>Legal</fullName>
+                <default>false</default>
+                <label>Legal</label>
+            </value>
+            <value>
+                <fullName>Materials Logistics</fullName>
+                <default>false</default>
+                <label>Materials Logistics</label>
+            </value>
+            <value>
+                <fullName>People Logistics</fullName>
+                <default>false</default>
+                <label>People Logistics</label>
+            </value>
+            <value>
+                <fullName>Maintenance</fullName>
+                <default>false</default>
+                <label>Maintenance</label>
+            </value>
+            <value>
+                <fullName>Navy</fullName>
+                <default>false</default>
+                <label>Navy</label>
+            </value>
+            <value>
+                <fullName>Metering</fullName>
+                <default>false</default>
+                <label>Metering</label>
+            </value>
+            <value>
+                <fullName>Operation</fullName>
+                <default>false</default>
+                <label>Operation</label>
+            </value>
+            <value>
+                <fullName>Planning</fullName>
+                <default>false</default>
+                <label>Planning</label>
+            </value>
+            <value>
+                <fullName>Project - Fleet Services</fullName>
+                <default>false</default>
+                <label>Project - Fleet Services</label>
+            </value>
+            <value>
+                <fullName>HR</fullName>
+                <default>false</default>
+                <label>HR</label>
+            </value>
+            <value>
+                <fullName>Process Safety</fullName>
+                <default>false</default>
+                <label>Process Safety</label>
+            </value>
+            <value>
+                <fullName>Supply chain</fullName>
+                <default>false</default>
+                <label>Supply chain</label>
+            </value>
+            <value>
+                <fullName>IT</fullName>
+                <default>false</default>
+                <label>IT</label>
+            </value>
+            <value>
+                <fullName>Technical Training</fullName>
+                <default>false</default>
+                <label>Technical Training</label>
+            </value>
+            <value>
+                <fullName>Presidency</fullName>
+                <default>false</default>
+                <label>Presidency</label>
+            </value>
+            <value>
+                <fullName>Providers</fullName>
+                <default>false</default>
+                <label>Providers</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

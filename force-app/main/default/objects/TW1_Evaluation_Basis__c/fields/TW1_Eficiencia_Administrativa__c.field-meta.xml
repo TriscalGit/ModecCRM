@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Eficiencia_Administrativa__c</fullName>
+    <externalId>false</externalId>
+    <formula>(IF(TW1_1_1_1__c = &apos;N/A&apos;, 0,  VALUE( TW1_1_1_1__c)) + IF(TW1_1_1_2__c = &apos;N/A&apos;, 0,  VALUE(TW1_1_1_2__c) ) + IF(TW1_1_1_3__c = &apos;N/A&apos;, 0, VALUE(TW1_1_1_3__c)) + IF(TW1_1_1_4__c = &apos;N/A&apos;, 0, VALUE(TW1_1_1_4__c)) + IF(TW1_1_1_5__c = &apos;N/A&apos;, 0, VALUE(TW1_1_1_5__c)) + IF(TW1_1_1_6__c = &apos;N/A&apos;, 0, VALUE(TW1_1_1_6__c)) + IF(TW1_1_1_7__c = &apos;N/A&apos;, 0, VALUE(TW1_1_1_7__c)))
+
+ / 
+
+(IF(TW1_1_1_1__c = &apos;N/A&apos;, 0,  1) + IF(TW1_1_1_2__c = &apos;N/A&apos;, 0,  1) + IF(TW1_1_1_3__c = &apos;N/A&apos;, 0, 1) + IF(TW1_1_1_4__c = &apos;N/A&apos;, 0, 1) + IF(TW1_1_1_5__c = &apos;N/A&apos;, 0, 1) + IF(TW1_1_1_6__c = &apos;N/A&apos;, 0, 1) + IF(TW1_1_1_7__c = &apos;N/A&apos;, 0, 1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Eficiencia Administrativa</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>3</scale>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

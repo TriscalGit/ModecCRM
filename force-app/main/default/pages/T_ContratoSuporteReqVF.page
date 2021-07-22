@@ -1,0 +1,249 @@
+<!--
+  @File Name          : T_ContratoSuporteReqVF.page
+  @Description        : 
+  @Author             : Mario Jorge
+  @Group              : 
+  @Last Modified By   : Mario Oliveira
+  @Last Modified On   : 04/12/2019 11:51:07
+  @Modification Log   : 
+  Ver       Date            Author                  Modification
+  1.0    25/10/2019   Mario Jorge     Initial Version
+-->
+<apex:page controller="T_MODEC_ContratoSuporteReq_CTRL" renderAs="PDF" standardStylesheets="false" applyBodyTag="false" >
+    <apex:param name="contratoId" value="" />
+    <head>
+        <style>
+            html { font-size: 11px; }
+            .label { font-weight: bold; }
+            .block_top { background-color: #CCC; border: 2px solid black; font-weight: bold; text-align: center; }
+            h1 { font-size: 18px; }
+            td { border: 1px solid black; padding: 5px 10px; }
+            table { width: 100%; border: 2px solid black; border-collapse: collapse; }
+            #footerCod { border: 1px solid #BBB; margin-top: 10px; padding: 5px 30px 5px 150px; font-size: 8px; position: absolute; right: 5px; }
+
+            .subTr { display: block; padding: 6px 0px; border-top: 1px solid black; }
+            .emptyRow { padding: 10px 0px; }
+            .emptyThinRow { padding: 4px 0px; }
+            .borderBottomBold { border-bottom: 2px solid black; }
+            .centerText { text-align: center; }
+            .noBorderRight { border-right-color: transparent; }
+            .noBorderLeft { border-left-color: transparent; }
+            .noBorderHorizontal { border-left-color: transparent; border-right-color: transparent; }
+        </style>
+    </head>
+    <body>
+        
+        <table>
+            <tbody>
+            	<tr> <!-- Contract Support Request -->
+                    <td class="noBorderRight borderBottomBold" colspan="4" >
+                    	<h1 class="col-8">CONTRACT SUPPORT REQUEST</h1>
+                    </td>
+                    <td class="noBorderLeft borderBottomBold" colspan="2" >
+                    	<apex:image url="/resource/1572459206000/LOGO_MODEC_CONTRACT" width="225" height="55" ></apex:image>
+                    </td>
+                </tr>
+                <tr> <!-- informations Top -->
+                    <td class="label noBorderRight" colspan="1">CONTRACT NUMBER:</td>
+                    <td class="noBorderHorizontal centerText" colspan="2"><apex:outputText value="{!contratoVF.NameDTO}" /></td>
+                	<td class="label noBorderHorizontal" colspan="2">SAP OUTLINE AGREEMENT NUMBER:</td>
+                    <td class="noBorderLeft centerText" colspan="1"><apex:outputText value="{!contratoVF.SapOutlineAgreementNumberDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label noBorderRight" colspan="3">TYPE OF CONTRACT:</td>
+                    <td class="noBorderLeft centerText" colspan="3"><apex:outputText value="{!contratoVF.TypeOfContractDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label noBorderRight" colspan="1">REQUESTOR/SPONSOR:</td>
+                    <td class="noBorderLeft centerText" colspan="2"><apex:outputText value="{!contratoVF.RequestorSponsorDTO}" /></td>
+                    <td class="label noBorderRight" colspan="1">JOB TITLE:</td>
+                    <td class="noBorderLeft centerText" colspan="2"><apex:outputText value="{!contratoVF.JobTitleDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label noBorderRight" colspan="1">DATE:</td>
+                    <td class="noBorderLeft centerText" colspan="2"><apex:outputText value="{!contratoVF.DateDTO}" /></td>
+                    <td class="label noBorderRight" colspan="1">SIGNATURE:</td>
+                    <td class="noBorderLeft centerText" colspan="2"><apex:outputText value="" /></td>
+                </tr>
+                <tr> <!-- /// CONTRACTED PARTY /// -->
+                    <td class="block_top" colspan="6">CONTRACTED PARTY:</td>
+                </tr>
+                <tr>
+                    <td class="label noBorderRight" colspan="1">NAME:</td>
+                    <td class="noBorderLeft centerText" colspan="3"><apex:outputText value="{!contratoVF.VendorDTO}" /></td>
+                    <td class="label" colspan="1">CNPJ nº</td>
+                    <td class="centerText"  colspan="1"><apex:outputText value="{!contratoVF.VendorCNPJDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label noBorderRight" colspan="1">VENDOR VETTING:</td>
+                    <td class="noBorderLeft centerText" colspan="2"><apex:outputText value="{!contratoVF.VendorVettingDTO}" /></td>
+                    <td class="label noBorderRight" colspan="1">SAP CODE:</td>
+                    <td class="noBorderLeft centerText" colspan="2"><apex:outputText value="{!contratoVF.SAPCodeDTO}" /></td>
+                </tr>
+                <tr> <!-- Esta row é a referencia de todo documento. *** LEMBRAR! *** -->
+                    <td class="label" style="width: 5%;">MAIN CONTACT:</td>
+                    <td class="centerText" style="width: 45%;"><apex:outputText value="{!contratoVF.MainContactDTO}" /></td>
+                    <td class="label" style="width: 5%;">e-mail:</td>
+                    <td class="centerText" style="width: 20%;"><apex:outputText value="{!contratoVF.PartyEmailDTO}" /></td>
+                	<td class="label" style="width: 5%;">Telephone:</td>
+                    <td class="centerText" style="width: 20%;"><apex:outputText value="" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="2">BID?:</td>
+                    <td class="centerText" colspan="4"><apex:outputText value="{!contratoVF.BIDDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="2">JUSTIFICATION:</td>
+                    <td class="centerText" colspan="4"><apex:outputText value="{!contratoVF.JustificationDTO}" /></td>
+                </tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr><td class="emptyThinRow" colspan="6"></td></tr>
+                <tr> <!-- /// CONTEMPLATED IN THIS AGREEMENT/AMENDMENT /// -->
+                    <td class="block_top" colspan="6">CONTEMPLATED IN THIS AGREEMENT/AMENDMENT:</td>
+                </tr>
+                <tr><td style="padding-left: 4px; padding-right: 4px;" class="emptyRow" colspan="6"><apex:outputText value="{!contratoVF.ContempledInThisAgreementDTO}" /></td></tr> <!-- NewField - 03/12/2019 -->
+                <!-- <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr> -->
+                <tr>
+                    <td class="label" colspan="1">TERMINATION:</td>
+                    <td class="centerText" colspan="5"><apex:outputText value="{!contratoVF.TerminationConditionsPenaltyDTO}" /></td>
+                </tr>
+                <tr> <!-- /// VALUES /// -->
+                    <td class="block_top" colspan="6">VALUES:</td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="1">PREVIOUS CONTRACT AMOUNT (A):</td>
+                    <td class="centerText" colspan="2"><apex:outputText value="{!contratoVF.PreviousContractAmountADTO}" /></td>
+                    <td class="label" colspan="1">ACCUMULATED CONTRACT AMOUNT (A+B):</td>
+                    <td class="centerText"  colspan="2"><apex:outputText value="{!contratoVF.AccumulatedContractAmoutDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="1">CONTRACTED VALUE (B):</td>
+                    <td class="centerText" colspan="2"><apex:outputText value="{!contratoVF.ContractedValueBDTO}" /></td>
+                    <td class="label" colspan="1">INCREASE (%):</td>
+                    <td class="centerText"  colspan="2"><apex:outputText value="{!contratoVF.IncreaseDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="1">ANNUAL ESTIMATE:</td>
+                    <td class="centerText" colspan="2"><apex:outputText value="{!contratoVF.AnnualEstimateDTO}" /></td>
+                    <td class="label noBorderRight" colspan="1">CURRENCY:</td>
+                    <td class="noBorderLeft centerText"  colspan="2"><apex:outputText value="{!contratoVF.CurrencyIsoCodeDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="1">MONTHLY (IF FIXED):</td>
+                    <td class="centerText" colspan="1"><apex:outputText value="{!contratoVF.MonthlyIfFixedDTO}" /></td>
+                    <td class="label noBorderRight" colspan="1">ESCALATION:</td>
+                    <td class="noBorderLeft centerText"  colspan="1"><apex:outputText value="{!contratoVF.EscalationDTO}" /></td>
+                    <td class="label" colspan="1">DURATION:</td>
+                    <td class="centerText"  colspan="1"><apex:outputText value="{!contratoVF.DurationDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="1">PAYMENT TERM:</td>
+                    <td class="centerText" colspan="1"><apex:outputText value="{!contratoVF.PaymentTermDTO}" /></td>
+                    <td class="label" colspan="1">START DATE:</td>
+                    <td class="centerText"  colspan="1"><apex:outputText value="{!contratoVF.StartDateDTO}" /></td>
+                    <td class="label" colspan="1">END DATE:</td>
+                    <td class="centerText"  colspan="1"><apex:outputText value="{!contratoVF.EndDateDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="2">PAYMENT CONDITIONS:</td>
+                    <td class="centerText" colspan="4"><apex:outputText value="{!contratoVF.PaymentConditionsDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="2">PO NUMBER:</td>
+                    <td class="centerText" colspan="4"><apex:outputText value="{!contratoVF.PONumberDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="1">BUDGETED 2019?</td>
+                    <td class="centerText" colspan="2"><apex:outputText value="{!contratoVF.Budgeted2019DTO}" /></td>
+                    <td class="label noBorderRight" colspan="1">JUSTIFICATION:</td>
+                    <td class="noBorderLeft centerText"  colspan="2"><apex:outputText value="{!contratoVF.BudgetedJustificationDTO}" /></td>
+                </tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+                <tr>
+                    <td class="label" colspan="2">COST CENTER:</td>
+                    <td class="centerText" colspan="4"><apex:outputText value="{!contratoVF.CostCenterDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="2">WBS nº:</td>
+                    <td class="centerText" colspan="4"><apex:outputText value="{!contratoVF.WBSNumberDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="2">DEPARTMENT CODE</td>
+                    <td class="centerText" colspan="4"><apex:outputText value="{!contratoVF.DepartmentCodeDTO}" /></td>
+                </tr>
+                <tr>
+                    <td class="label" colspan="2">COST CONTROLLER:</td>
+                    <td class="centerText" colspan="4"><apex:outputText value="{!contratoVF.CostControllerDTO}" /></td>
+                </tr>
+                <tr> <!-- /// APPROVALS /// -->
+                    <td class="block_top" colspan="6">APPROVALS:</td>
+                </tr>
+                <tr><td class="emptyThinRow" colspan="6"></td></tr>
+                <tr>
+                    <td class="label" colspan="2">CONTRACT OWNER:</td>
+                    <td class="centerText" colspan="4">
+                        <span>DATE: </span>
+                        <apex:outputText value="" />
+                    </td>
+                </tr>
+                <tr><td class="emptyThinRow" colspan="6"></td></tr>
+                <tr>
+                    <td class="label" colspan="2">LEGAL TEAM:</td>
+                    <td class="centerText" colspan="4">
+                            <span>DATE: </span>
+                            <apex:outputText value="" />
+                        </td>
+                </tr>
+                <tr><td class="emptyThinRow" colspan="6"></td></tr>
+                <tr>
+                    <td class="label" colspan="2">SUPPLY CHAIN TEAM:</td>
+                    <td colspan="4" style="margin: 0px; padding: 0px;">
+                        <span class="centerText subTr">
+                            <span class="centerText">
+                                <span>DATE: </span>
+                                <apex:outputText value="" />
+                            </span>
+                        </span>
+                        <span class="centerText subTr">
+                            <span class="centerText">
+                                <span>DATE: </span>
+                                <apex:outputText value="" />
+                            </span>
+                        </span>
+                        <span class="centerText subTr">
+                            <span class="centerText">
+                                <span>DATE: </span>
+                                <apex:outputText value="" />
+                            </span>
+                        </span>
+                    </td>
+                </tr>
+                <tr><td class="emptyThinRow" colspan="6"></td></tr>
+                <tr>
+                    <td class="label" colspan="2">MODEC PRESIDENT/VICE PRESIDENT:</td>
+                    <td class="centerText" colspan="4">
+                        <span>DATE: </span>
+                        <apex:outputText value="" />
+                    </td>
+                </tr>
+                <tr><td class="emptyThinRow" colspan="6"></td></tr>
+                <tr>
+                    <td class="label" colspan="2">OTHERS:</td>
+                    <td class="centerText" colspan="4">
+                        <span>DATE: </span>
+                        <apex:outputText value="" />
+                    </td>
+                </tr>
+                <tr><td class="emptyRow" colspan="6"></td></tr>
+            </tbody>
+        </table>
+    </body>
+</apex:page>

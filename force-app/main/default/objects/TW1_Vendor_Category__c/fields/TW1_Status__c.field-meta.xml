@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Status__c</fullName>
+    <defaultValue>&quot;Not Homologated&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Homologated</fullName>
+                <default>false</default>
+                <label>Homologated</label>
+            </value>
+            <value>
+                <fullName>Not Homologated</fullName>
+                <default>false</default>
+                <label>Not Homologated</label>
+            </value>
+            <value>
+                <fullName>Expired</fullName>
+                <default>false</default>
+                <label>Expired</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

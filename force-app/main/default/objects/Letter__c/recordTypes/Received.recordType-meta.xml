@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Received</fullName>
+    <active>true</active>
+    <label>Received</label>
+    <picklistValues>
+        <picklist>AnswerNeeded__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Penalty__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed in Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed on Time</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Actions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ongoing</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,102 @@
+<!--
+  @File Name          : T_MODEC_AnexosFornecedor.cmp
+  @Description        : 
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 03/03/2020 15:49:28
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    21/11/2019   Rafael Hadama     Initial Version
+-->
+<aura:component controller="T_MODEC_AnexosFornecedor_Ctrl"
+    implements="force:appHostable,flexipage:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,forceCommunity:layout"
+    access="global">
+
+    <aura:attribute name="greeting" type="String" default="" access="global" />
+
+    <aura:attribute name="subject" type="String" default="Upload de arquivos" access="global" />
+
+    <aura:attribute name="accept" type="List"
+        default="['.pdf','.docx','.doc','.xlsx','.xls','.xlsm','.txt','.mpp','.ppt','.pptx','.dxf','.dwf']" />
+    <aura:attribute name="multiple" type="Boolean" default="true" />
+    <aura:attribute name="disabled" type="Boolean" default="false" />
+
+    <aura:attribute name="recordId" type="String" default="" />
+    <aura:attribute name="userId" type="String" default="" />
+    <aura:attribute name="StatusBoletim" type="boolean" default="false" />
+
+    <aura:attribute name="fileIsNF" type="boolean" default="false" />
+    <aura:attribute name="NFNumber" type="string" default="" />
+
+    <aura:attribute name="listAnexos" type="list" />
+
+    <aura:attribute name="listUploadFeitos" type="list" />
+    <!--Booleano que garante que foi feito pelo menos o upload de um arquivo-->
+    <aura:attribute name="fileUploaded" type="boolean" default="false" />
+
+    <!--Booleano para controle se o browser IE 11 ou anterior.-->
+    <aura:attribute name="browserIsIE" type="boolean" default="false" />
+
+    <aura:attribute name="disabledNF" type="boolean" default="false" />
+    <aura:attribute name="disabledNFValue" type="string" default="choose one..." />
+
+    
+    <aura:attribute name="blockSaveButton" type="boolean" default="false" />
+    
+    <aura:attribute name="ButtonText" type="string" default="Criar documento do BM" />
+    <aura:attribute name="warningMessage" type="string" default="" />
+    <aura:handler value="{!this}" name="init" action="{!c.init}" />
+
+    <div class="backgroundFull">
+        <div class="header">
+            <img class="imageBeSupplier" src="{!$Resource.ModecLogoAction}" />
+            <!--<img class="imageBeSupplier" src="/resource/modecImages/modecImgs/modecIcon.png" />
+            <h1 class="headerTextInfo"> <span class="slds-page-header__title slds-truncate" title="MODEC">
+                MODEC</span></h1>-->
+            <div class="thinStyleBarRed"> </div>
+            <div class="slds-box slds-theme_default">
+                <div>
+                    <span class="greeting">{!v.greeting}</span>{!v.subject}!
+                </div>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_6-of-12">
+                        <lightning:fileUpload name="fileUploader" label="" multiple="{!v.multiple}"
+                            accept="{!v.accept}" disabled="{!v.disabled}" recordId="{!v.userId}"
+                            onuploadfinished="{! c.handleUploadFinished }" />
+                            <aura:if isTrue="{!v.browserIsIE}">
+                            <div class="nfBlockedText">Prezado, o sistema é incompatível com o Internet Explorer. Por favor, use o Chrome, Firefox ou Edge</div>
+                        </aura:if>
+                    </div>
+                    <div class="slds-col slds-size_6-of-12">
+                        <aura:if isTrue="{!v.StatusBoletim}">
+                            <lightning:select aura:id="isNFModec" name="isNF" label="Upload NF?" required="true"
+                                onchange="{!c.selecionadoNF}" class="selectPicklist" disabled="{!v.disabledNF}" value="{!v.disabledNFValue}">
+                                <option value="NoChoice">escolha um...</option>
+                                <option value="Yes">Sim</option>
+                                <option value="No">Não</option>
+                            </lightning:select>
+                            <div class="nfBlockedText">{!v.warningMessage}</div>
+                        </aura:if>
+                    </div>
+                </div>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size_6-of-12">
+                        <aura:iteration items="{!v.listUploadFeitos}" var="item">
+                            {!item}<br />
+                        </aura:iteration>
+                    </div>
+                    <div class="slds-col slds-size_6-of-12">
+                        <aura:if isTrue="{!v.fileIsNF}">
+                            <lightning:input aura:id="nfNumber" value="{!v.NFNumber}" type="text" required="true" label="Número da NF" pattern="[0-9]*" messageWhenPatternMismatch="Somente números" onblur="{!c.onchangeNfField}" />                            
+                        </aura:if>
+                        <lightning:button class="backButton" variant="brand" disabled="{!v.blockSaveButton}" label="{!v.ButtonText}" title="{!v.ButtonText}" onclick="{! c.saveDocumentation }" />                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="thinStyleBarBlue"> </div>
+        </div>
+    </div>
+
+</aura:component>

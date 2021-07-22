@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_Step</fullName>
+    <columns>NAME</columns>
+    <columns>TW1_Subject__c</columns>
+    <columns>TW1_Status__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>My Steps</label>
+</ListView>

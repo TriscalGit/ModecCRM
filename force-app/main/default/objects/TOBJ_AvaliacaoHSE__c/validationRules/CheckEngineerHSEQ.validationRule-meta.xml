@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckEngineerHSEQ</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				TCF_EngenheiroHSEQ__c = true,
+				OR(
+								ISBLANK(TCF_NomeEngenheiroHSEQ__c),
+								ISNULL(TCF_NomeEngenheiroHSEQ__c),
+								ISBLANK(TCF_PrincipaisRespEngenheiroHSEQ__c),
+								ISNULL(TCF_PrincipaisRespEngenheiroHSEQ__c)
+				)
+)</errorConditionFormula>
+    <errorDisplayField>TCF_EngenheiroHSEQ__c</errorDisplayField>
+    <errorMessage>If the HSEQ Engineer field is completed, the HSEQ Engineer Name and Main Responsibilities Engineer HSEQ fields must also be completed.</errorMessage>
+</ValidationRule>

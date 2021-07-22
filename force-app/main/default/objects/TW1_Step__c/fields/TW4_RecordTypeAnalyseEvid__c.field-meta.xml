@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW4_RecordTypeAnalyseEvid__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASESAFEID(RecordTypeId) =  $Setup.IDStep__c.Id_RecordType_Evidence_Analysis__c</formula>
+    <label>RecordTypeAnalyseEvid?</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

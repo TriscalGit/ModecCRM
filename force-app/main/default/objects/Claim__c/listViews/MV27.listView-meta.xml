@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV27</fullName>
+    <columns>VesselShortName__c</columns>
+    <columns>NAME</columns>
+    <columns>Subject__c</columns>
+    <columns>AmountUnderDisputeBRL__c</columns>
+    <columns>AmountUnderDisputeUSD__c</columns>
+    <columns>Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VesselShortName__c</field>
+        <operation>equals</operation>
+        <value>MV27</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>MV27 (Open/Building)</label>
+</ListView>

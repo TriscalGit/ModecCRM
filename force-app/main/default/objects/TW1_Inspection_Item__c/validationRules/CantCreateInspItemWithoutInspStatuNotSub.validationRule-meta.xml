@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantCreateInspItemWithoutInspStatuNotSub</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISNEW(), NOT(ISPICKVAL(  TW1_Request__r.TW1_Inspection_Status__c  , &apos;Not Submitted&apos;)))</errorConditionFormula>
+    <errorMessage>You can&apos;t create a new Inspection Item if the Inspection was already sent.</errorMessage>
+</ValidationRule>

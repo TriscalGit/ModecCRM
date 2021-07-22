@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TCF_Status__c</fullName>
+    <defaultValue>&quot;Aberta&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Aberta</fullName>
+                <default>false</default>
+                <label>Aberta</label>
+            </value>
+            <value>
+                <fullName>Fechada</fullName>
+                <default>false</default>
+                <label>Fechada</label>
+            </value>
+            <value>
+                <fullName>Não Concluída</fullName>
+                <default>false</default>
+                <label>Não Concluída</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

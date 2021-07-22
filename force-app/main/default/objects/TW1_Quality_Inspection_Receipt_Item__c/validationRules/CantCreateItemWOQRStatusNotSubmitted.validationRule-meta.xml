@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantCreateItemWOQRStatusNotSubmitted</fullName>
+    <active>true</active>
+    <description>Can&apos;t create more items if the Quality Receipt Inspection Status is not on &quot;Not Submitted&quot;.</description>
+    <errorConditionFormula>AND(
+				ISNEW(),
+				NOT(ISPICKVAL(TW1_Quality_Inspection_Receipt__r.TW5_Quality_Receipt_Status__c, &quot;Not Submitted&quot;))
+ )</errorConditionFormula>
+    <errorMessage>You can&apos;t create an Item if your Inspection is already Submitted.</errorMessage>
+</ValidationRule>

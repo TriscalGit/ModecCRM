@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InspectionTypeEmergencyNoteNotFilled</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+				RecordType.DeveloperName = &quot;TW1_Receipt_Inspection&quot;,
+				ISPICKVAL(TW5_Inspection_Type__c, &quot;Emergency&quot;),
+    ISBLANK(TW5_Emergency_Note__c)
+				)</errorConditionFormula>
+    <errorMessage>You can&apos;t set this Inspection as Emergency without an Emergency Note.</errorMessage>
+</ValidationRule>

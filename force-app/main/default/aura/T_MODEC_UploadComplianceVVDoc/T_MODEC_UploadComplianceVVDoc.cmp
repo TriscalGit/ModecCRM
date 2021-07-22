@@ -1,0 +1,57 @@
+<!--
+  @File Name          : T_MODEC_UploadComplianceVVDoc.cmp
+  @Description        : 
+  @Author             : Rafael Hadama
+  @Group              : 
+  @Last Modified By   : Rafael Hadama
+  @Last Modified On   : 14/01/2020 19:54:21
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    14/01/2020   Rafael Hadama     Initial Version
+-->
+<aura:component controller="T_MODEC_UploadVVWDoc_CTRL" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickActionWithoutHeader"
+    access="global">
+
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="documentationId" type="String" />
+    <aura:attribute name="accept" type="List" default="['.pdf']" />
+    <aura:attribute name="listAttachments" type="List" />
+    <aura:attribute name="fileUploaded" type="boolean" default="false" />
+
+    <aura:handler value="{!this}" name="init" action="{!c.init}" />
+
+    <div class="backgroundFull">
+        <div class="header">
+            <img class="imageBeSupplier" src="{!$Resource.ModecLogoAction}" />
+            <div class="thinStyleBarRed"> </div>
+            <div class="slds-box">
+                <h1 class="headerTextInfo"> <span class="slds-page-header__title slds-truncate"
+                        title="New Documentation">
+                        Upload VVW Compliance Document </span></h1>
+                <lightning:textarea aura:id="Commentfield" label="Comments" name="reason" required="true"
+                    placeholder="Write here..." />
+                <div class="slds-box">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_2-of-3">
+                            <div class="">
+                                <lightning:fileUpload name="fileUploader" label="Only PDF files." multiple="true"
+                                    accept="{!v.accept}" recordId="{!v.documentationId}"
+                                    onuploadfinished="{!c.handleUploadFinished}" />
+                                <aura:iteration items="{!v.listAttachments}" var="item" indexVar="idx">
+                                    {!item} <br />
+                                </aura:iteration>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-3">
+                            <div class="">
+                                <input type="button" class="backButton" value="Save" onclick="{!c.saveDocumentation}" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="thinStyleBarBlue"> </div>
+        </div>
+    </div>
+
+</aura:component>

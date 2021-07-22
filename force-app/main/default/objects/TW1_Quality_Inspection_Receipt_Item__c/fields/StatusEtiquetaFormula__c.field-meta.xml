@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StatusEtiquetaFormula__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(TW5_Supply_Chain_Status__c,&apos;&apos;), TEXT(TW1_Status__c),TEXT(TW5_Supply_Chain_Status__c))</formula>
+    <label>StatusEtiquetaFormula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

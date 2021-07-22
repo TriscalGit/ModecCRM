@@ -1,0 +1,362 @@
+<apex:page standardController="WorkOrder" extensions="WorkOrderPdfController" applyBodyTag="false" showHeader="false" sidebar="false" standardStylesheets="true" renderAs="pdf">
+
+	<div class="container-pdf">
+		<div align="left">
+			<img src="{!$Resource.modecLogo}" class="logo" width="350" />
+		</div>
+		<h1>WORK ORDER</h1>
+		<table>
+			<tr>
+				<td>
+					{!WorkOrder.NAM__r.Subject__c}
+				</td>
+				<td>
+					No.: {!WorkOrder.WorkOrder__c}
+				</td>
+			</tr>
+		<table>
+		</table>
+			<tr>
+				<td>
+					<b>FROM:</b><br />
+					{!WorkOrder.Account.Name}<br />
+					{!WorkOrder.Account.BillingStreet}<br />
+					{!WorkOrder.Account.BillingCity}<br />
+					{!WorkOrder.Account.BillingState}<br />
+					{!WorkOrder.Account.BillingPostalCode}<br />
+					{!WorkOrder.Account.BillingCountry}<br />
+					("Company")
+				</td>
+				<td>
+					<b>TO:</b><br />
+					{!WorkOrder.Contractor__r.Name}<br />
+					{!WorkOrder.Contractor__r.BillingStreet}<br />
+					{!WorkOrder.Contractor__r.BillingCity}<br />
+					{!WorkOrder.Contractor__r.BillingState}<br />
+					{!WorkOrder.Contractor__r.BillingPostalCode}<br />
+					{!WorkOrder.Contractor__r.BillingCountry}<br />
+					("Contractor")
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>
+					<b>SCOPE OF WORK:</b><br />
+					<apex:outputText value="{!WorkOrder.ScopeWork__c}" escape="false" />
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>
+					<b>SPECIAL INSTRUCTIONS:</b>
+					<apex:outputText value="{!WorkOrder.WOAttention__c}" escape="false" />
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td class="td-footer">
+					<b>ESTIMATED START DATE:</b><br />
+					<apex:outputText value="{0, date, MMMM d','  yyyy}">
+						<apex:param value="{!WorkOrder.EstimatedStartDate__c}" /> 
+					</apex:outputText>
+				</td>
+				<td class="td-footer">
+					<b>ESTIMATED FINISH DATE:</b><br />
+					<apex:outputText value="{0, date, MMMM d','  yyyy}">
+						<apex:param value="{!WorkOrder.EstimatedFinishDate__c}" /> 
+					</apex:outputText>
+				</td>
+				<td class="td-footer">
+					<b>NAM No.:</b><br />
+					{!WorkOrder.NAM__r.Name}
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="page-break"><!-- PAGE BREAK --></div>
+
+	<div class="container-pdf">
+		<table>
+			<tr>
+				<td>
+					<b>PRICES/RATES AND TERMS OF PAYMENT:</b><br />
+						<apex:outputText value="{0, Number, Currency}" rendered="{!WorkOrder.Responsible__c = 'MdB'}">
+							Total estimated cost for MdB Scope is<b><apex:param value="{!WorkOrder.TotalAmountMdB__c}" /></b>
+						</apex:outputText>
+
+						<apex:outputText value="{0, Number, Currency}" rendered="{!WorkOrder.Responsible__c != 'MdB'}">
+							Total estimated cost is <b><apex:param value="{!WorkOrder.TotalAmount__c}" /></b>
+						</apex:outputText>
+						<br />
+
+					<table class="table-custom table-full-width">
+						<tr>
+							<th>No.</th>
+							<th>Description</th>
+							<th>C.A.</th>
+							<th>M/S</th>
+							<th>Responsible</th>
+							<th>Price (USD)</th>
+							<th>Price (BRL)</th>
+						</tr>
+						<apex:variable var="index" value="{!0}" />
+						<apex:repeat var="item" value="{!items}">
+							<apex:variable var="index" value="{!index + 1}"/>
+							<tr>
+								<td>{!index}</td>
+								<td class="td-half-width">{!item.Product__c}</td>
+								<td class="td-text-center">{!item.Status}</td>
+								<td class="td-text-center">{!item.MS__c}</td>
+								<td>{!item.ResponsibleCountry__c}</td>
+								<td style="text-align: right;">
+									<apex:outputText value="{0, Number, ###,###.00}">
+										<apex:param value="{!item.Price__c}" />
+									</apex:outputText>
+								</td>
+								<td style="text-align: right;">
+									<apex:outputText value="{0, Number, ###,###.00}">
+										<apex:param value="{!item.BRL__c}" />
+									</apex:outputText>
+								</td>
+							</tr>
+						</apex:repeat>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td><b>Total</b></td>
+							<td style="text-align: right;"><b>
+								<apex:outputText value="{0, Number, ###,###.00}">
+									<apex:param value="{!allPortionAmount}" />
+								</apex:outputText>
+							</b></td>
+							<td style="text-align: right;"><b>
+								<apex:outputText value="{0, Number, ###,###.00}">
+									<apex:param value="{!allTotalBRL}" />
+								</apex:outputText>
+							</b></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<!-- Responsible = MdB -->
+		<apex:outputPanel rendered="{!WorkOrder.Responsible__c = 'MdB'}">
+			<table>
+				<tr>
+					<td>Total:</td>
+					<td>USD</td>
+					<td style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!allPortionAmount}" />
+						</apex:outputText>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>MdB Portion Amount:</td>
+					<td>USD</td>
+					<td style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.BrazilPortion__c}" />
+						</apex:outputText>
+					</td>
+					<td class="td-form-background-grey">BRL</td>
+					<td class="td-form-background-grey" style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.PortionAmountMdB__c}" />
+						</apex:outputText>
+					</td>
+				</tr>
+				<tr>
+					<td>Mark up:</td>
+					<td>USD</td>
+					<td style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.MarkUpBrazilAmmount__c}" />
+						</apex:outputText>
+					</td>
+					<td class="td-form-background-grey">BRL</td>
+					<td class="td-form-background-grey" style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.MarkUpAmountMdB__c}" />
+						</apex:outputText>
+					</td>
+				</tr>
+				<tr>
+					<td>Tax (ISS):</td>
+					<td>USD</td>
+					<td style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.TaxISS2__c}" />
+						</apex:outputText>
+					</td>
+					<td class="td-form-background-grey">BRL</td>
+					<td class="td-form-background-grey" style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.TaxISS2BRL__c}" />
+						</apex:outputText>
+					</td>
+				</tr>
+				<tr>
+					<td>Total Amount:</td>
+					<td>USD</td>
+					<td style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.TotalAmountMdB__c}" />
+						</apex:outputText>
+					</td>
+					<td class="td-form-background-grey">BRL</td>
+					<td class="td-form-background-grey" style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.TotalBRL__c}" />
+						</apex:outputText>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span>
+							Exchange rate: USD/BRL:
+							<apex:outputText value="{0, Number, ###,###.00}">
+								<apex:param value="{!WorkOrder.BRLRate__c}" />
+							</apex:outputText>
+						</span>
+					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>			
+			</table>
+		</apex:outputPanel>
+
+		<!-- Responsible != MdB -->
+		<apex:outputPanel rendered="{!WorkOrder.Responsible__c != 'MdB'}">
+			<table>
+				<tr>
+					<td>Total:</td>
+					<td>USD</td>
+					<td style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!allPortionAmount}" />
+						</apex:outputText>
+					</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Mark up:</td>
+					<td>USD</td>
+					<td style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.MarkUpAmount__c}" />
+						</apex:outputText>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>ISS on Brazil Portion:</td>
+					<td>USD</td>
+					<td style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.TaxISS2__c}" />
+						</apex:outputText>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Total Amount:</td>
+					<td>USD</td>
+					<td style="text-align: right;">
+						<apex:outputText value="{0, Number, ###,###.00}">
+							<apex:param value="{!WorkOrder.TotalAmount__c}" />
+						</apex:outputText>
+					</td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>
+						<span>
+							Exchange rate: USD/BRL:
+							<apex:outputText value="{0, Number, 00.00}">
+								<apex:param value="{!WorkOrder.BRLRate__c}" />
+							</apex:outputText>
+						</span>
+					</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>			
+			</table>
+		</apex:outputPanel>
+
+		<table>
+			<tr>
+				<td>
+					<b>TERMS AND CONDITIONS:</b><br />
+					<!-- MdB -->
+					<apex:outputPanel rendered="{!WorkOrder.Responsible__c == 'MdB'}">
+						<ol>
+							<li>Payment shall be made in by the Company within 30 days from their receipt of invoices submitted by the Contractor together with necessary documents satisfactory to the company.</li>
+							<li>Contractor may request for an advance payment to be made by the company for this Work Order. The amount and the schedule of advance payment shall be mutually discussed and agreed between the Company and the Contractor.</li>
+							<li>Company shall pay <apex:outputText value="{0, Number, ###,##}"> <apex:param value="{!WorkOrder.MarkUp__c}" /></apex:outputText>% Mark up to Contractor on the third party expenses paid by Contractors such as labor and equipment necessary for closing out this work including but not limited to transportation, accommodation, meals, etc.</li>
+							<li>In case of each payment for MdB, each payment shall be calculated on the basis of total Real amount by the exchange rate (BRL/USD) at each point of issuing each invoice. Each invoice will be issued using the official exchange rate (Taxa de Compra) of the previous day's closing according to the official exchange rate (Taxa de Compra) of the Central Bank of Brazil (P -Tax).</li>
+						</ol>
+					</apex:outputPanel>
+					<!-- != MdB -->
+					<apex:outputPanel rendered="{!WorkOrder.Responsible__c != 'MdB'}">
+						<ol>
+							<li>Payment shall be made in accordance with Support Contract entered into by and between the Company and the Contractor (hereinafter refferd to as "Support Contract"). The parties hereby agree that the definitions set forth in the Support Contract also apply to this WO.</li>
+							<li>Contractor’s invoice shall be accompanied with all invoices of subcontractors/vendors and other supporting documents.</li>
+							<li>Company shall pay <apex:outputText value="{0, Number, ###,##}"> <apex:param value="{!WorkOrder.MarkUp__c}" /></apex:outputText>% Mark up to Contractor on the third party expenses paid by O&amp;M Support Contractor Group such as labor and equipment necessary for closing out this work including but not limited to transportation, accommodation, meals, etc.</li>
+							<li>In case of each payment for Brazilian Portion, each payment shall be calculated on the basis of total Real amount by the exchange rate (BRL/USD) at each point of issuing each invoice. Each invoice will be issued using the official exchange rate (Taxa de Compra) of the previous day's closing according to the official exchange rate (Taxa de Compra) of the Central Bank of Brazil (P -Tax).</li>
+						</ol>
+					</apex:outputPanel>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td>
+					<b>WORK ORDER TERMS:</b><br />
+					<p>This Work Order is subject to the General Terms and Conditions (Services) printed on the following pages which are made a part hereof.  “Service Agreement” as used therein refers to this Work Order.  This Work Order shall control over and supersede any inconsistent provision in any other document, including, but not limited to, Contractor’s work orders, delivery tickets, responses, etc. (regardless of whether such is issued prior to or after the Work Order), and this Work Order may not be modified, amended or altered except by the express, written consent of Contractor and Company which states an express intention to modify the terms set forth herein.  All of Contractor’s invoices shall quote the Work Order No. as specified above, and be sent to Company at the above-noted address and marked for the attention of the Accounting Supervisor.</p>
+				</td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td class="td-half-width">
+					<b>Company:</b><br />
+					<b>{!WorkOrder.Account.Name}</b><br />
+					<b>Name:</b><br />
+					<b>Title:</b><br />
+					<b>Date:</b>
+				</td>
+				<td class="td-half-width">
+					<b>Contractor:</b><br />
+					<b>{!WorkOrder.Contractor__r.Name}</b><br />
+					<b>Name:</b><br />
+					<b>Title:</b><br />
+					<b>Date:</b>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="page-break"><!-- PAGE BREAK --></div>
+
+	<div class="terms">
+		<p style="display: none">{!WorkOrder.ContractTerm__c}</p>
+		<apex:outputText escape="false" value="{!contractTerms}"></apex:outputText>
+	</div>
+	
+	<apex:stylesheet value="{!$Resource.WorkOrderPdfCSS}" />
+
+</apex:page>

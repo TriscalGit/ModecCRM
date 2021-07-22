@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV24_Openned</fullName>
+    <columns>NAME</columns>
+    <columns>Subject__c</columns>
+    <columns>ReceiveSendDate__c</columns>
+    <columns>Deadline__c</columns>
+    <columns>Status__c</columns>
+    <columns>ReferenceLetter__c</columns>
+    <columns>Vessel__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Vessel__c</field>
+        <operation>contains</operation>
+        <value>MV24</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Open</value>
+    </filters>
+    <label>MV24 Opened</label>
+</ListView>

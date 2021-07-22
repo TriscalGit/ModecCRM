@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TW1_Family_of_Materials__c</fullName>
+    <externalId>false</externalId>
+    <label>Family of Materials</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Consumíveis</fullName>
+                <default>false</default>
+                <label>Consumíveis</label>
+            </value>
+            <value>
+                <fullName>Dispositivo de segurança</fullName>
+                <default>false</default>
+                <label>Dispositivo de segurança</label>
+            </value>
+            <value>
+                <fullName>Elementos de fixação</fullName>
+                <default>false</default>
+                <label>Elementos de fixação</label>
+            </value>
+            <value>
+                <fullName>Eletro/Eletrônicos</fullName>
+                <default>false</default>
+                <label>Eletro/Eletrônicos</label>
+            </value>
+            <value>
+                <fullName>EPI/EPC</fullName>
+                <default>false</default>
+                <label>EPI/EPC</label>
+            </value>
+            <value>
+                <fullName>Equip. Estáticos</fullName>
+                <default>false</default>
+                <label>Equip. Estáticos</label>
+            </value>
+            <value>
+                <fullName>Equip. Rotativos</fullName>
+                <default>false</default>
+                <label>Equip. Rotativos</label>
+            </value>
+            <value>
+                <fullName>Estrutural</fullName>
+                <default>false</default>
+                <label>Estrutural</label>
+            </value>
+            <value>
+                <fullName>Ferramentas</fullName>
+                <default>false</default>
+                <label>Ferramentas</label>
+            </value>
+            <value>
+                <fullName>Fittings</fullName>
+                <default>false</default>
+                <label>Fittings</label>
+            </value>
+            <value>
+                <fullName>Instrumentação</fullName>
+                <default>false</default>
+                <label>Instrumentação</label>
+            </value>
+            <value>
+                <fullName>Lifting</fullName>
+                <default>false</default>
+                <label>Lifting</label>
+            </value>
+            <value>
+                <fullName>Mangueiras/Mangotes</fullName>
+                <default>false</default>
+                <label>Mangueiras/Mangotes</label>
+            </value>
+            <value>
+                <fullName>Marinha</fullName>
+                <default>false</default>
+                <label>Marinha</label>
+            </value>
+            <value>
+                <fullName>Outros</fullName>
+                <default>false</default>
+                <label>Outros</label>
+            </value>
+            <value>
+                <fullName>Part Number</fullName>
+                <default>false</default>
+                <label>Part Number</label>
+            </value>
+            <value>
+                <fullName>Piping</fullName>
+                <default>false</default>
+                <label>Piping</label>
+            </value>
+            <value>
+                <fullName>Rolamentos</fullName>
+                <default>false</default>
+                <label>Rolamentos</label>
+            </value>
+            <value>
+                <fullName>Válvulas</fullName>
+                <default>false</default>
+                <label>Válvulas</label>
+            </value>
+            <value>
+                <fullName>Vedação</fullName>
+                <default>false</default>
+                <label>Vedação</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

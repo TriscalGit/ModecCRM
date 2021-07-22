@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CantReproveNonconformityWithoutDisReason</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISCHANGED(TW4_Nonconformity_Status__c),
+  ISPICKVAL(TW4_Nonconformity_Status__c, &quot;Reproved&quot;),
+ ISBLANK(TW4_Disapproval_Reason__c) 	
+				)</errorConditionFormula>
+    <errorMessage>You can&apos;t disapprove this nonconformity without a Disapproval Reason.</errorMessage>
+</ValidationRule>

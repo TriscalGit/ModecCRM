@@ -1,0 +1,5 @@
+<aura:component implements= 'force:lightningQuickAction,lightning:availableForFlowActions'>
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="URL" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.invoke}"/>
+</aura:component>

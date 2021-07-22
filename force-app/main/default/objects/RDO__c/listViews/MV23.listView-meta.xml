@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MV23</fullName>
+    <columns>VesselShortName__c</columns>
+    <columns>Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Status__c</columns>
+    <columns>RateDeltaDaily__c</columns>
+    <columns>RateReductionDeltaDaily__c</columns>
+    <columns>BOM__c</columns>
+    <columns>Comments__c</columns>
+    <columns>WaterInjectionInjectedVolume__c</columns>
+    <columns>WaterInjectionUninjectedVolume__c</columns>
+    <columns>WITotal__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VesselShortName__c</field>
+        <operation>equals</operation>
+        <value>MV23</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Active,Adjusted</value>
+    </filters>
+    <label>MV23</label>
+</ListView>

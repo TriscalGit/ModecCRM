@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>InspectionResultsDateFormula__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(Month(DATEVALUE(TW5_Inspection_Result_Date__c)),
+1, &quot;January&quot;, 
+2, &quot;February&quot;, 
+3, &quot;March&quot;, 
+4, &quot;April&quot;, 
+5, &quot;May&quot;, 
+6, &quot;June&quot;, 
+7, &quot;July&quot;, 
+8, &quot;August&quot;, 
+9, &quot;September&quot;, 
+10, &quot;October&quot;, 
+11, &quot;November&quot;, 
+12, &quot;December&quot;, &quot;Nenhum&quot;) + &apos;/&apos; + Text(Day(DateValue(TW5_Inspection_Result_Date__c))) + &apos;/&apos; + Text(Year(DateValue(TW5_Inspection_Result_Date__c)))</formula>
+    <label>InspectionResultsDateFormula</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

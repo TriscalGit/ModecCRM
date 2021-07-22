@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NAMUser__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( OR(Profile.Name = &apos;AMC&apos;, Profile.Name = &apos;SPC Partner&apos;, Profile.Name = &apos;SPC Partner Admin&apos;, Profile.Name = &apos;SPC&apos;, Profile.Name = &apos;Technical SPC&apos;, Profile.Name = &apos;AMC Manager&apos;, Profile.Name =	&apos;AMC / Fleet Maintenance&apos; ), true, false)</formula>
+    <label>NAM User?</label>
+    <type>Checkbox</type>
+</CustomField>
