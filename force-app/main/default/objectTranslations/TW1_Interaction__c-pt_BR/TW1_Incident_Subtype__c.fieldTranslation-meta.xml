@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Subtipo do Incidente</label>
+    <name>TW1_Incident_Subtype__c</name>
+    <picklistValues>
+        <masterLabel>Dropped Object</masterLabel>
+        <translation>Objeto solto</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evironmental</masterLabel>
+        <translation>Meio Ambiente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fatality</masterLabel>
+        <translation>Fatalidade</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>First Aid</masterLabel>
+        <translation>Primeiros Socorros</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>General Near Miss</masterLabel>
+        <translation>Quase Incidente Gerais</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Improper waste disposal</masterLabel>
+        <translation>Eliminação inadequada de resíduos</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Information security</masterLabel>
+        <translation>Segurança da informação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Lost Time Injury</masterLabel>
+        <translation>Lesão com perda de tempo</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Medical Treatment</masterLabel>
+        <translation>Tratamento médico</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Yet Classified</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process/operation non-conformance</masterLabel>
+        <translation>Processo/Operação de não conformidade</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Process/procedural non-conformance</masterLabel>
+        <translation>Processo/Procedimento de não conformidade</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Restricted Work Day Case</masterLabel>
+        <translation>Dia de trabalho restrito</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Significant Event</masterLabel>
+        <translation>Evento significante</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Spill to sea</masterLabel>
+        <translation>Derramar no mar</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>System non-conformance</masterLabel>
+        <translation>Sistema em não conformidade</translation>
+    </picklistValues>
+</CustomFieldTranslation>

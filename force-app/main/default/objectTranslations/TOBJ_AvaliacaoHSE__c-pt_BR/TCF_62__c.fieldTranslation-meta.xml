@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Sessões realizadas regularmente para discutir questões relacionadas HSEQ.Elas podem incluir o compartilhamento de lições de eventos anteriores,novas práticas de trabalho,expectativas da adm, maior conscientização sobre questões HSEQ de interesse geral</help>
+    <label></label>
+    <name>TCF_62__c</name>
+</CustomFieldTranslation>

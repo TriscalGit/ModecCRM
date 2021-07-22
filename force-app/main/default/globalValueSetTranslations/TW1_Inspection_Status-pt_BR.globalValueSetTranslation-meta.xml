@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Approved</masterLabel>
+        <translation>Aprovado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Approved with Restriction</masterLabel>
+        <translation>Aprovado com Restrição</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Awaiting Date Confirmation</masterLabel>
+        <translation>Aguardando Data de Confirmação</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Canceled</masterLabel>
+        <translation>Cancelado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Emergency Inspection</masterLabel>
+        <translation>Inspeção Emergencial</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Inspection Rescheduled</masterLabel>
+        <translation>Inspeção Reagendada</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Inspection Scheduled</masterLabel>
+        <translation>Inspeção Agendada</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Not Submitted</masterLabel>
+        <translation>Não Enviado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rejected</masterLabel>
+        <translation>Rejeitado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Reproved</masterLabel>
+        <translation>Reprovado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Rescheduled</masterLabel>
+        <translation>Reagendado</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Verifying Date Availability</masterLabel>
+        <translation>Verificando Disponibilidade de Data</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

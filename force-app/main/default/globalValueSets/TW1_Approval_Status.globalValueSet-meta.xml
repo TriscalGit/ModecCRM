@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Approved</fullName>
+        <default>false</default>
+        <label>Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Approved</fullName>
+        <default>false</default>
+        <label>Not Approved</label>
+    </customValue>
+    <customValue>
+        <fullName>Approved with Red Flag</fullName>
+        <default>false</default>
+        <label>Approved with Red Flag</label>
+    </customValue>
+    <customValue>
+        <fullName>Reassigned</fullName>
+        <default>false</default>
+        <label>Reassigned</label>
+    </customValue>
+    <customValue>
+        <fullName>N/A</fullName>
+        <default>false</default>
+        <label>N/A</label>
+    </customValue>
+    <customValue>
+        <fullName>Rejected</fullName>
+        <default>false</default>
+        <label>Rejected</label>
+    </customValue>
+    <customValue>
+        <fullName>Rescheduled</fullName>
+        <default>false</default>
+        <label>Rescheduled</label>
+    </customValue>
+    <customValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>Canceled</label>
+    </customValue>
+    <customValue>
+        <fullName>Confirmed</fullName>
+        <default>false</default>
+        <label>Confirmed</label>
+    </customValue>
+    <customValue>
+        <fullName>Reproved</fullName>
+        <default>false</default>
+        <label>Reproved</label>
+    </customValue>
+    <customValue>
+        <fullName>Approved with Restriction</fullName>
+        <default>false</default>
+        <label>Approved with Restriction</label>
+    </customValue>
+    <masterLabel>Approval Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Preencha como no Ex.: PAR-2020-0001</help>
+    <label>Projeto de Alteração e Reparo</label>
+    <name>TW1_Change_and_Repair_Project__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <gender></gender>
+    <layouts>
+        <layout>Nonconformity Layout</layout>
+        <sections>
+            <label>Avalição do Plano de Ação</label>
+            <section>Action Plan Evaluation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Ações do Fornecedor</label>
+            <section>Supplier Actions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Supplier - Nonconformity Layout</layout>
+        <sections>
+            <label>Avaliação do Plano de Ação</label>
+            <section>Action Plan Evaluation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Ações do Fornecedor</label>
+            <section>Supplier Actions</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel></nameFieldLabel>
+    <quickActions>
+        <label>Criar Ações</label>
+        <name>TW4_Add_Actions</name>
+    </quickActions>
+    <quickActions>
+        <label>Validação de Não-Conformidade</label>
+        <name>TW4_Flow_Nonconformity_Validation</name>
+    </quickActions>
+    <quickActions>
+        <label>Validação de Não-Conformidade</label>
+        <name>TW4_Nonconformity_Validation</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage>Não é possível reprovar essa Não Conformidade sem o preenchimento do motivo da Reprovação.</errorMessage>
+        <name>CantReproveNonconformityWithoutDisReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível modificar uma Não Conformidade que já foi aprovada.</errorMessage>
+        <name>SupplierCantChangeNonConfApproved</name>
+    </validationRules>
+</CustomObjectTranslation>

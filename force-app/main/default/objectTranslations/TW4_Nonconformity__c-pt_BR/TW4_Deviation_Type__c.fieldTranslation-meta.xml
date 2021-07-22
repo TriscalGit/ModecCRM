@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Tipo de Desvio</label>
+    <name>TW4_Deviation_Type__c</name>
+    <picklistValues>
+        <masterLabel>HSE</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Infrastructure</masterLabel>
+        <translation>Infraestrutura</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Operation</masterLabel>
+        <translation>Operação</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Outro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>People</masterLabel>
+        <translation>Pessoas</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Planning and Control</masterLabel>
+        <translation>Planejamento e Controle</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality</masterLabel>
+        <translation>Qualidade</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Resources</masterLabel>
+        <translation>Recursos</translation>
+    </picklistValues>
+</CustomFieldTranslation>

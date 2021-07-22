@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Nonconformity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Nonconformities</value>
+    </caseValues>
+    <layouts>
+        <layout>Nonconformity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Action Plan Evaluation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Supplier Actions</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Supplier - Nonconformity Layout</layout>
+        <sections>
+            <label></label>
+            <section>Action Plan Evaluation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Supplier Actions</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>TW4_Add_Actions</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Flow_Nonconformity_Validation</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW4_Nonconformity_Validation</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantReproveNonconformityWithoutDisReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>SupplierCantChangeNonConfApproved</name>
+    </validationRules>
+</CustomObjectTranslation>

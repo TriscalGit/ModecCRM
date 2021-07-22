@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Requests</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <layouts>
+        <layout>BM</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>PO Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SED</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vendor Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BM - Community</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Campos</label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Informações da PO</label>
+            <section>PO Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SED</section>
+        </sections>
+        <sections>
+            <label>Informações do Fornecedor</label>
+            <section>Vendor Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>BM - History Tracking</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>PO Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>SED</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vendor Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contract Addtive</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Contract Addtive - Requester</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspection</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Disponibilidade de Data</label>
+            <section>Date Availability</section>
+        </sections>
+        <sections>
+            <label>Confirmação de Data</label>
+            <section>Date Confirmation</section>
+        </sections>
+        <sections>
+            <label>Aprovação Emergencial</label>
+            <section>Emergency Approval</section>
+        </sections>
+        <sections>
+            <label>Dados Gerais para Inspeção</label>
+            <section>Geral Data for Inspection</section>
+        </sections>
+        <sections>
+            <label>Definição da Inspeção</label>
+            <section>Inspection Definition</section>
+        </sections>
+        <sections>
+            <label>Data e Local</label>
+            <section>Local and Date</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OM Approval</section>
+        </sections>
+        <sections>
+            <label>Realização da Inspeção</label>
+            <section>Perform Inspection</section>
+        </sections>
+        <sections>
+            <label>Requisição de Reagendamento</label>
+            <section>Reschedule Requested</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspection - Admin</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Date Availability</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Date Confirmation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Emergency Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Geral Data for Inspection</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Inspection Definition</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Local and Date</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OM Approval</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Perform Inspection</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Reschedule Requested</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Inspection - Community</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label>Dados Gerais para Inspeção</label>
+            <section>Geral Data for Inspection</section>
+        </sections>
+        <sections>
+            <label>Data e Local</label>
+            <section>Local and Date</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Material Packing List (Third-party)</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Campos</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Material Packing List (Third-party) - Community</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Campos</label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Contract</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Contract - Requester</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Scope</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PO Review Form</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Seção do Focal</label>
+            <section>Focal Section</section>
+        </sections>
+        <sections>
+            <label>Informação de Revisão de PO</label>
+            <section>PO Review Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>PO Review Form - Community</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>Seção do Focal</label>
+            <section>Focal Section</section>
+        </sections>
+        <sections>
+            <label>Informação de Revisão de PO</label>
+            <section>PO Review Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Vetting</layout>
+        <sections>
+            <label></label>
+            <section>CEO (if Red Flag)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Compliance - Step 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Compliance - Step 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Compliance Form</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Compliance Initial Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Docs Validation (VV)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Enable Customer User</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Engineering</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Finance - Step 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Finance - Step 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>General Manager (If Red Flag)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSEQ (EPCI or Operation)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Homologation Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Procurement Manager</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quality</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Supply Manager</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>VVW Attachment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vetting Final Check</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Vetting - Senegal</layout>
+        <sections>
+            <label></label>
+            <section>CEO (if Red Flag)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Company Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Compliance - Step 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Compliance - Step 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Compliance Form</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Compliance Initial Validation</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Docs Validation (VV)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Enable Customer User</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Engineering</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Finance - Step 1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Finance - Step 2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>GM SC, FIN, CON</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSEQ (EPCI or Operation)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Homologation Process</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Procurement Manager</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Quality</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>VP (If Red Flag)</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>VVW Attachment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vetting Final Check</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>Código da Requisição</nameFieldLabel>
+    <quickActions>
+        <label>Cancelar Inspeção</label>
+        <name>Cancel_Inspection</name>
+    </quickActions>
+    <quickActions>
+        <label>Clonar Inspeção</label>
+        <name>Clone_Inspection</name>
+    </quickActions>
+    <quickActions>
+        <label>Criar Documento</label>
+        <name>Create_DocRequest</name>
+    </quickActions>
+    <quickActions>
+        <label>Reagendar Inspeção</label>
+        <name>Reschedule_Inspection</name>
+    </quickActions>
+    <quickActions>
+        <label>Agendar Inspeção</label>
+        <name>Schedule_Inspection_LP</name>
+    </quickActions>
+    <quickActions>
+        <label>Enviar BM</label>
+        <name>Send_BM</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TAC_NewSupplierAnalyzeRequest</name>
+    </quickActions>
+    <quickActions>
+        <label>Novo Item</label>
+        <name>TW1_New_BM_Item</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_New_Contemplated_Vessel</name>
+    </quickActions>
+    <quickActions>
+        <label>Novo Item de Inspeção</label>
+        <name>TW1_New_Inspection_Item</name>
+    </quickActions>
+    <quickActions>
+        <label>Nova Linha de Serviço de BM</label>
+        <name>TW1_New_Item</name>
+    </quickActions>
+    <quickActions>
+        <label>Novo Item</label>
+        <name>TW1_New_Material_Packing_Item</name>
+    </quickActions>
+    <quickActions>
+        <label>Enviar Inspeção</label>
+        <name>TW1_Send_Inspection</name>
+    </quickActions>
+    <quickActions>
+        <label>Enviar Romaneio</label>
+        <name>TW1_Send_Material_Packing_List</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Send_to_Contract_Team</name>
+    </quickActions>
+    <quickActions>
+        <label>Enviar Feedback ao Fornecedor</label>
+        <name>T_Send_Feedback_to_Supplier</name>
+    </quickActions>
+    <quickActions>
+        <label>Enviar Formulário</label>
+        <name>T_Send_Form</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Upload_Files</name>
+    </quickActions>
+    <recordTypes>
+        <label>Inspeção</label>
+        <name>Inspection</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_BM</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Aditivo de Contrato</label>
+        <name>TW1_Contract_Amendment</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Novo Contrato</label>
+        <name>TW1_Contract_New_Contract</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Romaneio</label>
+        <name>TW1_Material_Packing_List_Third_party</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Homologação</label>
+        <name>TW1_Vendor_Vetting</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW3_Vendor_Vetting_Senegal</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Solicitação de Revisão de Ordem de Compra</label>
+        <name>T_PO_Review_Form</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>Não é possível cancelar uma Requisição já cancelada.</errorMessage>
+        <name>CantCancelInspAlreadyCanceled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível modificar a Requisição após o envio da mesma.</errorMessage>
+        <name>CantChangeInspIfStatusNotSubmitted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantChangeReqIfSAPModecFilled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível reagendar essa Inspeção ao menos que esteja em Confirmação de Data ou que ela já esteja agendada.</errorMessage>
+        <name>CantRescheduleUnlessDateConfAndInspSched</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível enviar a Inspeção sem ao menos 1 Item de Inspeção.</errorMessage>
+        <name>CantSendInspWOInspItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>CantStartVettingExpDateLessThan6Months</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Doc_attached_service_onshore</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Se você indicou que existe uma requisição relacionada, você tem que preencher o campo Requisição Relacionada.</errorMessage>
+        <name>IfThereIsRelatRequestTheFieldIsRequested</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>InspectionRelatedRequestHasToHaveSamePO</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>PreventSubmitContract</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Por favor preencher o telefone corretamente como o Ex.: (XX) XXXXX-XXXX</errorMessage>
+        <name>RegexInspectionContactNumber</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>validate_fiscal_period_to_save_bm</name>
+    </validationRules>
+    <webLinks>
+        <label>Novo Item de BM</label>
+        <name>TW1_New_BM_Item</name>
+    </webLinks>
+</CustomObjectTranslation>

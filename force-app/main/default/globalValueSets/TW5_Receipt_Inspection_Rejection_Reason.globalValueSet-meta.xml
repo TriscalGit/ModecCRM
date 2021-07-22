@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Documentation</fullName>
+        <default>false</default>
+        <label>Documentation</label>
+    </customValue>
+    <customValue>
+        <fullName>Logistic</fullName>
+        <default>false</default>
+        <label>Logistic</label>
+    </customValue>
+    <customValue>
+        <fullName>Quantity</fullName>
+        <default>false</default>
+        <label>Quantity</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing Defect</fullName>
+        <default>false</default>
+        <label>Manufacturing Defect</label>
+    </customValue>
+    <customValue>
+        <fullName>Out Of Specification</fullName>
+        <default>false</default>
+        <label>Out Of Specification</label>
+    </customValue>
+    <customValue>
+        <fullName>PO Divergence</fullName>
+        <default>false</default>
+        <label>PO Divergence</label>
+    </customValue>
+    <customValue>
+        <fullName>Preservation</fullName>
+        <default>false</default>
+        <label>Preservation</label>
+    </customValue>
+    <customValue>
+        <fullName>Traceability</fullName>
+        <default>false</default>
+        <label>Traceability</label>
+    </customValue>
+    <masterLabel>Receipt Inspection Rejection Reason</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

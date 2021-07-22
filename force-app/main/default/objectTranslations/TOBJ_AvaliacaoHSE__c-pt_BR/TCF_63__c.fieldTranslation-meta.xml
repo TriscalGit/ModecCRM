@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>… São comunicações especificamente para informar os trabalhadores sobre incidentes ou problemas identificados em outros locais.</help>
+    <label></label>
+    <name>TCF_63__c</name>
+</CustomFieldTranslation>

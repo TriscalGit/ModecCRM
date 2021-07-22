@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Vessel</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Vessels</value>
+    </caseValues>
+    <layouts>
+        <layout>Vessel Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Vessel Detail</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>WO Attention</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vessel Layout - Contracts</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

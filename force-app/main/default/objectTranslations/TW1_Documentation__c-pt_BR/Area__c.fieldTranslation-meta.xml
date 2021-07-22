@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>Area__c</name>
+    <picklistValues>
+        <masterLabel>Commercial</masterLabel>
+        <translation>Comercial</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Compliance</masterLabel>
+        <translation>Compliance</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Finance</masterLabel>
+        <translation>Financeiro</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>HSE</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>None</masterLabel>
+        <translation>Nenhuma</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Quality</masterLabel>
+        <translation>Qualidade</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Technical</masterLabel>
+        <translation>Tecnica</translation>
+    </picklistValues>
+</CustomFieldTranslation>

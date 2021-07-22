@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Esse campo é somente leitura. Não tente preenchê-lo.</help>
+    <label>Número de Referencia do BM no SAP</label>
+    <name>TW1_BM_Reference_Number_in_SAP_MODEC__c</name>
+</CustomFieldTranslation>

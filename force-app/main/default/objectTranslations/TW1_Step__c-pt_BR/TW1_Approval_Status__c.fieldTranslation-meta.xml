@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Status da Aprovação</label>
+    <name>TW1_Approval_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation>Aprovada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Audit</masterLabel>
+        <translation>Aguardando Auditoria</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Supplier Clarification</masterLabel>
+        <translation>Aguardando Esclarecimento do Fornecedor</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Inprogress</masterLabel>
+        <translation>Em andamento</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Not Approved</masterLabel>
+        <translation>Não Aprovada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reassign to level 1</masterLabel>
+        <translation>Reatribuida para Nível 1</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Under evaluation</masterLabel>
+        <translation>Em avaliação</translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <assignments>
+        <name>Update_HSE_Evaluation</name>
+        <label>Update HSE Evaluation</label>
+        <locationX>626</locationX>
+        <locationY>315</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.TCF_GeneralSafetyCulture__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>SafetyCulture</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>$Record.TCF_GeneralRating__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>RatingMedia</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>DS_IsChangedRating</name>
+        <label>Is Changed Rating</label>
+        <locationX>613</locationX>
+        <locationY>125</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingSection3__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingSection3__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingSection4__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingSection4__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingItem5_1__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingItem5_1__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingItem5_2__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingItem5_2__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingSection6__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingSection6__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingSection7__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingSection7__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingSection8__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingSection8__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingSection9__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingSection9__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingSection10__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingSection10__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingSection11__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingSection11__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Get.TCF_RatingSection12__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.TCF_RatingSection12__c</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_HSE_Evaluation</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>RatingMedia</name>
+        <dataType>Number</dataType>
+        <expression>IF(AND(ISBLANK(TEXT({!$Record.TCF_RatingSection3__c})),ISBLANK(TEXT({!$Record.TCF_RatingSection4__c})),ISBLANK(TEXT({!$Record.TCF_RatingItem5_1__c})),ISBLANK(TEXT({!$Record.TCF_RatingItem5_2__c})),ISBLANK(TEXT({!$Record.TCF_RatingSection6__c})),ISBLANK(TEXT({!$Record.TCF_RatingSection7__c})),ISBLANK(TEXT({!$Record.TCF_RatingSection8__c})),ISBLANK(TEXT({!$Record.TCF_RatingSection9__c})),ISBLANK(TEXT({!$Record.TCF_RatingSection10__c})),ISBLANK(TEXT({!$Record.TCF_RatingSection11__c})),ISBLANK(TEXT({!$Record.TCF_RatingSection11__c}))), null,		
+		((IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingSection3__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingSection3__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingSection4__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingSection4__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingItem5_1__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingItem5_1__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingItem5_2__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingItem5_2__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingSection6__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingSection6__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingSection7__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingSection7__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingSection8__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingSection8__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingSection9__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingSection9__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingSection10__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingSection10__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingSection11__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingSection11__c}))) +
+		IF(ISBLANK(VALUE(TEXT({!$Record.TCF_RatingSection12__c}))), 0, VALUE(TEXT({!$Record.TCF_RatingSection12__c}))))/11))</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>SafetyCulture</name>
+        <dataType>String</dataType>
+        <expression>IF({!RatingMedia} = 10, 
+	IF(ISPICKVAL({!$User.LanguageLocaleKey},&quot;pt_BR&quot;),&quot;Construtivo&quot;,&quot;Generative&quot;),
+	IF(AND({!RatingMedia}&gt;=6, {!RatingMedia}&lt;10),
+		IF(ISPICKVAL({!$User.LanguageLocaleKey},&quot;pt_BR&quot;),&quot;Proativo&quot;,&quot;Proactive&quot;),
+		IF(AND({!RatingMedia}&gt;=3, {!RatingMedia}&lt;6),
+			IF(ISPICKVAL({!$User.LanguageLocaleKey},&quot;pt_BR&quot;),&quot;Calculativo&quot;,&quot;Calculative&quot;),
+			IF(AND({!RatingMedia}&gt;=0, {!RatingMedia}&lt;3),
+				IF(ISPICKVAL({!$User.LanguageLocaleKey},&quot;pt_BR&quot;),&quot;Patológico/Reativo&quot;,&quot;Pathological/Reative&quot;),
+				&quot;&quot;)
+			)
+		)
+	)</expression>
+    </formulas>
+    <interviewLabel>HSE Evalution - Media {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>HSE Evaluation - Media</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get</name>
+        <label>Get</label>
+        <locationX>461</locationX>
+        <locationY>107</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>DS_IsChangedRating</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>TOBJ_AvaliacaoHSE__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <start>
+        <locationX>45</locationX>
+        <locationY>40</locationY>
+        <connector>
+            <targetReference>Get</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>TCF_Answered__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>TOBJ_AvaliacaoHSE__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Status do Plano de Ação</label>
+    <name>TW4_Action_Plan_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation>Aprovado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reproved</masterLabel>
+        <translation>Reprovado</translation>
+    </picklistValues>
+</CustomFieldTranslation>

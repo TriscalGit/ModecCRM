@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>51.0</apiVersion>
+    <assignments>
+        <name>Add_current_item_to_List_for_update</name>
+        <label>Add current item to List for update</label>
+        <locationX>138</locationX>
+        <locationY>791</locationY>
+        <assignmentItems>
+            <assignToReference>UpdatedSupplierCategory</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>Loop_de_registros</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Loop_de_registros</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Atribui novo valor de record type</description>
+        <name>Atribui_novo_valor_de_record_type</name>
+        <label>Atribui novo valor de record type</label>
+        <locationX>138</locationX>
+        <locationY>671</locationY>
+        <assignmentItems>
+            <assignToReference>Loop_de_registros.T_Category_Type__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Record.RecordType.Name</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Add_current_item_to_List_for_update</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <description>Verifica se Record Type foi alterado.</description>
+        <name>Verifica_se_Record_Type_foi_alterado</name>
+        <label>Verifica se Record Type foi alterado</label>
+        <locationX>182</locationX>
+        <locationY>311</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Record_type_alterado</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record__Prior.RecordTypeId</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>BuscaSupplierCategory</targetReference>
+            </connector>
+            <label>Record type alterado</label>
+        </rules>
+    </decisions>
+    <description>Verifica mudanças de record type e atualiza as supplier category relacionadas com o novo valor de record type.</description>
+    <interviewLabel>Category - Verifica {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Category - Verify Record Type changes</label>
+    <loops>
+        <name>Loop_de_registros</name>
+        <label>Loop de registros</label>
+        <locationX>50</locationX>
+        <locationY>551</locationY>
+        <collectionReference>BuscaSupplierCategory</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>Atribui_novo_valor_de_record_type</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>Atualiza_Registros_de_Supplier_Category_0_0</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <description>Busca os registros de Supplier Category relacionados ao registro de categoria.</description>
+        <name>BuscaSupplierCategory</name>
+        <label>Busca Supplier Category</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Loop_de_registros</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>TW1_Category__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>TW1_Vendor_Category__c</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <description>Atualiza Registros de Supplier Category</description>
+        <name>Atualiza_Registros_de_Supplier_Category_0_0</name>
+        <label>Atualiza Registros de Supplier Category</label>
+        <locationX>50</locationX>
+        <locationY>1007</locationY>
+        <inputReference>UpdatedSupplierCategory</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Verifica_se_Record_Type_foi_alterado</targetReference>
+        </connector>
+        <object>TW1_Category__c</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>UpdatedSupplierCategory</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>TW1_Vendor_Category__c</objectType>
+    </variables>
+</Flow>

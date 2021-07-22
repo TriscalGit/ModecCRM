@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tech Clarification</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tech Clarifications</value>
+    </caseValues>
+    <layouts>
+        <layout>Review Clarification Layout</layout>
+        <sections>
+            <label></label>
+            <section>Clarification Closed Out Comment</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Email</name>
+    </quickActions>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>OnlyFocalPointcanChangeStatus</name>
+    </validationRules>
+</CustomObjectTranslation>

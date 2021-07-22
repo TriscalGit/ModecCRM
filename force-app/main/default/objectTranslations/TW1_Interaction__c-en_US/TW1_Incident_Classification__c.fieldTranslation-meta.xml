@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Incident Classification</label>
+    <name>TW1_Incident_Classification__c</name>
+    <picklistValues>
+        <masterLabel>Non-Tabular</masterLabel>
+        <translation>Non-Tabular</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Tabular</masterLabel>
+        <translation>Tabular</translation>
+    </picklistValues>
+</CustomFieldTranslation>

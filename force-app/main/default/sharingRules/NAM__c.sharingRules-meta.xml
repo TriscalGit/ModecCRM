@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>EMVisibility</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>EM Visibility</label>
+        <sharedTo>
+            <role>EngineeringManager</role>
+        </sharedTo>
+        <criteriaItems>
+            <field>SPCPartnersVisible__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPCPartner</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>SPC Partner</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>SPC</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>SPCPartnersVisible__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>SPCTechTeamEdit</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>SPCTechTeamEdit</label>
+        <sharedTo>
+            <role>TechnicalSPC</role>
+        </sharedTo>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <field>ClosedOutStatus__c</field>
+            <operation>equals</operation>
+            <value>Tech Team</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Tech Team</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ShareMdB</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Share MdB</label>
+        <sharedTo>
+            <roleAndSubordinates>ProjectEngineeringManager</roleAndSubordinates>
+        </sharedTo>
+        <criteriaItems>
+            <field>Name</field>
+            <operation>notEqual</operation>
+            <value>|-99|</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>TeachTeam</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Teach Team</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>TechnicalSPC</roleAndSubordinatesInternal>
+        </sharedTo>
+        <criteriaItems>
+            <field>SPCPartnersVisible__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>AMC</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>AMC</label>
+        <sharedTo>
+            <role>AMC_Fleet_Maintenance</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>AMC_Fleet_Maintenance</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>AMCFleetControlersMV24</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Rule for Fleet Controllers and subordinates in MV24 can edit NAMs owned by AMCs in MV24</description>
+        <label>AMC and Fleet Controlers MV24</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>AMCMV24</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>AMCMV24</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>AMCFleetControlersMV26</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Rule for Fleet Controllers and subordinates in MV26 can edit NAMs owned by AMCs in MV26</description>
+        <label>AMC and Fleet Controlers MV26</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>AMCMV26</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>AMCMV26</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>AMCFleetControlersMV27</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Rule for Fleet Controllers and subordinates in MV27 can edit NAMs owned by AMCs in MV27</description>
+        <label>AMC and Fleet Controlers MV27</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>AMCMV27</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>AMCMV27</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>AMCFleetControlersMV29</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Rule for Fleet Controllers and subordinates in MV29 can edit NAMs owned by AMCs in MV29</description>
+        <label>AMC and Fleet Controlers MV29</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>AMCMV29</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <role>AMCMV29</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

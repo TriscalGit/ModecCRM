@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Status da Auditoria</label>
+    <name>TW1_Audit_Status__c</name>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation>Aprovada</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Pending Audit</masterLabel>
+        <translation>Auditoria Pendente</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reproved</masterLabel>
+        <translation>Reprovado</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Successfully Approved</masterLabel>
+        <translation>Aprovado com Sucesso</translation>
+    </picklistValues>
+</CustomFieldTranslation>

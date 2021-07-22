@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Status</label>
+    <name>TW1_Status__c</name>
+    <picklistValues>
+        <masterLabel>Accepted</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Action Plan Evaluation</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Action Plan Validation</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Analyzing Audit Info</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved under restriction</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Audit Scheduled</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Action Plan</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Evidences</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting Return</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Awaiting evidence of treatment</masterLabel>
+        <translation>Awaiting evidence of treatment</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Cancelled</masterLabel>
+        <translation>Cancelled</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Clarification Required</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Closed</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evidence sent</masterLabel>
+        <translation>Evidence sent</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evidences Analyzed</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Evidences Sent</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>In Validation By the Legal</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident responded</masterLabel>
+        <translation>Incident responded</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident treatment approved</masterLabel>
+        <translation>Incident treatment approved</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incident treatment rejected</masterLabel>
+        <translation>Incident treatment rejected</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New Proposed Date</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>New incident treatment</masterLabel>
+        <translation>New incident treatment</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Open</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Rejected</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reproved</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Sent incident to supplier</masterLabel>
+        <translation>Sent incident to supplier</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Validated Notification</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>Account Layout</layout>
+        <sections>
+            <label></label>
+            <section>Account Summary</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Community Vendor</layout>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Layout</layout>
+        <sections>
+            <label></label>
+            <section>Address</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Homologated</layout>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Homologated - QA</layout>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSEQ Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Homologated - Senegal</layout>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSEQ Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Homologated - VV Team</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Homologated - VV Team - QA</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSSE Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor Homologated - VV Team - Senegal</layout>
+        <sections>
+            <label></label>
+            <section>Contact Informartion</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSSE Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor NAM Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor not Homologated</layout>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor not Homologated - QA</layout>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Vendor not Homologated - Senegal</layout>
+        <sections>
+            <label></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>HSEQ Information</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>Child_Account</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Email</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>New_Supplier_Category</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>StartVettingProcess</name>
+    </quickActions>
+    <quickActions>
+        <label>Iniciar Homologaçao</label>
+        <name>Start_Vendor_Vetting</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW1_Vendor</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>Business</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Vendor_Homologated</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW1_Vendor_Not_Homologated</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW3_Supplier_Homologated_Senegal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>TW3_Supplier_Not_Homologated_Senegal</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>Vendor</name>
+    </recordTypes>
+    <webLinks>
+        <label></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label></label>
+        <name>Teste_Botao</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Esse campo é somente leitura. Não tente preenchê-lo.</help>
+    <label></label>
+    <name>TW1_NF__c</name>
+</CustomFieldTranslation>

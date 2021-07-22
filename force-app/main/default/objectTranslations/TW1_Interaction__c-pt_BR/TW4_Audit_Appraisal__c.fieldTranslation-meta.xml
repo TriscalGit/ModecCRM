@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Avaliação da Auditoria</label>
+    <name>TW4_Audit_Appraisal__c</name>
+    <picklistValues>
+        <masterLabel>Approved with Nonconformities</masterLabel>
+        <translation>Aprovado com Não Conformidades</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Approved without Nonconformities</masterLabel>
+        <translation>Aprovado sem Não Conformidades</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Reproved</masterLabel>
+        <translation>Reprovado</translation>
+    </picklistValues>
+</CustomFieldTranslation>

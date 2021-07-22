@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value></value>
+    </caseValues>
+    <gender></gender>
+    <layouts>
+        <layout>Inspection Item Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>OM Approval</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel></nameFieldLabel>
+    <quickActions>
+        <label>Laudo da Inspeção do Item</label>
+        <name>Item_Inspection_Result</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>TW5_OM_Approval_Flow</name>
+    </quickActions>
+    <validationRules>
+        <errorMessage>Não é possível modificar o Item da Inspeção após o já envio da Requisição.</errorMessage>
+        <name>CantChangeInspItemAfterSendInsp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível criar um novo Item da Inspeção após a Requisição já ter sido enviada.</errorMessage>
+        <name>CantCreateInspItemWithoutInspStatuNotSub</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível criar mais que 10 Itens de Inspeção.</errorMessage>
+        <name>CantCreateMoreThan10InspItem</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível laudar o Item como rejeitado sem o Laudo da Inspeção preenchido.</errorMessage>
+        <name>CantRejectItemWOInspAppraisal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>Não é possível laudar o Item se a Requisição não estiver duranta uma Inspeção.</errorMessage>
+        <name>CantSendItemResultStatusDifInspSched</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>IfTQMOCYesFillTQMOCReason</name>
+    </validationRules>
+</CustomObjectTranslation>

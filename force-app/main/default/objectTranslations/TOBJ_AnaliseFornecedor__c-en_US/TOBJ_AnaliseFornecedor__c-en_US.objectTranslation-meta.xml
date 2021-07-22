@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Análise Fornecedor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Análises dos Fornecedores</value>
+    </caseValues>
+    <layouts>
+        <layout>Layout - Análise Fornecedor - Inspeção</layout>
+        <sections>
+            <label></label>
+            <section>1. Recebimento de Material</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>1.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>1.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>1.4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>1.5</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>1.6</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>1.7</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2. Manuseio, Armazenagem e Preservação de Materiais</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>2.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3. Identificação / Rastreabilidade de Materiais</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>3.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4. Soldagem / END</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4.10</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4.4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4.5</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4.6</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4.7</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4.8</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>4.9</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5. Teste de Pressão</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5.4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>5.5</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6. PIntura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6.4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6.5</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>6.6</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7. Documentação / Subfornecedores / Embalagem Final</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>7.4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Critério de Pontuação</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informações</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Qualificação Final do Fornecedor/Comentários</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 1.1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 1.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 1.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 1.4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 1.5</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 1.6</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 1.7</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 2.1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 2.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 3.1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 3.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.10</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.5</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.6</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.7</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.8</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 4.9</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 5.1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 5.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 5.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 5.4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 5.5</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 6.1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 6.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 6.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 6.4</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 6.5</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 6.6</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 7.1</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 7.2</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 7.3</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Resposta 7.4</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>TAC_Fechar</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>TRT_Inspecao</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ImpedirAlterarAvaliacaoFinalizada</name>
+    </validationRules>
+</CustomObjectTranslation>

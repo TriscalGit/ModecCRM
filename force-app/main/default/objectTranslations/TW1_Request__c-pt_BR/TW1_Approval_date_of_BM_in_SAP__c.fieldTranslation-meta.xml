@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Data de Aprovação do BM no SAP</label>
+    <name>TW1_Approval_date_of_BM_in_SAP__c</name>
+</CustomFieldTranslation>
