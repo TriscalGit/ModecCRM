@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Todas as evidências deverão ser anexadas</help>
-    <label>Qtde Simulados de Emergência no Período</label>
-    <name>TCF_QtdeSimuladosEmergenciaPeriodo__c</name>
-</CustomFieldTranslation>

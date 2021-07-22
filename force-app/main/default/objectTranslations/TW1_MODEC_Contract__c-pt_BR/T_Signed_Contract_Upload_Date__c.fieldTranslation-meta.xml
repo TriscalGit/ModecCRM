@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Data de Upload do Contrato</label>
-    <name>T_Signed_Contract_Upload_Date__c</name>
-</CustomFieldTranslation>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Evidenciar o cumprimento do plano de manutenção / calibração das ferramentas e equipamentos.</help>
-    <label>Qtde Manutenção/Calibração Realizada</label>
-    <name>TCF_QtdeManutencaoCalibracaoRealizada__c</name>
-</CustomFieldTranslation>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Taxa de frequência:</label>
-    <name>TCF_TaxaFrequencia__c</name>
-</CustomFieldTranslation>

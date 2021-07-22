@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Esse campo é somente leitura. Você pode preenchê-lo pelo botão &quot;Agendar Inspeção&quot; depois de salvar esse registro.</help>
-    <label>Opção de Data de Inspeção 2</label>
-    <name>TW1_Inspection_Date_Option_2__c</name>
-</CustomFieldTranslation>

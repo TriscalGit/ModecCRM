@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Plano de Ação - Data de Conclusão</label>
-    <name>TW4_Conclusion_Date_Action_Plan__c</name>
-</CustomFieldTranslation>

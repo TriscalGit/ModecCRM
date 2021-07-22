@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>dateValidaton</fullName>
-    <active>false</active>
-    <errorConditionFormula>if(EstimatedFinishDate__c &lt; EstimatedStartDate__c, true, false)</errorConditionFormula>
-    <errorDisplayField>EstimatedStartDate__c</errorDisplayField>
-    <errorMessage>&apos;Estimated Start Date&apos; can not be  greater than &apos;Estimated Finish Date&apos;</errorMessage>
-</ValidationRule>

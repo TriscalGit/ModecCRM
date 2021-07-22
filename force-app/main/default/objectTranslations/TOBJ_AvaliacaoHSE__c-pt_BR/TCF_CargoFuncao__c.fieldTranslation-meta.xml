@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Anexar o organograma do departamento de HSEQ e a descrição dos cargos da equipe</help>
-    <label>Cargo/Função</label>
-    <name>TCF_CargoFuncao__c</name>
-</CustomFieldTranslation>

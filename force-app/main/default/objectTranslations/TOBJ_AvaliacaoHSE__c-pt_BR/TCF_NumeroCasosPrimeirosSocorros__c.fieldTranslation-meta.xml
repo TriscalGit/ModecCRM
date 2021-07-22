@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Número de casos de primeiros socorros:</label>
-    <name>TCF_NumeroCasosPrimeirosSocorros__c</name>
-</CustomFieldTranslation>

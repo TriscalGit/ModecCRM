@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Defaul</fullName>
-    <fields>LineItemNumber</fields>
-    <fields>WorkOrderId</fields>
-    <fields>Product__c</fields>
-    <fields>Price__c</fields>
-    <label>Defaul</label>
-</CompactLayout>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label>Inspeção Realizada Vigente</label>
-    <name>TW1_Current_Inspection_Perfomed__c</name>
-</CustomFieldTranslation>

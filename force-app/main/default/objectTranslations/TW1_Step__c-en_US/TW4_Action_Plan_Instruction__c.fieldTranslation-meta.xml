@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <label></label>
-    <name>TW4_Action_Plan_Instruction__c</name>
-    <picklistValues>
-        <masterLabel>Please fill in each nonconformity related to this Interaction</masterLabel>
-        <translation></translation>
-    </picklistValues>
-</CustomFieldTranslation>

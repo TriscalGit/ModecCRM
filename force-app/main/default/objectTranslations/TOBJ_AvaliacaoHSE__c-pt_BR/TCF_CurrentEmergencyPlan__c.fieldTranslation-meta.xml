@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-    <help>Específico para o contrato/serviço prestado para a Modec</help>
-    <label>Plano de Emergência Atualizado</label>
-    <name>TCF_CurrentEmergencyPlan__c</name>
-</CustomFieldTranslation>
